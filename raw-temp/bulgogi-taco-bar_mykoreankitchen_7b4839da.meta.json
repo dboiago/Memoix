@@ -1,0 +1,72 @@
+{
+  "url": "https://mykoreankitchen.com/bulgogi-taco-bar/",
+  "slug": "bulgogi-taco-bar_mykoreankitchen_7b4839da",
+  "title": "Bulgogi Taco Bar",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T23:15:58.850Z",
+  "ldName": "Bulgogi Taco Bar",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "8",
+    "8 to 10"
+  ],
+  "ldCuisine": "Korean Fusion",
+  "ldCategory": "Main",
+  "ldKeywords": "bulgogi, taco",
+  "ldIngredientsRaw": [
+    "8 to 10  large tortillas (, warm them up just before serving. (I used a microwave.))",
+    "600 g bulgogi ((1.3 pounds), stir fried)",
+    "10 leaves Korean lettuce (or baby cos lettuce, thinly sliced)",
+    "10 leaves Korean perilla (, thinly sliced)",
+    "1  Lebanese cucumber (, thinly sliced)",
+    "Korean spicy cucumber salad",
+    "Korean white radish pickles (or pink radish pickles)",
+    "2 Tbsp gochujang ((Korean chili paste))",
+    "2 Tbsp white sugar",
+    "1 Tbsp soy sauce",
+    "1 tsp rice vinegar",
+    "1/4 tsp minced garlic",
+    "1 tsp sesame oil",
+    "1 tsp toasted sesame seeds"
+  ],
+  "ldInstructionsRaw": [
+    "Place all prepared ingredients on a dining table and start assembling!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "241 kcal",
+    "carbohydrateContent": "37 g",
+    "proteinContent": "4 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "4 g",
+    "cholesterolContent": "24 mg",
+    "sodiumContent": "621 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "14 g",
+    "unsaturatedFatContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[MAIN]",
+    "▢ 8 to 10 large tortillas , warm them up just before serving. (I used a microwave.)",
+    "▢ 600 g bulgogi (1.3 pounds), stir fried",
+    "▢ 10 leaves Korean lettuce or baby cos lettuce, thinly sliced",
+    "▢ 10 leaves Korean perilla , thinly sliced",
+    "▢ 1 Lebanese cucumber , thinly sliced",
+    "▢ Korean spicy cucumber salad",
+    "▢ Korean white radish pickles or pink radish pickles",
+    "[KOREAN TACO SAUCE (MIX THESE IN A BOWL)]",
+    "▢ 2 Tbsp gochujang (Korean chili paste)",
+    "▢ 2 Tbsp white sugar",
+    "▢ 1 Tbsp soy sauce",
+    "▢ 1 tsp rice vinegar",
+    "▢ 1/4 tsp minced garlic",
+    "▢ 1 tsp sesame oil",
+    "▢ 1 tsp toasted sesame seeds"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

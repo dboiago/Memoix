@@ -1,0 +1,7 @@
+I have been using dried mushrooms in recipes for ages, as when the mushrooms I want to use are out of season or not readily available in the stores, they are a perfect replacement. However, I never thought that when using dried [shiitake mushroom](https://www.greatbritishchefs.com/ingredients/shiitake-mushroom-recipes) I was, in fact, making dashi.
+
+Making mushroom dashi is easy, but you should only use dried shiitake mushrooms for the best results. The stock is achieved by just re-hydrating the dried fungus. This lovely recipe warms the soul, and despite having a few steps it's actually quite easy to make. Mushrooms are a very versatile fungus, and they are really good at absorbing other flavours. In this recipe, I used fresh Japanese mushrooms and the re-hydrated shiitake for the [dashi](https://www.greatbritishchefs.com/how-to-cook/how-to-cook-with-dashi). This mix of flavours, combined with the beef, gives the whole dish an earthy aroma and a lot of texture.
+
+I used shiitake, enoki, shimeji, brown, white and oyster mushrooms for this recipe, but please feel free to use your favourite combination.
+
+The use of a basic dashi to cook the rice gave it a deeper flavour and beautiful scent. Quite unique!

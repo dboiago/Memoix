@@ -1,0 +1,48 @@
+{
+  "url": "https://japan.recipetineats.com/beef-rolls-asparagus/",
+  "slug": "beef-rolls-with-asparagus_japan_b88035f9",
+  "title": "Beef Rolls with Asparagus",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T22:23:32.036Z",
+  "ldName": "Beef Rolls with Asparagus",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "6  thin slices of beef ((about 160-200g/6-7oz in total, Wagyu beef if possible, Note 1))",
+    "9  asparagus stems (, moderate thickness)",
+    "1 tbsp Cooking Oil",
+    "1 tbsp soy sauce",
+    "1 tbsp mirin",
+    "1 tbsp sake"
+  ],
+  "ldInstructionsRaw": [
+    "Remove hard part of the asparagus stem at lower end and cut into half length each (Note 3).",
+    "Boil water in a pan, add a pinch of salt and par boil asparagus for 30 seconds to 1 minute. Drain.",
+    "Spread a beef slice on a cutting board, place 3 pieces of asparagus at the end closer to you and roll forward. The asparagus should be wrapped in 2 layers of the beef.",
+    "Repeat and wrap the rest of the asparagus with beef. This will make 6 uncooked beef rolls.",
+    "Heat a frying pan with oil over medium high heat. Add beef rolls and cook, rolling them occasionally to brown beef rolls evenly. When surface of the beef is slightly burnt all over (a couple of minutes), remove excess oil with kitchen paper as the sauce will not coat the beef well if there is too much oil.",
+    "Add Sauce ingredients to the pan and coat the beef roll with the sauce.",
+    "When the sauce is almost evaporated, turn the heat off and remove the beef rolls onto a cutting board.",
+    "Cut each roll into 3 or 4cm (1¼-1½\") depending on the length of the roll and your preference. Place the rolls upright on a plate and serve. (Note 4)"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "6\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tthin slices of beef\n\t\t\t\t\t\t\t\t\t\t(about 160-200g/6-7oz in total, Wagyu beef if possible, Note 1)",
+    "9\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tasparagus stems\n\t\t\t\t\t\t\t\t\t\t, moderate thickness",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tCooking Oil",
+    "[Sauce (Note 2)]",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tsoy sauce",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tmirin",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tsake"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

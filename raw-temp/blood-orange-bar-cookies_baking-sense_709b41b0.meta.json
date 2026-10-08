@@ -1,0 +1,67 @@
+{
+  "url": "https://www.baking-sense.com/2015/03/19/blood-orange-bars/",
+  "slug": "blood-orange-bar-cookies_baking-sense_709b41b0",
+  "title": "Blood Orange Bar Cookies",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T05:52:11.339Z",
+  "ldName": "Blood Orange Bar Cookies",
+  "ldTime": "PT70M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "24",
+    "24 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "blood orange, easy",
+  "ldIngredientsRaw": [
+    "10 ounces all purpose flour (2 cups, see note)",
+    "8 ounces granulated sugar (1 cup)",
+    "½ teaspoon salt",
+    "8 ounces unsalted butter (room temp)",
+    "8 ounces granulated sugar (1 cup)",
+    "¼ teaspoon salt",
+    "3 tablespoons all purpose flour",
+    "4  eggs",
+    "6  blood oranges",
+    "1  lemon"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat oven to 350 °F. Lightly butter a 13 x 9 baking pan, then line with parchment paper in one direction going up and over the two sides of the pan.",
+    "For the Crust",
+    "For the Filling:"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "182 kcal",
+    "carbohydrateContent": "24 g",
+    "proteinContent": "3 g",
+    "fatContent": "9 g",
+    "saturatedFatContent": "5 g",
+    "transFatContent": "0.3 g",
+    "cholesterolContent": "48 mg",
+    "sodiumContent": "85 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "15 g",
+    "unsaturatedFatContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Crust]",
+    "10 ounces all purpose flour (2 cups, see note)",
+    "8 ounces granulated sugar (1 cup)",
+    "½ teaspoon salt",
+    "8 ounces unsalted butter (room temp)",
+    "[filling]",
+    "8 ounces granulated sugar (1 cup)",
+    "¼ teaspoon salt",
+    "3 tablespoons all purpose flour",
+    "4 eggs",
+    "6 blood oranges",
+    "1 lemon"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

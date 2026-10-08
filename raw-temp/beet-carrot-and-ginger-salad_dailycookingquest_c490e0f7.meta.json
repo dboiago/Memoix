@@ -1,0 +1,58 @@
+{
+  "url": "https://dailycookingquest.com/beet-carrot-and-ginger-salad.html",
+  "slug": "beet-carrot-and-ginger-salad_dailycookingquest_c490e0f7",
+  "title": "Beet, Carrot, and Ginger Salad",
+  "byline": "",
+  "fetchedAt": "2026-08-02T10:29:34.669Z",
+  "ldName": "Beet, Carrot, and Ginger Salad",
+  "ldTime": "PT0H30M",
+  "ldPrepTime": "PT0H30M",
+  "ldCookTime": "PT0H0M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Salad",
+  "ldKeywords": [
+    "Raw salad with carrot and beet",
+    "Simple olive oil salad dressing with ginger, lime, honey, and mustard",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "250 gram carrot (Indonesian: wortel), peeled and slice into thin ribbons (I use a peeler)",
+    "250 gram beet (Indonesian: bit), peeled and slice into thin ribbons (I use a peeler)",
+    "8 shallots (Indonesian: bawang merah), peeled and thinly sliced",
+    "2 tablespoon raisin (Indonesian: kismis)",
+    "salt (Indonesian: garam), about 1 teaspoon (or to taste)",
+    "pepper (Indonesian: merica), about 1/2 teaspoon (or to taste)",
+    "1 tablespoon olive oil (Indonesian: minyak zaitun)",
+    "1 tablespoon grated ginger (Indonesian: jahe)",
+    "2 tablespoon lime juice (Indonesian: jeruk nipis)",
+    "2 teaspoon honey (Indonesian: madu)",
+    "2 teaspoon mustard",
+    "1/2 cup chopped lemon basil (Indonesian: daun kemangi)"
+  ],
+  "ldInstructionsRaw": [
+    "Place carrot ribbons, beet ribbons, sliced shallots, and raisins in a mixing bowl.",
+    "Sprinkle with salt and pepper. Add olive oil, grated ginger, lime juice, honey, and mustard. Toss and adjust the taste as needed.",
+    "Toss in the chopped lemon basil and serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "250 gram carrot (Indonesian: wortel), peeled and slice into thin ribbons (I use a peeler)",
+    "250 gram beet (Indonesian: bit), peeled and slice into thin ribbons (I use a peeler)",
+    "8 shallots (Indonesian: bawang merah), peeled and thinly sliced",
+    "2 tablespoon raisin (Indonesian: kismis)",
+    "salt (Indonesian: garam), about 1 teaspoon (or to taste)",
+    "pepper (Indonesian: merica), about 1/2 teaspoon (or to taste)",
+    "1 tablespoon olive oil (Indonesian: minyak zaitun)",
+    "1 tablespoon grated ginger (Indonesian: jahe)",
+    "2 tablespoon lime juice (Indonesian: jeruk nipis)",
+    "2 teaspoon honey (Indonesian: madu)",
+    "2 teaspoon mustard",
+    "1/2 cup chopped lemon basil (Indonesian: daun kemangi)"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

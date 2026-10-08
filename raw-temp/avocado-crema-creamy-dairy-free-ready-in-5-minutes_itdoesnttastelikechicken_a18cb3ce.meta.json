@@ -1,0 +1,55 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/avocado-crema/",
+  "slug": "avocado-crema-creamy-dairy-free-ready-in-5-minutes_itdoesnttastelikechicken_a18cb3ce",
+  "title": "Avocado Crema (Creamy, Dairy-Free & Ready in 5 Minutes)",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T08:32:45.376Z",
+  "ldName": "Avocado Crema (Creamy, Dairy-Free &amp; Ready in 5 Minutes)",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "4",
+    "4 (makes about 1 cup)"
+  ],
+  "ldCuisine": "American, Mexican",
+  "ldCategory": "sauce",
+  "ldKeywords": "chipotle",
+  "ldIngredientsRaw": [
+    "1 large ripe avocado",
+    "¼ cup vegan yogurt ((such as soy, almond, or coconut))",
+    "1  lime (juiced (about 2 tablespoons))",
+    "1 small clove  garlic",
+    "¼ teaspoon salt (or to taste)",
+    "2 - 4 tablespoons water (to thin as needed)"
+  ],
+  "ldInstructionsRaw": [
+    "Blend: Add the avocado, yogurt, lime juice, garlic, and salt to a high-speed blender or small food processor and blend until completely smooth.",
+    "Thin: Add water 1 tablespoon at a time until you reach your desired drizzleable consistency.",
+    "Taste and finish: Taste and adjust salt and lime as needed."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1  serving (recipe makes 4 servings)",
+    "calories": "96 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "2 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "152 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 large ripe avocado",
+    "▢ ¼ cup vegan yogurt, (such as soy, almond, or coconut)",
+    "▢ 1 lime, juiced (about 2 tablespoons)",
+    "▢ 1 small clove  garlic",
+    "▢ ¼ teaspoon salt, or to taste",
+    "▢ 2 - 4 tablespoons water, to thin as needed"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

@@ -1,0 +1,56 @@
+{
+  "url": "https://www.okonomikitchen.com/3-ingredient-yogurt-souffle-cake/",
+  "slug": "3-ingredient-yogurt-souffl-cake-okonomi-kitchen_okonomikitchen_b4b84689",
+  "title": "3 Ingredient Yogurt Soufflé Cake - Okonomi Kitchen",
+  "byline": "Lisa Kitahara",
+  "fetchedAt": "2026-09-26T00:23:20.000Z",
+  "ldName": "3 Ingredient Yogurt Soufflé Cake",
+  "ldTime": "PT1H",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT50M",
+  "ldYield": [
+    "2",
+    "2 servings"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "yogurt cake, souffle cake, souffle cheesecake, yogurt souffle cake, japanese cheesecake",
+  "ldIngredientsRaw": [
+    "1 cup (250 g) Balkan or Greek yogurt",
+    "2 large (112 g) eggs",
+    "1/4 cup (50 g) sugar",
+    "1 1/2 cup (375 g) Balkan or Greek yogurt",
+    "3 large (168 g) eggs",
+    "1/3 (75 g) sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Strain the yogurt using a yogurt strainer or cheesecloth until about 100 grams in weight (less is okay, anything more and the cake might be too wet). A yogurt strainer will take about 1 hour and a cheesecloth may take several hours.",
+    "Preheat your oven to 400°F (200°C). Grease and line an 5 or 6 inch round cake pan with parchment paper. If using a pan with a removable bottom, wrap the outside of the pan tightly with aluminum foil to prevent water from leaking in during the water bath.",
+    "Separate the egg whites from the yolks. Place the yolks in one bowl and the whites in another. Make sure the bowl for the egg whites is clean and dry.",
+    "In the bowl with the egg yolks, whisk in the yogurt until smooth and fully combined.",
+    "Using an electric mixer, add the sugar and beat the egg whites on high speed until stiff peaks form.",
+    "Gently fold a a scoop of the whipped egg whites into the yogurt mixture to lighten it. Repeat two more times. Add the yolk batter to the remaining whipped egg whites and whisk it in using scooping motions. Switch to a spatula and mix, scraping the bottom of the bowl to ensure everything is well mixed.",
+    "Place the prepared cake pan into a larger baking dish. Pour hot water into the larger dish until it reaches about halfway up the sides of the cake pan.",
+    "Carefully transfer the water bath and cake into the oven. Bake the cake at 400°F for 10 minutes, then open the oven door briefly, reduce the heat to 320°F, and bake for another 40-50 minutes for 12 cm or 50-60 minutes for 15 cm.",
+    "Let the cake cool in the water bath for about 10 minutes. Then remove the cake pan from the water bath, let it cool completely, and carefully remove the cake. Dust with powdered sugar or top with fresh fruit before serving, if desired."
+  ],
+  "ldNutritionRaw": {
+    "servingSize": "1 serving",
+    "calories": "257 calories",
+    "sugarContent": "25",
+    "sodiumContent": "125",
+    "fatContent": "12",
+    "saturatedFatContent": "6.2",
+    "unsaturatedFatContent": "3",
+    "transFatContent": "0.1",
+    "carbohydrateContent": "26",
+    "fiberContent": "0.3",
+    "proteinContent": "11",
+    "cholesterolContent": "233.7",
+    "@type": "nutritionInformation"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

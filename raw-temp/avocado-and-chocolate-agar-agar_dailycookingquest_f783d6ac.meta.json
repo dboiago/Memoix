@@ -1,0 +1,67 @@
+{
+  "url": "https://dailycookingquest.com/avocado-chocolate-agar-agar.html",
+  "slug": "avocado-and-chocolate-agar-agar_dailycookingquest_f783d6ac",
+  "title": "Avocado and Chocolate Agar-Agar",
+  "byline": "",
+  "fetchedAt": "2026-08-01T21:17:29.580Z",
+  "ldName": "Avocado and Chocolate Agar-Agar",
+  "ldTime": "PT0H45M",
+  "ldPrepTime": "PT0H25M",
+  "ldCookTime": "PT0H20M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Dessert, Vegetarian",
+  "ldKeywords": [
+    "avocado agar-agar",
+    "avocado pudding",
+    "avocado jelly",
+    "gluten-free avocado dessert",
+    "vegan avocado dessert",
+    "Fruit"
+  ],
+  "ldIngredientsRaw": [
+    "225 gram (1/2 lb) ripe avocado flesh",
+    "500 ml (2 cup) milk (Note 1)",
+    "7 gram (2 1/4 teaspoon) agar-agar powder",
+    "100 gram (1/2 cup) sugar",
+    "400 ml (1 2/3 cup) milk",
+    "3 1/2 gram (1 1/8 teaspoon) agar-agar powder",
+    "1 teaspoon vanilla extract",
+    "50 gram (1/4 cup) sugar",
+    "50 gram bittersweet chocolate chips",
+    "1 teaspoon espresso powder",
+    "2 tablespoon cocoa powder (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Avocado puree: Use a food processor/blender to process avocado into an avocado puree.",
+    "Avocado agar-agar: Boil together milk and agar-agar powder in a small pot over medium heat, then add sugar and boil until sugar is completely dissolved.",
+    "Remove the pot from heat. Wait until the steam subsides. Add avocado puree and whisk until smooth. Pour into a loaf pan (I use a 9\"x5\" loaf pan). Use a spatula to smooth the mixture and chill in the fridge while we prepare the chocolate layer.",
+    "Chocolate agar-agar: Boil together milk, agar-agar powder, and vanilla extract in a small pot over medium heat, then add sugar and boil until sugar is completely dissolved.",
+    "Remove the pot from heat. Add chocolate chips, espresso powder, and cocoa powder (if using). Wait 5 minutes to let the chocolate chips melt, then whisk until smooth.",
+    "Remove the loaf pan from the fridge. The avocado agar-agar layer should have started to set.",
+    "Use a fork to lightly scratch the surface of the avocado layer, then very gently pour the chocolate agar-agar liquid over the avocado layer. Chill in the fridge until set, about 1 hour.",
+    "Serving: Gently run a thin blade around the loaf pan to loosen the agar-agar, then cover the pan with a plate and flip. The agar-agar should drop on the plate. Cut into slices to serve.",
+    "Storing: Store any leftover agar-agar in an air-tight container in the fridge for up to 1 week."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "Avocado agar-agar",
+    "225 gram (1/2 lb) ripe avocado flesh",
+    "500 ml (2 cup) milk (Note 1)",
+    "7 gram (2 1/4 teaspoon) agar-agar powder",
+    "100 gram (1/2 cup) sugar",
+    "Chocolate agar-agar",
+    "400 ml (1 2/3 cup) milk",
+    "3 1/2 gram (1 1/8 teaspoon) agar-agar powder",
+    "1 teaspoon vanilla extract",
+    "50 gram (1/4 cup) sugar",
+    "50 gram bittersweet chocolate chips",
+    "1 teaspoon espresso powder",
+    "2 tablespoon cocoa powder (optional)"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

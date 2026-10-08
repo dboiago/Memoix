@@ -1,0 +1,42 @@
+{
+  "url": "https://www.bongeats.com/recipe/aloo-paratha",
+  "slug": "aloo-paratha-recipe-by-bong-eats_bongeats_e1f11323",
+  "title": "Aloo paratha recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T16:33:32.502Z",
+  "ldName": "Aloo paratha",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT30M",
+  "ldYield": "4 porotas",
+  "ldCuisine": "Indian",
+  "ldCategory": "main",
+  "ldKeywords": "punjabi paratha, stuffed paratha, alu paratha, aloo paratha, alu ke parathe",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "385"
+  },
+  "htmlIngredientLines": [
+    "150 g atta (whole-wheat flour)",
+    "3 g salt",
+    "7 g sugar",
+    "8 g vegetable oil",
+    "100 ml hot water",
+    "250 g potatoes (boiled and peeled)",
+    "80 g onions (finely chopped)",
+    "15 g ginger (minced)",
+    "10 g garlic (minced)",
+    "5 g green chillies (chopped)",
+    "5 g kasuri methi/curry leaves/coriander leaves",
+    "5 g salt",
+    "½ tsp chaat masala",
+    "1 tsp bhaja moshla",
+    "¼ tsp jowan (carom seeds)",
+    "100 g oil for cooking/frying"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

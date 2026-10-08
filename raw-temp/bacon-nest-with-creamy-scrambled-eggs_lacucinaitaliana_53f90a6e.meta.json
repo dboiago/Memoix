@@ -1,0 +1,34 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/appetizers/bacon-nest-with-creamy-scrambled-eggs",
+  "slug": "bacon-nest-with-creamy-scrambled-eggs_lacucinaitaliana_53f90a6e",
+  "title": "Bacon Nest with Creamy Scrambled Eggs",
+  "byline": "by  Editorial staff   March 10, 2020",
+  "fetchedAt": "2026-08-02T13:09:57.577Z",
+  "ldName": "Bacon Nest with Creamy Scrambled Eggs",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "appetizers",
+  "ldKeywords": "Bacon",
+  "ldIngredientsRaw": [
+    "16 slices bacon",
+    "8 eggs",
+    "Sour cream",
+    "Chives",
+    "Salt"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "16  of slices bacon",
+    "8  of eggs",
+    "Sour cream",
+    "Chives",
+    "Salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

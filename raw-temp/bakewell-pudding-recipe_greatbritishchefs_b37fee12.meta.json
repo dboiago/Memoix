@@ -1,0 +1,37 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/bakewell-pudding",
+  "slug": "bakewell-pudding-recipe_greatbritishchefs_b37fee12",
+  "title": "Bakewell Pudding Recipe",
+  "byline": "by Paul Welburn",
+  "fetchedAt": "2026-08-03T14:39:04.164Z",
+  "ldName": "Bakewell pudding",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "150g of puff pastry",
+    "250g of unsalted butter, melted",
+    "1 egg, beaten",
+    "7 egg yolks",
+    "250g of caster sugar",
+    "1 tbsp of ground almonds",
+    "3 tbsp of raspberry jam",
+    "1 handful of flaked almonds"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 180°C/gas mark 4",
+    "Roll the pastry out to an approximate thickness of 1/3cm and prick it all over with a fork to prevent it rising. Use the pastry to line a 20x3cm deep, preferably sloping-sided, tart tin (or an oven-proof skillet). Leave the pastry to rest for 1 hour in the fridge",
+    "While the pastry is chilling, mix the butter, egg and extra yolks with the sugar and almonds in a large mixing bowl. Stir over a pan of simmering water for 3–4 minutes until it reaches a honey-like consistency",
+    "Spoon the jam into the pastry base, then pour the filling over the jam. Scatter with flaked almonds and bake for 45 minutes, or until the top is golden and the filling just set. If it’s browning too much, turn the oven down halfway through",
+    "Serve with a generous scoop of vanilla ice cream, or cream if preferred"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://dailycookingquest.com/bean-curd-and-chicken-soup.html",
+  "slug": "bean-curd-and-chicken-soup_dailycookingquest_cded24ea",
+  "title": "Bean Curd and Chicken Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-02T09:44:28.573Z",
+  "ldName": "Bean Curd and Chicken Soup",
+  "ldTime": "PT1H15M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT1H0M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": [
+    "Bean",
+    "Chicken",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "100 gram dried bean curd sticks (Indonesian: kembang tahu)",
+    "1 whole range chicken (Indonesian: ayam kampung), cut into 8 pieces",
+    "1 carrot (about 100 gram), peeled and cut into bite size pieces",
+    "1 tomato, cut into quarters",
+    "15 gram salted dried cuttlefish (Indonesian: sotong kering asin) (*)",
+    "1 tablespoon salt",
+    "1/2 tablespoon sugar",
+    "2 liter water"
+  ],
+  "ldInstructionsRaw": [
+    "(Optional) Soaked bean curd sticks in hot water until soft to remove excess oil, cut into small bite size pieces. You can safely skip this part and just add dried bean curd sticks along with everything else in the next step.",
+    "In a soup pot, add soaked bean curd sticks, chicken, carrot, tomato, cuttlefish, salt, sugar, and water. Bring to a boil, reduce heat, and simmer for 30 to 45 minutes until everything is fully cooked. Adjust salt and sugar as needed.",
+    "Turn off heat and serve hot."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "100 gram dried bean curd sticks (Indonesian: kembang tahu)",
+    "1 whole range chicken (Indonesian: ayam kampung), cut into 8 pieces",
+    "1 carrot (about 100 gram), peeled and cut into bite size pieces",
+    "1 tomato, cut into quarters",
+    "15 gram salted dried cuttlefish (Indonesian: sotong kering asin) (*)",
+    "1 tablespoon salt",
+    "1/2 tablespoon sugar",
+    "2 liter water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

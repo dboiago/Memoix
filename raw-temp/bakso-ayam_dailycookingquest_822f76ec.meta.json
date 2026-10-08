@@ -1,0 +1,57 @@
+{
+  "url": "https://dailycookingquest.com/bakso-ayam.html",
+  "slug": "bakso-ayam_dailycookingquest_822f76ec",
+  "title": "Bakso Ayam",
+  "byline": "",
+  "fetchedAt": "2026-08-01T22:56:21.147Z",
+  "ldName": "Bakso Ayam",
+  "ldTime": "PT0H30M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT0H15M",
+  "ldYield": [
+    "~ 3 dozens meatballs"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "quick",
+    "easy",
+    "meatballs",
+    "authenthic",
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "500 gram boneless skinless chicken breast, ground",
+    "5 tablespoon ice-cold water",
+    "4 cloves garlic, grated",
+    "1 teaspoon salt",
+    "1/2 tablespoon sugar",
+    "1 teaspoon baking powder",
+    "2 tablespoon tapioca starch (or corn starch)",
+    "1 tablespoon oil",
+    "4 tablespoon ice-cold water"
+  ],
+  "ldInstructionsRaw": [
+    "Place ground chicken in a large mixing bowl, slowly add the 5 tablespoons of ice-cold water a tablespoon at a time, stirring until fully incorporated with each addition.",
+    "In another bowl, whisk together grated garlic, salt, sugar, baking powder, tapioca starch, oil, and 4 tablespoons of ice-cold water. Slowly pour this solution to the ground chicken, and stir until fully incorporated.",
+    "Wrap the mixing bowl with a saran plastic, and chill the chicken mixture in the fridge for at least 30 minutes and up to 2 hours.",
+    "Boil water in a large pot. Fill a large mixing bowl with ice-cold water and plenty of ice cubes.",
+    "Once the water boils, reduce heat until water is just barely simmering, then drop tablespoonfuls of chicken mixture (I shape with 2 tablespoons into roundish shape) into the pot of hot water. Once the meatball floats to the surface, wait another 30 seconds, then scoop it out from the hot water and plunge in the prepared ice cubes and cold water bowl. You may want to keep adding ice cubes as more and more cooked meatballs are added into the bowl to keep the temperature as cold as possible.",
+    "The chicken balls are fully cooked at this stage, and you can definitely enjoy them as is if you want, but my favorite way is to use them to prepare sup bakso ayam (chicken meatballs soup)."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "500 gram boneless skinless chicken breast, ground",
+    "5 tablespoon ice-cold water",
+    "4 cloves garlic, grated",
+    "1 teaspoon salt",
+    "1/2 tablespoon sugar",
+    "1 teaspoon baking powder",
+    "2 tablespoon tapioca starch (or corn starch)",
+    "1 tablespoon oil",
+    "4 tablespoon ice-cold water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

@@ -1,0 +1,65 @@
+{
+  "url": "https://dailycookingquest.com/beef-and-bell-pepper-stir-fry.html",
+  "slug": "beef-and-bell-pepper-stir-fry_dailycookingquest_d5503c5e",
+  "title": "Beef and Bell Pepper Stir Fry",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:16:04.018Z",
+  "ldName": "Beef and Bell Pepper Stir Fry",
+  "ldTime": "PT0H45M",
+  "ldPrepTime": "PT0H30M",
+  "ldCookTime": "PT0H15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Side Dish",
+  "ldKeywords": [
+    "Beef"
+  ],
+  "ldIngredientsRaw": [
+    "500 gram beef, thinly sliced",
+    "1/2 onion, thinly sliced",
+    "1 red bell pepper, seeded and chopped",
+    "1 yellow bell pepper, seeded and chopped",
+    "5 green bird eye chilies (Indonesian: cabe rawit hijau)",
+    "4 shallots (Indonesian: bawang merah)",
+    "2 cloves garlic (Indonesian: bawang putih)",
+    "1/2 tablespoon coriander powder (Indonesian: bubuk ketumbar)",
+    "1/2 teaspoon turmeric powder (Indonesian: bubuk kunyit)",
+    "1/4 teaspoon cumin powder (Indonesian: bubuk jinten)",
+    "1 teaspoon sesame oil",
+    "2 tablespoon sweet soy sauce (Indonesian: kecap manis)",
+    "1 tablespoon soy sauce (Indonesian: kecap asin)",
+    "1/2 teaspoon salt",
+    "3 tablespoon oil"
+  ],
+  "ldInstructionsRaw": [
+    "Mix together beef and the spice paste in a mixing bowl. Cover the bowl with a saran wrap and leave to marinate for 8 hours (or overnight).",
+    "Heat 1 tablespoon of oil in a wok/frying pan. Sauté onion, red bell pepper, yellow bell pepper, and chilies until onion is slightly translucent, about 3-4 minutes. Transfer to a plate.",
+    "Reheat the wok/frying pan, and stir fry the beef mixture until no longer pink.",
+    "Return the onion and bell pepper to the wok/frying pan, and mix well.",
+    "Turn off heat, transfer to a serving plate. Serve with steamed white rice."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "500 gram beef, thinly sliced",
+    "1/2 onion, thinly sliced",
+    "1 red bell pepper, seeded and chopped",
+    "1 yellow bell pepper, seeded and chopped",
+    "5 green bird eye chilies (Indonesian: cabe rawit hijau)",
+    "Grind the following into spice paste",
+    "4 shallots (Indonesian: bawang merah)",
+    "2 cloves garlic (Indonesian: bawang putih)",
+    "1/2 tablespoon coriander powder (Indonesian: bubuk ketumbar)",
+    "1/2 teaspoon turmeric powder (Indonesian: bubuk kunyit)",
+    "1/4 teaspoon cumin powder (Indonesian: bubuk jinten)",
+    "1 teaspoon sesame oil",
+    "2 tablespoon sweet soy sauce (Indonesian: kecap manis)",
+    "1 tablespoon soy sauce (Indonesian: kecap asin)",
+    "1/2 teaspoon salt",
+    "3 tablespoon oil"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

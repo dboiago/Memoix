@@ -1,0 +1,73 @@
+{
+  "url": "https://www.chinasichuanfood.com/char-siu-chicken-skewers/",
+  "slug": "char-siu-chicken-skewers_chinasichuanfood_8d86c7a5",
+  "title": "Char Siu Chicken Skewers",
+  "byline": "",
+  "fetchedAt": "2026-08-01T20:25:03.513Z",
+  "ldName": "Char Siu Chicken Skewers",
+  "ldTime": "PT140M",
+  "ldPrepTime": "PT120M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "Char Siu, chicken",
+  "ldIngredientsRaw": [
+    "300 g boneless chicken meat ( , chicken breast or thigh without bone will be ok)",
+    "1  carrot",
+    "1  large size red onion",
+    "2  round green pepper",
+    "1.5 tablespoon char siu sauce",
+    "1 teaspoon salt",
+    "1 teaspoon sugar",
+    "1/2 tablespoon light soy sauce",
+    "1  egg white",
+    "Sesame seeds for garnish",
+    "1 tablespoon char sui sauce",
+    "1 teaspoon light soy sauce",
+    "1 teaspoon honey"
+  ],
+  "ldInstructionsRaw": [
+    "Drain the chicken meat and then cut into small chunks around 4 cm.",
+    "Cut half of the onion, green pepper and carrot into small pieces to match with the chicken and then chop the left half red onion.",
+    "In a large bowl, mix one egg white, char siu sauce, light soy sauce, salt and sugar with chicken meat. Then mix with chopped red onion. Put in refrigerator to marinate for around 1 to 2 hours (longer time is highly recommended for a stronger and more combined taste)",
+    "Soak the wood skewers firstly and the place the marinated chicken meat (meat only,discard the chopped red onion and left marinating sauce)with carrots, green peppers and onion slices.",
+    "Preheat the grill to medium or high heat. Brushing some oil to coat the grill, grill for around 12 minutes. Turn over from time to time.",
+    "In a small bowl, mix light soy sauce, char siu sauce and honey and brush the sauce evenly on the skewers at the very end of grilling process.",
+    "Garnish with roasted sesame seed prior to serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "304 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "21 g",
+    "fatContent": "16 g",
+    "saturatedFatContent": "4 g",
+    "cholesterolContent": "75 mg",
+    "sodiumContent": "1165 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "8 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "300 g boneless chicken meat  , chicken breast or thigh without bone will be ok",
+    "1 carrot",
+    "1 large size red onion",
+    "2 round green pepper",
+    "1.5 tablespoon char siu sauce",
+    "1 teaspoon salt",
+    "1 teaspoon sugar",
+    "1/2 tablespoon light soy sauce",
+    "1 egg white",
+    "Sesame seeds for garnish",
+    "[brushing sauce]",
+    "1 tablespoon char sui sauce",
+    "1 teaspoon light soy sauce",
+    "1 teaspoon honey"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

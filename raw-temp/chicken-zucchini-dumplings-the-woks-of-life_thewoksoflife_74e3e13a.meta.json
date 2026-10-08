@@ -1,0 +1,64 @@
+{
+  "url": "https://thewoksoflife.com/chicken-zucchini-dumplings/",
+  "slug": "chicken-zucchini-dumplings-the-woks-of-life_thewoksoflife_74e3e13a",
+  "title": "Chicken Zucchini Dumplings - The Woks of Life",
+  "byline": "Sarah",
+  "fetchedAt": "2026-08-02T17:37:37.235Z",
+  "ldName": "Chicken Zucchini Dumplings",
+  "ldTime": "PT105M",
+  "ldPrepTime": "PT80M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "12"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizers and Snacks",
+  "ldKeywords": "chicken zucchini dumplings",
+  "ldIngredientsRaw": [
+    "1 pound zucchini ((1 pound/450g = about 2 medium or 3 small; seeds removed and shredded))",
+    "5 tablespoons vegetable oil ((or other neutral oil; divided))",
+    "2 tablespoons ginger ((minced))",
+    "1 pound ground chicken",
+    "½ teaspoon white pepper",
+    "1 teaspoon sugar",
+    "2 teaspoons sesame oil",
+    "3 tablespoons soy sauce",
+    "2 tablespoons Shaoxing wine ((or dry cooking sherry))",
+    "2 packages dumpling wrappers ((or make your own))"
+  ],
+  "ldInstructionsRaw": [
+    "Take the shredded zucchini, put it in a clean kitchen towel, and squeeze out as much water as you can. Add it to a large mixing bowl and set aside.",
+    "In a wok over medium low heat, add 2 tablespoons vegetable oil and the minced ginger. Allow the ginger to fry in the oil until fragrant, 2 minutes. Add to the bowl of zucchini.",
+    "To the bowl, add 3 tablespoons vegetable oil, the ground chicken, white pepper, sugar, sesame oil, soy sauce, and Shaoxing wine. Mix well, stirring vigorously in one direction for about 5 minutes, until it resembles a paste.",
+    "Wrap the dumplings and place on a parchment lined baking sheet, so that the dumplings are not touching each other. You can fry them right away, or cover the dumplings with plastic wrap and freeze them on the tray. Once frozen solid, you can transfer them to freezer bags and store for up to 3 months.",
+    "To fry the dumplings, add a couple tablespoons of oil to a cast iron skillet or nonstick pan over medium high heat. Add the dumplings to the pan. Once the bottoms of the dumplings are golden brown, fill the pan with a little less than a centimeter of water, and cover immediately. Turn the heat down to medium low, and allow the dumplings to steam. Once the water has evaporated, remove the cover and let the dumplings continue to fry until the bottoms are crisp. Serve with black vinegar, chili oil, and/or our dumpling dipping sauce."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "343 kcal",
+    "carbohydrateContent": "45 g",
+    "proteinContent": "15 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "6 g",
+    "cholesterolContent": "39 mg",
+    "sodiumContent": "706 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 pound zucchini (1 pound/450g = about 2 medium or 3 small; seeds removed and shredded)",
+    "▢ 5 tablespoons vegetable oil (or other neutral oil; divided)",
+    "▢ 2 tablespoons ginger (minced)",
+    "▢ 1 pound ground chicken",
+    "▢ ½ teaspoon white pepper",
+    "▢ 1 teaspoon sugar",
+    "▢ 2 teaspoons sesame oil",
+    "▢ 3 tablespoons soy sauce",
+    "▢ 2 tablespoons Shaoxing wine (or dry cooking sherry)",
+    "▢ 2 packages dumpling wrappers (or make your own)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

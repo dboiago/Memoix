@@ -1,0 +1,55 @@
+{
+  "url": "https://www.baking-sense.com/2015/07/13/blueberry-preserves-with-lemon/",
+  "slug": "blueberry-lemon-preserves_baking-sense_c552f016",
+  "title": "Blueberry Lemon Preserves",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T08:27:17.959Z",
+  "ldName": "Blueberry Preserves with Lemon",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "48",
+    "48 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast, Jams &amp; Preserves",
+  "ldKeywords": "jam, jelly, preserves",
+  "ldIngredientsRaw": [
+    "12 oz blueberries (1 pint)",
+    "3 tablespoons Ball Classic Pectin",
+    "18 oz granulated sugar (2 1/4 cups)",
+    "1 each lemon zest (finely grated)",
+    "1 tablespoon lemon juice"
+  ],
+  "ldInstructionsRaw": [
+    "Bring a very large pot of water to a full boil. Sterilize your canning jars (3 half pints) and lids by boiling in the water for 10 minutes (or with the sterilize setting on your dishwasher). Use a jar lifter or tongs to remove the hot jars from the water. Line them up on a clean kitchen towel.",
+    "Sprinkle an even layer of blueberries into the bottom of a medium saucepan. Using a potato masher or the bottom of a ladle, lightly crush the berries (it&#39;s okay if not all of the berries are crushed). Sprinkle the remaining berries in another layer and crush those. Sprinkle the pectin over the berries and stir together",
+    "Bring the berries and pectin to a boil over medium high heat. Add the sugar, zest and lemon juice. Return the mixture to a full boil and boil vigorously for 1 minute, stirring constantly.",
+    "Ladle into sterilized canning jars and process on a hot water bath for 15 minutes.",
+    "The preserves can be refrigerated for a couple of weeks, frozen for 9-12 months or processed in canning jars to keep for one year"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "90 kcal",
+    "carbohydrateContent": "23 g",
+    "proteinContent": "0.1 g",
+    "fatContent": "0.1 g",
+    "saturatedFatContent": "0.005 g",
+    "sodiumContent": "0.4 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "23 g",
+    "unsaturatedFatContent": "0.03 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "12 oz blueberries (1 pint)",
+    "3 tablespoons Ball Classic Pectin",
+    "18 oz granulated sugar (2 1/4 cups)",
+    "1 each lemon zest (finely grated)",
+    "1 tablespoon lemon juice"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

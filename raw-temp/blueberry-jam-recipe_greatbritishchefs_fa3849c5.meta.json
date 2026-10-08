@@ -1,0 +1,34 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/blueberry-jam-recipe",
+  "slug": "blueberry-jam-recipe_greatbritishchefs_fa3849c5",
+  "title": "Blueberry Jam Recipe",
+  "byline": "by Tom Kitchin",
+  "fetchedAt": "2026-08-03T10:03:38.699Z",
+  "ldName": "Blueberry jam",
+  "ldTime": "PT40M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Preserve",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "400g of blueberries",
+    "300g of sugar",
+    "1 tbsp of lemon juice, (fresh)"
+  ],
+  "ldInstructionsRaw": [
+    "Begin by putting a plate in the freezer. This will help you test when the jam is ready later on",
+    "Place the blueberries in a heavy-based pan and gently crush with a potato masher, just enough to release some of the juices",
+    "Add the sugar and lemon juice to the pan and leave to simmer on a low heat. Stir to prevent sticking",
+    "Cook down for 25 minutes and skim off any scum that has settled on the surface",
+    "To test if the jam is the correct consistency, remove the plate form the freezer and spoon a little jam onto the plate. Place in the fridge to set for a couple of minutes. If the jam forms a skin and sets then it is ready to jar. If not, return to the heat and continue cooking, repeating the test every 5 minutes",
+    "Leave to sit for 15 minutes to cool slightly – this allows the berries to settle evenly instead of floating to the top when you transfer to the jars",
+    "Spoon the jam into the sterilised jar, seal, and label with the date. The jam will keep in a cool dark place for 1 year, once opened keep in the fridge"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

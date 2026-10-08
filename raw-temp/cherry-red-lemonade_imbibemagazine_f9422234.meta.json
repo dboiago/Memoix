@@ -1,0 +1,31 @@
+{
+  "url": "https://imbibemagazine.com/recipe/cherry-red-lemonade/",
+  "slug": "cherry-red-lemonade_imbibemagazine_f9422234",
+  "title": "Cherry Red Lemonade",
+  "byline": "March 27, 2018",
+  "fetchedAt": "2026-08-03T22:51:38.056Z",
+  "ldName": "Cherry Red Lemonade",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "10",
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "[object Object]",
+    "[object Object]",
+    "[object Object]",
+    "[object Object]",
+    "[object Object]"
+  ],
+  "ldInstructionsRaw": [
+    "In a blender, combine the cherries, lemon juice, sugar and vinegar. Blend until fully liquid. Strain the purée through a fine-mesh sieve, pressing on the solids with a rubber spatula. (For smoother lemonade, strain twice.) Reserve the liquid and discard the solids.",
+    "In a pitcher, stir together the cherry mixture and water. Refrigerate until cold. Serve over ice."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

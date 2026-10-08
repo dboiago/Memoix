@@ -1,0 +1,66 @@
+{
+  "url": "https://omnivorescookbook.com/bean-sprout-salad/",
+  "slug": "bean-sprout-salad_omnivorescookbook_96edf4be",
+  "title": "Bean Sprout Salad (凉拌豆芽)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T00:57:32.110Z",
+  "ldName": "Bean Sprout Salad (凉拌豆芽)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer, Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 teaspoon salt",
+    "12 oz (340 g) bean sprouts",
+    "1  anaheim pepper (, or half a red pepper, or 1 Asian long red pepper (*Footnote 1))",
+    "2  green onions (, sliced)",
+    "4 cloves garlic (, grated (*Footnote 2))",
+    "1 tablespoon soy sauce",
+    "2 teaspoon Chinkiang vinegar",
+    "1/2 teaspoon sugar",
+    "1/4 teaspoon ground Sichuan peppercorn ((*Footnote 2))",
+    "2 tablespoons peanut oil",
+    "1 teaspoon toasted sesame oil ((or homemade chili oil))"
+  ],
+  "ldInstructionsRaw": [
+    "Bring a medium-sized pot of water to a boil. Add the salt and stir to dissolve completely. Add the bean sprouts. Cook for 40 seconds, or until al dente. Immediately drain and transfer the bean sprouts to a colander. Rinse with cold tap water to stop cooking. Once cooled completely, drain thoroughly, then pat dry with paper towels. Transfer to a big bowl.",
+    "Add the sliced pepper, green onion, and garlic to the bowl with the bean sprouts. Do not stir. Make sure the garlic is on the very top of the bowl.",
+    "Add the soy sauce, Chinkiang vinegar, sugar and Sichuan peppercorns.",
+    "Heat the peanut oil over medium heat until hot. Immediately drizzle the oil into the bowl, directly over the garlic and Sichuan peppercorns. You should see the ingredients sizzle in the hot oil.",
+    "Mix everything together and pour in the sesame oil (or chili oil, if you prefer a spicy dish). Mix again and serve as an appetizer."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "107 kcal",
+    "carbohydrateContent": "5.9 g",
+    "proteinContent": "4.2 g",
+    "fatContent": "8.3 g",
+    "saturatedFatContent": "1.4 g",
+    "sodiumContent": "232 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "0.8 g"
+  },
+  "htmlIngredientLines": [
+    "1 teaspoon salt",
+    "12 oz (340 g) bean sprouts",
+    "1 anaheim pepper , or half a red pepper, or 1 Asian long red pepper (*Footnote 1)",
+    "2 green onions , sliced",
+    "4 cloves garlic , grated (*Footnote 2)",
+    "1 tablespoon soy sauce",
+    "2 teaspoon Chinkiang vinegar",
+    "1/2 teaspoon sugar",
+    "1/4 teaspoon ground Sichuan peppercorn (*Footnote 2)",
+    "2 tablespoons peanut oil",
+    "1 teaspoon toasted sesame oil (or homemade chili oil)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

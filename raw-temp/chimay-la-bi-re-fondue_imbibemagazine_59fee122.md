@@ -1,0 +1,11 @@
+Bring the ale to a boil over medium heat in a fondue pot or a heavy-bottomed 2-qt saucepan. Turn the heat to medium-low.
+
+Combine the cheese and cornstarch in a medium bowl and toss to coat. Add the cheese to the ale a large handful at a time, stirring in a figure-eight pattern until the cheese is completely melted before each addition. Have patience; this could take a total of 20 minutes and it is important that the cheese melts slowly and completely.
+
+When all of the cheese is melted and the fondue is thick, stir in the mustard, Worcestershire sauce, and paprika. Season with salt.
+
+Serve piping hot, from the fondue pot placed over a low flame or the saucepan set on a trivet. (If you’re serving it from a saucepan, you’ll need to return it to a low flame to remelt the cheese once it begins to solidify. Do this stirring gently, again in a figure-eight pattern.) Offer your guests forks or metal skewers for dipping the pretzels, sausages, apples, or vegetables.
+
+Serves 6-8.
+
+_Reprinted with permission from_ [Beer Bites: Tasty Recipes and Perfect Pairings for Brew Lovers](http://www.amazon.com/Beer-Bites-Recipes-Perfect-Pairings/dp/145213524X/ref=sr_1_1?ie=UTF8&qid=1441129749&sr=8-1&keywords=beer+bites&tag=imbibmagazin-20) _by Christian DeBenedetti and Andrea Slonecker. Published by Chronicle Books._

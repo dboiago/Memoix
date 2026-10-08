@@ -1,0 +1,51 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/sides-and-vegetables/artichoke-platter",
+  "slug": "artichoke-platter_lacucinaitaliana_5c5f6a55",
+  "title": "Artichoke Platter",
+  "byline": "by  Editorial staff   March 7, 2023",
+  "fetchedAt": "2026-08-03T07:03:32.215Z",
+  "ldName": "Artichoke Platter",
+  "ldTime": "PT60M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "sides and vegetables",
+  "ldKeywords": "Carciofi,Side Dishes,Side Dish",
+  "ldIngredientsRaw": [
+    "1/2CUP sparkling water",
+    "2OZ. Pecorino cheese",
+    "1/4CUP rice flour",
+    "2OZ. arugula",
+    "1/8CUP all-purpose flour",
+    "2TBSP. hazelnuts, blanched and chopped",
+    "7 artichokes",
+    "2 egg yolks",
+    "lemon",
+    "sunflower seed oil"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Cut 1 lemon in half and squeeze juice into large bowl; add lemon halves. Fill bowl with water. Working one artichoke at a time, trim, cut into wedges; add to lemon water.&nbsp;</p>",
+    "<p>Cook 3 artichokes in a pan with olive oil, salt, and 1 cup broth for 15-20 minutes. Blend and strain to obtain a purée.</p>",
+    "<p>Prepare mayonnaise by combining the egg yolks with 1 tsp. mustard, 1 tsp. lemon juice, a pinch of salt, and some freshly ground pepper. Whisk until blended around 30 seconds. Gradually add 1/2 cup sunflower seed oil in a very slow stream, whisking continuously, until thick. Combine mayonnaise with artichoke puree.&nbsp;</p>",
+    "<p>Combine flours and sparkling water to prepare the batter.&nbsp;</p>",
+    "<p dir=\"ltr\">Heat sunflower seed oil to 350°F and line a plate with paper towels.&nbsp;</p>\r\n\r\n<p>\r\n\t<br>\r\n</p>\r\n\r\n<p>\r\n\t<br>\r\n</p>\r\n\r\n<p>\r\n\t<br>\r\n</p>",
+    "<p>Coat wedges of 2 artichokes in batter and fry for 3 minutes. Dry on paper towels and season with salt. Serve with the remaining raw artichokes wedges, mayonnaise, arugula, chopped hazelnuts, and Pecorino shavings.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1/2 CUP of sparkling water",
+    "2 OZ. of Pecorino cheese",
+    "1/4 CUP of rice flour",
+    "2 OZ. of arugula",
+    "1/8 CUP of all-purpose flour",
+    "2 TBSP. of hazelnuts, blanched and chopped",
+    "7  of artichokes",
+    "2  of egg yolks",
+    "lemon",
+    "sunflower seed oil"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

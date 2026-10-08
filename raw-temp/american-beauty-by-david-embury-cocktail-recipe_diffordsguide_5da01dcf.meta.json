@@ -1,0 +1,45 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/58/american-beauty-by-david-embury",
+  "slug": "american-beauty-by-david-embury-cocktail-recipe_diffordsguide_5da01dcf",
+  "title": "American Beauty (by David Embury) Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-01T17:37:13.834Z",
+  "ldName": "American Beauty (by David Embury)",
+  "ldTime": "PT04M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "After dinner/digestif",
+    "Classic/vintage"
+  ],
+  "ldIngredientsRaw": [
+    "60 ml Cognac (brandy)",
+    "15 ml Dry vermouth",
+    "15 ml White crème de menthe",
+    "15 ml Orange juice",
+    "15 ml Grenadine syrup",
+    "5 ml Claret wine"
+  ],
+  "ldInstructionsRaw": [
+    "Select a COUPE GLASS.",
+    "Prepare garnish of mint leaf or red rose petal",
+    "SHAKE first 5 ingredients with CRUSHED ICE.",
+    "FINE STRAIN into chilled glass.",
+    "FLOAT red wine.",
+    "Garnish with mint leaf or rose petal floated on surface."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "249 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

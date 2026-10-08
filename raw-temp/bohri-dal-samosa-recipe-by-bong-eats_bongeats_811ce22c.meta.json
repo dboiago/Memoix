@@ -1,0 +1,43 @@
+{
+  "url": "https://www.bongeats.com/recipe/bohri-dal-samosa",
+  "slug": "bohri-dal-samosa-recipe-by-bong-eats_bongeats_811ce22c",
+  "title": "Bohri Dal Samosa recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T17:31:18.081Z",
+  "ldName": "Bohri Dal Samosa",
+  "ldTime": "PT2H",
+  "ldPrepTime": "PT1H15M",
+  "ldCookTime": "PT45M",
+  "ldYield": "24 samosas",
+  "ldCuisine": "Indian",
+  "ldCategory": "snack",
+  "ldKeywords": "Bohri Keema Samosa, Keema Samosa, Mutton Keema Samosa, bohri dal samosa",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": ""
+  },
+  "htmlIngredientLines": [
+    "150 g arahar dal (soaked 2 hours)",
+    "200 ml water",
+    "7 g salt",
+    "¼ tsp turmeric",
+    "50 g spring onions (chopped)",
+    "25 g coriander leaves (chopped)",
+    "15 g mint leaves (chopped)",
+    "8 g green chillies (finely chopped)",
+    "1 tsp coriander powder",
+    "1 tsp cumin powder",
+    "½ tsp gorom moshla",
+    "160 g atta",
+    "3 g salt",
+    "120–130 g water",
+    "2 tbsp atta",
+    "3 tbsp water",
+    "vegetable oil for deep frying"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

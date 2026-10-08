@@ -1,0 +1,38 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/birramisu",
+  "slug": "birramisu_lacucinaitaliana_d0c1ad81",
+  "title": "Birramisu",
+  "byline": "by  Editorial staff   July 16, 2019",
+  "fetchedAt": "2026-08-02T22:09:30.298Z",
+  "ldName": "Birramisu",
+  "ldTime": "PT210M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Beer,Dolci,Dolci Al Cucchiaio,Tiramisu",
+  "ldIngredientsRaw": [
+    "1 3/4C. cream",
+    "1 1/2C. mascarpone cheese",
+    "1 1/4C. beer",
+    "3/4C. sugar",
+    "1 packet vanilla sugar",
+    "1 teaspoon cocoa powder",
+    "20 ladyfingers"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 3/4 C. of cream",
+    "1 1/2 C. of mascarpone cheese",
+    "1 1/4 C. of beer",
+    "3/4 C. of sugar",
+    "1 packet vanilla sugar",
+    "1 teaspoon cocoa powder",
+    "20  of ladyfingers"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

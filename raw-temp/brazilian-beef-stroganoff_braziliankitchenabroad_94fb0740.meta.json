@@ -1,0 +1,71 @@
+{
+  "url": "https://braziliankitchenabroad.com/brazilian-beef-stroganoff/",
+  "slug": "brazilian-beef-stroganoff_braziliankitchenabroad_94fb0740",
+  "title": "Brazilian Beef Stroganoff",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-25T19:57:05.265Z",
+  "ldName": "Brazilian Beef Stroganoff",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "6",
+    "6 Servings"
+  ],
+  "ldCuisine": "Brazilian",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Beef",
+  "ldIngredientsRaw": [
+    "1 Tbsp olive oil",
+    "1.5 lbs high quality beef such as fillet mignon, beef tenderloin, top sirloin, ribeye steak cut into cubes or sliced into strips",
+    "1 medium onion, diced",
+    "2 Tbsp Brazilian sofrito (or 3 cloves of garlic, minced)",
+    "8 oz white mushrooms, sliced",
+    "6 oz tomato paste",
+    "2 Tbsp ketchup",
+    "2 Tbsp Worcestershire sauce",
+    "2 cups heavy cream",
+    "salt and pepper to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Season the beef pieces with salt and pepper, and let it sit on the counter at room temperature for about 15-20 minutes.",
+    "Place a large heavy bottomed pan or dutch oven over medium to high heat. Add the olive oil, and when the oil is hot, add in the beef pieces, and quick sear them in a single layer, no longer than a minute or 2.",
+    "Remove the beef from the pan, place it on a plate and reserve.",
+    "Using that same pan, sauté the onions over medium heat - about 2-3 minutes.",
+    "Add the garlic, and sauté until fragrant - about 1-2 minutes.",
+    "Add the sliced mushrooms, and sauté until the mushrooms wilt down - about 5-6 mins.",
+    "Add the beef back in, then the tomato paste, the Worcestershire, and the ketchup and saute for about 2 minutes, stirring.",
+    "Add 1/4 cup of water to the pan, and simmer a couple of minutes, stirring and scraping any bits off the sides and bottom of the pan.",
+    "Add in the the cream, and simmer just a couple more minutes and you&#x27;re all done!",
+    "Serving Suggestions:"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "343 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "5 g",
+    "fatContent": "31 g",
+    "saturatedFatContent": "19 g",
+    "cholesterolContent": "90 mg",
+    "sodiumContent": "368 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "9 g",
+    "unsaturatedFatContent": "11 g"
+  },
+  "htmlIngredientLines": [
+    "1 Tbsp olive oil",
+    "1.5 lbs high quality beef such as fillet mignon, beef tenderloin, top sirloin, ribeye steak cut into cubes or sliced into strips",
+    "1 medium onion, diced",
+    "2 Tbsp Brazilian sofrito or 3 cloves of garlic, minced",
+    "8 oz white mushrooms, sliced",
+    "6 oz tomato paste",
+    "2 Tbsp ketchup",
+    "2 Tbsp Worcestershire sauce",
+    "2 cups heavy cream",
+    "salt and pepper to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

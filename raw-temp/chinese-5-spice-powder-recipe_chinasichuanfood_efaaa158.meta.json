@@ -1,0 +1,38 @@
+{
+  "url": "https://www.chinasichuanfood.com/five-spice-powder/",
+  "slug": "chinese-5-spice-powder-recipe_chinasichuanfood_efaaa158",
+  "title": "Chinese 5 Spice Powder Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-01T15:36:45.490Z",
+  "ldName": "Chinese 5 spice recipe",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": null,
+  "ldCuisine": "Chinese",
+  "ldCategory": "Sauce and paste",
+  "ldKeywords": "Five Spice",
+  "ldIngredientsRaw": [
+    "20 g Sichuan Peppercorn",
+    "20 g star anise",
+    "10 g fennel seeds",
+    "10 g cinnamon or cinnamon powder",
+    "8 g cloves"
+  ],
+  "ldInstructionsRaw": [
+    "Break cinnamon and star anise. And then put the two ingredients in your grinder to ground them to powder.",
+    "Mix with other ingredients and continue grind until all the ingredients are well grounded.",
+    "Filter large particles out; and keep the filtered ground powder mixture in airtighter container until use."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "20 g Sichuan Peppercorn",
+    "20 g star anise",
+    "10 g fennel seeds",
+    "10 g cinnamon or cinnamon powder",
+    "8 g cloves"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

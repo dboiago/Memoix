@@ -1,0 +1,36 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/ale-bread-recipe",
+  "slug": "ale-bread-recipe_greatbritishchefs_fd34ad86",
+  "title": "Ale Bread Recipe",
+  "byline": "by Daniele Usai",
+  "fetchedAt": "2026-08-03T16:27:16.022Z",
+  "ldName": "Two Chefs ale bread",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Side",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "575ml of Two Chefs ale",
+    "750g of plain white bread flour",
+    "250g of granary bread flour",
+    "40g of fresh yeast",
+    "25g of salt",
+    "25g of rapeseed oil"
+  ],
+  "ldInstructionsRaw": [
+    "Add the flours, yeast and salt to a mixing bowl. Using a freestanding mixer with a dough hook attachment, mix on a low setting for 1 minute, or until combined",
+    "While still on a low setting, slowly add the oil, then slowly add the ale until a soft dough forms – you may require more or less ale, depending on your bread flour",
+    "Knead on a medium setting for 10 minutes until the dough has a smooth surface. Place in a lightly greased bowl, cover with cling film and allow to prove for at least 1 hour, or until doubled in size",
+    "Tip the dough onto a lightly floured surface and knead for 5 minutes. Divide into 2, roll into lengths and place in flour-lined tins. Prove again in a warm place until doubled in size",
+    "Preheat the oven to 210°C/gas mark 6",
+    "Bake the loaves for 18-20 minutes until golden in colour and hollow-sounding when tapped on the bottom"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

@@ -1,0 +1,64 @@
+{
+  "url": "https://dailycookingquest.com/ayam-tempra.html",
+  "slug": "ayam-tempra_dailycookingquest_fed47e94",
+  "title": "Ayam Tempra",
+  "byline": "",
+  "fetchedAt": "2026-08-02T01:07:11.972Z",
+  "ldName": "Ayam Tempra",
+  "ldTime": "PT0H40M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H30M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Malaysian",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "quick",
+    "easy",
+    "authentic",
+    "soy sauce",
+    "nyonya",
+    "baba",
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "2 tablespoon oil",
+    "2 onion, thinly sliced",
+    "2 cloves garlic, peeled and crushed",
+    "1/2 inch ginger, thinly sliced",
+    "5-6 chicken drumsticks (~ 1/2 chicken, cut into pieces)",
+    "2 tablespoon dark soy sauce",
+    "2 tablespoon light soy sauce (or regular soy sauce)",
+    "2 tablespoon sugar",
+    "1/4 teaspoon ground pepper",
+    "1/2 cup water",
+    "3-5 red chilies, seeded and sliced",
+    "1 tablespoon calamansi juice (from ~ 3 calamansi) (*)"
+  ],
+  "ldInstructionsRaw": [
+    "Heat oil in a wok/deep skillet over medium heat. Sauté onion, garlic, and ginger until fragrant, about 3 minutes.",
+    "Add in chicken pieces and fry until no longer pink, about 5 minutes.",
+    "Add in dark soy sauce, light soy sauce, sugar, pepper, and water. Bring to a boil.",
+    "Reduce heat to a simmer, cover wok/skillet with a lid, and cook until chicken is tender, and the sauce is very thick and coats the chicken, about 20 minutes.",
+    "Add chili slices and calamansi juice. Stir. Turn off heat and serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 tablespoon oil",
+    "2 onion, thinly sliced",
+    "2 cloves garlic, peeled and crushed",
+    "1/2 inch ginger, thinly sliced",
+    "5-6 chicken drumsticks (~ 1/2 chicken, cut into pieces)",
+    "2 tablespoon dark soy sauce",
+    "2 tablespoon light soy sauce (or regular soy sauce)",
+    "2 tablespoon sugar",
+    "1/4 teaspoon ground pepper",
+    "1/2 cup water",
+    "3-5 red chilies, seeded and sliced",
+    "1 tablespoon calamansi juice (from ~ 3 calamansi) (*)"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

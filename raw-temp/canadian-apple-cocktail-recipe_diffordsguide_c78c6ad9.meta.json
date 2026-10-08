@@ -1,0 +1,41 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/569/canadian-apple",
+  "slug": "canadian-apple-cocktail-recipe_diffordsguide_c78c6ad9",
+  "title": "Canadian Apple Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:10:24.060Z",
+  "ldName": "Canadian Apple",
+  "ldTime": "PT02M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Fruity (e.g. Pornstar Martini)",
+    "Non-alcoholic",
+    "Non-alcoholic"
+  ],
+  "ldIngredientsRaw": [
+    "105 ml Apple juice",
+    "45 ml Lemon juice",
+    "22.5 ml Maple syrup"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COLLINS GLASS.",
+    "Prepare garnish of apple slice.",
+    "SHAKE all ingredients with ice.",
+    "FINE STRAIN into ice-filled glass."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "134 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

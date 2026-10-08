@@ -1,0 +1,41 @@
+{
+  "url": "https://www.simplytrinicooking.com/beet-salad/",
+  "slug": "a-healthy-and-easy-beet-salad-simply-trini-cooking_simplytrinicooking_d48fd5cd",
+  "title": "A Healthy and Easy Beet Salad | Simply Trini Cooking",
+  "byline": "Author Felix (Simply Trini Cooking)",
+  "fetchedAt": "2026-09-26T01:22:25.671Z",
+  "ldName": "Beet Salad",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT8M",
+  "ldCookTime": "PT2M",
+  "ldYield": [
+    "11"
+  ],
+  "ldCuisine": "Fusion, International",
+  "ldCategory": "Salads",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "5 cups iceberg lettuce",
+    "2 1/2 cups diced cucumber",
+    "2 cups broccoli",
+    "1 1/2 cups grated beet",
+    "1 cup carrots (julienne)",
+    "1 tbsp coconut oil"
+  ],
+  "ldInstructionsRaw": [
+    "Lightly saute the broccoli in the coconut oil.",
+    "Add all the ingredients into a large bowl and toss."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "5 cups iceberg lettuce",
+    "2 1/2 cups diced cucumber",
+    "2 cups broccoli",
+    "1 1/2 cups grated beet",
+    "1 cup carrots julienne",
+    "1 tbsp coconut oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

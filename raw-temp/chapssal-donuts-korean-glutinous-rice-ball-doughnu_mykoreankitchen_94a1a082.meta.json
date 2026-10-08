@@ -1,0 +1,65 @@
+{
+  "url": "https://mykoreankitchen.com/chapsal-donuts-korean-glutinous-rice-ball-doughnuts/",
+  "slug": "chapssal-donuts-korean-glutinous-rice-ball-doughnu_mykoreankitchen_94a1a082",
+  "title": "Chapssal Donuts (Korean Glutinous Rice Ball Doughnuts)",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T18:45:34.139Z",
+  "ldName": "Chapssal Donuts (Korean Glutinous Rice Ball Doughnuts)",
+  "ldTime": "PT55M",
+  "ldPrepTime": "PT40M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "25",
+    "25 donuts"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Snacks",
+  "ldKeywords": "donuts, glutinous rice",
+  "ldIngredientsRaw": [
+    "500 g sweet rice flour ((1.1 pounds))",
+    "80 g self-raising flour ((2.8 ounces))",
+    "20 g melted butter ((0.7 ounces))",
+    "1/4 tsp fine sea salt",
+    "2 cups hot water ((16 ounces))",
+    "1/4 tsp cinnamon powder",
+    "180 g sweetened red bean paste ((0.4 pounds))",
+    "Some  vegetable oil (for deep-frying)",
+    "30 g castor sugar ((1 ounce))"
+  ],
+  "ldInstructionsRaw": [
+    "Mix the stuffing ingredients in a small bowl. (If you want smooth silkier texture, blend or mash the red bean paste. You could also add more sugar if the mixture isn't sweet enough for you.)",
+    "Sieve the sweet rice flour and self-raising flour into a large bowl. Add salt, melted butter and hot water. Mix all the ingredients well and knead it to make one large dough.",
+    "Take the dough out onto a cutting board and divide it into smaller pieces to make mini round balls. (The size can be up to you but remember that larger doughnuts take longer to cook. Also make sure it is large enough to hold the stuffing inside.) While working through, cover the mini balls with glad wrap to stop them drying out.",
+    "Open up the dough by pressing the rolled balls with your thumbs. Add the stuffing mixture and close the dough. I added ¼ tsp worth stuffing on each ball. You could add more or less, just make sure you can close the dough without getting messy - (note that the photo below has much more stuffing than necessary, so that you can see what it looks like). Repeat this until you use up the prepared ingredients.",
+    "Deep fry the donut in a deep sauce pan (on medium high heat) until the dough is golden brown. You will have to continuously roll the donut while cooking so it doesn't stick to the base of the pan, and to shape it better. Place the cooked doughnuts onto a piece of oil absorbing paper and cool down for 10 to 15 mins. Repeat this with the remaining ingredients. Be sure to watch out for oil splash.",
+    "Sprinkle the sugar onto the donuts or roll them on a plate of sugar. Alternatively, put the sugar into a plastic bag and added the donuts. Then while holding the top of the bag, shake the bag.",
+    "Enjoy."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "114 kcal",
+    "carbohydrateContent": "24 g",
+    "proteinContent": "1 g",
+    "cholesterolContent": "1 mg",
+    "sodiumContent": "30 mg",
+    "sugarContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Dough]",
+    "▢ 500 g sweet rice flour (1.1 pounds)",
+    "▢ 80 g self-raising flour (2.8 ounces)",
+    "▢ 20 g melted butter (0.7 ounces)",
+    "▢ 1/4 tsp fine sea salt",
+    "▢ 2 cups hot water (16 ounces)",
+    "[Stuffing]",
+    "▢ 1/4 tsp cinnamon powder",
+    "▢ 180 g sweetened red bean paste (0.4 pounds)",
+    "[Others]",
+    "▢ Some vegetable oil for deep-frying",
+    "▢ 30 g castor sugar (1 ounce)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

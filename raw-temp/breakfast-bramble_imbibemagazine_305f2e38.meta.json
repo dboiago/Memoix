@@ -1,0 +1,30 @@
+{
+  "url": "https://imbibemagazine.com/recipe/breakfast-bramble/",
+  "slug": "breakfast-bramble_imbibemagazine_305f2e38",
+  "title": "Breakfast Bramble",
+  "byline": "",
+  "fetchedAt": "2026-08-03T23:58:30.587Z",
+  "ldName": "Breakfast Bramble",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "10",
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "[object Object]",
+    "[object Object]",
+    "[object Object]",
+    "[object Object]",
+    "[object Object]"
+  ],
+  "ldInstructionsRaw": [
+    "Combine all the ingredients in a shaker with ice. Shake and strain into a glass with fresh crushed ice and garnish."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

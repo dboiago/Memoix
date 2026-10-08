@@ -1,0 +1,57 @@
+{
+  "url": "https://thewoksoflife.com/celtuce-salad-scallion-oil/",
+  "slug": "celtuce-salad-with-scallion-oil_thewoksoflife_7652c19a",
+  "title": "Celtuce Salad with Scallion Oil",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T10:18:46.722Z",
+  "ldName": "Celtuce Salad with Scallion Oil",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "celtuce salad",
+  "ldIngredientsRaw": [
+    "1 pound celtuce ((about 2))",
+    "1/2 teaspoon salt ((plus more to taste if needed))",
+    "2-3 tablespoons oil ((any neutral oil))",
+    "1  scallion ((finely chopped))",
+    "1/2 teaspoon sugar",
+    "1/2 teaspoon  sesame oil",
+    "1/2 teaspoon apple cider vinegar"
+  ],
+  "ldInstructionsRaw": [
+    "Peel the celtuce, removing all of the tough light green outer skin. Julienne the celtuce and transfer to a large bowl. Sprinkle with ½ teaspoon salt, and marinate for 10 minutes. (Not much longer, as this might draw too much liquid from the celtuce.)",
+    "In the meantime, cook the oil in a small saucepan over medium heat until it’s just smoking. Add the scallions and cook for a minute to infuse the oil. Turn it off, and let it cool.",
+    "Pour off the excess liquid from the celtuce and discard the liquid. Add the scallion oil, along with the sugar, sesame oil, apple cider vinegar, and additional salt to taste (if needed). Serve immediately."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "91 kcal",
+    "carbohydrateContent": "4 g",
+    "proteinContent": "2 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "1 g",
+    "transFatContent": "1 g",
+    "sodiumContent": "299 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "3 g",
+    "unsaturatedFatContent": "7 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 pound celtuce (about 2)",
+    "▢ 1/2 teaspoon salt (plus more to taste if needed)",
+    "▢ 2-3 tablespoons oil (any neutral oil)",
+    "▢ 1 scallion (finely chopped)",
+    "▢ 1/2 teaspoon sugar",
+    "▢ 1/2 teaspoon  sesame oil",
+    "▢ 1/2 teaspoon apple cider vinegar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

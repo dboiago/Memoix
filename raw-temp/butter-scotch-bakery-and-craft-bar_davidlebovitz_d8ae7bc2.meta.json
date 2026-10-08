@@ -1,0 +1,34 @@
+{
+  "url": "https://www.davidlebovitz.com/butter-and-scotch-brooklyn-new-york-city-bakery-bar/",
+  "slug": "butter-scotch-bakery-and-craft-bar_davidlebovitz_d8ae7bc2",
+  "title": "Butter & Scotch Bakery and Craft Bar",
+  "byline": "David",
+  "fetchedAt": "2026-08-02T18:00:05.547Z",
+  "ldName": "Rock &amp; Rye Milkshake",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1.5 oz Mister Katz's Rock &amp; Rye",
+    "1 oz sour cherry purée",
+    "3  scoops coffee ice cream",
+    "Whipped cream &amp; a Luxardo cherry for garnish"
+  ],
+  "ldInstructionsRaw": [
+    "In a blender, combine the rock &amp; rye, cherry purée, and ice cream, and blend until smooth. Pour into a parfait or pint glass, top with whipped cream and a cherry, and serve with a straw and a spoon."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1.5 oz Mister Katz's Rock & Rye",
+    "1 oz sour cherry purée",
+    "3 scoops coffee ice cream",
+    "Whipped cream & a Luxardo cherry for garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

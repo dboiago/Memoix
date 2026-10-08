@@ -1,0 +1,63 @@
+{
+  "url": "https://thewoksoflife.com/ham-chim-peng-fried-dough/",
+  "slug": "cantonese-fried-dough-ham-chim-peng_thewoksoflife_dcc6c646",
+  "title": "Cantonese Fried Dough - 咸煎饼 (Ham Chim Peng)",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T12:10:03.444Z",
+  "ldName": "Cantonese Fried Dough (Ham Chim Peng)",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "12"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Bread and Pizza",
+  "ldKeywords": "Cantonese fried dough",
+  "ldIngredientsRaw": [
+    "3 3/4 cups all-purpose flour ((plus extra for dusting))",
+    "3 tablespoons baking powder",
+    "1 teaspoon baking soda",
+    "1/3 cup dark brown sugar",
+    "1/3 cup regular granulated sugar",
+    "2 cubes fermented red bean curd ((mashed))",
+    "1/4 teaspoon five-spice powder",
+    "1 1/3 cups water",
+    "Neutral oil ((for frying))",
+    "3 tablespoons sesame seeds"
+  ],
+  "ldInstructionsRaw": [
+    "First mix together the flour, baking powder, and baking soda in a mixing bowl. Next, add the dark brown sugar, regular sugar, mashed fermented bean curd, and five-spice powder. Slowly stir in the water to form a wet dough. Make sure everything is well-combined. Cover and let the dough rest for 15 minutes.",
+    "While the dough is resting, take a medium pot and fill it with about 1 inch of oil for frying. Set aside. Once the dough is rested, dust a clean surface with a good amount of flour, and scrape the dough onto the floured surface. The dough will be very wet, so flour both hands before handling the dough. Divide it into 12 equal pieces.",
+    "Take each dough ball, and dip it into sesame seeds to coat--more or less depending on your preference. You can also coat both sides if you like. Flatten the dough to a 5-inch circle with a small hole in the middle and set aside on a well-floured surface. They can look quite rough at this point; don't feel the need to make them look perfect! Repeat until all 12 dough balls have been shaped.",
+    "Now, heat the oil to 325 degrees. Keep the heat between 325 to 350 degrees for the duration of the frying process. Fry the dough in batches, frying each side until golden brown, flipping one to two times to brown both sides. It should take 1 to 2 minutes each.",
+    "Drain on plate lined with paper towels or a wire rack and serve alone or with porridge. You can also store extras in the fridge and rejuvenate them with a quick turn through the oven or toaster oven."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "266 kcal",
+    "carbohydrateContent": "43 g",
+    "proteinContent": "5 g",
+    "fatContent": "9 g",
+    "saturatedFatContent": "6 g",
+    "sodiumContent": "98 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "12 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 3/4 cups all-purpose flour (plus extra for dusting)",
+    "▢ 3 tablespoons baking powder",
+    "▢ 1 teaspoon baking soda",
+    "▢ 1/3 cup dark brown sugar",
+    "▢ 1/3 cup regular granulated sugar",
+    "▢ 2 cubes fermented red bean curd (mashed)",
+    "▢ 1/4 teaspoon five-spice powder",
+    "▢ 1 1/3 cups water",
+    "▢ Neutral oil (for frying)",
+    "▢ 3 tablespoons sesame seeds"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

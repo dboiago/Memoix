@@ -1,0 +1,51 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/4-ingredient-pumpkin-spice-syrup/",
+  "slug": "4-ingredient-pumpkin-spice-syrup_itdoesnttastelikechicken_afaddf27",
+  "title": "4 Ingredient Pumpkin Spice Syrup",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T20:05:23.163Z",
+  "ldName": "4 Ingredient Pumpkin Spice Syrup",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT2M",
+  "ldCookTime": "PT3M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Drinks",
+  "ldKeywords": "drink",
+  "ldIngredientsRaw": [
+    "3/4 cup water",
+    "3/4 cup brown sugar",
+    "1/4 cup pumpkin purée",
+    "2 teaspoons pumpkin pie spice"
+  ],
+  "ldInstructionsRaw": [
+    "Add everything to a small pot, whisk together and bring to a simmer for about 3 minutes.",
+    "Pour the syrup through a fine mesh strainer, or a nut milk bag. (You may want to let it cool first if using a nut milk bag). This strains out the pulpiness and leaves you with perfect syrup.",
+    "To make a pumpkin spice latte or coffee, simply stir 1 tablespoon of syrup, or to taste, into your latte or coffee.",
+    "Store the pumpkin spice syrup in an airtight container in the fridge for up to a week, or freeze it in ice cube trays for longer storage."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "83 kcal",
+    "servingSize": "1  serving (recipe makes 8 servings)",
+    "carbohydrateContent": "21 g",
+    "proteinContent": "0.1 g",
+    "fatContent": "0.1 g",
+    "saturatedFatContent": "0.04 g",
+    "sodiumContent": "8 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "20 g",
+    "unsaturatedFatContent": "0.02 g"
+  },
+  "htmlIngredientLines": [
+    "▢ ¾ cup water",
+    "▢ ¾ cup brown sugar",
+    "▢ ¼ cup pumpkin purée",
+    "▢ 2 teaspoons pumpkin pie spice"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

@@ -1,0 +1,62 @@
+{
+  "url": "https://thewoksoflife.com/black-chicken-soup/",
+  "slug": "black-chicken-soup-the-woks-of-life_thewoksoflife_67ec1c0e",
+  "title": "Black Chicken Soup - The Woks of Life",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T13:55:25.679Z",
+  "ldName": "Black Chicken Soup",
+  "ldTime": "PT155M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT135M",
+  "ldYield": [
+    "12"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soups",
+  "ldKeywords": "black chicken soup",
+  "ldIngredientsRaw": [
+    "40 g dried Chinese yam ((淮山 - huáishān))",
+    "20 g dried Codonopsis pilosula ((党参 - dǎngshēn))",
+    "15 g dried goji berries ((枸杞 - gǒuqǐ))",
+    "10 g dried Astragalus propinquus ((黄芪 - huángqí))",
+    "10 g dried Polygonatum odoratum ((玉竹 - yù zhú))",
+    "3 large slices ginger",
+    "13 cups water",
+    "2.5 pound whole black silkie chicken",
+    "salt ((to taste))"
+  ],
+  "ldInstructionsRaw": [
+    "Add the dried ingredients, ginger, and water to a thick-bottomed soup pot or Dutch oven. Lower the chicken into the pot, feet side down.",
+    "Bring to a boil over high heat. Once boiling, immediately reduce the heat to medium-low, cover, and simmer for 2 hours. Adjust the heat as necessary so the soup is simmering slowly. This slow cooking will give you a clear, consommé-like broth, and will prevent you from cooking off too much liquid.",
+    "Skim any fat off the surface of the soup, and ladle the broth into bowls. Season the soup with salt to taste, right before enjoying."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "139 kcal",
+    "carbohydrateContent": "0.1 g",
+    "proteinContent": "12 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "3 g",
+    "transFatContent": "0.1 g",
+    "cholesterolContent": "48 mg",
+    "sodiumContent": "58 mg",
+    "fiberContent": "0.01 g",
+    "sugarContent": "0.01 g",
+    "unsaturatedFatContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 40 g dried Chinese yam (淮山 – huáishān)",
+    "▢ 20 g dried Codonopsis pilosula (党参 – dǎngshēn)",
+    "▢ 15 g dried goji berries (枸杞 – gǒuqǐ)",
+    "▢ 10 g dried Astragalus propinquus (黄芪 – huángqí)",
+    "▢ 10 g dried Polygonatum odoratum (玉竹 – yù zhú)",
+    "▢ 3 large slices ginger",
+    "▢ 13 cups water",
+    "▢ 2.5 pound whole black silkie chicken",
+    "▢ salt (to taste)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

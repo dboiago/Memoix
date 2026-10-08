@@ -1,0 +1,70 @@
+{
+  "url": "https://omnivorescookbook.com/bang-bang-chicken/",
+  "slug": "chinese-bang-bang-chicken_omnivorescookbook_4ce097f3",
+  "title": "Chinese Bang Bang Chicken (棒棒鸡)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T19:41:35.406Z",
+  "ldName": "Chinese Bang Bang Chicken (棒棒鸡)",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "party food",
+  "ldIngredientsRaw": [
+    "1.5 lbs (700 g) boneless skinless chicken breasts ( (or chicken thighs))",
+    "1 teaspoon salt",
+    "4  green onions (, separated)",
+    "4 tablespoons light soy sauce ((or soy sauce))",
+    "2 tablespoons Chinese sesame paste ((or unsweetened natural peanut butter))",
+    "2 tablespoons homemade chili oil ((or more) (*Footnote 1))",
+    "1.5 tablespoons Chinkiang vinegar ((or 2 tablespoons rice vinegar))",
+    "4 teaspoons sugar",
+    "2 cloves garlic (, grated)",
+    "2 teaspoons grated ginger",
+    "1/2 teaspoon ground Sichuan peppercorns"
+  ],
+  "ldInstructionsRaw": [
+    "Chop 2 green onions into 2” (5 cm) sticks. Slice the remaining 2 green onions into thin slices.",
+    "Prepare a steamer by adding 2” (5 cm) water into the pot. Cover and heat over medium-high heat until boiling.",
+    "Use a plate that can fit into your steamer rack. Spread the green onion sticks onto the plate to make a bed. Place the chicken breast on top. Sprinkle salt evenly over the chicken.",
+    "When steam comes out of the steamer, place the steamer rack with the chicken on top, and cover the steamer. Cook for 20 minutes. Test the chicken by using a thermometer inserted into the thickest part. It should read 165 degrees F (73 C). Or insert a knife into the thickest part, and the juice should run clear. If the chicken is still pink inside, steam for another 5 to 10 minutes. Once done, transfer the chicken to a plate to cool.",
+    "While cooking the chicken, combine the rest of the ingredients in a large bowl. Whisk to mix well.",
+    "Once the chicken is cooled, transfer it onto a cutting board. Use a meat pounder or a rolling pin to pound the chicken (optional), then shred into thin slices using two forks.",
+    "Place the chicken into a large bowl or deep plate. Drizzle the sauce on top and mix well. Garnish with thinly sliced green onion. If you want to create the authentic look, like at a Sichuan restaurant, drizzle more chili oil (about 1/3 to 1/2 cup) onto the chicken.",
+    "Serve as a cold appetizer or a main dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "4 g",
+    "calories": "372 kcal",
+    "carbohydrateContent": "6.6 g",
+    "proteinContent": "41.5 g",
+    "fatContent": "19.4 g",
+    "saturatedFatContent": "2.7 g",
+    "cholesterolContent": "109 mg",
+    "sodiumContent": "994 mg",
+    "fiberContent": "1.6 g",
+    "sugarContent": "2.2 g"
+  },
+  "htmlIngredientLines": [
+    "1.5 lbs (700 g) boneless skinless chicken breasts  (or chicken thighs)",
+    "1 teaspoon salt",
+    "4 green onions , separated",
+    "[Sauce]",
+    "4 tablespoons light soy sauce (or soy sauce)",
+    "2 tablespoons Chinese sesame paste (or unsweetened natural peanut butter)",
+    "2 tablespoons homemade chili oil (or more) (*Footnote 1)",
+    "1.5 tablespoons Chinkiang vinegar (or 2 tablespoons rice vinegar)",
+    "4 teaspoons sugar",
+    "2 cloves garlic , grated",
+    "2 teaspoons grated ginger",
+    "1/2 teaspoon ground Sichuan peppercorns"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

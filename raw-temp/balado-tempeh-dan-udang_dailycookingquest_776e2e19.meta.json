@@ -1,0 +1,72 @@
+{
+  "url": "https://dailycookingquest.com/balado-tempeh-dan-udang.html",
+  "slug": "balado-tempeh-dan-udang_dailycookingquest_776e2e19",
+  "title": "Balado Tempeh dan Udang",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:50:22.484Z",
+  "ldName": "Balado Tempeh dan Udang",
+  "ldTime": "PT2H0M",
+  "ldPrepTime": "PT1H0M",
+  "ldCookTime": "PT1H0M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Side Dish",
+  "ldKeywords": [
+    "Bean",
+    "Seafood"
+  ],
+  "ldIngredientsRaw": [
+    "200 gram shelled shrimps",
+    "½ teaspoon lime juice",
+    "½ teaspoon salt",
+    "½ teaspoon ground pepper",
+    "½ teaspoon corn starch",
+    "enough oil for deep frying",
+    "500 gram tempeh",
+    "150 ml water",
+    "1 teaspoon salt",
+    "4 teaspoon sugar",
+    "3 kaffir lime leaves (Indonesian: daun jeruk)",
+    "5 shallots",
+    "3 cloves garlic",
+    "3 candlenuts (Indonesian: kemiri)",
+    "3 red chilies, seeded (optional)",
+    "1 fresh turmeric (Indonesian: kunyit), about 1 inch, peeled",
+    "1 inch ginger, peeled"
+  ],
+  "ldInstructionsRaw": [
+    "Marinate the shrimp with lime juice, salt, ground pepper, and corn starch for 15 minutes.",
+    "Cut the tempeh into thin slices, about 2 cm wide x 4 cm long x as thin as you can manage.",
+    "Prepare a pot with enough oil for deep frying. Deep fry the tempeh until golden brown and crispy, about 5-7 minutes. Drain on paper towel.",
+    "Heat 2 tablespoon of oil in a pan and cook the spice paste until fragrant, about 3-5 minutes.",
+    "Add the shrimps and cook until no longer pink, about 1 minute.",
+    "Add the water, salt, sugar, and kaffir lime leaves. Mix well and cook until liquid is reduced.",
+    "Add the fried tempeh. Toss gently so the tempeh pieces are coated with the sauce. Turn off the heat and serve immediately or at room temperature."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "200 gram shelled shrimps",
+    "½ teaspoon lime juice",
+    "½ teaspoon salt",
+    "½ teaspoon ground pepper",
+    "½ teaspoon corn starch",
+    "enough oil for deep frying",
+    "500 gram tempeh",
+    "150 ml water",
+    "1 teaspoon salt",
+    "4 teaspoon sugar",
+    "3 kaffir lime leaves (Indonesian: daun jeruk)",
+    "Grind the following into spice paste",
+    "5 shallots",
+    "3 cloves garlic",
+    "3 candlenuts (Indonesian: kemiri)",
+    "3 red chilies, seeded (optional)",
+    "1 fresh turmeric (Indonesian: kunyit), about 1 inch, peeled",
+    "1 inch ginger, peeled"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

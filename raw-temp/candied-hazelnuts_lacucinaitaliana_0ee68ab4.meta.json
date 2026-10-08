@@ -1,0 +1,31 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/candied-hazelnuts",
+  "slug": "candied-hazelnuts_lacucinaitaliana_0ee68ab4",
+  "title": "Candied Hazelnuts",
+  "byline": "by  Editorial staff   March 10, 2020",
+  "fetchedAt": "2026-08-03T08:09:53.806Z",
+  "ldName": "Candied Hazelnuts",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Dolcetti,Dolcezze,Dolci,Dolci Delle Feste,Dolci Di Natale,Natale,Nocciole",
+  "ldIngredientsRaw": [
+    "14OZ. hazelnuts, blanched",
+    "1 1/2C. sugar"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Toast the hazelnuts in a dry pan, moving them around often and ensuring that they do not get dark. Place the sugar in a saucepan with 3 1/2 tablespoons of water and melt it until it reaches 250°F. Add in the hazelnuts, remove from the heat, and mix until the sugar completely coats the hazelnuts and turns white.</p>",
+    "<p>Place the saucepan back over the heat and melt the sugar again, cooking until it caramelizes. Spread the hazelnuts out on a baking tray lined with parchment paper and let cool. Place them in little bags or in paper cones.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "14 OZ. of hazelnuts, blanched",
+    "1 1/2 C. of sugar"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

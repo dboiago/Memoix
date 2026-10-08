@@ -1,0 +1,38 @@
+{
+  "url": "https://www.bongeats.com/recipe/alur-khosha-bhaja",
+  "slug": "alur-khosha-bhaja-recipe-by-bong-eats_bongeats_beb23a70",
+  "title": "Alur Khosha Bhaja recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T16:42:23.726Z",
+  "ldName": "Alur Khosha Bhaja",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT15M",
+  "ldYield": "2 servings",
+  "ldCuisine": "Indian",
+  "ldCategory": "lunch, snack",
+  "ldKeywords": "potato peel fry, crispy potato peel fry, alur khosha bhaja, no waste cooking",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": ""
+  },
+  "htmlIngredientLines": [
+    "100 g potato peels",
+    "¼ tsp salt",
+    "4 g sugar",
+    "1 pinch turmeric powder",
+    "1 pinch red chilli powder",
+    "½ tsp posto (poppy seeds)",
+    "¼ tsp kaalo jeere (nigella seeds)",
+    "1 pc green chilli",
+    "½ tsp mustard oil",
+    "10 g rice flour",
+    "10 g maida (plain flour)",
+    "vegetable oil for deep-frying"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

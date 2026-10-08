@@ -1,0 +1,3 @@
+Pork shoulder steaks are a bit of a revelation when it comes to barbecuing this summer. Unlike the pork chop, which can dry out all too easily, the shoulder steaks have plenty of fat running through them, which keeps them moist, juicy and flavourful. To show off these beauties we've given them a classic marinade of garlic, rosemary and fennel seeds – give them a good long marinate if you can, it really does make all the difference.
+
+The yoghurt flatbreads are easy to make and well worth the effort; fluffy on the inside and glistening with garlic butter, they are the perfect vehicle to carry your new favourite cut of pork. The smoky apple sauce is simple to whip up too, and adds a new dimension to the classic combination of pork and apple.

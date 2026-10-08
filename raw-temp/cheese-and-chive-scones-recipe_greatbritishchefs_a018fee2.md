@@ -1,0 +1,9 @@
+Of all the foodie days on the calendar, one of my top favourites is [National Cream Tea Day](http://www.creamteasociety.co.uk/national-cream-tea-day)! I am an avid fan of all things tea time, and a good home-made fluffy scone is my idea of heaven when topped with rich, golden clotted cream and a dollop of fruity strawberry jam.
+
+However, I am also a cheese addict and I adore cheese scones, especially when made at home to accompany bowls of thick velvety soup and hearty stews; but, there’s more to a cheese scone than acting simply as an accompaniment to the above, so why not make cheese scones the star of National Cream Tea Day as part of a savoury cream tea?
+
+My three recipes for Cheese and chive scones, Quick tomato relish and Herb and garlic cream cheese will offer all savoury afternoon tea lovers the chance to indulge in a cream tea with a difference, and you can still enjoy a pot of tea to go with your cheesy, herb and tomato treats. A robust tea is what’s needed, and one of my favourites is assam, a dark and malty black tea with attitude.
+
+As someone who was [recently in Sri Lanka](http://www.lavenderandlovage.com/2016/04/postcards-beguiling-sri-lanka-pol-sambol.html), and who had the privilege of ‘plucking tea’ over there, as well enjoying a tea tasting session in one of the plantations, another tea that would be the perfect accompaniment would be a Ceylon Broken Orange Pekoe tea, which is a tea full of character and flavour, and one that would hold its own when enjoyed with the cheese scones, tomato relish and herb cream cheese.
+
+So, if cheese is more your thing, then here’s the perfect trio of recipes for you to make and enjoy this National Cream Tea Day, with a pot of tea of course, and why not make it a sweet and savoury affair by offering rich fruit scones with jam and cream for the ‘[dessert](https://www.greatbritishchefs.com/collections/dessert-recipes)’ course of your cream tea too!

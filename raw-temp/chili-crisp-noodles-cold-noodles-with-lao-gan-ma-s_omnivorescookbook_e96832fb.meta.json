@@ -1,0 +1,73 @@
+{
+  "url": "https://omnivorescookbook.com/chili-crisp-noodles-with-lao-gan-ma-sauce/",
+  "slug": "chili-crisp-noodles-cold-noodles-with-lao-gan-ma-s_omnivorescookbook_e96832fb",
+  "title": "Chili Crisp Noodles (Cold Noodles with Lao Gan Ma Sauce)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T11:15:07.026Z",
+  "ldName": "Chili Crisp Noodles (Cold Noodles with Lao Gan Ma Sauce)",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main, Side",
+  "ldKeywords": "home style",
+  "ldIngredientsRaw": [
+    "5 oz dried wheat noodles (such as udon noodles) ((or 8 oz fresh wheat noodles) (*Footnote 1))",
+    "1/2 lb chicken tenderloins",
+    "1/4 cup Lao Gan Ma chili crisp ((or other chili crisp you prefer))",
+    "3 tablespoons light soy sauce",
+    "1 tablespoon Chinkiang vinegar",
+    "2 tablespoons Chinese sesame paste ((or tahini))",
+    "2 teaspoons toasted sesame oil",
+    "1 tablespoon honey ((or sugar))",
+    "1 teaspoon ground ginger",
+    "1/2 teaspoon ground Sichuan peppercorn",
+    "1/4  red onion (, thinly sliced)",
+    "1  persian cucumber (, julienned)",
+    "1/4 cup salted dry-roasted peanuts (, chopped)",
+    "1/4 cup cilantro (, chopped)"
+  ],
+  "ldInstructionsRaw": [
+    "Bring a large pot of water to a boil. Cook noodles according to package directions. Once done, transfer the noodles to a colander to drain, then rinse with cold tap water to stop cooking. Drain and set aside.",
+    "Bring the same pot of water back to a boil and add chicken tenderloins. Keep the water at a very low simmer that barely bubbles. Cook the chicken for 5 to 7 minutes, until just cooked through. Transfer to a plate to cool. Then shred the chicken using two forks.",
+    "Mix the chili crisp, soy sauce, Chinkiang vinegar, sesame paste, sesame oil, sugar, ginger, and Sichuan peppercorn together in a medium bowl.",
+    "In a large bowl, combine the cooked noodles (*Footnote 2), red onion, chicken, cucumber and most of the noodle sauce, reserving 1 to 2 tablespoons. Toss to coat well. Transfer to each individual serving bowl, top with peanuts and cilantro, if using. (*Footnote 3) Taste the noodles and mix in the remaining sauce if needed. Serve at room temperature with the remaining sauce."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "352 kcal",
+    "carbohydrateContent": "38 g",
+    "proteinContent": "23 g",
+    "fatContent": "13 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "37 mg",
+    "sodiumContent": "992 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "10 g",
+    "unsaturatedFatContent": "9 g"
+  },
+  "htmlIngredientLines": [
+    "5 oz dried wheat noodles (such as udon noodles) (or 8 oz fresh wheat noodles) (*Footnote 1)",
+    "1/2 lb chicken tenderloins",
+    "1/4 cup Lao Gan Ma chili crisp (or other chili crisp you prefer)",
+    "3 tablespoons light soy sauce",
+    "1 tablespoon Chinkiang vinegar",
+    "2 tablespoons Chinese sesame paste (or tahini)",
+    "2 teaspoons toasted sesame oil",
+    "1 tablespoon honey (or sugar)",
+    "1 teaspoon ground ginger",
+    "1/2 teaspoon ground Sichuan peppercorn",
+    "1/4 red onion , thinly sliced",
+    "1 persian cucumber , julienned",
+    "1/4 cup salted dry-roasted peanuts , chopped",
+    "1/4 cup cilantro , chopped"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

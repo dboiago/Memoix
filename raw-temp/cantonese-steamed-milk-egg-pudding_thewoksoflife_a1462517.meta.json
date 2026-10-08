@@ -1,0 +1,54 @@
+{
+  "url": "https://thewoksoflife.com/cantonese-steamed-milk-egg-pudding/",
+  "slug": "cantonese-steamed-milk-egg-pudding_thewoksoflife_a1462517",
+  "title": "Cantonese Steamed Milk Egg Pudding (双皮奶)",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-01T19:51:26.520Z",
+  "ldName": "Cantonese Steamed Milk Egg Pudding (双皮奶)",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "steamed milk egg pudding",
+  "ldIngredientsRaw": [
+    "1 cup whole milk",
+    "3/4 cup light cream",
+    "¼ cup sugar",
+    "2  large egg whites ((beaten))",
+    "3  drops vanilla extract",
+    "Your desired toppings––fresh fruit, granola, nuts, etc."
+  ],
+  "ldInstructionsRaw": [
+    "Prepare a steamer with water and bring it to a boil. Meanwhile, add the milk, cream, and sugar to a small saucepan and place over low heat. Heat the mixture until it’s warm to the touch, but not hot, stirring to dissolve the sugar completely.",
+    "Thoroughly beat the egg whites in a large mixing bowl, and then slowly stir in the milk mixture and the vanilla extract. Mix everything well.",
+    "Strain the liquid through a fine mesh strainer, and then pour into three separate heatproof serving bowls (they should be about 3-4 inches in diameter). Cover each serving bowl with foil. Then carefully place them in the steamer once the water is boiling. Steam for 8 to 10 minutes (steaming time will depend on the size of your serving bowls. If they’re wider and shallower, and the pudding is more spread out, steam for 8 minutes. If they’re smaller, steam a bit longer). Turn off the heat and let the puddings sit in the steamer for 10 minutes before opening the lid.",
+    "Serve warm or chilled with your favorite toppings."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "213 kcal",
+    "carbohydrateContent": "22 g",
+    "proteinContent": "5 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "7 g",
+    "cholesterolContent": "41 mg",
+    "sodiumContent": "79 mg",
+    "sugarContent": "21 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup whole milk",
+    "▢ 3/4 cup light cream",
+    "▢ ¼ cup sugar",
+    "▢ 2 large egg whites (beaten)",
+    "▢ 3 drops vanilla extract",
+    "▢ Your desired toppings––fresh fruit, granola, nuts, etc."
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

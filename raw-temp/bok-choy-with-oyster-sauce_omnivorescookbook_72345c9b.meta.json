@@ -1,0 +1,57 @@
+{
+  "url": "https://omnivorescookbook.com/bok-choy-with-oyster-sauce/",
+  "slug": "bok-choy-with-oyster-sauce_omnivorescookbook_72345c9b",
+  "title": "Bok Choy with Oyster Sauce",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T09:17:03.995Z",
+  "ldName": "Bok Choy with Oyster Sauce",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 lb baby bok choy",
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "2  dried chili peppers",
+    "2 teaspoons ginger (, minced)",
+    "1/2 teaspoon sugar",
+    "1 tablespoon soy sauce",
+    "2 tablespoons oyster sauce"
+  ],
+  "ldInstructionsRaw": [
+    "Cut off the ends of baby bok choy and discard. Separate the larger leaves of baby bok choy. Soak in cold water for 2 minutes, then rinse to remove any dust. Cut the stems into 1/2” pieces and the leaves into 2” pieces. Separate the whites and greens. Halve the cores.",
+    "Heat oil in a wok over medium-high heat until smoking. Add chili peppers and ginger. Stir a few times to release fragrance.",
+    "Add the baby bok choy whites and turn to high heat. Stir a few times to coat evenly with oil, spread them out and sear until the white part just starts to turn tender, 1 to 2 minutes.",
+    "Add the baby bok choy greens and sprinkle with sugar. Stir to mix well. Add the soy sauce and oyster sauce. Stir immediately to mix the ingredients. Cook and stir until the greens are wilted, then transfer everything to a big serving plate. Serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "65 kcal",
+    "carbohydrateContent": "6.3 g",
+    "proteinContent": "3.5 g",
+    "fatContent": "3.9 g",
+    "saturatedFatContent": "0.7 g",
+    "sodiumContent": "417 mg",
+    "fiberContent": "2.3 g",
+    "sugarContent": "3.1 g"
+  },
+  "htmlIngredientLines": [
+    "1 lb baby bok choy",
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "2 dried chili peppers",
+    "2 teaspoons ginger , minced",
+    "1/2 teaspoon sugar",
+    "1 tablespoon soy sauce",
+    "2 tablespoons oyster sauce"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

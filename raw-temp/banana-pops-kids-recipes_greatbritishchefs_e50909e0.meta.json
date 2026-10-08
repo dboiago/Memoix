@@ -1,0 +1,32 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/banana-pops-recipe",
+  "slug": "banana-pops-kids-recipes_greatbritishchefs_e50909e0",
+  "title": "Banana Pops - Kids Recipes",
+  "byline": "by Adam Bennett",
+  "fetchedAt": "2026-08-03T19:36:27.066Z",
+  "ldName": "Banana pops",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "2 bananas, ripe",
+    "50g of dark chocolate, broken up",
+    "100g of low fat vanilla yoghurt",
+    "20g of hundreds and thousands"
+  ],
+  "ldInstructionsRaw": [
+    "Peel the bananas and cut each one in half to get 4 chunks. Pierce a skewer into the bottom of each piece",
+    "Add the chocolate to a glass bowl. Heat in the microwave until melted, approximately 1-2 minutes, stirring after a minute to make sure it all melts",
+    "Place the vanilla yoghurt into a bowl, then dip each banana into the yoghurt to cover one side",
+    "Using a spoon, drizzle the melted chocolate over the other halves. Sprinkle hundreds and thousands over the top and serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

@@ -1,0 +1,49 @@
+{
+  "url": "https://www.cookwithmanali.com/apple-halwa/",
+  "slug": "apple-halwa_cookwithmanali_f0950fe3",
+  "title": "Apple Halwa",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-01T18:40:33.997Z",
+  "ldName": "Apple Halwa",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2  apples (large [around 1.5 cups grated apples])",
+    "1.5 tablespoons ghee (clarified butter)",
+    "¼ cup + 2 tablespoons granulated sugar",
+    "¼  + ⅛ teaspoon cinnamon powder",
+    "¼ teaspoon cardamom powder",
+    "⅛ teaspoon nutmeg powder",
+    "sliced almonds (to garnish)"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the apples and peel them.",
+    "Cut into slices and run them into a food processor till the apples are well grind. Few pieces are ok.",
+    "In a pan heat ghee on medium heat. Once hot, add the apples.",
+    "Cook the apples till all the water is evaporated, this took me around 7-8 minutes.",
+    "Now add sugar and mix. Also add cinnamon powder, nutmeg and cardamom powder.",
+    "As the sugar melts, the halwa will again become liquidy.",
+    "Cook for 5 minutes stirring continuously till all water evaporates.",
+    "Garnish with sliced almonds and serve hot."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "▢ 2 apples, large [around 1.5 cups grated apples]",
+    "▢ 1.5 tablespoons ghee, clarified butter",
+    "▢ ¼ cup + 2 tablespoons granulated sugar",
+    "▢ ¼ + ⅛ teaspoon cinnamon powder",
+    "▢ ¼ teaspoon cardamom powder",
+    "▢ ⅛ teaspoon nutmeg powder",
+    "▢ sliced almonds, to garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

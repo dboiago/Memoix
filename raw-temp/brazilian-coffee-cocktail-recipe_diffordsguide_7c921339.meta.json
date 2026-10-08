@@ -1,0 +1,42 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/319/brazilian-coffee",
+  "slug": "brazilian-coffee-cocktail-recipe_diffordsguide_7c921339",
+  "title": "Brazilian Coffee Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-02T01:36:04.681Z",
+  "ldName": "Brazilian Coffee",
+  "ldTime": "PT02M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Creamy (e.g. Dirty banana)",
+    "Frozen (blended)"
+  ],
+  "ldIngredientsRaw": [
+    "30 ml Cachaça (unaged)",
+    "30 ml Whipping cream",
+    "60 ml Espresso coffee (hot)",
+    "22.5 ml Sugar syrup (2:1)"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a TODDY GLASS.",
+    "Prepare garnish of coffee beans.",
+    "BLEND ingredients with 6oz scoop of crushed ice.",
+    "Pour into glass.",
+    "Serve with straws."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "225 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

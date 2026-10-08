@@ -1,0 +1,38 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/5-minute-cake",
+  "slug": "5-minutes-cake_lacucinaitaliana_c294b14e",
+  "title": "5-Minutes Cake",
+  "byline": "by  Editorial staff   July 16, 2019",
+  "fetchedAt": "2026-08-02T17:58:08.903Z",
+  "ldName": "5-Minutes Cake",
+  "ldTime": "PT170M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "8",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Mandorle",
+  "ldIngredientsRaw": [
+    "200G farina 00",
+    "200G farina di mandorle",
+    "200G burro ammorbidito",
+    "200G zucchero",
+    "un uovo",
+    "rum",
+    "sale"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "200 G of farina 00",
+    "200 G of farina di mandorle",
+    "200 G of burro ammorbidito",
+    "200 G of zucchero",
+    "un uovo",
+    "rum",
+    "sale"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

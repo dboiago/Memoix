@@ -1,0 +1,59 @@
+{
+  "url": "https://dailycookingquest.com/chicken-in-ginger-and-soy-sauce.html",
+  "slug": "chicken-in-ginger-and-soy-sauce_dailycookingquest_6f437626",
+  "title": "Chicken in Ginger and Soy Sauce",
+  "byline": "",
+  "fetchedAt": "2026-08-02T00:12:57.631Z",
+  "ldName": "Chicken in Ginger and Soy Sauce",
+  "ldTime": "PT0H45M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT0H30M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "Chinese chicken and soy sauce recipe",
+    "Chinese chicken and ginger recipe",
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "1 chicken, cut into 8 pieces, or use 8 drumsticks",
+    "2 tablespoon oil",
+    "4 inches ginger, peeled and cut into match sticks",
+    "6 cloves garlic, minced",
+    "3 scallion, chopped (reserve some for garnish)",
+    "1 bunch (~ 1 cup) cilantro, chopped",
+    "2 tablespoon kecap manis (Indonesian sweet soy sauce)",
+    "2 tablespoon light soy sauce",
+    "1/2 tablespoon sugar",
+    "¾ cup water",
+    "1 teaspoon salt, or to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Heat oil in a skillet and stir fry ginger, garlic, scallion, and cilantro until fragrant, about 2-3 minutes.",
+    "Add chicken pieces and stir fry until no longer pink.",
+    "Add kecap manis, light soy sauce, sugar, and water and mix well.",
+    "Bring to a boil, then cover with a lid and simmer for 20 minutes.",
+    "Remove the lid and cook until liquid is reduced by half.",
+    "Add salt if needed, transfer to a serving plate, garnish with some chopped scallion, and serve with steamed white rice."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 chicken, cut into 8 pieces, or use 8 drumsticks",
+    "2 tablespoon oil",
+    "4 inches ginger, peeled and cut into match sticks",
+    "6 cloves garlic, minced",
+    "3 scallion, chopped (reserve some for garnish)",
+    "1 bunch (~ 1 cup) cilantro, chopped",
+    "2 tablespoon kecap manis (Indonesian sweet soy sauce)",
+    "2 tablespoon light soy sauce",
+    "1/2 tablespoon sugar",
+    "¾ cup water",
+    "1 teaspoon salt, or to taste"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

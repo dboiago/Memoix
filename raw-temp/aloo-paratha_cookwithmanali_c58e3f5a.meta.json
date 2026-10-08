@@ -1,0 +1,69 @@
+{
+  "url": "https://www.cookwithmanali.com/aloo-paratha/",
+  "slug": "aloo-paratha_cookwithmanali_c58e3f5a",
+  "title": "Aloo Paratha",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T08:05:28.325Z",
+  "ldName": "Aloo Paratha",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "8",
+    "8 paratha"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Breads",
+  "ldKeywords": "aloo paratha",
+  "ldIngredientsRaw": [
+    "2 cups atta (260 grams, whole wheat flour)",
+    "1/2 teaspoon salt (also known as carom seeds)",
+    "2 teaspoons oil",
+    "water (to knead the dough, around 3/4 cup (180 ml) + 1-2 tablespoons (15-30 ml))",
+    "3-4 medium potatoes (around 400-450 grams)",
+    "1  green chili (finely chopped, or more to taste)",
+    "1/2 teaspoon cumin powder",
+    "3/4 teaspoon amchur (also known as dry mango powder)",
+    "1/4 teaspoon garam masala",
+    "1/4 teaspoon ajwain",
+    "1/4 teaspoon Kashmiri red chili powder (replace with regular chili powder if you prefer spicy)",
+    "1/2 teaspoon salt  (or adjust to taste)",
+    "2 tablespoons chopped cilantro"
+  ],
+  "ldInstructionsRaw": [
+    "Make the dough",
+    "Make the filling",
+    "Make the paratha"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "171 kcal",
+    "carbohydrateContent": "31 g",
+    "proteinContent": "5 g",
+    "fatContent": "3 g",
+    "sodiumContent": "421 mg",
+    "fiberContent": "5 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Dough]",
+    "▢ 2 cups atta, 260 grams, whole wheat flour",
+    "▢ 1/2 teaspoon salt, also known as carom seeds",
+    "▢ 2 teaspoons oil",
+    "▢ water, to knead the dough, around 3/4 cup (180 ml) + 1-2 tablespoons (15-30 ml)",
+    "[Stuffing]",
+    "▢ 3-4 medium potatoes, around 400-450 grams",
+    "▢ 1 green chili, finely chopped, or more to taste",
+    "▢ 1/2 teaspoon cumin powder",
+    "▢ 3/4 teaspoon amchur, also known as dry mango powder",
+    "▢ 1/4 teaspoon garam masala",
+    "▢ 1/4 teaspoon ajwain",
+    "▢ 1/4 teaspoon Kashmiri red chili powder, replace with regular chili powder if you prefer spicy",
+    "▢ 1/2 teaspoon salt , or adjust to taste",
+    "▢ 2 tablespoons chopped cilantro",
+    "[oil or ghee, to cook the parathas]"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

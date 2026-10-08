@@ -1,0 +1,44 @@
+{
+  "url": "https://dailycookingquest.com/barley-and-candied-winter-melon-drink.html",
+  "slug": "barley-and-candied-winter-melon-drink_dailycookingquest_a43bb48a",
+  "title": "Barley and Candied Winter Melon Drink",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:22:39.604Z",
+  "ldName": "Barley and Candied Winter Melon Drink",
+  "ldTime": "PT1H40M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT1H30M",
+  "ldYield": [
+    "12"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Drink, Vegetarian",
+  "ldKeywords": [
+    "Chinese barley and winter melon drink tong sui",
+    "How to cook Chinese barley tong sui",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "100 gram barley (Indonesian: jali), washed and drained a couple of times",
+    "125 gram candied winter melon (Indonesian: baligo/beligo/kundur)",
+    "3 pandan leaves, washed and knotted",
+    "3 liter water",
+    "sugar (optional), to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Place all ingredients in a pot and bring to a boil. Reduce heat and simmer for 1 1/2 hour until barley is soft.",
+    "Taste if it is sweet enough, usually it is, but you can add more sugar if you prefer a sweeter drink.",
+    "Turn off heat. Can be served hot, at room temperature, or chilled."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "100 gram barley (Indonesian: jali), washed and drained a couple of times",
+    "125 gram candied winter melon (Indonesian: baligo/beligo/kundur)",
+    "3 pandan leaves, washed and knotted",
+    "3 liter water",
+    "sugar (optional), to taste"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

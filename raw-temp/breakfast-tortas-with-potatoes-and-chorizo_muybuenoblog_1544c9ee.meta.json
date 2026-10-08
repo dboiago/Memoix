@@ -1,0 +1,60 @@
+{
+  "url": "https://muybuenoblog.com/tortas-potatoes-chorizo/",
+  "slug": "breakfast-tortas-with-potatoes-and-chorizo_muybuenoblog_1544c9ee",
+  "title": "Breakfast Tortas with Potatoes and Chorizo",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T00:37:38.543Z",
+  "ldName": "Tortas with Potatoes and Chorizo",
+  "ldTime": "PT32M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT27M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Main Course",
+  "ldKeywords": "chorizo sandwich, easy sandwich recipe, Mexican sandwich recipe",
+  "ldIngredientsRaw": [
+    "3  russet potatoes (washed, peeled, and cut into 1⁄4-inch cubes)",
+    "1 tablespoon kosher salt",
+    "10 ounces Mexican chorizo (casings removed)",
+    "4  bolillos or large sub rolls",
+    "4 tablespoons butter",
+    "4  deli cheese slices of choice",
+    "2  avocados (pitted, peeled, and sliced)"
+  ],
+  "ldInstructionsRaw": [
+    "Bring about 4 cups water to a boil in a deep pot with salt. Carefully add potatoes to boiling water. Boil over medium-high heat for about 15 minutes. Check at 10 minutes. If they are tender but not firm then remove from the heat. You do not want to overcook the potatoes. Using a colander, strain the potatoes but do not rinse.",
+    "Fry the chorizo in a large nonstick skillet until browned. Add the cooked potatoes to the cooked chorizo and gently combine. Do not stir too much or the potatoes will get mushy.",
+    "Heat a griddle or large skillet over medium. Slice rolls in half lengthwise and spread butter over cut sides. Toast rolls until golden brown.",
+    "Divide potato filling between bottom halves of rolls; top with cheese and avocado slices.",
+    "Place on griddle to warm torta and melt cheese.",
+    "Close sandwiches and cut in half."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "803.41 kcal",
+    "sugarContent": "6.04 g",
+    "sodiumContent": "3061.67 mg",
+    "fatContent": "48.18 g",
+    "saturatedFatContent": "17.81 g",
+    "carbohydrateContent": "70.09 g",
+    "fiberContent": "9.88 g",
+    "proteinContent": "24.82 g",
+    "cholesterolContent": "84.9 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 russet potatoes, washed, peeled, and cut into 1⁄4-inch cubes",
+    "▢ 1 tablespoon kosher salt",
+    "▢ 10 ounces Mexican chorizo, casings removed",
+    "▢ 4 bolillos or large sub rolls",
+    "▢ 4 tablespoons butter",
+    "▢ 4 deli cheese slices of choice",
+    "▢ 2 avocados, pitted, peeled, and sliced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

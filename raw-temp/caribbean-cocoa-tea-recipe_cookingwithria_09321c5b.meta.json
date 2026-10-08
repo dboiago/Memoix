@@ -1,0 +1,67 @@
+{
+  "url": "https://cookingwithria.com/2025/10/cocoa-tea-recipe/",
+  "slug": "caribbean-cocoa-tea-recipe_cookingwithria_09321c5b",
+  "title": "Caribbean Cocoa Tea Recipe",
+  "byline": "CookingwithRia",
+  "fetchedAt": "2026-09-25T22:27:12.510Z",
+  "ldName": "Caribbean Cocoa Tea Recipe",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Caribbean, Trinidadian",
+  "ldCategory": "Breakfast, Snack",
+  "ldKeywords": "caribbean cocoa tea, cocoa tea, trinidad cocoa tea",
+  "ldIngredientsRaw": [
+    "2 cups water (divided)",
+    "2 cups whole milk",
+    "1  cinnamon stick",
+    "2  bay leaves",
+    "4  cloves",
+    "4  cardamom  (pods)",
+    "1  cocoa stick or 4 tablespoons unsweetened cocoa powder",
+    "1/2 teaspoon nutmeg (freshly grated, or to taste )",
+    "1/3 cup granulated sugar (adjust to taste)",
+    "1 teaspoon vanilla extract (optional)",
+    "Condensed milk (for serving (optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare the Cocoa Mixture: If using cocoa sticks, grate them finely or grind them using an electric grinder. In a small bowl, mix the cocoa powder or grated cocoa stick with 1/2 cup of water to form a smooth paste. Set aside.",
+    "Boil Water and Spices: In a medium saucepan, combine the remaining 1 1/2 cups of water, milk, cinnamon stick, bay leaves, cloves, cardamom pods, and freshly grated nutmeg. Bring to a gentle boil over medium heat, allowing the spices to infuse for about 5-7 minutes.",
+    "Add Cocoa, Vanilla, and Sugar: Gradually whisk the cocoa paste into the simmering spiced liquid until fully incorporated. Stir in the granulated sugar, adjusting the amount to your desired sweetness.",
+    "Simmer and Blend: Reduce the heat to low and let the Cocoa Tea simmer for 5 more minutes, stirring occasionally. For a smoother texture, use an immersion blender or strain the mixture to remove the spices.",
+    "Serve Hot: Ladle the Cocoa Tea into mugs or enamel cups. If desired, sweeten further with condensed milk."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "163 kcal",
+    "carbohydrateContent": "28 g",
+    "proteinContent": "5 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "3 g",
+    "cholesterolContent": "15 mg",
+    "sodiumContent": "55 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "23 g",
+    "unsaturatedFatContent": "1.2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 cups water divided",
+    "2 cups whole milk",
+    "1 cinnamon stick",
+    "2 bay leaves",
+    "4 cloves",
+    "4 cardamom  pods",
+    "1 cocoa stick or 4 tablespoons unsweetened cocoa powder",
+    "1/2 teaspoon nutmeg freshly grated, or to taste",
+    "1/3 cup granulated sugar adjust to taste",
+    "1 teaspoon vanilla extract optional",
+    "Condensed milk for serving (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

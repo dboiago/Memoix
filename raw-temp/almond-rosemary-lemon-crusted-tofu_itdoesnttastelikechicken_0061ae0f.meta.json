@@ -1,0 +1,65 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/almond-rosemary-lemon-crusted-tofu/",
+  "slug": "almond-rosemary-lemon-crusted-tofu_itdoesnttastelikechicken_0061ae0f",
+  "title": "Almond Rosemary Lemon Crusted Tofu",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T00:09:31.856Z",
+  "ldName": "Almond Rosemary Lemon Crusted Tofu",
+  "ldTime": "PT38M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT23M",
+  "ldYield": [
+    "8",
+    "8 slices of tofu"
+  ],
+  "ldCuisine": "American, Canadian",
+  "ldCategory": "Main Course",
+  "ldKeywords": "tofu",
+  "ldIngredientsRaw": [
+    "1 block (350g) extra-firm or firm tofu (drained, pressed*, and cut into 8 slices)",
+    "1/2 cup raw almonds",
+    "2 tablespoons fresh rosemary ((about 2 sprigs with stems removed))",
+    "1/2 cup bread crumbs ((gluten-free if preferred))",
+    "1 teaspoon lemon zest",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon garlic powder",
+    "1/4 teaspoon black pepper",
+    "1/2 cup all-purpose flour ((gluten-free if preferred))",
+    "1 cup full-fat coconut milk ((or other plant-based milk if preferred))",
+    "lemon wedges for serving"
+  ],
+  "ldInstructionsRaw": [
+    "OVEN: Preheat your oven 400F (200C). Line a baking sheet with parchment paper.AIR FRYER: Preheat your air fryer to 370F (190C).",
+    "To make the almond rosemary crust, add the almonds and rosemary to&nbsp;a food processor grind until the almonds are finely chopped but some larger chunks remain. Add the breadcrumbs, lemon zest, salt, garlic powder, and black pepper and pulse to combine. Alternatively, you can finely chop the almonds and rosemary with a knife, and then just mix everything together in a bowl.",
+    "Take 3 medium bowls. In the first bowl add the all-purpose flour. In the second bowl pour in the coconut milk. In the third bowl, pour in the almond rosemary mixture.",
+    "Now take a tofu slice and dredge the tofu in the flour. Shake off excess and then dip the floured tofu into the coconut milk. Finally, dip the coconut milk covered tofu into the almond rosemary mixture to coat. Place the coated tofu on the parchment paper and repeat with remaining slices until they are all coated.",
+    "OVEN: Place the coated tofu on the parchment paper and repeat with the remaining slices until they are all coated. Bake 18 - 23 minutes until the crust is lightly golden and crispy. Serve hot with a wedge of lemon for squeezing.AIR FRYER: place the coated tofu in a single layer in the bottom of the air fryer (you make need to work in batches). Fry 14 - 20 minutes until the crust is lightly golden and crispy. Serve hot with a wedge of lemon for squeezing."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "163 kcal",
+    "carbohydrateContent": "13 g",
+    "proteinContent": "4 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "5 g",
+    "sodiumContent": "198 mg",
+    "fiberContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 block (350g) extra-firm or firm tofu, drained, pressed*, and cut into 8 slices",
+    "▢ ½ cup raw almonds",
+    "▢ 2 tablespoons fresh rosemary, (about 2 sprigs with stems removed)",
+    "▢ ½ cup bread crumbs, (gluten-free if preferred)",
+    "▢ 1 teaspoon lemon zest",
+    "▢ ½ teaspoon salt",
+    "▢ ¼ teaspoon garlic powder",
+    "▢ ¼ teaspoon black pepper",
+    "▢ ½ cup all-purpose flour, (gluten-free if preferred)",
+    "▢ 1 cup full-fat coconut milk, (or other plant-based milk if preferred)",
+    "▢ lemon wedges for serving"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

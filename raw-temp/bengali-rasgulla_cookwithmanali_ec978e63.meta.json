@@ -1,0 +1,57 @@
+{
+  "url": "https://www.cookwithmanali.com/bengali-rasgulla/",
+  "slug": "bengali-rasgulla_cookwithmanali_ec978e63",
+  "title": "Bengali Rasgulla",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-01T19:06:56.786Z",
+  "ldName": "Rasgulla",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "15",
+    "15 medium size rasgullas"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1  litre whole milk",
+    "3 tablespoons lemon juice",
+    "1 teaspoon cornflour",
+    "1 cup sugar",
+    "4 cups water"
+  ],
+  "ldInstructionsRaw": [
+    "Heat milk in a heavy bottom pan.",
+    "Once the milk comes to a boil, switch off the flame and add 1/2 cup of water to bring down the temperature a bit.",
+    "Add lemon juice till the milk curdles.",
+    "Drain the curdled milk using a muslin cloth. You are now left with what is known as \"chena\" or \"paneer\".",
+    "Squeeze the muslin cloth to remove all the water from the chena.",
+    "Take the chena in a plate and add cornflour to it.",
+    "Mash the chena with your hands for 10 minutes to make it soft and smooth. This is an important step to make sure that the rasgullas are soft.",
+    "Make small balls from the chena after the mashing is done.",
+    "Meanwhile in a pan mix the sugar and water and let it boil at high temperature.",
+    "Put the rasgulla balls in the boiling sugar syrup.",
+    "Cook the rasgullas in sugar syrup for 18-20 minutes on high flame.",
+    "Refrigerate the rasgullas with the syrup and serve chilled."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "52 kcal",
+    "carbohydrateContent": "13 g",
+    "sodiumContent": "3 mg",
+    "sugarContent": "13 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 litre whole milk",
+    "▢ 3 tablespoons lemon juice",
+    "▢ 1 teaspoon cornflour",
+    "▢ 1 cup sugar",
+    "▢ 4 cups water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

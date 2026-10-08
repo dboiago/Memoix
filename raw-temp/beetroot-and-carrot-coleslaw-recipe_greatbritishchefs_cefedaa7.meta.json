@@ -1,0 +1,40 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/beetroot-carrot-slaw-recipe",
+  "slug": "beetroot-and-carrot-coleslaw-recipe_greatbritishchefs_cefedaa7",
+  "title": "Beetroot and Carrot Coleslaw Recipe",
+  "byline": "by Ollie Moore",
+  "fetchedAt": "2026-08-03T23:10:52.001Z",
+  "ldName": "Beetroot and carrot coleslaw",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Side",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "2 carrots",
+    "1 beetroot",
+    "1 small garlic clove, minced",
+    "2 tbsp of white wine vinegar",
+    "2 tbsp of raisins",
+    "1 tbsp of olive oil",
+    "1 tbsp of lemon juice",
+    "1 handful of parsley, small",
+    "1 handful of mint, small",
+    "1 tbsp of pine nuts, lightly toasted",
+    "salt",
+    "black pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the raisins, vinegar and garlic in a bowl and leave to sit for about an hour",
+    "Peel the carrots and beetroot and grate them with a box grater or a julienne slicer (a julienne slicer looks prettier)",
+    "Combine the raisins, vinegar and garlic with the carrots and beetroot, then toss with the olive oil, lemon juice, most of the parsley and mint, salt and pepper",
+    "Serve the coleslaw scattered with pine nuts and sprinkled with the extra herbs"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

@@ -1,0 +1,5 @@
+Carpaccio is one of my favourite appetisers. Traditionally, it is a dish of thinly sliced raw meat or fish served with a salad and a vinaigrette or a sauce. Italians often eat it during the warmer months of the year. Carpaccio was invented in the 1950s by Giuseppe Cipriani from Harry's Bar in [Venice](https://www.greatitalianchefs.com/collections/venetian-recipes) and it soon became very popular. It was named after Venetian painter Vittorio Carpaccio, known for the characteristic red and white tones of his work.
+
+Making carpaccio at home is very easy, as long as you have the right meat. You can either find a butcher who knows how to cut carpaccio properly, or you can do it yourself. The trick is to half-freeze the meat and use a very sharp knife to slice it very thinly. You can then gently pound the sliced meat to get it as thin as possible. For best results, use beef fillet.
+
+The vinaigrette in this recipe is very simple and refreshing, and the sweetness of the sun-dried tomatoes balances out the slight bitterness of the rocket. The whole dish comes together beautifully and it is a joy for the taste buds.

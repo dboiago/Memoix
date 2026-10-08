@@ -1,0 +1,54 @@
+{
+  "url": "https://muybuenoblog.com/mango-chili-paletas/",
+  "slug": "chili-mango-paletas_muybuenoblog_faf31f8f",
+  "title": "Chili Mango Paletas",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T08:43:20.116Z",
+  "ldName": "Chili Mango Paletas (Mexican Popsicles)",
+  "ldTime": "PT365M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "6",
+    "6 popsicles"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "easy homemade popsicles, mango popsicles, paletas recipe",
+  "ldIngredientsRaw": [
+    "1  mango (peeled, seeded, and sliced)",
+    "1 (11.3-ounce) can  mango nectar",
+    "1 ½ tablespoons granulated sugar ( or honey)",
+    "1  mango (peeled, seeded, and diced)",
+    "2 tablespoons chili powder"
+  ],
+  "ldInstructionsRaw": [
+    "In a blender add sliced mango, mango nectar, and sugar or honey. Blend until smooth. Add chili powder to mixture and stir, do not blend.",
+    "Spoon diced mango into 6 popsicle molds.",
+    "Pour 2 ounces of mixture into each mold.",
+    "Insert a popsicle stick into each mold and freeze until pops are solid, about 6 hours or overnight. To release ice pops from molds, run the bottom of the molds briefly under cold water.",
+    "Sprinkle chile powder to popsicles and enjoy."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "87.04 kcal",
+    "sugarContent": "19.08 g",
+    "sodiumContent": "47.05 mg",
+    "fatContent": "0.67 g",
+    "saturatedFatContent": "0.14 g",
+    "carbohydrateContent": "21.48 g",
+    "fiberContent": "2.19 g",
+    "proteinContent": "0.98 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 mango, peeled, seeded, and sliced",
+    "▢ 1 (11.3-ounce) can  mango nectar",
+    "▢ 1 ½ tablespoons granulated sugar,  or honey",
+    "▢ 1 mango, peeled, seeded, and diced",
+    "▢ 2 tablespoons chili powder, recommend Tajin Fruit and Snack Seasoning"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

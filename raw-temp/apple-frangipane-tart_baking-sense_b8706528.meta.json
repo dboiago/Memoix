@@ -1,0 +1,72 @@
+{
+  "url": "https://www.baking-sense.com/2017/10/31/apple-frangipan-tart/",
+  "slug": "apple-frangipane-tart_baking-sense_b8706528",
+  "title": "Apple Frangipane Tart",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T18:58:12.447Z",
+  "ldName": "Apple Frangipane Tart",
+  "ldTime": "PT120M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Dessert",
+  "ldKeywords": "almond, frangipane",
+  "ldIngredientsRaw": [
+    "1 recipe Tart dough",
+    "8 ounces granulated sugar (1 cup)",
+    "4 ounces unsalted butter (room temperature)",
+    "¼ teaspoon table salt",
+    "2  eggs (room temperature)",
+    "4 ounces almond flour (1 cup)",
+    "1 tablespoon all purpose flour",
+    "1 teaspoon almond extract",
+    "1 teaspoon vanilla extract",
+    "2 tablespoons dark rum (divided)",
+    "3  apples",
+    "6 ounces apricot preserves (1/2 cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Roll 1 recipe&#32;Tart dough to fit a 12&quot; fluted tart pan. Prick the dough all over with a fork and refrigerate until firm.",
+    "While the tart shell chills, preheat the oven to 350 °F. Bake the tart shell until it&#39;s light brown around the edges and pale in the center, about 10-15 minutes. Set the crust aside to cool while you make the filling. Keep the oven on.",
+    "In a mixing bowl, cream 8 ounces&#32;granulated sugar and 4 ounces&#32;unsalted butter together until light and aerated. Scrape the bowl and the beater. Add ¼ teaspoon&#32;table salt and 2&#32;eggs and mix to combine. Add 4 ounces&#32;almond flour, 1 teaspoon&#32;almond extract, 1 teaspoon&#32;vanilla extract and 1 tablespoon of the rum.",
+    "Spread the frangipane evenly into the tart crust. Peel, core and slice 3&#32;apples to ¼&quot; thick. Arrange the apple slices in a pretty petal pattern, starting with the outside edge and working your way towards the middle. Bake until the apples are tender and the filling is set, about 45 minutes.",
+    "Turn on the broiler and run the tart under the broiler for a minute or two to brown the top of the tart. Warm 6 ounces&#32;apricot preserves in the microwave for 30 seconds, stir in the remaining 1 tablespoon of rum. Brush the warm preserves over the warm tart. Cool to room temperature.",
+    "Best served at room temperature."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "255 kcal",
+    "carbohydrateContent": "35 g",
+    "proteinContent": "3 g",
+    "fatContent": "13 g",
+    "saturatedFatContent": "5 g",
+    "cholesterolContent": "48 mg",
+    "sodiumContent": "61 mg",
+    "sugarContent": "29 g",
+    "transFatContent": "0.3 g",
+    "fiberContent": "2 g",
+    "unsaturatedFatContent": "2.5 g"
+  },
+  "htmlIngredientLines": [
+    "1 recipe Tart dough",
+    "8 ounces granulated sugar (1 cup)",
+    "4 ounces unsalted butter (room temperature)",
+    "¼ teaspoon table salt",
+    "2 eggs (room temperature)",
+    "4 ounces almond flour (1 cup)",
+    "1 tablespoon all purpose flour",
+    "1 teaspoon almond extract",
+    "1 teaspoon vanilla extract",
+    "2 tablespoons dark rum (divided)",
+    "3 apples ( )",
+    "6 ounces apricot preserves (1/2 cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

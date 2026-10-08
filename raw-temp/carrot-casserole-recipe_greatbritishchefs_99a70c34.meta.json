@@ -1,0 +1,40 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/carrot-casserole-recipe",
+  "slug": "carrot-casserole-recipe_greatbritishchefs_99a70c34",
+  "title": "Carrot Casserole Recipe",
+  "byline": "by Andy McLeish",
+  "fetchedAt": "2026-08-03T19:19:25.883Z",
+  "ldName": "Cheesy carrot bake",
+  "ldTime": "PT45M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Side",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "225g of carrots, grated",
+    "1/2 tsp salt",
+    "50ml of vegetable stock",
+    "1/2 onion, finely chopped",
+    "20g of cheddar, grated",
+    "10g of coriander, chopped",
+    "1 egg",
+    "1 tsp olive oil",
+    "1 pinch of pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 180°C/gas mark 4",
+    "Place a pan over a medium heat and add the grated carrot and salt. Cook until the liquid given off from the carrot evaporates",
+    "Add the stock and reduce until dry. Remove the pan from the heat and set aside",
+    "Place a separate pan over a low-medium heat and add oil. Once the oil is hot, sweat the onions until soft but not coloured",
+    "Add the chopped onion to the carrot mixture along with the cheese, coriander and egg. Mix well to combine and season with pepper",
+    "Place the mixture in a small deep baking dish lined with parchment paper. Smooth over and place in the oven for 15 minutes",
+    "Remove from the oven and allow to cool for 5 minutes. Serve warm"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

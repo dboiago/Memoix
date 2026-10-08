@@ -1,0 +1,69 @@
+{
+  "url": "https://www.chinasichuanfood.com/chicken-fried-rice/",
+  "slug": "chicken-fried-rice_chinasichuanfood_89c62b99",
+  "title": "Chicken Fried Rice",
+  "byline": "",
+  "fetchedAt": "2026-08-01T18:17:04.374Z",
+  "ldName": "Chicken Fried Rice",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "staple food",
+  "ldKeywords": "chicken, Fried Rice",
+  "ldIngredientsRaw": [
+    "2  small bowls of leftover rice",
+    "1/2 pound boneless chicken chests ( , or 2 chicken thighs)",
+    "1  small fresh cucumber chopped",
+    "1 tablespoon cooking oil",
+    "Half of a middle size carrot chopped",
+    "1 teaspoon salt",
+    "1 teaspoon black pepper powder",
+    "1 teaspoon light soy sauce",
+    "1 teaspoon chopped spring onion for garnish",
+    "1 teaspoon salt",
+    "1 teaspoon corn starch",
+    "1 teaspoon cooking wine"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the chicken meat into cubes around 2cm and marinade with the sauce for at least 10 minutes.",
+    "Heat up cooking oil in pan. Put chicken cubs in to stir fry until the surface becomes slightly white.",
+    "Add cucumber and carrot in and continue to stir fry for 2 minutes or until soft.",
+    "Put leftover rice in. Add sale, light soy sauce and black pepper powder in and mix evenly.",
+    "Garnish some chopped spring onion and serve hot!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "591 kcal",
+    "carbohydrateContent": "85 g",
+    "proteinContent": "18 g",
+    "fatContent": "18 g",
+    "saturatedFatContent": "3 g",
+    "cholesterolContent": "60 mg",
+    "sodiumContent": "2574 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 small bowls of leftover rice",
+    "1/2 pound boneless chicken chests  , or 2 chicken thighs",
+    "1 small fresh cucumber chopped",
+    "1 tablespoon cooking oil",
+    "Half of a middle size carrot chopped",
+    "1 teaspoon salt",
+    "1 teaspoon black pepper powder",
+    "1 teaspoon light soy sauce",
+    "1 teaspoon chopped spring onion for garnish",
+    "[Marinade sauce]",
+    "1 teaspoon salt",
+    "1 teaspoon corn starch",
+    "1 teaspoon cooking wine"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

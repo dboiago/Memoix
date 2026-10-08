@@ -1,0 +1,37 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/blackberry-mary-cocktail-recipe",
+  "slug": "blackberry-mary-cocktail-recipe_greatbritishchefs_72ef81f4",
+  "title": "Blackberry Mary Cocktail Recipe",
+  "byline": "by Anna Hansen",
+  "fetchedAt": "2026-08-03T14:58:21.108Z",
+  "ldName": "Blackberry Mary",
+  "ldTime": "PT5M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Cocktail",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "6 fresh blackberries",
+    "12.5ml of lime juice",
+    "12.5ml of lemon juice",
+    "1/2 red chilli, sliced thinly",
+    "50ml of vodka, preferably Ketel",
+    "100ml of tomato juice",
+    "1 dash of Worcestershire sauce",
+    "salt, to rim the glasses",
+    "1 slice of cucumber, to garnish"
+  ],
+  "ldInstructionsRaw": [
+    "Add 5 of the blackberries (reserving 1 to garnish), the lime juice, lemon juice and sliced chilli to a cocktail shaker and muddle together (this should be quite aggressive to break down the berries)",
+    "Add the vodka, tomato juice and a dash of Worcestershire sauce and shake to combine",
+    "Dampen the edge of a tumbler or whisky glass and dip in salt to create a rim",
+    "Strain the cocktail mix through a sieve into the glass and garnish with a slice of cucumber and the reserved blackberry"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

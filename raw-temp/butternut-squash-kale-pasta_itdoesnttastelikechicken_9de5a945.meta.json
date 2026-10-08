@@ -1,0 +1,69 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/butternut-squash-kale-pasta/",
+  "slug": "butternut-squash-kale-pasta_itdoesnttastelikechicken_9de5a945",
+  "title": "Butternut Squash & Kale Pasta",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T18:19:53.774Z",
+  "ldName": "Roasted Butternut Squash &amp; Kale Pasta",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "4",
+    "4 as a side dish"
+  ],
+  "ldCuisine": "Italian",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "Italian, pasta, vegan",
+  "ldIngredientsRaw": [
+    "1  small butternut squash (, peeled and cut into cubes (around 4 1/2 cups))",
+    "1 tablespoon olive oil",
+    "1/4 teaspoon salt",
+    "2  packages Tofu Shirataki Spaghetti Shape (8 oz, 226g)",
+    "1 tablespoon olive oil",
+    "1/2  of a red onion (, sliced (you can use other onions, but red is pretty))",
+    "2 cloves garlic (, minced)",
+    "1/2  a bunch of kale (, destemmed and roughly chopped)",
+    "1 tablespoon balsamic vinegar",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "parmegan (for garnish)"
+  ],
+  "ldInstructionsRaw": [
+    "To roast the butternut squash: Preheat your oven to 425F (220C). Spread the squash cubes on a large baking sheet, drizzle the oil, and sprinkle with salt. Toss to coat. Bake for 20 to 25 minutes, flipping halfway through&nbsp;until squash pieces are golden and fork tender.",
+    "To make the pasta: Cook the spaghetti noodles according to package directions until al dente.",
+    "In a large skillet or frying pan, heat the olive oil and sauté the onions and garlic until the onions have softened. Add the kale and balsamic vinegar, and cook a couple minutes more until the kale is wilted.",
+    "Toss in the roasted butternut squash and the cooked spaghetti and toss to combine. Sprinkle with Parmegan to taste."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "196 kcal",
+    "servingSize": "1 serving (recipe makes 4 servings)",
+    "carbohydrateContent": "29 g",
+    "proteinContent": "4 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "464 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "[butternut squash]",
+    "▢ 1 small butternut squash, , peeled and cut into cubes (around 4 ½ cups)",
+    "▢ 1 tablespoon olive oil",
+    "▢ ¼ teaspoon salt",
+    "[pasta]",
+    "▢ 2 packages Tofu Shirataki Spaghetti Shape (8 oz, 226g)",
+    "▢ 1 tablespoon olive oil",
+    "▢ ½ of a red onion, , sliced (you can use other onions, but red is pretty)",
+    "▢ 2 cloves garlic, , minced",
+    "▢ ½ a bunch of kale, , destemmed and roughly chopped",
+    "▢ 1 tablespoon balsamic vinegar",
+    "▢ ½ teaspoon salt",
+    "▢ ¼ teaspoon black pepper",
+    "▢ parmegan, for garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

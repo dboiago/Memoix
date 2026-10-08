@@ -1,0 +1,4 @@
+Tim Anderson says: “Nabeyaki udon is udon cooked and served in a small hotpot (a nabe), with a wide variety of toppings and regional variations. Because the noodles, broth and toppings are all cooked together in the same vessel, it’s one of the easiest Japanese noodle dishes to prepare, as well as one of the most warming and satisfying. Even more so if you combine it with cheesy curry, because cheesy curry makes everything better.
+
+**Note**  
+This recipe gives instructions to cook two servings together in one pot, but it’s much better if you can make each portion in its own smaller pot (and this way everybody gets their own egg!). So, if you happen to have two smaller nabe or casserole (about 20cm in diameter, 700ml capacity each), then divide the ingredients between them and cook them separately."

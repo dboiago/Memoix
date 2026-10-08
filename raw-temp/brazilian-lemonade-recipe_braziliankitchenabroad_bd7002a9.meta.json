@@ -1,0 +1,54 @@
+{
+  "url": "https://braziliankitchenabroad.com/brazilian-lemonade/",
+  "slug": "brazilian-lemonade-recipe_braziliankitchenabroad_bd7002a9",
+  "title": "Brazilian Lemonade Recipe",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-25T19:48:18.815Z",
+  "ldName": "Brazilian Lemonade",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "5",
+    "5 cups"
+  ],
+  "ldCuisine": "Brazilian",
+  "ldCategory": "Drinks",
+  "ldKeywords": "juice, limes",
+  "ldIngredientsRaw": [
+    "5  limes",
+    "1/2 cup sweet condensed milk*",
+    "4 cups water**",
+    "ice"
+  ],
+  "ldInstructionsRaw": [
+    "slice 4 of the limes in 8 parts each and add them to a blender",
+    "add the condensed milk and the water to the blender along with the limes and blend for no more than 15 seconds (the more you blend, the bitterer the limeade will turn out)",
+    "using a fine mesh strainer, strain the juice from the blender into a pitcher filled with ice",
+    "slice the remaining lime in half, and sqeeze into the pitcher for an extra punch of lime flavor",
+    "Stir and serve right away!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "118 kcal",
+    "carbohydrateContent": "24 g",
+    "proteinContent": "3 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "10 mg",
+    "sodiumContent": "50 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "18 g",
+    "unsaturatedFatContent": "1.1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "5 limes",
+    "1/2 cup sweet condensed milk*",
+    "4 cups water**",
+    "ice"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

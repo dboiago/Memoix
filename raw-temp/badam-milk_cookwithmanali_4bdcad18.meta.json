@@ -1,0 +1,61 @@
+{
+  "url": "https://www.cookwithmanali.com/badam-milk/",
+  "slug": "badam-milk_cookwithmanali_4bdcad18",
+  "title": "Badam Milk",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-01T21:42:11.753Z",
+  "ldName": "Badam Milk",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Drink",
+  "ldKeywords": "badam milk",
+  "ldIngredientsRaw": [
+    "35  almonds (40 grams)",
+    "1 liter  whole milk",
+    "generous pinch saffron (dissolved in 1 tablespoon milk)",
+    "4-6 tablespoons granulated white sugar  (50-75 grams, or to taste)",
+    "5-6  green cardamom pods (seeds removed &amp; crushed using a mortar and pestle)",
+    "1/2 teaspoon rose water (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Soak almond in hot water for 20 minutes. After 20 minutes, discard the water and then remove the skin from each almond. It will come off easily.",
+    "Transfer blanched almonds with ¼ cup milk to a blender. Blend to a smooth paste. Set it aside.",
+    "Now transfer the remaining milk to a pan and put in on medium-high heat.",
+    "As the milk warms up, take out 1 tablespoon of the warm milk from the pan into a small bowl and add crushed saffron strands to it. Set aside.",
+    "Once the milk in the pan comes to a boil, add the prepared almond paste to it. Stir to combine.",
+    "Lower the heat to low medium and let the milk simmer for 15 to 20 minutes. Stir often so that milk doesn’t get stuck to the bottom of the pan. The raw smell of almonds should disappear completely.",
+    "Add in the saffron milk that you had set aside.",
+    "Then add the sugar and stir until it’s dissolved.",
+    "Finally add in the crushed cardamom seeds. You may also add rose water (if using) at this point. Mix everything together and turn off the heat.",
+    "Serve badam milk hot or cold. I personally love it chilled."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "257 kcal",
+    "carbohydrateContent": "27 g",
+    "proteinContent": "10 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "5 g",
+    "cholesterolContent": "25 mg",
+    "sodiumContent": "108 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "24 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 35 almonds, 40 grams",
+    "▢ 1 liter  whole milk",
+    "▢ generous pinch saffron, dissolved in 1 tablespoon milk",
+    "▢ 4-6 tablespoons granulated white sugar , 50-75 grams, or to taste",
+    "▢ 5-6 green cardamom pods, seeds removed & crushed using a mortar and pestle",
+    "▢ 1/2 teaspoon rose water, optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,53 @@
+{
+  "url": "https://japan.recipetineats.com/asparagus-and-prawns-with-egg-yolk-and-vinegar-dressing-kimizu/",
+  "slug": "asparagus-and-prawns-with-egg-yolk-and-vinegar-dre_japan_0794af67",
+  "title": "Asparagus and Prawns with Egg Yolk and Vinegar Dressing (Kimizu)",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-02T04:16:15.229Z",
+  "ldName": "Asparagus and Prawns with Egg Yolk and Vinegar Dressing (Kimizu)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Appetiser, Side",
+  "ldKeywords": "Japanese dressing, Japanese mayonnaise recipe, Japanese sauce, Oil-free dressing",
+  "ldIngredientsRaw": [
+    "4  stalks asparagus",
+    "4  raw prawns ((medium size, note 1))",
+    "1 tbsp cooking sake",
+    "2 tbsp water",
+    "1  egg yolk ((note 2))",
+    "1 tbsp rice wine vinegar ((note 3))",
+    "1 tbsp mirin",
+    "½ tbsp dashi stock ((note 4))",
+    "1 tsp sugar",
+    "¼ tsp salt",
+    "¼ tsp light soy sauce ((optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare Asparagus and Prawns",
+    "Making Kimizu",
+    "Serving"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "4\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tstalks asparagus",
+    "4\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\traw prawns\n\t\t\t\t\t\t\t\t\t\t(medium size, note 1)",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tcooking sake",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\twater",
+    "[Kimizu (Egg Yolk and Vinegar Dressing)]",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tegg yolk\n\t\t\t\t\t\t\t\t\t\t(note 2)",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\trice wine vinegar\n\t\t\t\t\t\t\t\t\t\t(note 3)",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tmirin",
+    "½\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tdashi stock\n\t\t\t\t\t\t\t\t\t\t(note 4)",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\tsugar",
+    "¼\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\tsalt",
+    "¼\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\tlight soy sauce\n\t\t\t\t\t\t\t\t\t\t(optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

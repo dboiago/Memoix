@@ -1,0 +1,71 @@
+{
+  "url": "https://www.chinasichuanfood.com/beef-with-scrambled-egg/",
+  "slug": "beef-with-scrambled-egg_chinasichuanfood_b3297372",
+  "title": "Beef with Scrambled Egg",
+  "byline": "",
+  "fetchedAt": "2026-08-02T06:15:09.489Z",
+  "ldName": "Beef and Scrambled Egg",
+  "ldTime": "PT1M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT1M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Cantonese cuisine",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Beef, egg",
+  "ldIngredientsRaw": [
+    "100g  beef",
+    "3  large eggs",
+    "coriander stem (, chopped)",
+    "3 tbsp. vegetable cooking oil (, divided )",
+    "white pepper",
+    "1/4 tsp. salt",
+    "1 tbsp. shaoxing wine",
+    "2 tsp. cornstarch",
+    "1/2 tbsp. light soy sauce",
+    "1/4 tsp. ground black pepper",
+    "1/2 tbsp. light soy sauce",
+    "1/2 tbsp. Chinese shaoxing cooking wine",
+    "1/8 tsp. salt"
+  ],
+  "ldInstructionsRaw": [
+    "Cut beef into slices and add salt, light soy sauce and cooking wine. Mix until the beef absorb all of the seasonings.Add starch and anther 2 teaspoon of water. Mix well and set aside for 15 minutes. Mix in 1 tablespoon of oil before stir frying.",
+    "Add around 2 tablespoon of cooking oil in wok, use medium fire and spread the beef slices in and cook until the color changed.",
+    "Pour the egg liquid in. Count for 2 seconds, move the egg and then another 2 seconds. Repeat until 8-10 seconds past. Transfer out immediately.",
+    "Sprinkle some chopped coriander stem and black pepper. Serve immediately!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "447 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "18 g",
+    "fatContent": "38 g",
+    "saturatedFatContent": "24 g",
+    "cholesterolContent": "281 mg",
+    "sodiumContent": "899 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "100g beef",
+    "3 large eggs",
+    "coriander stem , chopped",
+    "3 tbsp. vegetable cooking oil , divided",
+    "[Beef marinating]",
+    "white pepper",
+    "1/4 tsp. salt",
+    "1 tbsp. shaoxing wine",
+    "2 tsp. cornstarch",
+    "1/2 tbsp. light soy sauce",
+    "[Egg whisking]",
+    "1/4 tsp. ground black pepper",
+    "1/2 tbsp. light soy sauce",
+    "1/2 tbsp. Chinese shaoxing cooking wine",
+    "1/8 tsp. salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

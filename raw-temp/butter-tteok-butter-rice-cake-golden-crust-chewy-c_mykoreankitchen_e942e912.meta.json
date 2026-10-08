@@ -1,0 +1,70 @@
+{
+  "url": "https://mykoreankitchen.com/butter-tteok/",
+  "slug": "butter-tteok-butter-rice-cake-golden-crust-chewy-c_mykoreankitchen_e942e912",
+  "title": "Butter Tteok (Butter Rice Cake) - Golden Crust, Chewy Center",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-02T03:32:06.958Z",
+  "ldName": "Butter Tteok (Butter Rice Cake) - Golden Crust, Chewy Center",
+  "ldTime": "PT65M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "12"
+  ],
+  "ldCuisine": "Asian",
+  "ldCategory": "Snacks",
+  "ldKeywords": "Butter Mochi, Butter Tteok",
+  "ldIngredientsRaw": [
+    "120 g salted butter ((4.2 oz))",
+    "200 ml milk ((6.8 fl oz))",
+    "200 g glutinous rice flour ((7 oz), (about 1 1/2 cups + 2 Tbsp))",
+    "50 g tapioca flour ((1.8 oz), (about 5 Tbsp))",
+    "95 g granulated sugar ((3.4 oz), (about 6.5 Tbsp))",
+    "1/4 tsp fine salt",
+    "40 g sweetened condensed milk ((1.4 oz), (2 Tbsp))",
+    "1  egg",
+    "1/2 tsp vanilla extract",
+    "25 g salted butter ((0.7 oz), softened)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven - Preheat the oven to 170°C (340°F) if using a fan-forced oven, or 190°C (375°F) if using a conventional oven.",
+    "Warm the butter and milk - Add the butter and milk to a small saucepan. Warm over low heat, stirring occasionally, until the butter has melted and the mixture is well combined. Remove from the heat and let it cool until just warm to the touch.",
+    "Mix the dry ingredients - In a bowl, whisk together the glutinous rice flour, tapioca flour, sugar, and salt.",
+    "Mix the wet ingredients - In a large measuring cup or bowl, whisk together the warm milk mixture, sweetened condensed milk, egg, and vanilla extract until smooth.",
+    "Make the batter - Pour the wet mixture into the dry ingredients and whisk until smooth. The batter should be pourable and slightly thick, but not watery.",
+    "Prepare the pan - Generously grease each mini loaf cavity with the softened butter, making sure to coat the bottom and sides.",
+    "Fill the pan - Divide the batter evenly among the prepared cavities, filling each about three-quarters full. Tap the pan gently on the counter a few times to release any large air bubbles.",
+    "Bake - Bake for 35 minutes, or until the tops are golden brown and the edges are lightly crisp.",
+    "Cool - Let the cakes cool in the pan for 2 to 3 minutes, then carefully transfer them to a wire rack to cool for 15 to 20 minutes. They will continue to firm up as they cool and develop their signature chewy, buttery texture."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "219 kcal",
+    "carbohydrateContent": "28 g",
+    "proteinContent": "2 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "7 g",
+    "transFatContent": "0.4 g",
+    "cholesterolContent": "43 mg",
+    "sodiumContent": "142 mg",
+    "fiberContent": "0.4 g",
+    "sugarContent": "11 g",
+    "unsaturatedFatContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 120 g salted butter (4.2 oz)",
+    "▢ 200 ml milk (6.8 fl oz)",
+    "▢ 200 g glutinous rice flour (7 oz), (about 1 1/2 cups + 2 Tbsp)",
+    "▢ 50 g tapioca flour (1.8 oz), (about 5 Tbsp)",
+    "▢ 95 g granulated sugar (3.4 oz), (about 6.5 Tbsp)",
+    "▢ 1/4 tsp fine salt",
+    "▢ 40 g sweetened condensed milk (1.4 oz), (2 Tbsp)",
+    "▢ 1 egg",
+    "▢ 1/2 tsp vanilla extract",
+    "▢ 25 g salted butter (0.7 oz), softened"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

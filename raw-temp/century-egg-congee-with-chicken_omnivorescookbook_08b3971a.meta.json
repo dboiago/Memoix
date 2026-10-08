@@ -1,0 +1,55 @@
+{
+  "url": "https://omnivorescookbook.com/century-egg-congee/",
+  "slug": "century-egg-congee-with-chicken_omnivorescookbook_08b3971a",
+  "title": "Century Egg Congee with Chicken (皮蛋瘦肉粥)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T03:17:15.197Z",
+  "ldName": "Century Egg Congee with Chicken (皮蛋瘦肉粥)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main, Side",
+  "ldKeywords": "homestyle, instant pot",
+  "ldIngredientsRaw": [
+    "1/2 cup (120 ml) uncooked short grain white rice ((or medium grain))",
+    "4 cups chicken broth ((*Footnote 1))",
+    "2 (about 10 oz. / 300 g) chicken thighs (, frozen cuts work, too, if using Instant Pot )",
+    "1 tablespoon Shaoxing wine ((or dry sherry))",
+    "2 teaspoons ginger (, finely minced)",
+    "2  century eggs (, diced)",
+    "2  green onions (, thinly sliced)",
+    "1/4 teaspoon salt (, or to taste)",
+    "1 teaspoon toasted sesame oil",
+    "Fried wonton wrapper (, for topping (*Footnote 2) (Optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Add the rice into a medium-sized bowl and water to cover. Gently rinse the rice a few times with your fingers and drain. Repeat one to two more times. Drain well.",
+    "Method 1 - Use an Instant Pot",
+    "Method 2 - Stovetop method",
+    "To serve"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1/2 cup (120 ml) uncooked short grain white rice (or medium grain)",
+    "4 cups chicken broth (*Footnote 1)",
+    "2 (about 10 oz. / 300 g) chicken thighs , frozen cuts work, too, if using Instant Pot",
+    "1 tablespoon Shaoxing wine (or dry sherry)",
+    "2 teaspoons ginger , finely minced",
+    "2 century eggs , diced",
+    "2 green onions , thinly sliced",
+    "1/4 teaspoon salt , or to taste",
+    "1 teaspoon toasted sesame oil",
+    "Fried wonton wrapper , for topping (*Footnote 2) (Optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

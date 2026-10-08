@@ -1,0 +1,51 @@
+{
+  "url": "https://www.chinasichuanfood.com/broccoli-stir-fry-with-garlic/",
+  "slug": "broccoli-stir-fry-with-garlic_chinasichuanfood_625eed60",
+  "title": "Broccoli Stir Fry with Garlic",
+  "byline": "",
+  "fetchedAt": "2026-08-01T18:32:00.541Z",
+  "ldName": "Garlic Broccoli Stir Fry",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "Broccoli, stir fry",
+  "ldIngredientsRaw": [
+    "1  middle size broccoli crown only ( , cut into small pieces)",
+    "1  small section of carrots ( , cut into thin slices)",
+    "2 teaspoons cooking oil",
+    "2 teaspoons salt",
+    "4  garlic cloves finely chopped"
+  ],
+  "ldInstructionsRaw": [
+    "Cut broccoli crown into small pieces",
+    "Add 3 cups of water I pot or wok with 1 teaspoon of salt and several drops of oil. Bring the water to a boiling and then add broccoli and carrot slices to cook for around 2 minutes. Transfer out and drain.",
+    "Heat up other cooking oil in wok; add chopped garlic in to stir fry until aroma.",
+    "Add broccoli and carrot slices; add salt,mix well and serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "100 kcal",
+    "carbohydrateContent": "13 g",
+    "proteinContent": "3 g",
+    "fatContent": "4 g",
+    "sodiumContent": "2387 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 middle size broccoli crown only  , cut into small pieces",
+    "1 small section of carrots  , cut into thin slices",
+    "2 teaspoons cooking oil",
+    "2 teaspoons salt",
+    "4 garlic cloves finely chopped"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

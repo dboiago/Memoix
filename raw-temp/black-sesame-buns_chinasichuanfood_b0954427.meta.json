@@ -1,0 +1,71 @@
+{
+  "url": "https://www.chinasichuanfood.com/black-sesame-buns/",
+  "slug": "black-sesame-buns_chinasichuanfood_b0954427",
+  "title": "Black Sesame Buns",
+  "byline": "",
+  "fetchedAt": "2026-08-02T06:27:30.361Z",
+  "ldName": "Black Sesame Buns",
+  "ldTime": "PT155M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese cuisine",
+  "ldCategory": "staple food",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "3/4 cup toasted black sesame seeds",
+    "1/4 cup toasted peanuts",
+    "1/3 cup melted lard or butter",
+    "1/4 cup sugar",
+    "pinch of salt",
+    "2 tbsp. water",
+    "300 g All-purpose flour",
+    "155 ml water (, chilled cold water in summer, warm water in winter and room temperature water in other days. )",
+    "3 g instant yeast",
+    "2 tbsp. sugar",
+    "1 tbsp. vegetable cooking oil",
+    "pinch of salt",
+    "flour for dusting"
+  ],
+  "ldInstructionsRaw": [
+    "Filling",
+    "Dough",
+    "Assembling",
+    "Steaming"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "610 kcal",
+    "carbohydrateContent": "86 g",
+    "proteinContent": "16 g",
+    "fatContent": "24 g",
+    "saturatedFatContent": "6 g",
+    "cholesterolContent": "2 mg",
+    "sodiumContent": "30 mg",
+    "fiberContent": "6 g",
+    "sugarContent": "21 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Filling]",
+    "3/4 cup toasted black sesame seeds",
+    "1/4 cup toasted peanuts",
+    "1/3 cup melted lard or butter",
+    "1/4 cup sugar",
+    "pinch of salt",
+    "2 tbsp. water",
+    "[Dough]",
+    "300 g All-purpose flour",
+    "155 ml water , chilled cold water in summer, warm water in winter and room temperature water in other days.",
+    "3 g instant yeast",
+    "2 tbsp. sugar",
+    "1 tbsp. vegetable cooking oil",
+    "pinch of salt",
+    "flour for dusting"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

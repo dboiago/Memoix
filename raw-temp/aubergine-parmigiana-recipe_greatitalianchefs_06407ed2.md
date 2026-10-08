@@ -1,0 +1,5 @@
+Aubergine parmigiana is one of the most iconic Italian dishes. It is made with fried aubergine slices, layered with tomato sauce, mozzarella and Parmigiano Reggiano. The dish is then baked till golden brown. I assure you there is nothing better than cutting through layers of delicious aubergine and seeing the mozzarella stretching out of it.
+
+The origins of the dish are uncertain: both Sicily and Campania claim to have created it, and there is likely to be truth in both of these claims, though it is more plausible to think that the dish was first born in [Sicily](https://www.greatitalianchefs.com/features/sicily-north-african-influence), where the Arabs introduced aubergines for the first time. Only later it was modified in Naples where mozzarella was added to it.
+
+This is one of my favourite dishes: comfort food at its best. Aubergine parmigiana is a great appetiser or side dish. It also works really well for lunch, especially if served with a green salad. Buon appetito!

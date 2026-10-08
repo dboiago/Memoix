@@ -1,0 +1,65 @@
+{
+  "url": "https://www.baking-sense.com/2018/07/03/ice-cream-cones/",
+  "slug": "an-ice-cream-cone-recipe-baking-sense_baking-sense_ba22a140",
+  "title": "An Ice Cream Cone Recipe - Baking Sense® %",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T21:45:23.479Z",
+  "ldName": "Ice Cream Cone Recipe",
+  "ldTime": "PT130M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT90M",
+  "ldYield": [
+    "16",
+    "16 cones"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "ice cream, summer dessert",
+  "ldIngredientsRaw": [
+    "4 oz brown sugar (½ cup)",
+    "4 oz granulated sugar (½ cup)",
+    "2  large eggs",
+    "1/8 teaspoon table salt",
+    "4 oz whole milk (½ cup)",
+    "2 oz unsalted butter (¼ cup, melted)",
+    "1 tablespoon vanilla extract",
+    "5 oz all purpose flour (1 cup, see note)"
+  ],
+  "ldInstructionsRaw": [
+    "In a large bowl, whisk together4 oz&#32;brown sugar, 4 oz&#32;granulated sugar, 2&#32;large eggs, 1/8 teaspoon&#32;table salt, 4 oz&#32;whole milk, 2 oz&#32;unsalted butter 1 tablespoon&#32;vanilla extract.",
+    "Whisk in 5 oz&#32;all purpose flour until combined. The batter will look like pancake batter.",
+    "Set aside the batter for 30 minutes or refrigerate overnight. Return the batter to room temperature before making the cookies.",
+    "If you have a waffle cone iron preheat that. If you don&#39;t have a special iron, line 2 baking sheets with parchment paper or a silicone baking mat and preheat the oven to 350 °F.",
+    "If using the waffle iron bake the cookies according to the directions for your model. Remove the cookie from the iron and set it on a work surface. Pour another cookie and while that bakes, wrap the first cookie into a cone shape. Continue working with two cookies at a time. While one is baking, form the other into a cone. As the cones cool continue tweaking the shape until they are set.",
+    "If baking the cones in the oven, work with 2 cookies at a time on each baking sheet. For each cookie, spread two tablespoons batter to a 5-6\" circle. Bake one sheet of cookies until golden brown, about 7-8 minutes. While the first set of cookies is baking, spread the cookies onto the other sheet. Remove the first sheet from the oven and put in the second sheet. While the second sheet is baking form the cones from the first sheet. Continue working with the sets of cookies until all the batter is used up. (see note)",
+    "Cool completely. Store at room temperature in a tightly covered container."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 each",
+    "calories": "126 kcal",
+    "carbohydrateContent": "21 g",
+    "proteinContent": "2 g",
+    "fatContent": "4 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "29 mg",
+    "sodiumContent": "31 mg",
+    "sugarContent": "14 g",
+    "transFatContent": "0.1 g",
+    "fiberContent": "0.2 g",
+    "unsaturatedFatContent": "1.3 g"
+  },
+  "htmlIngredientLines": [
+    "4 oz brown sugar (½ cup)",
+    "4 oz granulated sugar (½ cup)",
+    "2 large eggs",
+    "1/8 teaspoon table salt",
+    "4 oz whole milk (½ cup)",
+    "2 oz unsalted butter (¼ cup, melted)",
+    "1 tablespoon vanilla extract",
+    "5 oz all purpose flour (1 cup, see note)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

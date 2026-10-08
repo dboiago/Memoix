@@ -1,0 +1,68 @@
+{
+  "url": "https://muybuenoblog.com/chile-verde-con-carne-y-papas/",
+  "slug": "chile-verde-con-carne-y-papas-green-chile-with-bee_muybuenoblog_10470022",
+  "title": "Chile Verde con Carne y Papas (Green Chile with Beef and Potatoes)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T09:37:56.691Z",
+  "ldName": "Chile Verde con Carne y Papas (Green Chile with Beef and Potatoes)",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "6",
+    "6 servings"
+  ],
+  "ldCuisine": "Mexican, Tex-Mex",
+  "ldCategory": "Main Course",
+  "ldKeywords": "beef chile recipe, beef chile verde, carne con chile, chile verde con papas, green chile recipe, green chile with potatoes, Mexican beef stew, Mexican chile recipe",
+  "ldIngredientsRaw": [
+    "1 tablespoon canola oil or shortening",
+    "2 1/4 pounds stew beef (diced)",
+    "3  medium russet potatoes (diced)",
+    "1 1/4 teaspoons salt (divided, plus more to taste)",
+    "5  cloves garlic (divided (3 minced, 2 chopped or use a pinch of garlic powder))",
+    "1 1/2 tablespoons all-purpose flour",
+    "4  roasted green chile peppers ((Anaheim or Hatch), peeled and stems removed)",
+    "1  roasted jalapeño pepper ((optional))",
+    "3/4 cup canned whole tomatoes",
+    "2 tablespoons tomato sauce ((optional))",
+    "2 1/2 cups  water"
+  ],
+  "ldInstructionsRaw": [
+    "In a blender, combine green chiles, jalapeño, 1/4 teaspoon salt, 2 chopped garlic cloves (or a pinch of garlic powder), tomatoes, and tomato sauce. Pulse until chunky. Set aside.",
+    "In a large skillet, heat oil. Add beef, potatoes, and 1 teaspoon salt. Cover and cook for 10 minutes.",
+    "Add 3 minced garlic cloves and cook 2 more minutes. Stir in flour and cook 2 minutes more.",
+    "Pour in the chile-tomato blend and water. Bring to a boil. Simmer uncovered for 5–10 minutes until potatoes are tender and sauce has thickened."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "368 kcal",
+    "sugarContent": "3 g",
+    "sodiumContent": "750 mg",
+    "fatContent": "11 g",
+    "saturatedFatContent": "3 g",
+    "carbohydrateContent": "25 g",
+    "fiberContent": "3 g",
+    "proteinContent": "41 g",
+    "cholesterolContent": "105 mg",
+    "transFatContent": "0.01 g",
+    "unsaturatedFatContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 tablespoon canola oil or shortening",
+    "▢ 2 1/4 pounds stew beef, diced",
+    "▢ 3 medium russet potatoes, diced",
+    "▢ 1 1/4 teaspoons salt, divided, plus more to taste",
+    "▢ 5 cloves garlic, divided (3 minced, 2 chopped or use a pinch of garlic powder)",
+    "▢ 1 1/2 tablespoons all-purpose flour",
+    "▢ 4 roasted green chile peppers, (Anaheim or Hatch), peeled and stems removed",
+    "▢ 1 roasted jalapeño pepper, (optional)",
+    "▢ 3/4 cup canned whole tomatoes",
+    "▢ 2 tablespoons tomato sauce, (optional)",
+    "▢ 2 1/2 cups  water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

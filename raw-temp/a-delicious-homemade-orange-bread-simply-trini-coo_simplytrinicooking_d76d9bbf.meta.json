@@ -1,0 +1,51 @@
+{
+  "url": "https://www.simplytrinicooking.com/orange-bread/",
+  "slug": "a-delicious-homemade-orange-bread-simply-trini-coo_simplytrinicooking_d76d9bbf",
+  "title": "A Delicious Homemade Orange Bread | Simply Trini Cooking",
+  "byline": "Author Felix",
+  "fetchedAt": "2026-09-25T22:52:50.599Z",
+  "ldName": "Orange Bread",
+  "ldTime": "PT120M",
+  "ldPrepTime": "PT90M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "2",
+    "2 loaves"
+  ],
+  "ldCuisine": "Fusion",
+  "ldCategory": "Breads",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "5 cups all purpose flour (divided)",
+    "1 1/2 tbsp. yeast",
+    "3 tbsp. white sugar",
+    "1 cup orange juice (from concentrate)",
+    "1 cup warm water",
+    "1  egg yolk (beaten)",
+    "2 tbsp. melted butter",
+    "1 tsp. grated orange rind",
+    "1 tsp salt"
+  ],
+  "ldInstructionsRaw": [
+    "Blend the juice, water, sugar, egg, butter, and orange rind.",
+    "Combine the 4 cups of flour and yeast. Then sift the flour at yeast twice.",
+    "Add 2 cups of the flour into the liquid mixture and beat well. Then knead in the next 2 cups of flour. (Note: As much as 1 cup of flour would have to be added to help make a smooth dough. That makes 5 cups in total).",
+    "Divide the dough into two and place into 2 (9\" or 23 cm) greased baking pans or dishes.Allow to rest until it doubles in size (about 1 hour)",
+    "Brush with melted butter. Bake for about 40 minutes at 350 degrees F or until golden and firm. Then remove from oven and cool before serving."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "5 cups all purpose flour divided",
+    "1 1/2 tbsp. yeast",
+    "3 tbsp. white sugar",
+    "1 cup orange juice from concentrate",
+    "1 cup warm water",
+    "1 egg yolk beaten",
+    "2 tbsp. melted butter",
+    "1 tsp. grated orange rind",
+    "1 tsp salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

@@ -1,0 +1,62 @@
+{
+  "url": "https://www.chinasichuanfood.com/beef-fried-rice/",
+  "slug": "beef-fried-rice_chinasichuanfood_0adf38db",
+  "title": "Beef Fried Rice",
+  "byline": "",
+  "fetchedAt": "2026-08-02T00:38:34.300Z",
+  "ldName": "Beef Fried Rice",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "staple food",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "4 cups leftover rice",
+    "1/2 cup minced beef (marinated with a small pinch of salt and pepper)",
+    "1/2    cup fresh diced green pepper",
+    "1/2 cup diced fresh red pepper",
+    "3  garlic cloves (sliced )",
+    "2 tbsp. cooking oil",
+    "1 tbsp. light soy sauce (optional)",
+    "Salt to taste",
+    "1/2 tsp. cumin powder"
+  ],
+  "ldInstructionsRaw": [
+    "In a small bowl, marinate beef with pinch of salt and pepper. Set aside for 10 minutes.",
+    "Pour oil in wok and add garlic slices. Fry over slow fire until aromatic. Transfer the garlic slices out.",
+    "Add minced beef in and fry for a while until aromatic.&nbsp;&nbsp;",
+    "Place rice in and mix well.",
+    "Place light soy sauce, fried garlic and chopped peppers in. Give a big stir fry to mix everything well. Add cumin powder and salt accordingly lastly.&nbsp;"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "729 kcal",
+    "carbohydrateContent": "92 g",
+    "proteinContent": "20 g",
+    "fatContent": "30 g",
+    "saturatedFatContent": "6 g",
+    "cholesterolContent": "39 mg",
+    "sodiumContent": "1613 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "4 cups leftover rice",
+    "1/2 cup minced beef marinated with a small pinch of salt and pepper",
+    "1/2   cup fresh diced green pepper",
+    "1/2 cup diced fresh red pepper",
+    "3 garlic cloves sliced",
+    "2 tbsp. cooking oil",
+    "1 tbsp. light soy sauce optional",
+    "Salt to taste",
+    "1/2 tsp. cumin powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

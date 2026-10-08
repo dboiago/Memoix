@@ -1,0 +1,36 @@
+{
+  "url": "https://www.bongeats.com/recipe/amra-chutney",
+  "slug": "amra-r-chutney-recipe-by-bong-eats_bongeats_2a5b3519",
+  "title": "Amra'r Chutney recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T16:44:35.235Z",
+  "ldName": "Amra&#39;r Chutney",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT10M",
+  "ldYield": "15 servings",
+  "ldCuisine": "Indian",
+  "ldCategory": "chutney",
+  "ldKeywords": "amrar chutney, amra recipe, hog plum recipe, biliti amra, deshi amra",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "73"
+  },
+  "htmlIngredientLines": [
+    "360 g biliti amra ('English' hog plum)",
+    "140 g deshi amra (local hog plum)",
+    "20 g vegetable oil",
+    "1 dried red chilli",
+    "½ tsp panch phoron",
+    "8 g salt",
+    "165 g sugar",
+    "1 pinch turmeric",
+    "350 ml water",
+    "½ tsp bhaja moshla"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

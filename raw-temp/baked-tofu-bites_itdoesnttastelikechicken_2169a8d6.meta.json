@@ -1,0 +1,53 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/baked-tofu-bites/",
+  "slug": "baked-tofu-bites_itdoesnttastelikechicken_2169a8d6",
+  "title": "Baked Tofu Bites",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T06:47:32.184Z",
+  "ldName": "Baked Tofu Bites",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "American, Canadian",
+  "ldCategory": "Main Course, Side Dish",
+  "ldKeywords": "baked tofu bites, baked tofu bites recipes, baked tofu nuggets, how to cook tofu, roasted tofu bites",
+  "ldIngredientsRaw": [
+    "1/4 cup nutritional yeast",
+    "2 tablespoons olive oil",
+    "2 tablespoons soy sauce ((gluten-free if preferred))",
+    "1 teaspoon garlic powder",
+    "2 blocks (12 oz/ 350 g each) extra-firm tofu (drained)"
+  ],
+  "ldInstructionsRaw": [
+    "Oven: Preheat your oven to 375°F (190°C). Line 2 large baking sheets with parchment paper.Air-Fryer: Preheat your air fryer to 350°F (180°C).",
+    "Mix the coating: In a large bowl, combine the nutritional yeast, olive oil, soy sauce, and garlic powder.",
+    "Prepare the tofu: Use your fingers to break the tofu into bite-sized chunks and add them to the bowl. (No need to press the tofu first.) Toss well to evenly coat each piece. The mixture will just barely coat the tofu, that’s exactly right. Don’t be tempted to thin it out. It’s not a marinade, but a light coating that clings to the tofu and helps it crisp up perfectly in the oven.",
+    "Cook the tofu (choose ONE method):Oven: Spread the tofu evenly over the baking sheets and bake for about 30 minutes, stirring halfway through, until lightly golden.Air-Fryer: Add the tofu to the air fryer basket and cook for about 20 minutes, shaking halfway through, until lightly golden.",
+    "Serve or store: Enjoy hot, or let cool and store in an airtight container in the fridge for up to 5 days, or freeze for longer storage."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "176 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "15 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "614 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "servingSize": "1  serving (recipe makes 4 servings)"
+  },
+  "htmlIngredientLines": [
+    "▢ ¼ cup nutritional yeast",
+    "▢ 2 tablespoons olive oil",
+    "▢ 2 tablespoons soy sauce, (gluten-free if preferred)",
+    "▢ 1 teaspoon garlic powder",
+    "▢ 2 blocks (12 oz/ 350 g each) extra-firm tofu, drained"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

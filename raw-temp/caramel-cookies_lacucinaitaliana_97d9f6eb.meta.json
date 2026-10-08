@@ -1,0 +1,36 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/caramel-cookies",
+  "slug": "caramel-cookies_lacucinaitaliana_97d9f6eb",
+  "title": "Caramel Cookies",
+  "byline": "by  Editorial staff   July 16, 2019",
+  "fetchedAt": "2026-08-03T01:21:43.855Z",
+  "ldName": "Caramel Cookies",
+  "ldTime": "PT140M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "4C. flour",
+    "3 1/2STICKS butter",
+    "1C. granulated sugar",
+    "1/2C. cane sugar",
+    "1/4C. cream",
+    "2PCS. eggs"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "4 C. of flour",
+    "3 1/2 STICKS of butter",
+    "1 C. of granulated sugar",
+    "1/2 C. of cane sugar",
+    "1/4 C. of cream",
+    "2 PCS. of eggs"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

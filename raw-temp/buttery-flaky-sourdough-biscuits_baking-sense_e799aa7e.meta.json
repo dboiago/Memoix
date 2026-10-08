@@ -1,0 +1,68 @@
+{
+  "url": "https://www.baking-sense.com/2019/09/12/sourdough-biscuits/",
+  "slug": "buttery-flaky-sourdough-biscuits_baking-sense_e799aa7e",
+  "title": "Buttery & Flaky Sourdough Biscuits",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T02:35:18.302Z",
+  "ldName": "Sourdough Biscuit Recipe",
+  "ldTime": "PT32M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT12M",
+  "ldYield": [
+    "12",
+    "12 biscuits"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breads, Breakfast, brunch",
+  "ldKeywords": "buttermilk, sourdough",
+  "ldIngredientsRaw": [
+    "10 oz all purpose flour (2 cups, see note)",
+    "8 oz cake flour (2 cups)",
+    "4 teaspoons baking powder",
+    "1 teaspoon baking soda",
+    "1 tablespoon granulated sugar",
+    "1 teaspoon table salt",
+    "8 oz unsalted butter (cold and cut into 16 pieces)",
+    "8 oz sourdough discard (1 cup, room temperature)",
+    "8 oz buttermilk (1 cup, room temperature)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 400 °F.  Line a half sheet pan with parchment paper.",
+    "Combine 10 oz&#32;all purpose flour, 8 oz&#32;cake flour, 4 teaspoons&#32;baking powder, 1 teaspoon&#32;baking soda, 1 tablespoon&#32;granulated sugar, and 1 teaspoon&#32;table salt in a mixing bowl. Whisk the dry ingredients to combine.",
+    "Mix 8 oz&#32;unsalted butter into the flour with your fingers until it&#39;s broken down into bits slightly larger than a pea.",
+    "Combine 8 oz&#32;sourdough discard and 8 oz&#32;buttermilk in a small bowl. Add the buttermilk mixture to the flour all at once. Mix until about 2/3 of the dry ingredients are absorbed.",
+    "Turn the dough onto a lightly floured surface and gently knead together just to incorporate the remaining dry flour (this should only take about 6-8 kneads).",
+    "Gently pat dough to a 1/2&quot; thick rectangle, brush off excess flour and fold the dough in 1/2. Pat gently to stick the dough together and and fold again. Pat to 3/4 &quot; thick disc and cut with a 2.5&quot;-3&quot; biscuit cutter. Gather the scraps together, pat to 3/4&quot; thick and continue cutting until all the dough is used up.",
+    "Set the biscuits onto the prepared baking sheet and brush the tops with buttermilk. Bake the biscuits until well rise and golden brown, about 10-12 minutes.",
+    "If the bottoms of the biscuits are browning too fast set another sheet pan under the biscuits after 5 minutes of baking."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 biscuit",
+    "calories": "323 kcal",
+    "carbohydrateContent": "38 g",
+    "proteinContent": "6 g",
+    "fatContent": "17 g",
+    "saturatedFatContent": "10 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "43 mg",
+    "sodiumContent": "449 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "unsaturatedFatContent": "5 g"
+  },
+  "htmlIngredientLines": [
+    "10 oz all purpose flour (2 cups, see note)",
+    "8 oz cake flour (2 cups)",
+    "4 teaspoons baking powder",
+    "1 teaspoon baking soda",
+    "1 tablespoon granulated sugar",
+    "1 teaspoon table salt",
+    "8 oz unsalted butter (cold and cut into 16 pieces)",
+    "8 oz sourdough discard (1 cup, room temperature)",
+    "8 oz buttermilk (1 cup, room temperature)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

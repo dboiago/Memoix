@@ -1,0 +1,45 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/37360/aegean-sunrise",
+  "slug": "aegean-sunrise-cocktail-recipe_diffordsguide_29ae8cad",
+  "title": "Aegean Sunrise Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T22:45:36.137Z",
+  "ldName": "Aegean Sunrise",
+  "ldTime": "PT04M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Fruity (e.g. Pornstar Martini)",
+    "Long drinks and highballs"
+  ],
+  "ldIngredientsRaw": [
+    "30 ml Greek spirit",
+    "30 ml Coconut liqueur",
+    "30 ml Orange juice",
+    "60 ml Pineapple juice",
+    "15 ml Lime juice",
+    "5 ml Grenadine syrup"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COLLINS GLASS.",
+    "Prepare garnish of skewered orange slice wheel and Luxardo Maraschino Cherry (sail).",
+    "SHAKE first 5 ingredients with ice.",
+    "STRAIN into ice-filled glass.",
+    "Slowly POUR grenadine (which will sink to the bottom of the cocktail).",
+    "Garnish with skewered orange slice wheel and maraschino cherry (sail)."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "187 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

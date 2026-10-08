@@ -1,0 +1,51 @@
+{
+  "url": "https://muybuenoblog.com/baja-style-chipotle-sauce/",
+  "slug": "baja-style-chipotle-sauce_muybuenoblog_58dadedb",
+  "title": "Baja Style Chipotle Sauce",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-01T22:45:37.189Z",
+  "ldName": "Baja Style Chipotle Sauce",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "condiment, sauce",
+  "ldKeywords": "Chipotle Sauce",
+  "ldIngredientsRaw": [
+    "1 cup crema Mexicana or sour cream",
+    "1 to 2  chipotle pepper in adobo sauce",
+    "1 teaspoon grated lemon zest",
+    "4 tablespoons fresh lemon juice",
+    "½ teaspoon kosher salt"
+  ],
+  "ldInstructionsRaw": [
+    "In a food processor or blender, combine crema, chipotle in adobo and sauce, lemon zest and lemon juice, and salt until smooth; transfer to a small bowl.",
+    "If your sauce is too thick, you can add a little water to desired consistency."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "59 kcal",
+    "sugarContent": "1 g",
+    "sodiumContent": "192 mg",
+    "fatContent": "6 g",
+    "saturatedFatContent": "3 g",
+    "carbohydrateContent": "2 g",
+    "fiberContent": "1 g",
+    "proteinContent": "1 g",
+    "cholesterolContent": "15 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup crema Mexicana or sour cream",
+    "▢ 1 to 2 chipotle pepper in adobo sauce, plus 1 tablespoon adobo sauce",
+    "▢ 1 teaspoon grated lemon zest",
+    "▢ 4 tablespoons fresh lemon juice",
+    "▢ ½ teaspoon kosher salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

@@ -1,0 +1,40 @@
+{
+  "url": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/asian-bbq-sauce/",
+  "slug": "asian-style-bbq-sauce_amazingribs_09cafe75",
+  "title": "Asian Style BBQ Sauce",
+  "byline": "Meathead",
+  "fetchedAt": "2026-08-02T10:59:59.425Z",
+  "ldName": "Asian Inspired BBQ Sauce Recipe",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "4",
+    "4 cups (946mL)"
+  ],
+  "ldCuisine": "American, Asian",
+  "ldCategory": "Main Course, Sauces and Condiments, Side Dish",
+  "ldKeywords": "asian barbecue sauce, barbecue sauce, dipping sauce",
+  "ldIngredientsRaw": [
+    "1 cup Stubbs Original BBQ Sauce ((or your favorite store bought sauce))",
+    "2 tablespoons Dijon mustard",
+    "1/4 cup light brown sugar",
+    "1 teaspoon apple cider vinegar",
+    "2 teaspoons Asian chili garlic sauce like Huy Fong or sambal oelek"
+  ],
+  "ldInstructionsRaw": [
+    "Prep. Combine all ingredients in a serving bowl. Refrigerate for at least 1 hour to allow the flavors to meld together.",
+    "Serve. Use as you would any other BBQ sauce."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 cup Stubbs Original BBQ Sauce (or your favorite store bought sauce)",
+    "2 tablespoons Dijon mustard",
+    "1/4 cup light brown sugar",
+    "1 teaspoon apple cider vinegar",
+    "2 teaspoons Asian chili garlic sauce like Huy Fong or sambal oelek"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "US",
+  "siteCourseHint": "Smoking"
+}

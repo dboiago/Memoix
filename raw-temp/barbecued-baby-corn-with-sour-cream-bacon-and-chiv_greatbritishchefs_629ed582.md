@@ -1,0 +1,5 @@
+Joe says: “Corn had a major part to play in my time spent with Dan Barber at Blue Hill at Stone Barns \[a two-starred restaurant outside New York\]. One of the first stories in his book The Third Plate refers to ‘Otto File’ or ‘8-row flint corn’. When I arrived there as a 26-year-old cook in the depths of winter, 8-row polenta was one of the early dishes I had to deal with on my section.
+
+Corn converts sugars into starch each and every day after it has been harvested so the fresher the corn is used after harvest, the sweeter it tastes.
+
+This recipe is based around late summer and a variety of corn called Tramunt – known for its extra sweetness and ability to slowly convert. It’s been a revelation for us to grow corn at Cinderwood, our farm in Cheshire, and is something I wish we had grown sooner. There is a window with corn where the plant grows to a size that still allows you to eat the entire cob whole and also some of the inner silks. This moment allows us to serve the baby corn whole in its jacket, cooked over coals to capture the feeling of a summer barbecue.”

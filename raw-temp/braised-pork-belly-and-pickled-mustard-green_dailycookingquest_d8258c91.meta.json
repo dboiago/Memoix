@@ -1,0 +1,56 @@
+{
+  "url": "https://dailycookingquest.com/braised-pork-belly-and-pickled-mustard-green.html",
+  "slug": "braised-pork-belly-and-pickled-mustard-green_dailycookingquest_d8258c91",
+  "title": "Braised Pork Belly and Pickled Mustard Green",
+  "byline": "",
+  "fetchedAt": "2026-08-02T10:44:23.802Z",
+  "ldName": "Braised Pork Belly and Pickled Mustard Green",
+  "ldTime": "PT0H45M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT0H30M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "Pork",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "500 gram pork belly (Indonesian: daging sam can)",
+    "250 gram pickled mustard green (Indonesian: kiam chai / sayur asin)",
+    "2 tablespoon oil",
+    "6 shallot, peeled and cut into quarters",
+    "2 inch ginger, peeled and bruised",
+    "6 red chilies, cut into thin slices diagonally",
+    "1 tomato, cored and cut into small pieces",
+    "3 cup water",
+    "1 1/2 tablespoon sugar",
+    "1/2 teaspoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "Bring a pot of water to boil and blanch the pork belly for 2 minutes. Drained and cut into 1 cm slices. Set aside.",
+    "Wash the pickled mustard green under cold running water to remove the pickling juice. Drain and cut into small pieces. Heat a frying pan and dry frying the pickled mustard green until dry and wilted. Set aside.",
+    "Heat oil in a wok and sauté shallot and ginger until fragrant, about 2 minutes.",
+    "Add the pork belly and stir for about 3 minutes, until some oil from the pork belly is released and the wok looks oilier.",
+    "Add the chilies, tomatoes and stir for 1 minute. Pour the water and bring to a boil.",
+    "Return the pickled mustard green into the wok and bring to another boil. Reduce heat and simmer for 10 minutes. Season with sugar and salt. Turn off heat and serve with a bowl of white rice or plain porridge."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "500 gram pork belly (Indonesian: daging sam can)",
+    "250 gram pickled mustard green (Indonesian: kiam chai / sayur asin)",
+    "2 tablespoon oil",
+    "6 shallot, peeled and cut into quarters",
+    "2 inch ginger, peeled and bruised",
+    "6 red chilies, cut into thin slices diagonally",
+    "1 tomato, cored and cut into small pieces",
+    "3 cup water",
+    "1 1/2 tablespoon sugar",
+    "1/2 teaspoon salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

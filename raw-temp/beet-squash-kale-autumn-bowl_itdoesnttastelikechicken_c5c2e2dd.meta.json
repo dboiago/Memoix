@@ -1,0 +1,65 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/beet-squash-kale-autumn-bowl/",
+  "slug": "beet-squash-kale-autumn-bowl_itdoesnttastelikechicken_c5c2e2dd",
+  "title": "Beet, Squash & Kale Autumn Bowl",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T18:41:06.742Z",
+  "ldName": "Beet, Squash &amp; Kale Autumn Bowl",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Main Course",
+  "ldKeywords": "beets, bowl, butternut squash",
+  "ldIngredientsRaw": [
+    "4 medium beets (, peeled and chopped (about 2 1/2 Cups))",
+    "1 tablespoon olive oil",
+    "1/4 teaspoon salt",
+    "1/8 teaspoon black pepper",
+    "1  acorn squash (, peeled and cubed)",
+    "1 tablespoon olive oil",
+    "1/4 teaspoon salt",
+    "1/8 teaspoon black pepper",
+    "1  bunch of kale (, de-stemmed and shredded)",
+    "1/2  lemon (, juiced)",
+    "4 cups cooked brown rice, quinoa, or couscous",
+    "1  recipe Maple Mustard Dressing",
+    "1/4 cup sliced almonds"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat your oven to 425F (220C).",
+    "Add the beets ingredients to a bowl and toss to combine, then spread on a baking sheet. Add the squash ingredients to another bowl and toss to combine, and spread on a second baking sheet. (You want to keep the veggies separate or the beets will bleed onto the squash). Roast for 30 to 35 minutes until they are golden and fork tender, stopping halfway through to give them a stir.",
+    "For the kale, add it to a bowl with them lemon, and then use your hands to massage the kale. This helps it break down and get tender. Set it aside for up to 2 hours. The longer it sits the more tender it will get.",
+    "To assemble the bowls, add some of each veggie and some rice to a bowl. Drizzle with the maple mustard dressing to taste, and sprinkle some almond slices on top. Bon Appetegan!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "402 kcal",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[beets]",
+    "▢ 4 medium beets, , peeled and chopped (about 2 ½ Cups)",
+    "▢ 1 tablespoon olive oil",
+    "▢ ¼ teaspoon salt",
+    "▢ ⅛ teaspoon black pepper",
+    "[squash]",
+    "▢ 1 acorn squash, , peeled and cubed",
+    "▢ 1 tablespoon olive oil",
+    "▢ ¼ teaspoon salt",
+    "▢ ⅛ teaspoon black pepper",
+    "[kale]",
+    "▢ 1 bunch of kale, , de-stemmed and shredded",
+    "▢ ½ lemon, , juiced",
+    "[bowls]",
+    "▢ 4 cups cooked brown rice, quinoa, or couscous",
+    "▢ 1 recipe Maple Mustard Dressing",
+    "▢ ¼ cup sliced almonds"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

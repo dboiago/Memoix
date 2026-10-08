@@ -1,0 +1,3 @@
+Cherries and chocolate are the perfect pairing and they complement each other so well in baking. This recipe is no exception, full of delicious British cherries and bursting with flavour, the chocolate torte remains juicy and delicious from the fruit and the dark chocolate cuts right through the sweetness.
+
+When it’s British cherry season, they are so ripe and fresh they are a pleasure to eat and bake with. This torte is perfect to serve at a summer barbecue, as it can be made in advance and served with Chantilly cream or vanilla ice cream.

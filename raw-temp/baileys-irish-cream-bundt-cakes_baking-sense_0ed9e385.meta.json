@@ -1,0 +1,72 @@
+{
+  "url": "https://www.baking-sense.com/2015/03/11/baileys-baby-bundts-with-chocolate-chips/",
+  "slug": "baileys-irish-cream-bundt-cakes_baking-sense_0ed9e385",
+  "title": "Baileys Irish Cream Bundt Cakes",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T22:29:27.131Z",
+  "ldName": "Baileys Bundt Cakes with Chocolate chips",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT45M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "12",
+    "12 cakes"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "bailys, bundt, irish cream",
+  "ldIngredientsRaw": [
+    "6 ounces mini chocolate chips (1 cup)",
+    "4  egg yolks",
+    "6 ounces sour cream (¾ cup, divided)",
+    "2 teaspoons vanilla extract",
+    "8 ounces granulated sugar (1 cup, divided)",
+    "7 ounces cake flour (1 ½ cups, see note)",
+    "½ teaspoon salt",
+    "½ teaspoon baking powder",
+    "¼ teaspoon baking soda",
+    "6 ounces unsalted butter (room temp)",
+    "2  egg whites",
+    "16 oz confectioner sugar (4 cups)",
+    "4 oz Baileys Irish Cream (½ cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Cakes",
+    "Baileys Glaze"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 cake",
+    "calories": "526 kcal",
+    "carbohydrateContent": "79 g",
+    "proteinContent": "5 g",
+    "fatContent": "21 g",
+    "saturatedFatContent": "12 g",
+    "transFatContent": "0.5 g",
+    "cholesterolContent": "106 mg",
+    "sodiumContent": "165 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "65 g",
+    "unsaturatedFatContent": "5 g"
+  },
+  "htmlIngredientLines": [
+    "[Cakes]",
+    "6 ounces mini chocolate chips (1 cup)",
+    "4 egg yolks",
+    "6 ounces sour cream (¾ cup, divided)",
+    "2 teaspoons vanilla extract",
+    "8 ounces granulated sugar (1 cup, divided)",
+    "7 ounces cake flour (1 ½ cups, see note)",
+    "½ teaspoon salt",
+    "½ teaspoon baking powder",
+    "¼ teaspoon baking soda",
+    "6 ounces unsalted butter (room temp)",
+    "2 egg whites",
+    "[Bailey’s Glaze]",
+    "16 oz confectioner sugar (4 cups)",
+    "4 oz Baileys Irish Cream (½ cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

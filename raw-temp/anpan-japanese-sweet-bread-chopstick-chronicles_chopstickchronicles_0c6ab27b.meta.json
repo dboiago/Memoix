@@ -1,0 +1,72 @@
+{
+  "url": "https://www.chopstickchronicles.com/anpan/",
+  "slug": "anpan-japanese-sweet-bread-chopstick-chronicles_chopstickchronicles_0c6ab27b",
+  "title": "Anpan (Japanese Sweet Bread) あんパン - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-01T23:37:15.718Z",
+  "ldName": "Anpan あんパン",
+  "ldTime": "PT150M",
+  "ldPrepTime": "PT130M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "12"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Bread",
+  "ldKeywords": "#anpan, #sweet bean buns",
+  "ldIngredientsRaw": [
+    "50 g Azuki bean ((1/4 cup))",
+    "50 g caster sugar ((1/4 cup) )",
+    "50 g White bean ((1/4 cup))",
+    "50 g caster sugar ((1/4 cup))",
+    "50 g bread flour ((3/8 cup or 1/4 cup + 1 tbsp))",
+    "40 ml Boiling hot water ((2 tbsp + 2 tsp))",
+    "120 ml milk (room temperature) ((1/2 cup))",
+    "1  large egg (room temperature) (*1)",
+    "25 g sugar ((2 tbsp))",
+    "3 g dry yeast ((1 tsp))",
+    "250 g bread flour ((2 cups))",
+    "4 g salt ((1 tsp))",
+    "40 g butter chopped (room temperature) ((3 tbsp))"
+  ],
+  "ldInstructionsRaw": [
+    "Sweet Bean Paste",
+    "Yudane",
+    "Making Anpan Bread"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "178 kcal",
+    "carbohydrateContent": "31 g",
+    "proteinContent": "5 g",
+    "fatContent": "4 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "15 mg",
+    "sodiumContent": "171 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "11 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Azuki Bean Paste (Kuro-An)]",
+    "▢ 50 g Azuki bean (1/4 cup)",
+    "▢ 50 g caster sugar (1/4 cup)",
+    "[White Bean Paste (Shiro-An)]",
+    "▢ 50 g White bean (1/4 cup)",
+    "▢ 50 g caster sugar (1/4 cup)",
+    "[Yudane]",
+    "▢ 50 g bread flour (3/8 cup or 1/4 cup + 1 tbsp)",
+    "▢ 40 ml Boiling hot water (2 tbsp + 2 tsp)",
+    "[Bread dough]",
+    "▢ 120 ml milk (room temperature) (1/2 cup)",
+    "▢ 1 large egg (room temperature) *1",
+    "▢ 25 g sugar (2 tbsp)",
+    "▢ 3 g dry yeast (1 tsp)",
+    "▢ 250 g bread flour (2 cups)",
+    "▢ 4 g salt (1 tsp)",
+    "▢ 40 g butter chopped (room temperature) (3 tbsp)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

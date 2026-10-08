@@ -1,0 +1,37 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/barbecue-sauce-recipe-marcus-wareing",
+  "slug": "barbecue-sauce-recipe_greatbritishchefs_620515ab",
+  "title": "Barbecue Sauce Recipe",
+  "byline": "by Frances Atkins",
+  "fetchedAt": "2026-08-03T22:24:15.175Z",
+  "ldName": "Barbecue sauce",
+  "ldTime": "PT5M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Condiment",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "140g of ketchup",
+    "1 tsp black treacle",
+    "1 tsp Worcestershire sauce",
+    "1 tbsp of wholegrain mustard",
+    "1/2 tsp sweet smoked paprika",
+    "1/2 tsp hot smoked paprika",
+    "1 dash of Tabasco",
+    "1/2 lemon, juiced",
+    "1 garlic clove, finely chopped",
+    "1 pinch of salt",
+    "black pepper, freshly ground"
+  ],
+  "ldInstructionsRaw": [
+    "To make the barbecue sauce, combine all the ingredients together and mix well",
+    "Use the sauce to glaze ribs or chicken wings, or serve as a dipping sauce"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

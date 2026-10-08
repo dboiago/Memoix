@@ -1,0 +1,68 @@
+{
+  "url": "https://www.chinasichuanfood.com/beef-and-garlic-stir-fry/",
+  "slug": "beef-and-garlic-stir-fry_chinasichuanfood_b62c7d9d",
+  "title": "Beef and Garlic Stir Fry",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:09:34.919Z",
+  "ldName": "Beef and Garlic Stir fry",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2  whole garlic (, peeled )",
+    "200 g beef steak",
+    "1 tbsp. cooking oil",
+    "1/4  red onion (, cut into pieces)",
+    "2  green onions or scallion (, cut into sections)",
+    "1 tbsp. light soy sauce",
+    "1  small pinch of salt",
+    "1/2 tbsp. Shaoxing cooking wine",
+    "1 tbsp. oyster sauce (, optional )",
+    "1 tsp. corn starch",
+    "1 tsp. sesame oil",
+    "1 tsp. fresh ground black pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Add the steak to a hot pan, the cook for 3 minutes. Turn as you regular way. Transfer out and cut the steak into cubes around 1.5 cm squares.",
+    "In another wok, add oil and then fry the garlic cloves until slightly browned on surface.",
+    "Place beef cubes and red onion in.  Fry for another 1 minutes. Pour the sauce, add chopped green onion and mix well. Serve hot!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "324 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "21 g",
+    "fatContent": "24 g",
+    "saturatedFatContent": "7 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "61 mg",
+    "sodiumContent": "668 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 whole garlic , peeled",
+    "200 g beef steak",
+    "1 tbsp. cooking oil",
+    "1/4 red onion , cut into pieces",
+    "2 green onions or scallion , cut into sections",
+    "[! Sauce]",
+    "1 tbsp. light soy sauce",
+    "1 small pinch of salt",
+    "1/2 tbsp. Shaoxing cooking wine",
+    "1 tbsp. oyster sauce , optional",
+    "1 tsp. corn starch",
+    "1 tsp. sesame oil",
+    "1 tsp. fresh ground black pepper"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

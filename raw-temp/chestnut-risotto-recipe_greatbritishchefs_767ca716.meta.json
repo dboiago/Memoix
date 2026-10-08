@@ -1,0 +1,40 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chestnut-risotto-recipe",
+  "slug": "chestnut-risotto-recipe_greatbritishchefs_767ca716",
+  "title": "Chestnut Risotto Recipe",
+  "byline": "by Andy McLeish",
+  "fetchedAt": "2026-08-03T17:50:50.579Z",
+  "ldName": "Chestnut risotto",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Starter",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "1/2 red onion, chopped",
+    "1/2 celery stick, chopped",
+    "75g of pancetta, cubed",
+    "1 sprig of fresh rosemary",
+    "1 tbsp of olive oil",
+    "200g of Arborio risotto rice",
+    "800ml of chicken stock",
+    "100g of chestnuts, cooked, peeled and finely chopped",
+    "50ml of brandy",
+    "75g of unsalted butter",
+    "100g of Parmesan, grated",
+    "black pepper, freshly ground"
+  ],
+  "ldInstructionsRaw": [
+    "Soften the onion, celery, pancetta and rosemary in the olive oil over a low heat for 2-3 minutes. Add the risotto rice and cook for 5 minutes.",
+    "Bring the stock to a simmer in a separate pan. Add to the rice pan, ladle by ladle waiting for each to be absorberd before adding the next. Stir continuously for 15 minutes or until the rice is al dente and most of the liquid has been absorbed",
+    "When all the stock has been added, add the chestnuts with the brandy and stir through",
+    "Cook for a further 2 minutes to cook off the brandy. Beat in the butter, Parmesan and some black pepper. Serve immediately"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

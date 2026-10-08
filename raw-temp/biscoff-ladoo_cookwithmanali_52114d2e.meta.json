@@ -1,0 +1,57 @@
+{
+  "url": "https://www.cookwithmanali.com/biscoff-ladoo/",
+  "slug": "biscoff-ladoo_cookwithmanali_52114d2e",
+  "title": "Biscoff Ladoo",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T03:52:07.765Z",
+  "ldName": "Biscoff Ladoo",
+  "ldTime": "PT22M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT7M",
+  "ldYield": [
+    "15",
+    "15 ladoo"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Dessert",
+  "ldKeywords": "biscoff ladoo, diwali recipes",
+  "ldIngredientsRaw": [
+    "15  biscoff cookies  ( 114 grams , you need  1 cup  of cookie crumbs)",
+    "¾ tablespoon ghee",
+    "¾ cup desiccated coconut powder ( 57 grams )",
+    "¼ cup condensed milk (sweetened, reduce 1 tablespoon for a less sweet ladoo)",
+    "3 tablespoons milk ( 45 ml )"
+  ],
+  "ldInstructionsRaw": [
+    "Start by making the cookie crumbs first. Add biscoff cookies to a food processor and pulse until you get fine crumbs. You need 1 cup of cookie crumbs for this recipe. Set this side.",
+    "Now add ghee along with desiccated coconut powder to a pan on medium heat and cook for around 2 minutes, stirring constantly until coconut is lightly fragrant.",
+    "Then add the biscoff cookie crumbs to the pan and mix until everything is well combined.",
+    "Then add the sweetened condensed milk along with 3 tablespoons milk and mix. You can reduce the condensed milk by 1 tablespoon if you prefer less sweet ladoo. Stir and cook for 1 minute or so until everything comes together as a dough. Remove dough from the pan and transfer it to a bowl to make ladoos.",
+    "To make the ladoo, take a small portion from the dough and then press and roll between your palms to give it a round shape. Roll the ladoo into more desiccated coconut powder. Make all ladoos similarly and store them in an airtight container for up to 2-3 days at room temperature."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "113 kcal",
+    "carbohydrateContent": "15 g",
+    "proteinContent": "2 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "3 g",
+    "transFatContent": "0.003 g",
+    "cholesterolContent": "4 mg",
+    "sodiumContent": "82 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "7 g",
+    "unsaturatedFatContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 15 biscoff cookies ,  114 grams , you need  1 cup  of cookie crumbs",
+    "▢ ¾ tablespoon ghee",
+    "▢ ¾ cup desiccated coconut powder,  57 grams",
+    "▢ ¼ cup condensed milk, sweetened, reduce 1 tablespoon for a less sweet ladoo",
+    "▢ 3 tablespoons milk,  45 ml"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,53 @@
+{
+  "url": "https://www.baking-sense.com/2025/08/14/cherry-sorbet/",
+  "slug": "cherry-sorbet_baking-sense_3d34beaa",
+  "title": "Cherry Sorbet",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T00:01:17.981Z",
+  "ldName": "Cherry Sorbet",
+  "ldTime": "PT500M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": null,
+  "ldYield": [
+    "8",
+    "8 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "cherries, frozen dessert, fruit",
+  "ldIngredientsRaw": [
+    "24 oz Bing Cherries",
+    "4 oz red wine (½ cup, see note)",
+    "6 oz granulated sugar (¾ cup)",
+    "⅛ teaspoon table salt"
+  ],
+  "ldInstructionsRaw": [
+    "Stem and pit 24 oz&#32;Bing Cherries. Put the cherries into a food processor with 4 oz&#32;red wine, 6 oz&#32;granulated sugar and ⅛ teaspoon&#32;table salt. Puree the mixture until smooth.",
+    "Strain the puree through a fine sieve. You should have about 4 cups of puree.",
+    "Refrigerate until the mix is very cold, at least 3-4 hours or overnight.",
+    "Run in your ice cream machine according to the manufacturer&#39;s directions. (See Note)",
+    "Pack into a plastic container, cover the surface with plastic wrap, cover and freeze overnight"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "147 kcal",
+    "carbohydrateContent": "35 g",
+    "proteinContent": "1 g",
+    "fatContent": "0.2 g",
+    "saturatedFatContent": "0.03 g",
+    "sodiumContent": "37 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "32 g",
+    "unsaturatedFatContent": "0.08 g"
+  },
+  "htmlIngredientLines": [
+    "24 oz Bing Cherries",
+    "4 oz red wine (½ cup, see note)",
+    "6 oz granulated sugar (¾ cup)",
+    "⅛ teaspoon table salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

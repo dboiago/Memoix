@@ -1,0 +1,64 @@
+{
+  "url": "https://omnivorescookbook.com/cabbage-glass-noodles-stir-fry/",
+  "slug": "cabbage-glass-noodles-stir-fry_omnivorescookbook_f4d9342e",
+  "title": "Cabbage Glass Noodles Stir Fry",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T10:15:50.317Z",
+  "ldName": "Cabbage Glass Noodles Stir Fry",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 bunch mung bean vermicelli ((yields 1 cup after soaking))",
+    "1/4 head (12 oz) cabbage (, sliced into 1/2” (1 cm) pieces (yields about 4 cups after cutting))",
+    "Pinch of salt",
+    "1 1/2 tablespoons peanut oil ((or vegetable oil))",
+    "2  dried chili peppers (, cut into 3 to 4 pieces (keep them whole for a less spicy dish))",
+    "3 cloves garlic (, minced)",
+    "2 tablespoons light soy sauce",
+    "1/2 teaspoon dark soy sauce",
+    "1/2 teaspoon sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Bring a small pot of water to a boil. Add the dry glass noodles and cook according to instructions until al-dente. Rinse with tap water to stop cooking and drain. Cut into 3” (8 cm) strands.",
+    "Mix the sauce ingredients in a small bowl.",
+    "Heat a large skillet or a wok over medium-high heat until hot. Add oil and swirl to coat the bottom.",
+    "Add the dried pepper and garlic and stir a few times to release fragrance.",
+    "Add the cabbage and a pinch of salt. Stir and cook for 2 to 3 minutes, to coat evenly with oil, until the cabbage just starts to turn tender.",
+    "Add the glass noodles and pour in the sauce. Stir and cook until the sauce is absorbed and the cabbage turns tender. Turn to medium-low heat and carefully taste the cabbage. Sprinkle with a bit more salt to adjust seasoning, if needed. Transfer to a plate and serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "126 kcal",
+    "carbohydrateContent": "17.2 g",
+    "proteinContent": "3.5 g",
+    "fatContent": "5.4 g",
+    "saturatedFatContent": "0.9 g",
+    "sodiumContent": "467 mg",
+    "fiberContent": "2.8 g",
+    "sugarContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "1 bunch mung bean vermicelli (yields 1 cup after soaking)",
+    "1/4 head (12 oz) cabbage , sliced into 1/2” (1 cm) pieces (yields about 4 cups after cutting)",
+    "Pinch of salt",
+    "1 1/2 tablespoons peanut oil (or vegetable oil)",
+    "2 dried chili peppers , cut into 3 to 4 pieces (keep them whole for a less spicy dish)",
+    "3 cloves garlic , minced",
+    "[Sauce]",
+    "2 tablespoons light soy sauce",
+    "1/2 teaspoon dark soy sauce",
+    "1/2 teaspoon sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,62 @@
+{
+  "url": "https://omnivorescookbook.com/celery-stir-fry-with-fermented-black-beans/",
+  "slug": "celery-stir-fry-with-fermented-black-beans_omnivorescookbook_96a3049e",
+  "title": "Celery Stir Fry with Fermented Black Beans",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T06:55:05.367Z",
+  "ldName": "Celery Stir Fry with Fermented Black Beans",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "2 tablespoons water",
+    "1/2 tablespoon oyster sauce",
+    "1 teaspoon sugar",
+    "1/2 teaspoon cornstarch",
+    "1 1/2 tablespoons peanut oil ((or vegetable oil))",
+    "4 cloves garlic (, coarsely chopped)",
+    "1 teaspoon minced ginger",
+    "3  dried chili peppers",
+    "2 tablespoons fermented black beans",
+    "1 lb celery (, sliced on the bias into 1/2” (1 cm) pieces)"
+  ],
+  "ldInstructionsRaw": [
+    "Mix the water, oyster sauce, sugar, and cornstarch together in a small bowl. Set aside.",
+    "Heat oil in a large pan over high heat until it shimmers. Add the garlic, ginger, dried chili pepper, and fermented black beans. Stir and cook until fragrant, 30 seconds or so.",
+    "Add the celery. Stir and cook until it starts to turn tender, 3 to 4 minutes. If the pan starts to get too dry, pour in a small amount of water or Shaoxing wine to deglaze. Stir the sauce again to dissolve the cornstarch completely, and pour it into the pan. Stir and cook until the sauce thickens and coats the ingredients, 1 minute or so. Transfer everything to a plate. Serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "73 kcal",
+    "carbohydrateContent": "5.8 g",
+    "proteinContent": "1 g",
+    "fatContent": "5.3 g",
+    "saturatedFatContent": "0.9 g",
+    "sodiumContent": "133 mg",
+    "fiberContent": "1.8 g",
+    "sugarContent": "2.5 g"
+  },
+  "htmlIngredientLines": [
+    "2 tablespoons water",
+    "1/2 tablespoon oyster sauce",
+    "1 teaspoon sugar",
+    "1/2 teaspoon cornstarch",
+    "1 1/2 tablespoons peanut oil (or vegetable oil)",
+    "4 cloves garlic , coarsely chopped",
+    "1 teaspoon minced ginger",
+    "3 dried chili peppers",
+    "2 tablespoons fermented black beans",
+    "1 lb celery , sliced on the bias into 1/2” (1 cm) pieces"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

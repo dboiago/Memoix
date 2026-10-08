@@ -1,0 +1,35 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/barley-ice-cream-recipe",
+  "slug": "barley-ice-cream-recipe_greatbritishchefs_15f36f65",
+  "title": "Barley Ice Cream Recipe",
+  "byline": "by William Curley",
+  "fetchedAt": "2026-08-03T15:53:32.803Z",
+  "ldName": "Toasted barley ice cream",
+  "ldTime": "PT40M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "600ml of whole milk",
+    "200g of pearl barley",
+    "90g of caster sugar",
+    "6 egg yolks"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 170°C/gas mark 3.5",
+    "Place the barley on a baking tray and toast for 10 minutes in the oven or until a dark golden colour. It should release a strong, malty, caramel aroma",
+    "Combine the toasted barley and milk in a saucepan and place over a medium-high heat. Bring to the boil, then remove from the heat and allow to cool. Leave the barley to infuse in the milk for 2 hours",
+    "After the barley has infused, strain through a fine chinois. Combine the infused milk with the sugar in a pan and return to the heat. Bring to the boil until the sugar dissolves",
+    "Meanwhile, place the egg yolks in a bowl and whisk until smooth. Pour the milk into the eggs, whisking continuously to combine",
+    "Return to the saucepan and cook gently until the mixture starts to thicken (and reaches 76°C - 80°C) -  do not allow the mix to get too hot, or it will scramble",
+    "Remove from the heat and place in a bowl set over iced water, stirring continuously to chill the custard. Churn in an ice cream maker and store in the freezer until ready to serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

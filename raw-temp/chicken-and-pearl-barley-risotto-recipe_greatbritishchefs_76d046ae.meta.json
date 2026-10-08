@@ -1,0 +1,39 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chicken-and-barley-risotto-recipe",
+  "slug": "chicken-and-pearl-barley-risotto-recipe_greatbritishchefs_76d046ae",
+  "title": "Chicken and Pearl Barley Risotto Recipe",
+  "byline": "by Eugenio Boer",
+  "fetchedAt": "2026-08-03T08:19:02.123Z",
+  "ldName": "Chicken and pearl barley risotto",
+  "ldTime": "PT1H10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Main",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "1 large skinless chicken breast, or 2 small chicken breasts",
+    "100g of butter, cubed",
+    "1 leek, thinly sliced",
+    "200g of pearl barley, soaked overnight in cold water",
+    "250ml of white wine",
+    "1 chicken stock pot, diluted with 500ml boiling water",
+    "1/2 bunch of flat-leaf parsley",
+    "1 bunch of chervil",
+    "75g of Parmesan, grated"
+  ],
+  "ldInstructionsRaw": [
+    "Place a large pan over a medium heat. Add 50g of the butter with the leek and gently sweat without colouring",
+    "Once soft, add the pearl barley and white wine, then allow to reduce by three-quarters",
+    "Add enough chicken stock to cover the barley. Once that has reduced, add another ladle of stock and continue cooking in this way until the stock is used up (as you would a risotto)",
+    "As you add the final ladleful of stock, place the chicken breast on top of the barley, season with a sprinkle of salt and put a lid on the pan until the chicken is cooked – 10–15 minutes depending on the size of the chicken breast. Stir halfway through to ensure the barley doesn't stick to the pan",
+    "Remove the chicken from the pan and stir in the Parmesan and remaining butter. Turn the heat off, place the lid back on and let the risotto sit for 5 minutes. In the meantime, slice the chicken breast and chop the herbs",
+    "Taste the risotto and check for seasoning. Fold through the herbs, then portion between 2 bowls and lay the chicken on top"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

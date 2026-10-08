@@ -1,0 +1,53 @@
+{
+  "url": "https://www.okonomikitchen.com/blueberry-yeast-bread/",
+  "slug": "blueberry-yeast-bread-okonomi-kitchen_okonomikitchen_60d44805",
+  "title": "Blueberry Yeast Bread - Okonomi Kitchen",
+  "byline": "Lisa Kitahara",
+  "fetchedAt": "2026-09-25T23:50:11.800Z",
+  "ldName": "Blueberry Yeast Bread",
+  "ldTime": "PT-497250H15M5S",
+  "ldPrepTime": "PT4H",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": null,
+  "ldCategory": "bread",
+  "ldKeywords": "blueberry yeast bread, yeast bread, blueberry bread, shokupan",
+  "ldIngredientsRaw": [
+    "64 g frozen blueberries, thawed",
+    "75-80 ml unsweetened soy milk*",
+    "190 g bread flour",
+    "18 g sugar",
+    "3 g instant dry yeast",
+    "2.5 g salt",
+    "14 g butter",
+    "110 g frozen blueberries, thawed",
+    "30-35 ml milk",
+    "180 g bread flour",
+    "12.5 g sugar",
+    "3 g instant dry yeast",
+    "2.5 g salt",
+    "10 g butter"
+  ],
+  "ldInstructionsRaw": [
+    "Blend the thawed blueberries and soy milk until smooth. Mixture should be at room temperature.",
+    "Bread machine: Add the ingredients to a bread machine and run one bread cycle.",
+    "Stand mix: Add all the ingredients to a stand mix with hook attachment and knead for 5-6 minutes, or until a smooth dough forms.Place dough in a lightly greased container or bowl, cover and rest for 1 hour or until double in size.",
+    "Hands: Knead for about 8-12 minutes, depending on how much you can knead during that time or until a smooth dough forms. Place dough in a lightly greased container or bowl, cover and rest for 1 hour or until double in size.",
+    "During this time, thoroughly grease a 7 x 3.25 inch loaf pan. If using a larger loaf pan (8.5 x 4.5 or 9 x 5), double the ingredients.",
+    "Transfer dough to a floured surface and degas the dough with your hands. Divide the dough into two and form it into a ball. Cover and rest for 10-15 minutes to relax the gluten.",
+    "Flatten the dough again with your hands and shape the dough. You can make one sandwich loaf or two small loafs. Use a rolling pin and roll out the dough. Fold one side inward, and then the other side on top. Use the heel of your hands or rolling pin to press down and remove any air bubbles. Roll the dough from the top down like a cinnamon roll and then pinch the end seam. Place seam side down into prepared loaf pan. Cover with greased cling wrap or a bowl and let it rise until almost double in size. The time will depend on the temperature of your kitchen. To check, make an indent in the dough. It should spring back up slowly. If it springs back quickly, proof longer. If it stayed dented, it is over-proofed.",
+    "Once almost ready, pre-heat oven to 400 F (200 C). Bake for 5 minutes and then reduce temperature to 350 F (180 C) and bake for another 25-30 minutes, or until hallow when you tap it. If it browns too quickly, tent it with foil.",
+    "Immediately remove from loaf pan and cool on a wire rack. Once completely cooled, slice and serve!"
+  ],
+  "ldNutritionRaw": {
+    "servingSize": "1 serving",
+    "@type": "nutritionInformation"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

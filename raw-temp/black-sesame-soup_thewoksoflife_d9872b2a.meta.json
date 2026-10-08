@@ -1,0 +1,53 @@
+{
+  "url": "https://thewoksoflife.com/black-sesame-soup/",
+  "slug": "black-sesame-soup_thewoksoflife_d9872b2a",
+  "title": "Black Sesame Soup (芝麻糊)",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T16:32:17.922Z",
+  "ldName": "Black Sesame Soup (芝麻糊）",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "black sesame soup",
+  "ldIngredientsRaw": [
+    "1/2 cup cooked black rice",
+    "1/3 cup roasted black sesame seeds",
+    "6  walnut halves",
+    "1¼ cup boiling water",
+    "honey ((or sweetener of your choice, to taste))"
+  ],
+  "ldInstructionsRaw": [
+    "If you use leftover rice, make sure you reheat it for this recipe. The purpose of this ingredient is to thicken the soup, so the rice should be softened and warm.",
+    "If using store-bought toasted black sesame seeds, it is a good idea to toast them in a dry pan or wok for a couple of minutes over medium-low heat until you start to smell the sesame aroma. It is important to bring back the aroma for this recipe.",
+    "Toast the walnuts in a dry pan over medium heat for 6-7 minutes, until fragrant.",
+    "To a high-powered blender, add the warmed cooked black rice, toasted sesame seeds, toasted walnut halves, and just-boiled water. Cover tightly and securely (the contents are hot!), and blend on high speed for 2 minutes. Pour into 2-3 bowls. Serve hot or warm, adding honey or sugar to taste."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "158 kcal",
+    "carbohydrateContent": "12 g",
+    "proteinContent": "4 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "8 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "0.3 g",
+    "unsaturatedFatContent": "10 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1/2 cup cooked black rice (warmed; see how to cook black rice. Can also substitute cooked white rice, brown rice or sticky rice)",
+    "▢ 1/3 cup roasted black sesame seeds (see how to toast sesame seeds or use store-bought)",
+    "▢ 6  walnut halves",
+    "▢ 1¼ cup boiling water",
+    "▢ honey (or sweetener of your choice, to taste)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

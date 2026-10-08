@@ -1,0 +1,72 @@
+{
+  "url": "https://www.baking-sense.com/2022/03/13/baileys-cheesecake/",
+  "slug": "baileys-cheesecake_baking-sense_1ce2b3bf",
+  "title": "Baileys Cheesecake",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T08:13:19.818Z",
+  "ldName": "Baileys Cheesecake Recipe",
+  "ldTime": "PT495M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT75M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "baileys, cheesecake, irish cream",
+  "ldIngredientsRaw": [
+    "6 oz graham cracker crumbs  (1 ½ cups)",
+    "2 oz granulated sugar (¼ cup)",
+    "3 oz unsalted butter (melted)",
+    "24 oz cream cheese (room temperature)",
+    "12 oz granulated sugar (1 ½ cups)",
+    "8 oz Baileys Irish Cream Liqueur (1 cup)",
+    "2 tsp vanilla extract",
+    "5  large eggs (whisked, room temperature)",
+    "4 oz semi sweet chocolate (chopped fine)",
+    "2 oz heavy cream (¼ cup)",
+    "½ oz unsalted butter (1 tablespoon)",
+    "2 oz Baileys Irish Cream Liqueur (¼ cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Crust",
+    "Batter",
+    "Assembly"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "466 kcal",
+    "carbohydrateContent": "44 g",
+    "proteinContent": "6 g",
+    "fatContent": "28 g",
+    "saturatedFatContent": "16 g",
+    "cholesterolContent": "112 mg",
+    "sodiumContent": "226 mg",
+    "sugarContent": "35 g",
+    "transFatContent": "0.2 g",
+    "fiberContent": "1 g",
+    "unsaturatedFatContent": "8 g"
+  },
+  "htmlIngredientLines": [
+    "[Graham Crust]",
+    "6 oz graham cracker crumbs  (1 ½ cups)",
+    "2 oz granulated sugar (¼ cup)",
+    "3 oz unsalted butter (melted)",
+    "[Cheesecake Batter]",
+    "24 oz cream cheese (room temperature)",
+    "12 oz granulated sugar (1 ½ cups)",
+    "8 oz Baileys Irish Cream Liqueur (1 cup)",
+    "2 tsp vanilla extract",
+    "5 large eggs (whisked, room temperature)",
+    "[Glaze]",
+    "4 oz semi sweet chocolate (chopped fine)",
+    "2 oz heavy cream (¼ cup)",
+    "½ oz unsalted butter (1 tablespoon)",
+    "2 oz Baileys Irish Cream Liqueur (¼ cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

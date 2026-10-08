@@ -1,0 +1,49 @@
+{
+  "url": "https://mykoreankitchen.com/bean-sprout-soup-kongnamul-guk/",
+  "slug": "bean-sprout-soup-kongnamul-guk_mykoreankitchen_38b824ce",
+  "title": "Bean Sprout Soup (Kongnamul Guk)",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T17:06:04.518Z",
+  "ldName": "Bean Sprout Soup",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Soup",
+  "ldKeywords": "bean sprout soup",
+  "ldIngredientsRaw": [
+    "120 g soybean sprouts ((4.2 ounces))",
+    "4 1/2 cups Korean soup stock ((dashi))",
+    "1 Tbsp green onion",
+    "1/2 tsp minced garlic",
+    "1/2 tsp fine sea salt ((or more to taste))"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare the soybean sprouts. Discard any bad beans and rinse under running water (You can trim the root if you wish, but it is also one of the most nutritious parts of the bean sprouts. Besides, it can take a long time to trim too. So it’s up to you what you do here.)",
+    "Pour the soup stock (dashi) into a pot and boil over medium high heat. (You could use just plain water instead of using soup stock. However, it will lack depth of flavour and you will need to add a lot more seasoning (e.g. salt, soy sauce or salted shrimp) to make it taste right. Also, soup stock can be made on a different day to save your time. )",
+    "When the stock boils, add the soybean sprouts and boil for a further 3 to 4 minutes. (I cooked uncovered.) Add the garlic, salt, and green onion. Boil another 1 minute then remove from the heat.",
+    "Serve."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "40 kcal",
+    "carbohydrateContent": "2 g",
+    "proteinContent": "1 g",
+    "sodiumContent": "390 mg",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 120 g soybean sprouts (4.2 ounces)",
+    "▢ 4 1/2 cups Korean soup stock (dashi)",
+    "▢ 1 Tbsp green onion",
+    "▢ 1/2 tsp minced garlic",
+    "▢ 1/2 tsp fine sea salt (or more to taste)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

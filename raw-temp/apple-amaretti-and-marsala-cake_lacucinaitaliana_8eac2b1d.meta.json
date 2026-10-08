@@ -1,0 +1,44 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-amaretti-and-marsala-cake",
+  "slug": "apple-amaretti-and-marsala-cake_lacucinaitaliana_8eac2b1d",
+  "title": "Apple, Amaretti and Marsala Cake",
+  "byline": "by  Editorial staff   August 17, 2021",
+  "fetchedAt": "2026-08-03T02:38:50.955Z",
+  "ldName": "Apple, Amaretti and Marsala Cake",
+  "ldTime": "PT75M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "8",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Marsala Wine,Mela,Mele,Torte",
+  "ldIngredientsRaw": [
+    "3 Rennet apples",
+    "14OZ. dry amaretti cookies",
+    "1 1/4CUPS Marsala wine",
+    "1 1/2CUPS bread crumbs",
+    "1/3CUP sugar",
+    "3TBSP. unsalted butter",
+    "3TBSP. raisins"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Peel and core the apples, cut them in half and then into slices (1/4\" thick). Melt 2 Tbsp. butter in a large pan with the sugar; once it foams, add the apples and cook for 5 minutes.</p>",
+    "<p>Add the raisins at the last minute, stir and remove from heat. Set aside to cool.</p>",
+    "<p>Preheat the oven to 350 °F.&nbsp;</p>",
+    "<p>Crush the amaretti, reducing them into coarse crumbs and mix with the bread crumbs. Grease a baking dish (around 12\" in diameter, height 1 3/4\"). Sprinkle around half of the crumble mixture on the bottom, then sprinkle 1/2 cup Marsala on top, pressing it slightly.</p>",
+    "<p>Arrange the apples and raisins over the layer of amaretti, distributing them in an even layer. Cover with the remaining crumbled amaretti and sprinkle with the remaining Marsala. Bake the cake in the lower part of the oven at 350 °F for around 30 minutes. Serve as desired with unsweetened sour cream.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "3 Rennet apples",
+    "14 OZ. of dry amaretti cookies",
+    "1 1/4 CUPS of Marsala wine",
+    "1 1/2 CUPS of bread crumbs",
+    "1/3 CUP of sugar",
+    "3 TBSP. of unsalted butter",
+    "3 TBSP. of raisins"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

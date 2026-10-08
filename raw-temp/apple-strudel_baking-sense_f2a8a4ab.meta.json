@@ -1,0 +1,69 @@
+{
+  "url": "https://www.baking-sense.com/2024/10/11/apple-strudel/",
+  "slug": "apple-strudel_baking-sense_f2a8a4ab",
+  "title": "Apple Strudel",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T21:57:10.936Z",
+  "ldName": "Apple Strudel",
+  "ldTime": "PT100M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "10",
+    "10 servings"
+  ],
+  "ldCuisine": "Austrian",
+  "ldCategory": "brunch, Dessert, Snack",
+  "ldKeywords": "apple, filo, phyllo",
+  "ldIngredientsRaw": [
+    "3 oz raisins (1/2 cup)",
+    "1 ½ lbs apples",
+    "4 oz granulated sugar (½ cup)",
+    "¼ teaspoon table salt",
+    "1 teaspoon ground cinnamon",
+    "1 tablespoon fresh lemon juice",
+    "1 teaspoon finely grated lemon zest",
+    "8 oz Phyllo dough (about 9  14&quot;x18&quot; sheets, defrosted)",
+    "3 oz unsalted butter (melted)",
+    "2 oz granulated sugar (1/4 cup)",
+    "1 ½ oz dry bread crumbs (½ cup)",
+    "Confectioner’s sugar for finishing"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare the filling"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "272 kcal",
+    "carbohydrateContent": "48 g",
+    "proteinContent": "3 g",
+    "fatContent": "9 g",
+    "saturatedFatContent": "5 g",
+    "transFatContent": "0.3 g",
+    "cholesterolContent": "18 mg",
+    "sodiumContent": "203 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "24 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "[Filling]",
+    "3 oz raisins (1/2 cup)",
+    "1 ½ lbs apples",
+    "4 oz granulated sugar (½ cup)",
+    "¼ teaspoon table salt",
+    "1 teaspoon ground cinnamon",
+    "1 tablespoon fresh lemon juice",
+    "1 teaspoon finely grated lemon zest",
+    "[Assembly]",
+    "8 oz Phyllo dough (about 9  14\"x18\" sheets, defrosted)",
+    "3 oz unsalted butter (melted)",
+    "2 oz granulated sugar (1/4 cup)",
+    "1 ½ oz dry bread crumbs (½ cup)",
+    "Confectioner’s sugar for finishing"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

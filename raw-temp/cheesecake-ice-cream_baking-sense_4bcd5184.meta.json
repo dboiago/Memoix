@@ -1,0 +1,60 @@
+{
+  "url": "https://www.baking-sense.com/2015/05/21/cheesecake-ice-cream-with-cherry-blueberry-compote/",
+  "slug": "cheesecake-ice-cream_baking-sense_4bcd5184",
+  "title": "Cheesecake Ice Cream",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T23:24:54.473Z",
+  "ldName": "Cheesecake Ice Cream Recipe",
+  "ldTime": "PT510M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": null,
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "cream cheese",
+  "ldIngredientsRaw": [
+    "8 ounces whole milk (1 cup)",
+    "4 ounces heavy cream (½ cup)",
+    "½  vanilla bean (see note)",
+    "5  egg yolks",
+    "6 ounces granulated sugar (¾ cup)",
+    "½ teaspoon lemon zest",
+    "½ teaspoon lemon juice",
+    "⅛ teaspoon table salt",
+    "12 ounces cream cheese (room temperature)"
+  ],
+  "ldInstructionsRaw": [
+    "Ice Cream"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "222 kcal",
+    "carbohydrateContent": "17 g",
+    "proteinContent": "4 g",
+    "fatContent": "16 g",
+    "saturatedFatContent": "9 g",
+    "cholesterolContent": "123 mg",
+    "sodiumContent": "127 mg",
+    "fiberContent": "0.01 g",
+    "sugarContent": "16 g",
+    "unsaturatedFatContent": "5 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "8 ounces whole milk (1 cup)",
+    "4 ounces heavy cream (½ cup)",
+    "½ vanilla bean (see note)",
+    "5 egg yolks",
+    "6 ounces granulated sugar (¾ cup)",
+    "½ teaspoon lemon zest",
+    "½ teaspoon lemon juice",
+    "⅛ teaspoon table salt",
+    "12 ounces cream cheese (room temperature)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

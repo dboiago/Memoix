@@ -1,0 +1,73 @@
+{
+  "url": "https://www.chopstickchronicles.com/beef-negimaki/",
+  "slug": "beef-negimaki-japanese-beef-roll-ups-chopstick-chr_chopstickchronicles_d1cddf73",
+  "title": "Beef Negimaki (Japanese Beef Roll Ups) - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-01T19:06:46.899Z",
+  "ldName": "Beef Negimaki 牛肉のネギ巻き",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "8",
+    "8 beef negimaki"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Main Dish",
+  "ldKeywords": "#beefnegimaki, #beefrollups, #negimaki",
+  "ldIngredientsRaw": [
+    "300 g Thinly sliced beef  (*1)",
+    "8  Blanched scallions",
+    "¼  carrots  (Parboiled *2)",
+    "8  green beans (Parboiled )",
+    "1 tbs plain flour or potato starch(Katakuriko)",
+    "1 clove garlic mashed",
+    "1 tbs sesame oil",
+    "3 tbs Sake (*3)",
+    "1 tbs soy sauce",
+    "1 tbs oyster sause",
+    "1 tbs sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the blanched scallions into 5cm (2 inch) wide strips. Cut carrots into sticks and cut green beans in half then parboil them and set aside.",
+    "Lay the thinly slice beef on a chopping board and place prepared scallions and vegetables on the beef then tightly roll it up. The beef strip should be about 20cm (8 inch) long. If the meat is shorter than that, overwrap beef slices slightly to make it 20cm (8 inch) long.",
+    "You can secure by using a toothpick to tie the end of the meat (optional)",
+    "Repeat this same process until all the beef is used (I made about 8 negimaki out of 300 g beef)",
+    "Cover the roll ups with flour.",
+    "Heat a little sesame oil in a frying pan over medium heat and place the beef roll ups in the pan.",
+    "Cook one side for about 2- 3 minutes or until browned with a lid on.",
+    "Turn the beef roll ups over and cook the other side for a further 2-3 minutes.",
+    "Combine all the sauce ingredients and pour over the beef roll ups in the frying pan to sizzle.",
+    "Serve with green salad and rice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "145 kcal",
+    "carbohydrateContent": "5 g",
+    "proteinContent": "8 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "4 g",
+    "cholesterolContent": "26 mg",
+    "sodiumContent": "210 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 300 g Thinly sliced beef  *1",
+    "▢ 8 Blanched scallions",
+    "▢ ¼ carrots  Parboiled *2",
+    "▢ 8 green beans Parboiled",
+    "▢ 1 tbs plain flour or potato starch(Katakuriko)",
+    "[Sauce]",
+    "▢ 1 clove garlic mashed",
+    "▢ 1 tbs sesame oil",
+    "▢ 3 tbs Sake *3",
+    "▢ 1 tbs soy sauce",
+    "▢ 1 tbs oyster sause",
+    "▢ 1 tbs sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

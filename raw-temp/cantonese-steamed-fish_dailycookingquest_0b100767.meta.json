@@ -1,0 +1,51 @@
+{
+  "url": "https://dailycookingquest.com/cantonese-steamed-fish.html",
+  "slug": "cantonese-steamed-fish_dailycookingquest_0b100767",
+  "title": "Cantonese Steamed Fish",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:50:46.313Z",
+  "ldName": "Cantonese Steamed Fish",
+  "ldTime": "PT0H30M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT0H15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "Seafood"
+  ],
+  "ldIngredientsRaw": [
+    "2 flounder fillet",
+    "1 small bunch cilantro, roughly chopped",
+    "2 scallions, julienned",
+    "2 inch ginger, julienned",
+    "2 tablespoon oil",
+    "2 tablespoon soy sauce",
+    "2 tablespoon water",
+    "1/2 teaspoon oyster sauce",
+    "1/2 teaspoon sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Place flounder fillet in a steamer proof plate and steam for 5 to 8 minutes until cooked.",
+    "Carefully drain the liquid off the steaming plate and transfer the cooked fish to a nice serving plate. Topped the fish with chopped cilantro and 1/4 to 1/3 of the scallions.",
+    "Heat oil in a frying pan and sauté the rest of the scallion and ginger until fragrant, about 1 minute. Pour the sauce mixture to the pan and bring to a rolling boil. Once the scallions look wilted, turn off heat and spoon the sauce over the steamed fish. Serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 flounder fillet",
+    "1 small bunch cilantro, roughly chopped",
+    "2 scallions, julienned",
+    "2 inch ginger, julienned",
+    "2 tablespoon oil",
+    "Sauce (mix together the following)",
+    "2 tablespoon soy sauce",
+    "2 tablespoon water",
+    "1/2 teaspoon oyster sauce",
+    "1/2 teaspoon sugar"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

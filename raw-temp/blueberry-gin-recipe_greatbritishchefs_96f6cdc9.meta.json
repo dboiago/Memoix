@@ -1,0 +1,32 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/blueberry-gin-recipe",
+  "slug": "blueberry-gin-recipe_greatbritishchefs_96f6cdc9",
+  "title": "Blueberry Gin Recipe",
+  "byline": "by Tom Kitchin",
+  "fetchedAt": "2026-08-03T07:17:50.098Z",
+  "ldName": "Blueberry gin",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Drink",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "300g of blueberries",
+    "60g of sugar",
+    "500ml of gin"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the berries and place in a sterilsed jar",
+    "Use a masher or the end of a rolling pin to lightly crush the blueberries – just enough to split the skins a little",
+    "Add the sugar and gin, close the jar and give it a good shake",
+    "Leave to steep for 2–3 days, giving the jar a shake each day",
+    "Strain the berries through a muslin cloth and bottle the gin. Best enjoyed within 1 month"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

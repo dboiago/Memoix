@@ -1,0 +1,3 @@
+Remi says: 'My viral almond croissant recipe took the internet by storm and you all went wild for them! They quickly became one of my most popular, most recreated recipes – and for good reason! These delightful treats are marzipan-based cookies, coated in crunchy almond flakes and dusted with icing sugar. Here, I’m sharing a small-batch, improved version that's perfect for when you're craving a quick, indulgent treat!
+
+Store the cooled cookies in an airtight container at room temperature for up to 5 days. You can also freeze the cookies for longer storage. Simply place them in a freezer-safe container or bag and store them in the freezer for up to 2 months. Thaw at room temperature before serving.'

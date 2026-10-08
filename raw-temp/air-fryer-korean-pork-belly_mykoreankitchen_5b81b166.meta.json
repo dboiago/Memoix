@@ -1,0 +1,51 @@
+{
+  "url": "https://mykoreankitchen.com/air-fryer-pork-belly/",
+  "slug": "air-fryer-korean-pork-belly_mykoreankitchen_5b81b166",
+  "title": "Air Fryer Korean Pork Belly",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T23:52:02.152Z",
+  "ldName": "Air Fryer Korean Pork Belly",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "Korean Fusion",
+  "ldCategory": "Main",
+  "ldKeywords": "air fryer pork belly, korean roasted pork belly in air fryer, pork belly in air fryer",
+  "ldIngredientsRaw": [
+    "800 g pork belly (, skinless (1.8 pounds))",
+    "1/4 cup yellow mustard (, (American mustard, mild))",
+    "1 tsp fine sea salt"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the mustard sauce and the salt in a small bowl. Mix well. Paste all sides of the pork belly with the mustard sauce mixture.",
+    "Place the meat onto the air fryer basket and cook at 180 C / 356 F for 15 minutes.",
+    "Wipe the oil in the air fryer pan with some kitchen paper. Flip the meat over and cook for another 15 mins.",
+    "Remove the pork belly from the air fryer. Slice them into bite sized pieces. Serve with lettuce, Korean BBQ dipping sauce (ssamjang), a bowl of rice and kimchi."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "1395 kcal",
+    "carbohydrateContent": "1 g",
+    "proteinContent": "26 g",
+    "fatContent": "142 g",
+    "saturatedFatContent": "52 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "192 mg",
+    "sodiumContent": "1096 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "81 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 800 g pork belly , skinless (1.8 pounds)",
+    "▢ 1/4 cup yellow mustard , (American mustard, mild)",
+    "▢ 1 tsp fine sea salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

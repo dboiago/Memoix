@@ -1,0 +1,48 @@
+{
+  "url": "https://www.chopstickchronicles.com/chicken-ham/",
+  "slug": "chicken-ham-chopstick-chronicles_chopstickchronicles_0c5c90ca",
+  "title": "Chicken Ham 鶏ハム - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-02T02:29:46.538Z",
+  "ldName": "Easy Chicken Ham 鶏ハム",
+  "ldTime": "PT130M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT120M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Appetizer, Dinner, Lunch, Side Dish",
+  "ldKeywords": "#chicken ham, #Tori Hamu",
+  "ldIngredientsRaw": [
+    "1  Chicken Breast  (*1)",
+    "½ tbsp sugar",
+    "1 tsp salt"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare Chicken Breast",
+    "Cooking the rolled chicken breast"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "281 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "48 g",
+    "fatContent": "6 g",
+    "saturatedFatContent": "1 g",
+    "transFatContent": "0.03 g",
+    "cholesterolContent": "145 mg",
+    "sodiumContent": "2588 mg",
+    "sugarContent": "6 g",
+    "unsaturatedFatContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 Chicken Breast  *1",
+    "▢ ½ tbsp sugar",
+    "▢ 1 tsp salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

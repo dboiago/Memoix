@@ -1,0 +1,41 @@
+{
+  "url": "https://www.davidlebovitz.com/breakfast-martini-recipe-cocktail/",
+  "slug": "breakfast-martini-cocktail-recipe_davidlebovitz_684adcc7",
+  "title": "Breakfast Martini cocktail recipe",
+  "byline": "David",
+  "fetchedAt": "2026-08-02T20:21:24.839Z",
+  "ldName": "Breakfast Martini",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 teaspoon  orange marmalade",
+    "1/2 ounce freshly squeezed lemon juice",
+    "1 3/4 ounces London Dry gin",
+    "1/2 ounce  Grand Marnier or Cointreau",
+    "orange twist (for garnish)"
+  ],
+  "ldInstructionsRaw": [
+    "Muddle the marmalade with the lemon juice in a cocktail shaker until the orange bits in the marmalade are liquefied.",
+    "Add the gin and Grand Marnier to the shaker. Fill with ice and shake until well chilled.",
+    "Open the shaker and strain the drink through a mesh sieve into a chilled coupe or martini glass. Hold the orange twist over the top of the drink and twist it to release the oil over the surface of the cocktail. Drop the orange twist into the glass, and serve."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 teaspoon  orange marmalade",
+    "1/2 ounce freshly squeezed lemon juice",
+    "1 3/4 ounces London Dry gin",
+    "1/2 ounce  Grand Marnier or Cointreau",
+    "orange twist, for garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

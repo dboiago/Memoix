@@ -1,0 +1,51 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/banana-peel-bacon/",
+  "slug": "banana-peel-bacon_itdoesnttastelikechicken_d9b2e337",
+  "title": "Banana Peel Bacon",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T04:52:43.522Z",
+  "ldName": "Banana Peel Bacon",
+  "ldTime": "PT16M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT6M",
+  "ldYield": [
+    "8",
+    "8 strips"
+  ],
+  "ldCuisine": "American, Canadian",
+  "ldCategory": "Breakfast",
+  "ldKeywords": "banana peel bacon, banana peel bacon recipe, banana peel bacon vegan, banana peel edible, banana peel recipes",
+  "ldIngredientsRaw": [
+    "2  very ripe banana peels ((from 2 bananas, I used organic bananas and washed them before making the bacon))",
+    "3 tablespoon soy sauce",
+    "1 tablespoon maple syrup",
+    "1/2 teaspoon smoked paprika",
+    "1/2 teaspoon garlic powder",
+    "1 tablespoon light oil ((or more if needed))"
+  ],
+  "ldInstructionsRaw": [
+    "The number one most important step is to use bananas that are very ripe. Stay far away from green bananas, the bacon will taste terrible. The riper the banana the better the flavour so pick bananas that are yellow with lots of brown spots. To prepare the banana peels: remove the peels from the bananas and tear into about 4 strips per banana. Use a spoon to lightly scrape off the white inside part of the banana peel leaving just the peel.",
+    "Make the marinade by mixing the soy sauce, maple syrup, smoked paprika, and garlic powder together in a dish that will fit your banana peels. Add the banana peels and toss to coat. Let marinade for a minimum of 10 minutes, but as long as a few hours.",
+    "When ready to cook the bacon, heat the oil in a large skillet or frying pan over medium heat. When hot add the peels and fry a couple of minutes per side, until they are golden and bubble up a little. It may get a little smoky as the sugars will burn so make sure to turn on your hood fan. Remove from pan and drain on paper towel.&nbsp;They should get crispier as they cool.&nbsp;"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "27 kcal",
+    "carbohydrateContent": "2 g",
+    "fatContent": "1 g",
+    "sodiumContent": "377 mg",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 very ripe banana peels, (from 2 bananas, I used organic bananas and washed them before making the bacon)",
+    "▢ 3 tablespoon soy sauce",
+    "▢ 1 tablespoon maple syrup",
+    "▢ ½ teaspoon smoked paprika",
+    "▢ ½ teaspoon garlic powder",
+    "▢ 1 tablespoon light oil, (or more if needed)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

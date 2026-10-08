@@ -1,0 +1,57 @@
+{
+  "url": "https://muybuenoblog.com/camotes-enmielado-candied-sweet-potatoes/",
+  "slug": "camotes-enmielados-mexican-sweet-potatoes_muybuenoblog_4986a639",
+  "title": "Camotes Enmielados (Mexican Sweet Potatoes)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T10:01:40.150Z",
+  "ldName": "Camotes Enmielado (Candied Sweet Potatoes)",
+  "ldTime": "PT55M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT50M",
+  "ldYield": [
+    "8",
+    "8 servings"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Dessert",
+  "ldKeywords": "candied sweet potatoes recipe, candied yams recipe, how to candy sweet potatoes",
+  "ldIngredientsRaw": [
+    "6 cups water",
+    "8 ounces piloncillo",
+    "2  cinnamon sticks",
+    "2  whole anise stars",
+    "3  whole cloves",
+    "3  large sweet potatoes (peeled, cut into 1-inch slices)",
+    "milk or sweetened condensed milk (for serving)"
+  ],
+  "ldInstructionsRaw": [
+    "In 3-quart saucepan, place water, piloncillo, cinnamon sticks, anise stars, and whole cloves. Heat to boiling, stirring with a wooden spoon until piloncillo dissolves.",
+    "After 5 minutes, add sweet potatoes. Reduce heat; cover and simmer 30 to 45 minutes.",
+    "Remove and discard cinnamon sticks, anise stars, and cloves. Reserve syrup.",
+    "Serve sweet potatoes topped with reserved warm sweet syrup. Garnish with milk."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "132 kcal",
+    "sugarContent": "26 g",
+    "sodiumContent": "31 mg",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "carbohydrateContent": "32 g",
+    "fiberContent": "1 g",
+    "proteinContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 6 cups water",
+    "▢ 8 ounces piloncillo, unrefined sugar or 1 cup packed brown sugar",
+    "▢ 2 cinnamon sticks",
+    "▢ 2 whole anise stars",
+    "▢ 3 whole cloves",
+    "▢ 3 large sweet potatoes, peeled, cut into 1-inch slices",
+    "▢ milk or sweetened condensed milk, for serving"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

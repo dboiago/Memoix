@@ -1,0 +1,67 @@
+{
+  "url": "https://braziliankitchenabroad.com/banana-parfait-with-banana-mousse/",
+  "slug": "banana-parfait-with-banana-mousse_braziliankitchenabroad_3b2670b5",
+  "title": "Banana Parfait with Banana Mousse",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-26T02:29:54.058Z",
+  "ldName": "Banana Parfaits with Banana Mousse",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT45M",
+  "ldCookTime": null,
+  "ldYield": [
+    "6",
+    "6 Servings"
+  ],
+  "ldCuisine": "Brazilian",
+  "ldCategory": "Dessert",
+  "ldKeywords": "banana, brazilian dessert, brazilian desserts, easy dessert, no bake, no bake dessert",
+  "ldIngredientsRaw": [
+    "½ cup of whole toasted almonds",
+    "4 ounces of digestive cookies or biscuits (such as biscoito maizena, galletas Maria*)",
+    "4 tablespoons of butter",
+    "pinch of salt",
+    "1 ½ cups of mashed bananas ((from roughly 2-4 ripe bananas))",
+    "1 cup of heavy whipping cream, cold",
+    "¼ cup of sweet condensed milk",
+    "1 cup of plain Greek yogurt",
+    "Caramelized bananas"
+  ],
+  "ldInstructionsRaw": [
+    "Make the Caramelized Bananas",
+    "Make the Crumb Topping",
+    "Make the Banana Mousse",
+    "Assemble the Parfaits"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "463 kcal",
+    "carbohydrateContent": "39 g",
+    "proteinContent": "10 g",
+    "fatContent": "31 g",
+    "saturatedFatContent": "15 g",
+    "transFatContent": "0.3 g",
+    "cholesterolContent": "71 mg",
+    "sodiumContent": "197 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "21 g",
+    "unsaturatedFatContent": "13 g"
+  },
+  "htmlIngredientLines": [
+    "[Crumble]",
+    "½ cup of whole toasted almonds",
+    "4 ounces of digestive cookies or biscuits such as biscoito maizena, galletas Maria*",
+    "4 tablespoons of butter",
+    "pinch of salt",
+    "[Banana Mousse]",
+    "1 ½ cups of mashed bananas (from roughly 2-4 ripe bananas)",
+    "1 cup of heavy whipping cream, cold",
+    "¼ cup of sweet condensed milk",
+    "1 cup of plain Greek yogurt",
+    "[Topping]",
+    "Caramelized bananas"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

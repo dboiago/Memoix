@@ -1,0 +1,67 @@
+{
+  "url": "https://dailycookingquest.com/broccolini-tofu-stir-fry.html",
+  "slug": "broccolini-tofu-stir-fry_dailycookingquest_725f67c8",
+  "title": "Broccolini & Tofu Stir-Fry",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:07:38.797Z",
+  "ldName": "Broccolini & Tofu Stir-Fry",
+  "ldTime": "PT0H35M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT0H20M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "easy Chinese stir-fry sauce",
+    "Chinese tofu and vegetable stir-fry recipe",
+    "Tofu",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "450 gram (1 lb) firm/extra-firm tofu",
+    "4 cloves garlic, minced",
+    "2-3 chilies, thinly sliced",
+    "450 gram (1 lb) broccolini, chop into bite-size pieces",
+    "1/4 cup water",
+    "cornstarch slurry (1 tablespoon cornstarch + 2 tablespoon water)",
+    "2 scallions, thinly sliced",
+    "1 tablespoon light soy sauce",
+    "1 tablespoon dark soy sauce",
+    "1 tablespoon oyster sauce",
+    "1 tablespoon fish sauce",
+    "1 tablespoon Shaoxing wine",
+    "1 teaspoon sugar",
+    "1/2 teaspoon white pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Fry tofu: Drain and pat dry tofu and cut into 16-20 pieces. Pan-fry the tofu with a little oil on a non-stick frying pan (or a well-seasoned cast-iron skillet) until golden brown and set aside.",
+    "Sauté aromatics: Heat 2 tablespoons of oil in a wok over medium-high heat. Sauté garlic and chilies until fragrant, about 2 minutes.",
+    "Add broccolini: Add broccolini and 1/4 cup of water. Mix well, cover the wok, and let the broccolini rests for 2 minutes, or until wilted.",
+    "Add tofu and sauce: Add fried tofu and all the sauce ingredients, mix well, and cook for 2 minutes.",
+    "Thicken the sauce: Add cornstarch slurry and stir until the sauce is thick.",
+    "Add scallions: Toss in scallions and mix gently. Turn off the heat, transfer to a serving plate, and serve the dish immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "450 gram (1 lb) firm/extra-firm tofu",
+    "4 cloves garlic, minced",
+    "2-3 chilies, thinly sliced",
+    "450 gram (1 lb) broccolini, chop into bite-size pieces",
+    "1/4 cup water",
+    "cornstarch slurry (1 tablespoon cornstarch + 2 tablespoon water)",
+    "2 scallions, thinly sliced",
+    "Sauce",
+    "1 tablespoon light soy sauce",
+    "1 tablespoon dark soy sauce",
+    "1 tablespoon oyster sauce",
+    "1 tablespoon fish sauce",
+    "1 tablespoon Shaoxing wine",
+    "1 teaspoon sugar",
+    "1/2 teaspoon white pepper"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

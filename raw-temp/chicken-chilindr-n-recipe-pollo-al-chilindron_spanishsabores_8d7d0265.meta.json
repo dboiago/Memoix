@@ -1,0 +1,73 @@
+{
+  "url": "https://spanishsabores.com/chicken-chilindron-recipe/",
+  "slug": "chicken-chilindr-n-recipe-pollo-al-chilindron_spanishsabores_8d7d0265",
+  "title": "Chicken Chilindrón Recipe (Pollo al Chilindron)",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T07:19:52.914Z",
+  "ldName": "Chicken Chilindrón Recipe",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "4",
+    "4 people"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Main Course",
+  "ldKeywords": "chicken chilindrón, chicken stew recipe",
+  "ldIngredientsRaw": [
+    "6-8  chicken thighs or drumsticks (seasoned with salt and pepper)",
+    "4  cloves garlic (peeled and thinly sliced)",
+    "1.75 ounce Serrano ham or other cured ham (diced)",
+    "1  onion (diced)",
+    "1  red bell pepper (thinly sliced)",
+    "2  juicy medium tomatoes",
+    "1  bay leaf",
+    "1 teaspoon sweet Spanish paprika",
+    "1/2 cup white wine",
+    "4 tablespoons olive oil",
+    "salt (to taste)",
+    "black pepper (to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "Place heavy pan over medium heat and cover the bottom with olive oil. Once it&#39;s hot, add the seasoned chicken and brown on both sides, then reserve the chicken on the side. Work in batches to avoid overcrowding the pan.",
+    "Lower the heat to medium-low and add the garlic and ham to the pan. Sauté for 1 minute, making sure the garlic doesn&#39;t stick or burn.",
+    "Add the red pepper, onion, and a pinch of salt, then sauté for about 10 minutes, or until the vegetables are tender and starting to caramelize.",
+    "Mix in the bay leaf, tomato, and sweet paprika, then cook for about 5 minutes.",
+    "Add the white wine, turn up the heat, and reduce to a thick sauce; about 2-3 minutes.",
+    "Add the chicken back to the pan and reduce the heat to low. Slowly simmer for about 30 minutes, or until the chicken is tender and fully cooked.",
+    "Taste and add salt and pepper as desired. Serve the chicken chilindrón family-style or individually plated and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 bowl",
+    "calories": "685.35 kcal",
+    "carbohydrateContent": "9.36 g",
+    "proteinContent": "40.59 g",
+    "fatContent": "51.65 g",
+    "saturatedFatContent": "11.92 g",
+    "transFatContent": "0.18 g",
+    "cholesterolContent": "219.06 mg",
+    "sodiumContent": "418.49 mg",
+    "fiberContent": "2.08 g",
+    "sugarContent": "4.4 g",
+    "unsaturatedFatContent": "34.29 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 6-8 chicken thighs or drumsticks seasoned with salt and pepper",
+    "▢ 4  cloves garlic peeled and thinly sliced",
+    "▢ 1.75 ounce Serrano ham or other cured ham diced",
+    "▢ 1 onion diced",
+    "▢ 1 red bell pepper thinly sliced",
+    "▢ 2 juicy medium tomatoes",
+    "▢ 1 bay leaf",
+    "▢ 1 teaspoon sweet Spanish paprika",
+    "▢ ½ cup white wine",
+    "▢ 4 tablespoons olive oil",
+    "▢ salt to taste",
+    "▢ black pepper to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

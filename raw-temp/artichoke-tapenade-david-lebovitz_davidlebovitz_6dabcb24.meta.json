@@ -1,0 +1,44 @@
+{
+  "url": "https://www.davidlebovitz.com/artichoke-tapenade/",
+  "slug": "artichoke-tapenade-david-lebovitz_davidlebovitz_6dabcb24",
+  "title": "Artichoke Tapenade - David Lebovitz",
+  "byline": "David",
+  "fetchedAt": "2026-08-02T18:23:59.430Z",
+  "ldName": "Artichoke Tapenade",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2  garlic cloves (peeled and minced)",
+    "1 cup (4 oz, 120g) pitted green olives",
+    "1 tablespoon (10g) capers",
+    "8-10 (14 ounces, or 250g) canned artichokes (drained well and quartered)",
+    "1 tablespoon freshly squeezed lemon juice",
+    "6 tablespoons (90ml) extra-virgin olive oil",
+    "1/8 teaspoon chile powder",
+    "salt (to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "In the bowl of a food processor, pulse the garlic, olives, capers, artichoke hearts, lemon juice, and olive oil, and until almost smooth, but still chunky.",
+    "Taste, and add salt, chile powder, and additional lemon juice, if desired.",
+    "Serve with toasted slices of baguette or crackers."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 garlic cloves, peeled and minced",
+    "1 cup (4 oz, 120g) pitted green olives",
+    "1 tablespoon (10g) capers",
+    "8-10 (14 ounces, or 250g) canned artichokes, drained well and quartered",
+    "1 tablespoon freshly squeezed lemon juice",
+    "6 tablespoons (90ml) extra-virgin olive oil",
+    "1/8 teaspoon chile powder",
+    "salt, to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

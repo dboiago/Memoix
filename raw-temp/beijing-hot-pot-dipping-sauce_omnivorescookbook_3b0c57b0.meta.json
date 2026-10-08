@@ -1,0 +1,47 @@
+{
+  "url": "https://omnivorescookbook.com/beijing-hot-pot-dipping-sauce/",
+  "slug": "beijing-hot-pot-dipping-sauce_omnivorescookbook_3b0c57b0",
+  "title": "Beijing hot pot dipping sauce",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T16:45:54.862Z",
+  "ldName": "Beijing Hot Pot Dipping Sauce (京式火锅蘸料)",
+  "ldTime": "PT8M",
+  "ldPrepTime": "PT8M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2",
+    "2 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Condiment",
+  "ldKeywords": "home style",
+  "ldIngredientsRaw": [
+    "1/4 cup Chinese sesame paste ((or unsweetened natural peanut butter, or tahini) (*Footnote 1))",
+    "1/4 cup water ((or warm hot pot broth) (*Footnote 2))",
+    "1  block red fermented bean curd",
+    "2 to 3 teaspoons Chinese fermented leek flower sauce ((Optional) (*Footnote 3))",
+    "2 teaspoons soy sauce ((or to taste))",
+    "1 tablespoon toasted sesame oil",
+    "1 teaspoon garlic (, grated (2 cloves))",
+    "2 tablespoons cilantro (, minced (or to taste) (Optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Add the sesame paste into a big bowl. Add the water, one tablespoon at a time, and use a spatula or a spoon to blend the water in until it forms a smooth paste. Add more water and repeat, until it forms a smooth sauce that is slightly runny.",
+    "Add the red fermented bean curd. Break it apart while mixing it into the sauce, until fully incorporated.",
+    "Add the rest of the ingredients and mix, until everything is fully dissolved into the sauce. Taste it and adjust it according to your taste. If you do not use the leek flower sauce, the sauce will be milder. You can add a bit more soy sauce, sesame oil, and garlic to boost the flavor."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1/4 cup Chinese sesame paste (or unsweetened natural peanut butter, or tahini) (*Footnote 1)",
+    "1/4 cup water (or warm hot pot broth) (*Footnote 2)",
+    "1 block red fermented bean curd",
+    "2 to 3 teaspoons Chinese fermented leek flower sauce (Optional) (*Footnote 3)",
+    "2 teaspoons soy sauce (or to taste)",
+    "1 tablespoon toasted sesame oil",
+    "1 teaspoon garlic , grated (2 cloves)",
+    "2 tablespoons cilantro , minced (or to taste) (Optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

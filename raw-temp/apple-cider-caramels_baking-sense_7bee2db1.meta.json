@@ -1,0 +1,67 @@
+{
+  "url": "https://www.baking-sense.com/2017/11/29/apple-cider-caramels/",
+  "slug": "apple-cider-caramels_baking-sense_7bee2db1",
+  "title": "Apple Cider Caramels",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T01:26:21.612Z",
+  "ldName": "Apple Cider Caramels",
+  "ldTime": "PT570M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "64",
+    "64 pieces"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Snack",
+  "ldKeywords": "apple cider, autumn, jelly candy",
+  "ldIngredientsRaw": [
+    "16 oz apple cider (2 cups)",
+    "12 oz heavy cream (1 ½ cups)",
+    "3 oz unsalted butter",
+    "1 teaspoon vanilla extract",
+    "16 oz granulated sugar (2 cups)",
+    "10 oz light corn syrup (1 cup)",
+    "½ teaspoon cinnamon",
+    "½ teaspoon table salt",
+    "½ teaspoon ginger"
+  ],
+  "ldInstructionsRaw": [
+    "Butter an 8&quot;x 8&quot; square baking pan and line in both directions with parchment paper, also butter the parchment paper.",
+    "Bring 16 oz&#32;apple cider to a boil over medium high heat and allow it to reduce by ¾. You should have ½ cup when you&#39;re done. This should take about 15 minutes. Reduce the heat to low, then add 12 oz&#32;heavy cream, 3 oz&#32;unsalted butter and 1 teaspoon&#32;vanilla extract to the reduced cider. Cook until the butter is melted, then set the mixture aside.",
+    "Combine 16 oz&#32;granulated sugar and 10 oz&#32;light corn syrup in a large, heavy Dutch oven. Heat over medium high heat until the sugar is melted and the mixture becomes a medium caramel color. Do not stir once the sugar is boiling. You can pick up the pot and swirl it around if you see dark spots in the caramel.",
+    "Add the cider/cream mixture all at once. Keep your face away from the pan because the steam can burn. Stir to combine. Reduce heat to medium and cook until 248 °F-250 °F, do not stir. Turn off the heat and whisk in ½ teaspoon&#32;cinnamon, ½ teaspoon&#32;table salt and ½ teaspoon&#32;ginger.",
+    "Pour the caramel into the prepared pan and let set, uncovered, overnight at room temperature.",
+    "Cut into 1&quot; squares using a sharp, oiled knife. Wipe the blade between cuts with an oiled paper towel. Wrap the candies in squares of wax or parchment paper.",
+    "Keep in an airtight container at room temperature."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 candie",
+    "calories": "71 kcal",
+    "carbohydrateContent": "11 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "9 mg",
+    "sodiumContent": "23 mg",
+    "sugarContent": "11 g",
+    "proteinContent": "0.2 g",
+    "transFatContent": "0.04 g",
+    "fiberContent": "0.02 g",
+    "unsaturatedFatContent": "1.1 g"
+  },
+  "htmlIngredientLines": [
+    "16 oz apple cider (2 cups)",
+    "12 oz heavy cream (1 ½ cups)",
+    "3 oz unsalted butter",
+    "1 teaspoon vanilla extract",
+    "16 oz granulated sugar (2 cups)",
+    "10 oz light corn syrup (1 cup)",
+    "½ teaspoon cinnamon",
+    "½ teaspoon table salt",
+    "½ teaspoon ginger"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

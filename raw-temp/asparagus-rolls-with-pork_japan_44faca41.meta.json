@@ -1,0 +1,55 @@
+{
+  "url": "https://japan.recipetineats.com/asparagus-rolls-with-pork/",
+  "slug": "asparagus-rolls-with-pork_japan_44faca41",
+  "title": "Asparagus Rolls with Pork",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T17:01:39.354Z",
+  "ldName": "Asparagus Rolls with Pork",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "3",
+    "3 as appetiser"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Appetiser",
+  "ldKeywords": "asparagus, asparagus rolls, pork loin",
+  "ldIngredientsRaw": [
+    "9  thin asparagus spears ((about 125g/4.4oz, note 1))",
+    "9  very thin pork slices ((note 2))",
+    "1 tbsp oil",
+    "1 tbsp soy sauce",
+    "1 tbsp mirin",
+    "1 tbsp sake",
+    "Decorative cucumber – opposing cut ((note 3))"
+  ],
+  "ldInstructionsRaw": [
+    "Combine flavouring sauce ingredients in a jar or a small bowl.",
+    "Remove hard part of the asparagus stem at lower end and cut to half equal length.",
+    "Boil water in a pan, add a pinch of salt and blanch asparagus for 30 seconds to 1 minute. Drain and cool down.",
+    "On a cutting board, spread a slice of pork diagonally, then place the top half and the bottom half of asparagus pieces (note 1) at the end of the pork slice closest to you. Ensure the side edge of the pork slice lines up with the edge of the asparagus sticks.",
+    "Lift the end of the pork slice closest to you and roll the asparagus tightly away from you. Keep rolling until the end, adjusting the angle of the pork slice so that the pork just covers the end of the asparagus sticks.",
+    "Repeat steps 4 and 5 for the rest of asparagus sticks.",
+    "Heat oil in a frying pan over medium high heat and place asparagus wrapped in pork, facing the ending side of the pork down.",
+    "Sauté for about 1 minute until the bottom part of the pork is lightly browned (note 4). Turn them over and cook another 30 seconds to 1 minute until the pork is lightly browned.",
+    "Reduce the heat to medium low and add the flavouring sauce.",
+    "Roll the asparagus to coat them with the sauce while the sauce is bubbling and condensing. When the sauce is almost evaporated, remove the pan from the heat.",
+    "Serve with decorative cucumber pieces if using."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "9\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tthin asparagus spears\n\t\t\t\t\t\t\t\t\t\t(about 125g/4.4oz, note 1)",
+    "9\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tvery thin pork slices\n\t\t\t\t\t\t\t\t\t\t(note 2)",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\toil",
+    "[Flavouring Sauce]",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tsoy sauce",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tmirin",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tsake",
+    "[To Serve (optional)]",
+    "Decorative cucumber – opposing cut\n\t\t\t\t\t\t\t\t\t\t(note 3)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

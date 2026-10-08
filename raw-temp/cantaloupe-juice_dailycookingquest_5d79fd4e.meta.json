@@ -1,0 +1,38 @@
+{
+  "url": "https://dailycookingquest.com/cantaloupe-juice.html",
+  "slug": "cantaloupe-juice_dailycookingquest_5d79fd4e",
+  "title": "Cantaloupe Juice",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:18:54.356Z",
+  "ldName": "Cantaloupe Juice",
+  "ldTime": "PT0H10M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H0M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Drink, Vegetarian",
+  "ldKeywords": [
+    "fresh cantaloupe juice recipe",
+    "Fruit"
+  ],
+  "ldIngredientsRaw": [
+    "half a cantaloupe (about 400 gram)",
+    "100 ml cold drinking water",
+    "3 tablespoon honey"
+  ],
+  "ldInstructionsRaw": [
+    "Put everything in a blender and process until smooth.",
+    "Transfer to pretty serving glasses (or jars) and serve immediately"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "half a cantaloupe (about 400 gram)",
+    "100 ml cold drinking water",
+    "3 tablespoon honey"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

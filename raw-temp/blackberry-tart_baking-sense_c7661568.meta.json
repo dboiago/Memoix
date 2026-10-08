@@ -1,0 +1,71 @@
+{
+  "url": "https://www.baking-sense.com/2023/06/22/blackberry-tart/",
+  "slug": "blackberry-tart_baking-sense_c7661568",
+  "title": "Blackberry Tart",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T19:16:00.589Z",
+  "ldName": "Blackberry Tart Recipe",
+  "ldTime": "PT110M",
+  "ldPrepTime": "PT90M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "American, French",
+  "ldCategory": "Dessert",
+  "ldKeywords": "blackberries, white chocolate",
+  "ldIngredientsRaw": [
+    "1 recipe Short dough (Chilled)",
+    "8 oz white chocolate",
+    "8 oz whole milk (1 cup)",
+    "8 oz heavy cream (1 cup)",
+    "3 oz granulated sugar (⅓ cup)",
+    "½  vanilla bean (or 1 teaspoon vanilla extract)",
+    "2  large eggs",
+    "2  large yolks",
+    "¾ oz corn starch (2 tablespoons)",
+    "24-32 oz Fresh Blackberries (see note)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 °F. Roll 1 recipe&#32;Short dough to fit a 10&quot; or 12&quot; tart pan with a removeable bottom. Line the pan and poke at least 7-8x over the dough with a fork. Bake the crust until golden brown, about 10-12 minutes. Set the crust aside.",
+    "Chop 8 oz&#32;white chocolate and place it in a heat proof bowl.",
+    "In a medium size pan, scald 8 oz&#32;whole milk, 8 oz&#32;heavy cream and 3 oz&#32;granulated sugar over medium high heat. Scrape the seeds from ½&#32;vanilla bean and add them along with the pod to the pot.",
+    "While the milk heats up, whisk together 2&#32;large eggs, 2&#32;large yolks with ¾ oz&#32;corn starch until smooth.",
+    "Whisk the scalding hot milk into the eggs, then return the mix to the heat. Cook the mixture over low heat, stirring constantly, until the mixture just begins to boil and thickens. Remove from the heat. Immediately strain the custard over the chopped chocolate and let it sit for 2-3 minutes. Gently stir until it comes together and all the bits of white chocolate are melted.",
+    "While the filling is still warm, pour it into the baked tart shell and smooth to an even layer. Arrange 24-32 oz&#32;Fresh Blackberries, standing up, in concentric circles on the filling.",
+    "Chill the tart at least 2-3 hours until the filling is set."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "249 kcal",
+    "carbohydrateContent": "26 g",
+    "proteinContent": "4 g",
+    "fatContent": "15 g",
+    "saturatedFatContent": "8 g",
+    "transFatContent": "0.002 g",
+    "cholesterolContent": "65 mg",
+    "sodiumContent": "83 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "17 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "1 recipe Short dough (Chilled)",
+    "[White Chocolate Crémeux]",
+    "8 oz white chocolate",
+    "8 oz whole milk (1 cup)",
+    "8 oz heavy cream (1 cup)",
+    "3 oz granulated sugar (⅓ cup)",
+    "½ vanilla bean (or 1 teaspoon vanilla extract)",
+    "2 large eggs",
+    "2 large yolks",
+    "¾ oz corn starch (2 tablespoons)",
+    "[Assembly]",
+    "24-32 oz Fresh Blackberries (see note)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,9 @@
+Food plays a very important part of my holidays. Whether it’s a weekend outing or a family holiday my research always starts with the food. This year we’ve chosen [Italy](https://www.greatitalianchefs.com/). We don’t have very long so rather than choose a resort we are taking in the cities of Verona, Milan and Venice. I am of course excited about the sights and shopping but most of all I want to eat.
+
+Before I go away, I always try to get my children accustomed to the food they’ll be eating when we are away. We go to the library and take out recipe books as well as guide books. We’ll make a range of dishes – some familiar and some not so. It’s a really good way to start preparing and getting excited for holidays.
+
+As a [vegetarian](https://www.greatbritishchefs.com/collections/vegetarian-recipes) it’s hard eating out when there are no English menus. Especially when you want to get off the beaten track a little and the menus don’t have any English translations. That’s a great thing. It means the clientele is mainly local. But it’s problematic when you don’t speak the language very well.
+
+This is why I love the coffee shops. I’m not overly fussed about the coffee but I love the range of mini desserts and biscuits they have on the counter. I can point to something and know it won’t have any meat in it. Each stop heralds a different treat. The range on display almost always has varieties of biscotti. These are twice baked, usually oblong-shaped biscuits that are perfect for dipping. Either into Vin Santo or coffee.
+
+There are so many combinations but generally there is a dried fruit component and a nut component. I’ve used just cacao nibs in this version but I also liked a batch I made with dried cranberries. You can play around adding whatever spices, fruit or nuts you fancy.

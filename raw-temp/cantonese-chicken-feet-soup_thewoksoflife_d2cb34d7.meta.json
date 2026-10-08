@@ -1,0 +1,60 @@
+{
+  "url": "https://thewoksoflife.com/cantonese-chicken-feet-soup/",
+  "slug": "cantonese-chicken-feet-soup_thewoksoflife_d2cb34d7",
+  "title": "Cantonese Chicken Feet Soup",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T14:04:34.231Z",
+  "ldName": "Cantonese Chicken Feet Soup",
+  "ldTime": "PT225M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT165M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soups",
+  "ldKeywords": "chicken feet soup",
+  "ldIngredientsRaw": [
+    "15 grams dried seaweed ((haidai, 海带, also known as kelp or kombu - sliced into thin strips, a small handful))",
+    "1 cup raw shelled peanuts ((150g))",
+    "1 1/2 pounds chicken feet ((700g))",
+    "2 tablespoons Shaoxing wine",
+    "4 slices ginger",
+    "12 cups water ((2800 ml))",
+    "salt ((to taste))",
+    "1  scallion ((chopped))"
+  ],
+  "ldInstructionsRaw": [
+    "Soak the dried seaweed for an hour, rinsing it with water a couple of times to ensure there’s no sediment. Drain and set aside. Rinse the peanuts also and set aside.",
+    "Rinse the chicken feet, and trim away the nail portion with kitchen shears. Transfer to a soup pot. Fill with enough water to submerge completely, and add 2 tablespoons Shaoxing wine. Bring to a boil, and let boil for 1 minute. Remove from the burner, drain, and rinse clean.",
+    "The chicken feet then go back into the soup pot with the hai dai (海带), peanuts, ginger slices, and 12 cups of water. Cover and bring to a boil over high heat.",
+    "Once boiling, reduce the heat to medium and cook with the lid on for an additional 20 minutes.",
+    "Lastly, reduce the heat to a low simmer (with movement, but no large bubbles) for 2 hours, until the chicken feet are soft and falling off the bone tender. Add salt to taste, garnish with chopped scallions, and serve."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "294 kcal",
+    "carbohydrateContent": "4 g",
+    "proteinContent": "21 g",
+    "fatContent": "21 g",
+    "saturatedFatContent": "5 g",
+    "cholesterolContent": "71 mg",
+    "sodiumContent": "664 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 15 grams dried seaweed (haidai, 海带, also known as kelp or kombu – sliced into thin strips, a small handful)",
+    "▢ 1 cup raw shelled peanuts (150g)",
+    "▢ 1 1/2 pounds chicken feet (700g)",
+    "▢ 2 tablespoons Shaoxing wine",
+    "▢ 4 slices ginger",
+    "▢ 12 cups water (2800 ml)",
+    "▢ salt (to taste)",
+    "▢ 1 scallion (chopped)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

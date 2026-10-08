@@ -1,0 +1,5 @@
+Beetroot has a wonderfully long growing season here in the UK, stretching from mid/late summer, all through the [autumn](https://www.greatbritishchefs.com/collections/autumn-recipes), and even into the winter months. Nutritionally beetroot is an absolute powerhouse (it’s one of the most powerful antioxidants we can eat!), with the added bonus of being cheap as chips, especially if you’re buying from a local farmers’ market.
+
+Here I’ve paired roasted beetroot and shallots – both naturally sweet – with the sharp tang of a crushed raspberry and sherry vinegar dressing. Raspberries are coming to the end of their season in September, so try this savoury twist as a final hurrah! Walnuts add texture and ‘meatiness’, and thyme is a nod to the autumn and winter flavours, just around the corner.
+
+This recipe serves 4 people as lunch if accompanied with a green salad, and I suggest the peppery notes of some late season watercress. If you are not fully vegan perhaps add some crumbled feta – the salty ‘pop’ is a beautiful contrast to the sweet beetroot and the sharp tang of raspberries.

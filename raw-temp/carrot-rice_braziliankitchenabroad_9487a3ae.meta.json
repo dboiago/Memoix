@@ -1,0 +1,50 @@
+{
+  "url": "https://braziliankitchenabroad.com/carrot-rice/",
+  "slug": "carrot-rice_braziliankitchenabroad_9487a3ae",
+  "title": "Carrot Rice",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-25T19:55:41.115Z",
+  "ldName": "Brazilian Carrot Rice",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4",
+    "4 serv"
+  ],
+  "ldCuisine": "Brazilian, Latin American",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "carrot, rice recipe",
+  "ldIngredientsRaw": [
+    "1 Tbsp olive oil",
+    "1/2  onion, diced (about half a cup diced)",
+    "2 tsp Brazilian Sofrito (or 2 cloves of garlic, minced)",
+    "1 cup freshly grated carrots",
+    "1 cup uncooked long grain white rice (unwashed)",
+    "1.5 tsp kosher salt",
+    "1 Tbsp fresh parsley, minced (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "In a medium sauce pan, heat up the oil.",
+    "Add the diced onion and cook until transparent, about 2 minutes.",
+    "Add the garlic and cook until fragrant - about a minute.",
+    "Add the rice, the grated carrots, and the salt and stir for about a minute.",
+    "Add 1 3/4 cup of water to the pan and bring to a gentle boil.",
+    "Reduce to a simmer, cover and let it simmer until all water has been absorbed (try not to peak – we don’t want to lose steam that’s precious for the next step!)",
+    "Turn off the heat and let the rice pot sit covered for another 10 mins – steam.",
+    "Open the pot, then &quot;air&quot; the rice for a minute or two. Then, sprinkle in the parsley (if using), fluff with a fork, and serve!"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 Tbsp olive oil",
+    "1/2 onion, diced about half a cup diced",
+    "2 tsp Brazilian Sofrito or 2 cloves of garlic, minced",
+    "1 cup freshly grated carrots",
+    "1 cup uncooked long grain white rice unwashed",
+    "1.5 tsp kosher salt",
+    "1 Tbsp fresh parsley, minced optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

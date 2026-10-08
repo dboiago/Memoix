@@ -1,0 +1,68 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-beef-dumplings-with-celery/",
+  "slug": "chinese-beef-dumplings-with-celery_chinasichuanfood_524cf5c2",
+  "title": "Chinese Beef Dumplings with Celery",
+  "byline": "",
+  "fetchedAt": "2026-08-02T04:00:22.787Z",
+  "ldName": "Chinese Beef Dumplings with Celery",
+  "ldTime": "PT65M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT50M",
+  "ldYield": [
+    "40"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Beef, Dumpling",
+  "ldIngredientsRaw": [
+    "40 to 50  dumpling wrappers",
+    "2 cups ground beef ( ,15% fat at least)",
+    "1.5 cup chicken stock ( ,boiling hot)",
+    "1 tbsp. Sichuan peppercorn",
+    "1 to 2 cups chopped celery",
+    "1.5 tsp. salt",
+    "1/2 tbsp. Chinese cooking oil ( ,optional)",
+    "1 tbsp. light soy sauce",
+    "1 tbsp. sesame oil",
+    "1/4 tsp. white pepper",
+    "1/2 tbsp. grated ginger",
+    "1/2 tsp. sugar ( ,optional)",
+    "1/4 cup chopped leek scallion white"
+  ],
+  "ldInstructionsRaw": [
+    "Soak Sichuan peppercorn with boiling hot chicken stock and set aside for 10 minutes. Strain and remove the Sichuan peppercorns.",
+    "Add the ground beef in a large bowl and mix the chicken stock with beef by three batches. Each time after adding the stock, use a chopstick to stir it in one direction until all the liquid is absorbed. Continue stirring for couple of minutes after mixing all of the chicken stock until the beef becomes quite sticky and fluffy.",
+    "Add ginger, scallion white, light soy sauce, salt, sugar, white pepper and sesame oil. Combine well. Set aside until making your dumpling wrappers.",
+    "Before assembling your wonton, mix chopped celery in. Scoop around 1 tablespoon of filling in the center and assemble the dumplings with your favorite method. Repeat to finish all of the dumplings.",
+    "To fry the dumplings",
+    "Or to boil the dumplings:"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "68 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "3 g",
+    "fatContent": "3 g",
+    "cholesterolContent": "9 mg",
+    "sodiumContent": "174 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "40 to 50 dumpling wrappers",
+    "2 cups ground beef  ,15% fat at least",
+    "1.5 cup chicken stock  ,boiling hot",
+    "1 tbsp. Sichuan peppercorn",
+    "1 to 2 cups chopped celery",
+    "1.5 tsp. salt",
+    "1/2 tbsp. Chinese cooking oil  ,optional",
+    "1 tbsp. light soy sauce",
+    "1 tbsp. sesame oil",
+    "1/4 tsp. white pepper",
+    "1/2 tbsp. grated ginger",
+    "1/2 tsp. sugar  ,optional",
+    "1/4 cup chopped leek scallion white"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

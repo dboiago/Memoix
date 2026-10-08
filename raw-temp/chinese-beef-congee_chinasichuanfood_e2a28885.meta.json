@@ -1,0 +1,64 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-beef-congee/",
+  "slug": "chinese-beef-congee_chinasichuanfood_e2a28885",
+  "title": "Chinese Beef Congee",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:24:10.504Z",
+  "ldName": "Chinese Beef Congee",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 cup rice (, washed and soaked)",
+    "12 cups water",
+    "1 thumb ginger (, shredded)",
+    "1  lettuce leaf (, shredded)",
+    "50 g sliced beef",
+    "1/2 tsp. salt",
+    "1 tbsp. shredded ginger",
+    "1/4 tsp. white pepper",
+    "1/2 tsp. cornstarch",
+    "1/2 tbsp. light soy sauce (, optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Make basic congee. Wash the rice in advance and then soak with clean water for 30 minutes. Mix with 1/2 tablespoon of vegetable cooking oil or sesame oil. Set aside for 15 minutes. You can freeze the rice in the previous day.Bring the water to a boiling in a pot and then add the soaked rice. Heat until boiling again and slow down the fire and continue cooking for 30 minutes. Then transfer half of the congee to a serving claypot.",
+    "Marinate beef slice with salt, ground white pepper, ginger and 1/2 teaspoon of cornstarch. Mix for half minute. Then place the beef slice in the congee.",
+    "Stir quickly to separate the beef slices as soon as possible. Continue cooking for 1 minute. Add salt and mix well. Turn off fire, add chopped lettuce, shredded ginger and white pepper."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "189 kcal",
+    "carbohydrateContent": "38 g",
+    "proteinContent": "6 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "7 mg",
+    "sodiumContent": "570 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 cup rice , washed and soaked",
+    "12 cups water",
+    "1 thumb ginger , shredded",
+    "1 lettuce leaf , shredded",
+    "[Beef]",
+    "50 g sliced beef",
+    "1/2 tsp. salt",
+    "1 tbsp. shredded ginger",
+    "1/4 tsp. white pepper",
+    "1/2 tsp. cornstarch",
+    "1/2 tbsp. light soy sauce , optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

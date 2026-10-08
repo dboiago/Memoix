@@ -1,0 +1,58 @@
+{
+  "url": "https://amazingribs.com/tested-recipes/potato-recipes/blue-cheese-potato-salad-recipe/",
+  "slug": "blue-cheese-potato-salad-is-bold-and-beautiful_amazingribs_80b89f69",
+  "title": "Blue Cheese Potato Salad Is Bold And Beautiful",
+  "byline": "Meathead",
+  "fetchedAt": "2026-08-02T07:04:25.838Z",
+  "ldName": "Blue Cheese Potato Salad Recipe",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dinner, Lunch, Salad, Side Dish, Vegetable",
+  "ldKeywords": "bleu cheese, boiled potatoes, cheese, potato, potato salad",
+  "ldIngredientsRaw": [
+    "1 pound waxy potatoes ((2 baseball size))",
+    "2 teaspoons butter or margarine",
+    "1 tablespoon blue cheese",
+    "2 teaspoons chopped chives",
+    "2 pinches Morton Coarse Kosher Salt",
+    "2 pinches finely ground black pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Smush. Bring the butter and the blue cheese to room temp for about 2 hours. In a large bowl, smush them together with a fork until blended.",
+    "Prep. Peel the potatoes (or not), and cut them into bite-size chunks.",
+    "Cook. Boil the chunks until they are soft, but not mushy, about 10 minutes. Drain. Toss them in with the cheesy butter.",
+    "Chive me. Take the chives and bundle them like pencils. With a scissors cut them into 1/8&quot; (3.2 mm) bits and add toss into the potatoes.",
+    "Serve. Add salt and pepper to taste and serve immediately."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "4 ounces",
+    "calories": "105 kcal",
+    "carbohydrateContent": "18 g",
+    "proteinContent": "3 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "2 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "7 mg",
+    "sodiumContent": "257 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "1 g"
+  },
+  "htmlIngredientLines": [
+    "1 pound waxy potatoes (2 baseball size)",
+    "2 teaspoons butter or margarine",
+    "1 tablespoon blue cheese",
+    "2 teaspoons chopped chives",
+    "2 pinches Morton Coarse Kosher Salt",
+    "2 pinches finely ground black pepper"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "US",
+  "siteCourseHint": "Smoking"
+}

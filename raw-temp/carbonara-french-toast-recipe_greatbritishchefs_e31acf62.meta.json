@@ -1,0 +1,36 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/carbonara-french-toast-recipe",
+  "slug": "carbonara-french-toast-recipe_greatbritishchefs_e31acf62",
+  "title": "Carbonara French Toast Recipe",
+  "byline": "by Shaun Hill",
+  "fetchedAt": "2026-08-01T20:57:04.736Z",
+  "ldName": "French toast ‘alla carbonara’",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Brunch",
+  "ldKeywords": "carbonara, french toast, easy",
+  "ldIngredientsRaw": [
+    "6 Freshlay Farms Golden Yolker® eggs",
+    "200ml of whole milk",
+    "50g of Parmesan, finely grated, plus extra to serve",
+    "150g of pancetta lardons, or guanciale if you can find it",
+    "8 slices of sourdough bread, (brioche works nicely too)",
+    "olive oil, to fry"
+  ],
+  "ldInstructionsRaw": [
+    "Whisk together 2 of the eggs with the milk and grated Parmesan. Season with pepper (it shouldn’t need salt, as Parmesan and pancetta are salty)",
+    "Fry the pancetta in a large pan until the fat renders and the pieces are crisp. Remove the pancetta but leave the fat in the pan for frying the toast",
+    "Dip the bread slices into the milk mixture, allowing them to soak for 10-15 seconds",
+    "Fry the bread in the pancetta fat over medium heat until golden and crisp on both sides. Add a splash of olive oil if needed",
+    "Meanwhile, fry the remaining eggs in a separate pan in olive oil",
+    "Serve the French toast topped with the fried egg and scatter over the crispy pancetta. Finish with a generous shower of Parmesan and pepper"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

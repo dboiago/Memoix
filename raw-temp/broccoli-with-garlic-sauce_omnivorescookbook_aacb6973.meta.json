@@ -1,0 +1,63 @@
+{
+  "url": "https://omnivorescookbook.com/broccoli-with-garlic-sauce/",
+  "slug": "broccoli-with-garlic-sauce_omnivorescookbook_aacb6973",
+  "title": "Broccoli with Garlic Sauce",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T06:56:16.671Z",
+  "ldName": "Broccoli with Garlic Sauce",
+  "ldTime": "PT23M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT8M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "takeout",
+  "ldIngredientsRaw": [
+    "1 lb broccoli (, cut into bite size pieces)",
+    "2 tablespoons water",
+    "1 1/2 tablespoons light soy sauce",
+    "1/2 teaspoon dark soy sauce",
+    "1 teaspoon sugar",
+    "1 teaspoon cornstarch",
+    "1 tablespoon peanut oil",
+    "1 teaspoon minced ginger",
+    "3 cloves garlic (, chopped)"
+  ],
+  "ldInstructionsRaw": [
+    "Heat 1” water in a large frying pan over medium-high heat until boiling. Add the broccoli. Cover the pan and cook for 2 minutes, until al dente. Drain the broccoli and set aside.",
+    "Mix the sauce ingredients together in a small bowl.",
+    "Wipe the pan clean and heat the oil over medium-high heat until shimmering. Add the ginger and garlic. Stir and cook for 30 seconds to release fragrance.",
+    "Add the broccoli. Stir and cook for 1 minute, until coated evenly with oil and the extra moisture from blanching has been cooked off. Stir the sauce again until the cornstarch is fully dissolved, then pour it into the pan. Immediately stir to mix everything well until the sauce thickens. Transfer everything to a plate and serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "169 kcal",
+    "carbohydrateContent": "34 g",
+    "proteinContent": "3.1 g",
+    "fatContent": "3.7 g",
+    "saturatedFatContent": "0.6 g",
+    "sodiumContent": "369 mg",
+    "fiberContent": "2.5 g",
+    "sugarContent": "26.7 g"
+  },
+  "htmlIngredientLines": [
+    "1 lb broccoli , cut into bite size pieces",
+    "[Sauce]",
+    "2 tablespoons water",
+    "1 1/2 tablespoons light soy sauce",
+    "1/2 teaspoon dark soy sauce",
+    "1 teaspoon sugar",
+    "1 teaspoon cornstarch",
+    "[Stir fry]",
+    "1 tablespoon peanut oil",
+    "1 teaspoon minced ginger",
+    "3 cloves garlic , chopped"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

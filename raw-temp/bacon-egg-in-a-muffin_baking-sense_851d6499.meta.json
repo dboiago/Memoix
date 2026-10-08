@@ -1,0 +1,73 @@
+{
+  "url": "https://www.baking-sense.com/2016/05/06/bacon-egg-in-a-muffin/",
+  "slug": "bacon-egg-in-a-muffin_baking-sense_851d6499",
+  "title": "Bacon & Egg (in a) Muffin",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T19:06:08.285Z",
+  "ldName": "Bacon & Egg Corn Muffin",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "6",
+    "6 large muffins"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast, brunch, Lunch",
+  "ldKeywords": "runny egg",
+  "ldIngredientsRaw": [
+    "6  large eggs (cold)",
+    "12 ½ oz all purpose flour (2 ½ cups, see note)",
+    "7 ½ oz yellow corn meal (1 ½ cups)",
+    "2 teaspoons table salt",
+    "1 ½ teaspoons baking powder",
+    "1 teaspoon baking soda",
+    "2 oz granulated sugar (¼ cup)",
+    "½ teaspoon ground cinnamon",
+    "12 ounces bacon (cooked crisp)",
+    "18 oz buttermilk (2 ¼ cups)",
+    "2 oz maple syrup (¼ cup)",
+    "4  large eggs",
+    "2 oz butter ( or bacon fat, melted)"
+  ],
+  "ldInstructionsRaw": [
+    "Bring 1 inch of water to a boil in a small pot. Gently place the 6 cold eggs into the pot, cover. Reduce the heat to medium and steam the eggs for exactly 5 minutes. Remove the pot from the stove and immediately fill the pot with cold water to stop the cooking. Let the eggs cool in the water for 5 minutes then place in the refrigerator to cool completely.",
+    "When you&#x27;re ready to make the muffin batter, put the eggs into the freezer while making the batter (up to 1/2 hr). Cook the bacon slices until crisp, chop into small bacon bits. Grease a 6-cup jumbo muffin tin with butter or bacon fat, then flour.",
+    "Preheat the oven to 375 °F.",
+    "Make the batter"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 muffin",
+    "calories": "876 kcal",
+    "carbohydrateContent": "93 g",
+    "proteinContent": "29 g",
+    "fatContent": "43 g",
+    "saturatedFatContent": "17 g",
+    "cholesterolContent": "340 mg",
+    "sodiumContent": "1697 mg",
+    "transFatContent": "0.4 g",
+    "fiberContent": "5 g",
+    "sugarContent": "20 g",
+    "unsaturatedFatContent": "23 g"
+  },
+  "htmlIngredientLines": [
+    "6 large eggs (cold)",
+    "[Batter]",
+    "12 ½ oz all purpose flour (2 ½ cups, see note)",
+    "7 ½ oz yellow corn meal (1 ½ cups)",
+    "2 teaspoons table salt",
+    "1 ½ teaspoons baking powder",
+    "1 teaspoon baking soda",
+    "2 oz granulated sugar (¼ cup)",
+    "½ teaspoon ground cinnamon",
+    "12 ounces bacon (cooked crisp)",
+    "18 oz buttermilk (2 ¼ cups)",
+    "2 oz maple syrup (¼ cup)",
+    "4 large eggs",
+    "2 oz butter ( or bacon fat, melted)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

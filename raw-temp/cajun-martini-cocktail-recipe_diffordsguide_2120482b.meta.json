@@ -1,0 +1,37 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/358/cajun-martini",
+  "slug": "cajun-martini-cocktail-recipe_diffordsguide_2120482b",
+  "title": "Cajun Martini Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-02T02:36:49.317Z",
+  "ldName": "Cajun Martini",
+  "ldTime": "PT03M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Martini-style"
+  ],
+  "ldIngredientsRaw": [
+    "75 ml Chili pepper vodka",
+    "15 ml Dry vermouth"
+  ],
+  "ldInstructionsRaw": [
+    "STIR vermouth with ice",
+    "Strain, discarding vermouth to leave only a coating on the ice",
+    "Pour pepper vodka into mixing glass, stir with coated ice and strain into chilled glass."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "191 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

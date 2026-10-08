@@ -1,0 +1,58 @@
+{
+  "url": "https://omnivorescookbook.com/baby-bok-choy-stir-fry/",
+  "slug": "4-ingredient-baby-bok-choy-stir-fry_omnivorescookbook_e65c8ba9",
+  "title": "4-Ingredient Baby Bok Choy Stir Fry",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T03:20:42.331Z",
+  "ldName": "4-Ingredient Baby Bok Choy Stir Fry",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "vegan",
+  "ldIngredientsRaw": [
+    "18 oz (500 g) baby bok choy",
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "2 tablespoons light soy sauce ((or soy sauce))",
+    "1 teaspoon sugar",
+    "2 tablespoons garlic (, minced)",
+    "Toasted sesame seeds  (, for garnish (Optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Rinse the baby bok choy. Tear apart the large leaves and remove the tough ends (see the blog post above for more detailed instructions and pictures). Wash thoroughly to remove any dirt between the leaves and drain in a colander.",
+    "Heat 1 tablespoon of oil in a large skillet (nonstick or carbon steel) over medium-high heat until hot. Add the garlic and stir a few times until fragrant.",
+    "Add the baby bok choy, stir, and cook for 1 to 2 minutes, until the bok choy is evenly coated with oil.",
+    "Add sugar and swirl in the light soy sauce. Stir a few times to mix the sauce.",
+    "Cover and reduce to medium heat. Cook for 30 seconds to 1 minute, until the baby bok choy turns tender, but not to the point of being mushy. You can uncover the pan to check on the progress in the meantime.",
+    "Uncover the pan. Carefully taste the baby bok choy. Let cook for another 30 seconds or so to absorb the sauce. Once done, stop the heat and immediately transfer the baby bok choy to a serving plate. Sprinkle with toasted sesame seeds, if using.",
+    "Serve hot as a side."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "59 kcal",
+    "carbohydrateContent": "5.2 g",
+    "proteinContent": "2.7 g",
+    "fatContent": "3.7 g",
+    "saturatedFatContent": "0.6 g",
+    "sodiumContent": "314 mg",
+    "fiberContent": "1.4 g",
+    "sugarContent": "2.6 g"
+  },
+  "htmlIngredientLines": [
+    "18 oz (500 g) baby bok choy",
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "2 tablespoons light soy sauce (or soy sauce)",
+    "1 teaspoon sugar",
+    "2 tablespoons garlic , minced",
+    "Toasted sesame seeds  , for garnish (Optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/4-ingredient-jerk-tofu/",
+  "slug": "4-ingredient-jerk-tofu_itdoesnttastelikechicken_42592c75",
+  "title": "4 Ingredient Jerk Tofu",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T22:26:57.742Z",
+  "ldName": "4 Ingredient Jerk Tofu",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Jamaican",
+  "ldCategory": "Main Course",
+  "ldKeywords": "tofu",
+  "ldIngredientsRaw": [
+    "1 block (350g) extra-firm tofu (pressed for 15-30 minutes, and cut into 1\" cubes.)",
+    "1/4 cup jerk marinade (plus more for dipping)",
+    "Handful of cilantro, (chopped)",
+    "Half a lime, (cut into wedges)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat oven to 325F (170C). Lightly grease a baking sheet or line it with parchment paper.",
+    "Toss the pressed tofu with the marinade to coat. Spread on the baking sheet. Bake for 45 minutes to an hour, tossing every now and then. 45 minutes will get you soft-chewy tofu, but for extra-chewy (how I like it), keep it in there for the full hour. Some of the tofu pieces might puff up, this is a sign of good things happening in the oven.",
+    "Once baked, brush on a little more of the marinade, or alternatively, serve it on the side as dipping sauce. Sprinkle with chopped cilantro and a squeeze of lime. Perfect served with beans &amp; rice and coleslaw."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "119 kcal",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 block (350g) extra-firm tofu, pressed for 15-30 minutes, and cut into 1\" cubes.",
+    "▢ ¼ cup jerk marinade, plus more for dipping",
+    "▢ Handful of cilantro,, chopped",
+    "▢ Half a lime,, cut into wedges"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

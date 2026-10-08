@@ -1,0 +1,53 @@
+{
+  "url": "https://muybuenoblog.com/cebollitas-asadas-grilled-green-onions/",
+  "slug": "cebollitas-asadas-grilled-green-onions_muybuenoblog_70a1e9a8",
+  "title": "Cebollitas Asadas (Grilled Green Onions)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-01T20:13:31.962Z",
+  "ldName": "Cebollitas Asadas (Grilled Green Onions)",
+  "ldTime": "PT27M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT22M",
+  "ldYield": [
+    "5"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "grilled vegetables, grilling green onions, Mexican grilled vegetables",
+  "ldIngredientsRaw": [
+    "20  spring onions or large scallions (about 4 bunches washed and trimmed)",
+    "2 tablespoons salted butter (chopped or melted)",
+    "2 tablespoons soy sauce (or Maggi)",
+    "salt",
+    "1  lime (juiced (optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat grill.",
+    "Place onions on a large sheet of foil with butter, soy sauce, and lime juice. Seal onions securely in the foil. To do this lay the onions in the middle of the foil sheet, and fold in each side of the foil. Do the same with the remaining two sides. Wrap the foil around the onions like a present.",
+    "Grill onions or scallions on a rack set 5 to 6 inches over the grill, 10 to 12 minutes. Remove from foil and place on the grill (across the rungs) and grill on medium heat for 1 to 2 minutes on each side until softened and lightly charred.",
+    "Transfer onions or scallions to a platter and sprinkle with salt and garnish with lime juice, if desired."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "64 kcal",
+    "sugarContent": "1 g",
+    "sodiumContent": "450 mg",
+    "fatContent": "5 g",
+    "saturatedFatContent": "3 g",
+    "carbohydrateContent": "5 g",
+    "fiberContent": "2 g",
+    "proteinContent": "2 g",
+    "cholesterolContent": "12 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 20 spring onions or large scallions, about 4 bunches washed and trimmed",
+    "▢ 2 tablespoons salted butter, chopped or melted",
+    "▢ 2 tablespoons soy sauce, or Maggi",
+    "▢ salt",
+    "▢ 1 lime, juiced (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

@@ -1,0 +1,57 @@
+{
+  "url": "https://dailycookingquest.com/aromatic-steamed-chicken-wings.html",
+  "slug": "aromatic-steamed-chicken-wings_dailycookingquest_52b26556",
+  "title": "Aromatic Steamed Chicken Wings",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:42:17.906Z",
+  "ldName": "Aromatic Steamed Chicken Wings",
+  "ldTime": "PT1H0M",
+  "ldPrepTime": "PT0H30M",
+  "ldCookTime": "PT0H30M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "8 chicken wings, cut each wing to two parts",
+    "6 cloves garlic, minced",
+    "2 lemon grass, remove the outer layers and finely chopped the white parts",
+    "2 inch fresh ginger, peeled and cut into match sticks",
+    "2 red chilies, seeded and cut into match sticks",
+    "1 stalk scallion, cut into match sticks",
+    "1 stalk coriander leaf, chopped",
+    "2 teaspoon soy sauce",
+    "1 teaspoon fish sauce",
+    "1 teaspoon salt",
+    "½ teaspoon ground pepper",
+    "100 ml water"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare a steamer.",
+    "Place chicken wings in a steamed proof bowl. Top the chicken with garlic, lemon grass, ginger, chili, scallion, coriander leaf, soy sauce, fish sauce, salt, ground pepper, and water. Wrap the bowl with aluminum foil.",
+    "Steamed the chicken for 30 minutes or until the chicken is cooked.",
+    "Carefully remove the aluminum foil and served immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "8 chicken wings, cut each wing to two parts",
+    "6 cloves garlic, minced",
+    "2 lemon grass, remove the outer layers and finely chopped the white parts",
+    "2 inch fresh ginger, peeled and cut into match sticks",
+    "2 red chilies, seeded and cut into match sticks",
+    "1 stalk scallion, cut into match sticks",
+    "1 stalk coriander leaf, chopped",
+    "2 teaspoon soy sauce",
+    "1 teaspoon fish sauce",
+    "1 teaspoon salt",
+    "½ teaspoon ground pepper",
+    "100 ml water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

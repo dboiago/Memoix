@@ -1,0 +1,64 @@
+{
+  "url": "https://spanishsabores.com/chicken-milanesa-recipe/",
+  "slug": "chicken-milanese-milanesa-de-pollo-spanish-sabores_spanishsabores_eb799694",
+  "title": "Chicken Milanese (Milanesa de Pollo) - Spanish Sabores",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T10:07:52.562Z",
+  "ldName": "Chicken Milanesa (Milanesa de Pollo)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Main",
+  "ldKeywords": "chicken milanesa recipe, milanesa de pollo",
+  "ldIngredientsRaw": [
+    "2  boneless chicken breasts",
+    "1/2 teaspoon garlic powder",
+    "1/2 teaspoon ground black pepper",
+    "1 pinch salt",
+    "1  large egg",
+    "1 cup breadcrumbs",
+    "1/3 cup vegetable oil (or canola oil)",
+    "lemon wedges (for serving)"
+  ],
+  "ldInstructionsRaw": [
+    "Slice each of the breasts crosswise into two thin fillets. Place in a zip-top bag and pound with a meat tenderizer or rolling pin until it&#39;s about 1/4-inch thick.",
+    "Beat the egg in one medium bowl, and combine the breadcrumbs, garlic powder, pepper, and salt in another bowl.",
+    "Dip each chicken fillet in the egg, then in the breadcrumb mix, and then place on a plate ready to fry.",
+    "Place a large skillet over medium heat and add the vegetable oil. When the oil is shimmering, fry the chicken fillets until golden, about 5 minutes on each side. Avoid crowding the pan.",
+    "Drain the fried chicken on a paper-towel lined plate.",
+    "Serve hot, with lemon wedges on the side, and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 chicken fillet",
+    "calories": "224.04 kcal",
+    "carbohydrateContent": "20.79 g",
+    "proteinContent": "16.96 g",
+    "fatContent": "7.74 g",
+    "saturatedFatContent": "2.18 g",
+    "transFatContent": "0.07 g",
+    "cholesterolContent": "77.08 mg",
+    "sodiumContent": "259 mg",
+    "fiberContent": "1.56 g",
+    "sugarContent": "1.95 g",
+    "unsaturatedFatContent": "4.72 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 boneless chicken breasts",
+    "▢ ½ teaspoon garlic powder",
+    "▢ ½ teaspoon ground black pepper",
+    "▢ 1 pinch salt",
+    "▢ 1 large egg",
+    "▢ 1 cup breadcrumbs",
+    "▢ ⅓ cup vegetable oil or canola oil",
+    "▢ lemon wedges for serving"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

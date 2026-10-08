@@ -1,0 +1,46 @@
+{
+  "url": "https://dailycookingquest.com/azuki-and-sticky-rice-porridge.html",
+  "slug": "azuki-and-sticky-rice-porridge_dailycookingquest_a03b3eeb",
+  "title": "Azuki and Sticky Rice Porridge",
+  "byline": "",
+  "fetchedAt": "2026-08-02T04:54:10.498Z",
+  "ldName": "Azuki and Sticky Rice Porridge",
+  "ldTime": "PT2H40M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT2H30M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert, Vegetarian",
+  "ldKeywords": [
+    "Bean",
+    "Rice"
+  ],
+  "ldIngredientsRaw": [
+    "250 gram azuki bean, soaked in water overnight, then drained",
+    "100 gram black sticky (glutinous) rice, soaked in water overnight, then drained",
+    "3 pandan leaves, knotted",
+    "8 cups (2 liter) water",
+    "150 gram rock sugar",
+    "1/2 teaspoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "Place azuki bean, black sticky rice, pandan leaves, and water in a pot. Bring to a boil, then reduce heat to a simmer, cover the pot and cook for 2 hours, or until the beans and rice are split open.",
+    "Remove the cover, then turn the heat to medium high. Cook for 10-15 minutes to release more starch from the rice to thicken the porridge.",
+    "Once the porridge is thick and the consistency is to your liking, add sugar and salt. Once the sugar has completely melted, turn off heat, remove pandan leaves.",
+    "The porridge can be served hot, at room temperature, or even chilled."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "250 gram azuki bean, soaked in water overnight, then drained",
+    "100 gram black sticky (glutinous) rice, soaked in water overnight, then drained",
+    "3 pandan leaves, knotted",
+    "8 cups (2 liter) water",
+    "150 gram rock sugar",
+    "1/2 teaspoon salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

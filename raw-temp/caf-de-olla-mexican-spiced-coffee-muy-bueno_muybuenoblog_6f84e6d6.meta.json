@@ -1,0 +1,54 @@
+{
+  "url": "https://muybuenoblog.com/cafe-de-olla-video-le-creuset-giveaway/",
+  "slug": "caf-de-olla-mexican-spiced-coffee-muy-bueno_muybuenoblog_6f84e6d6",
+  "title": "Café de Olla (Mexican Spiced Coffee) - Muy Bueno",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T03:47:16.538Z",
+  "ldName": "Café de Olla Recipe",
+  "ldTime": "PT11M",
+  "ldPrepTime": "PT1M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "6",
+    "6 servings"
+  ],
+  "ldCuisine": "Mexican, Mexico",
+  "ldCategory": "Breakfast, Drinks",
+  "ldKeywords": "cafe de olla recipe, homemade cafe de olla, Mexican coffee recipe",
+  "ldIngredientsRaw": [
+    "6 cups water",
+    "6 to 8 ounces piloncillo (or substitute packed brown sugar)",
+    "2  cinnamon sticks",
+    "2  cloves",
+    "1  anise star",
+    "6 tablespoons freshly ground dark roasted coffee"
+  ],
+  "ldInstructionsRaw": [
+    "In a medium saucepan bring the water to a boil. Carefully add piloncillo, cinnamon sticks, cloves, and anise star.",
+    "Stir with a wooden spoon until the piloncillo dissolves, about 5 minutes. Add the ground coffee and stir, turn off heat, cover, and let steep for an additional 5 minutes.",
+    "Strain the coffee through cheesecloth and enjoy."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "105 kcal",
+    "sugarContent": "24 g",
+    "sodiumContent": "13 mg",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "carbohydrateContent": "25 g",
+    "fiberContent": "1 g",
+    "proteinContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 6 cups water",
+    "▢ 6 to 8 ounces piloncillo, or substitute packed brown sugar",
+    "▢ 2 cinnamon sticks",
+    "▢ 2 cloves",
+    "▢ 1 anise star",
+    "▢ 6 tablespoons freshly ground dark roasted coffee"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

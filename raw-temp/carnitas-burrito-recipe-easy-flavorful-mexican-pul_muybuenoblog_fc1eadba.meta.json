@@ -1,0 +1,58 @@
+{
+  "url": "https://muybuenoblog.com/carnitas-burrito/",
+  "slug": "carnitas-burrito-recipe-easy-flavorful-mexican-pul_muybuenoblog_fc1eadba",
+  "title": "Carnitas Burrito Recipe – Easy, Flavorful Mexican Pulled Pork Wrap",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T09:41:18.562Z",
+  "ldName": "Carnitas Burrito",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4",
+    "4 burritos"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Burritos de Carnitas, Carnitas Burrito",
+  "ldIngredientsRaw": [
+    "4 large flour tortillas (warmed)",
+    "1 1/2 cups refried beans ((homemade or store-bought))",
+    "2 cups hot carnitas ((Dutch oven, Coca-Cola, or condensed milk version))",
+    "1 cup shredded cheese ((cheddar, Oaxaca, or queso fresco) – optional)",
+    "1/2 cup salsa ((your favorite!))",
+    "1/2 cup guacamole ((optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Heat each tortilla on a griddle or comal until soft and pliable, about 30 seconds.",
+    "Spread about ⅓ cup of refried beans across the center of the tortilla, leaving space at the edges. Top with about ½ cup of hot carnitas, a sprinkle of cheese, a spoonful of salsa, and a dollop of guacamole.",
+    "Fold in the sides of the tortilla, then roll it up tightly from the bottom to seal.",
+    "Place seam-side down on a hot griddle to seal and crisp the burrito. Flip once golden, about 1–2 minutes per side.",
+    "Place burrito on parchment paper, then wrap in foil for a road-ready meal."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "514 kcal",
+    "carbohydrateContent": "51 g",
+    "proteinContent": "28 g",
+    "fatContent": "22 g",
+    "saturatedFatContent": "8 g",
+    "cholesterolContent": "73 mg",
+    "sodiumContent": "1834 mg",
+    "fiberContent": "8 g",
+    "sugarContent": "22 g",
+    "unsaturatedFatContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 4 large flour tortillas, warmed",
+    "▢ 1 1/2 cups refried beans, (homemade or store-bought)",
+    "▢ 2 cups hot carnitas, (Dutch oven, Coca-Cola, or condensed milk version)",
+    "▢ 1 cup shredded cheese, (cheddar, Oaxaca, or queso fresco) – optional",
+    "▢ 1/2 cup salsa, (your favorite!)",
+    "▢ 1/2 cup guacamole, (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

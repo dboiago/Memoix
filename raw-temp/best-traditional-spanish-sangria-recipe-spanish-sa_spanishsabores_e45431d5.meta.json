@@ -1,0 +1,63 @@
+{
+  "url": "https://spanishsabores.com/traditional-spanish-sangria-recipe/",
+  "slug": "best-traditional-spanish-sangria-recipe-spanish-sa_spanishsabores_e45431d5",
+  "title": "Best Traditional Spanish Sangria Recipe - Spanish Sabores",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T07:37:47.185Z",
+  "ldName": "Best Traditional Spanish Sangria Recipe",
+  "ldTime": "PT130M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT120M",
+  "ldYield": [
+    "6",
+    "6 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Drinks",
+  "ldKeywords": "authentic sangria, spanish sangria, traditional sangria",
+  "ldIngredientsRaw": [
+    "1/4 cup simple syrup (optional)",
+    "1.5 bottles young, fruity red wine (good quality but not oaky or complex)",
+    "2  oranges",
+    "1  lemon",
+    "1  cinnamon stick",
+    "1  green apple (cut in chunks (optional))",
+    "2  peaches or apricots (cut in chunks (optional))",
+    "citrus-flavored soda or carbonated water (optional)",
+    "2 ounces brandy, vermouth, or other hard liquor (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Make the simple syrup by dissolving 3 tablespoons (38g) of granulated sugar in 3 tablespoons (45 ml) of water over medium heat, then set aside to chill until ready to use.",
+    "Wash the lemons and oranges, then cut off thick pieces of rind.  Juice the lemons and oranges.",
+    "Pour the wine, orange juice, lemon juice, and brandy (if using) into a large pitcher or pot and stir to combine.",
+    "Add simple syrup to taste, then add the cinnamon stick and lemon and orange rind. Add the chunks of green apple and peaches/apricots at this stage if using.",
+    "Let the sangria sit for at least 2 hours (preferably overnight) to allow the wine to take on the aromas of the citrus rind and cinnamon.",
+    "Serve over ice.  Add soda or carbonated water right before drinking if desired."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "186.18 kcal",
+    "carbohydrateContent": "17.42 g",
+    "proteinContent": "0.46 g",
+    "fatContent": "0.12 g",
+    "saturatedFatContent": "0.02 g",
+    "sodiumContent": "9.12 mg",
+    "fiberContent": "1.65 g",
+    "sugarContent": "11.36 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ ¼ cup simple syrup optional",
+    "▢ 1.5 bottles young, fruity red wine good quality but not oaky or complex",
+    "▢ 2 oranges",
+    "▢ 1 lemon",
+    "▢ 1 cinnamon stick",
+    "▢ 1 green apple cut in chunks (optional)",
+    "▢ 2 peaches or apricots cut in chunks (optional)",
+    "▢ citrus-flavored soda or carbonated water optional",
+    "▢ 2 ounces brandy, vermouth, or other hard liquor optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

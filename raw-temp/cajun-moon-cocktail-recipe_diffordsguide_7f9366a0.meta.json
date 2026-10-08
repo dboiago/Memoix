@@ -1,0 +1,47 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/5410/cajun-moon",
+  "slug": "cajun-moon-cocktail-recipe_diffordsguide_7f9366a0",
+  "title": "Cajun Moon Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T15:20:28.880Z",
+  "ldName": "Cajun Moon",
+  "ldTime": "PT04M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Aperitivo/aperitif",
+    "Spicy (e.g. Spicy Fifty)"
+  ],
+  "ldIngredientsRaw": [
+    "25 ml Cognac (brandy)",
+    "25 ml Aged rum (6-10yr)",
+    "15 ml Lime juice",
+    "15 ml Falernum liqueur",
+    "5 ml Honey and water syrup",
+    "1.25 ml Grenadine syrup",
+    "2 dash Creole bitters",
+    "1 drop Red hot pepper sauce"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COUPE GLASS.",
+    "RIM glass with Tajín seasoning (moisten outside edge with lime or orange juice and drip into Tajín).",
+    "Prepare garnish of lime wedge.",
+    "SHAKE all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "Garnish with lime wedge."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "177 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

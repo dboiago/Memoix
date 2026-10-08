@@ -1,0 +1,64 @@
+{
+  "url": "https://www.chopstickchronicles.com/sweet-red-bean-soup/",
+  "slug": "authentic-japanese-red-bean-soup-recipe-oshiruko-z_chopstickchronicles_c1e5a4f3",
+  "title": "Authentic Japanese Red Bean Soup recipe (Oshiruko/Zenzai)",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-02T00:33:26.174Z",
+  "ldName": "Sweet red bean soup お汁粉",
+  "ldTime": "PT65M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Dessert, Snack, Soup",
+  "ldKeywords": "#zenzai, Oshiruko, red bean soup",
+  "ldIngredientsRaw": [
+    "1 cup Dried azuki beans (*1)",
+    "5 cups water (*2)",
+    "3/4 cup sugar (*3)",
+    "1/2 tsp salt",
+    "8  mochi pieces  (*4)",
+    "1 tsp roasted sesame seed (Optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the azuki beans, drain the washing water.",
+    "Place the azuki beans in a pot and add plenty of water (not listed in the ingredients list) *5",
+    "Heat it over high heat and bring the water to boil.",
+    "Discard the cooking water by using a strainer. *6",
+    "Place back the azuki beans in a pot and add 3 cups of water out of the 5 cups listed.",
+    "Heat the pot over high heat and once it boils, reduce the heat to low to mid and simmer for an hour.",
+    "Check occasionally and add water if necessary. *7",
+    "After 1 hour check the azuki beans are cooked or not by squishing a bean with your finger tips.",
+    "If the azuki beans are soft and cooked, add sugar and salt and stir.",
+    "Simmer furthur till the soup reduces a little and becomes thicker.",
+    "Cook mochi by using the grill function of oven or microwave. If you use oven grill, cook for 6-7 minutes, if you use microwave, cook for 1-2 minutes. Watch it does not over cook and explode.",
+    "Stir the bean paste to mix well with water, bring to simmer and add mochi.",
+    "Serve two pieces of toasted mochi with sweet azuki bean soup  together in a small soup bowl. Garnish with sesame seeds."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "416 kcal",
+    "carbohydrateContent": "73 g",
+    "proteinContent": "11 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "3 g",
+    "cholesterolContent": "12 mg",
+    "sodiumContent": "549 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "18 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup Dried azuki beans *1",
+    "▢ 5 cups water *2",
+    "▢ 3/4 cup sugar *3",
+    "▢ 1/2 tsp salt",
+    "▢ 8 mochi pieces  *4",
+    "▢ 1 tsp roasted sesame seed Optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

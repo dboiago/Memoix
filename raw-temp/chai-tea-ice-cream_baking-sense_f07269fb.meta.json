@@ -1,0 +1,70 @@
+{
+  "url": "https://www.baking-sense.com/2022/02/03/chai-tea-ice-cream/",
+  "slug": "chai-tea-ice-cream_baking-sense_f07269fb",
+  "title": "Chai Tea Ice Cream",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T08:47:11.927Z",
+  "ldName": "Chai Tea Ice Cream Recipe",
+  "ldTime": "PT380M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "8",
+    "8 servings"
+  ],
+  "ldCuisine": "American, Indian",
+  "ldCategory": "Dessert, Ice Creams &amp; Frozen Treats",
+  "ldKeywords": "chai spice, tea",
+  "ldIngredientsRaw": [
+    "12  green cardamom pods",
+    "10  black peppercorns",
+    "1/2  teaspoon anise seeds",
+    "1/4 teaspoon ground ginger",
+    "1/8  teaspoon ground cinnamon",
+    "12 oz whole milk (1 1/2 cups)",
+    "12 oz heavy cream (1 1/2 cups)",
+    "1/4 teaspoon table salt",
+    "3  each tea bags (black tea)",
+    "6 each egg yolks",
+    "8 oz granulated sugar (1 cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Grind the spices in a spice grinder to a fine powder.",
+    "Combine the milk and cream in a small saucepan. Heat over medium high heat until scalding hot. Add the spices and tea bags to the pot. Cover and set aside for 30 minutes.",
+    "Meanwhile, whisk together the yolks, sugar and salt in a medium bowl.",
+    "After 30 minutes remove the tea bags from the milk mixture. Pour the hot milk into the bowl with the yolks and whisk to combine.",
+    "Return the entire mixture to the saucepan and heat over medium low heat, stirring constantly. Cook the custard until it thickens enough to coat the back of a spatula or wooden spoon. Do not allow it to come to a full boil. Remove from the heat and strain into a bowl. Cover the bowl and chill until very cold. At least 4-5 hours or over night.",
+    "Freeze according to the directions for your ice cream machine.",
+    "When the ice cream is ready, scoop it into a container and smooth to an even layer. Lay a piece of plastic wrap directly on the surface of the ice cream, cover tightly and freeze until firm."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "0.5 cup",
+    "calories": "295 kcal",
+    "carbohydrateContent": "34 g",
+    "proteinContent": "3 g",
+    "fatContent": "18 g",
+    "saturatedFatContent": "11 g",
+    "cholesterolContent": "71 mg",
+    "sodiumContent": "108 mg",
+    "sugarContent": "30 g",
+    "fiberContent": "1 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "12 green cardamom pods",
+    "10 black peppercorns",
+    "1/2  teaspoon anise seeds",
+    "1/4 teaspoon ground ginger",
+    "1/8  teaspoon ground cinnamon",
+    "12 oz whole milk (1 1/2 cups)",
+    "12 oz heavy cream (1 1/2 cups)",
+    "1/4 teaspoon table salt",
+    "3  each tea bags (black tea)",
+    "6 each egg yolks",
+    "8 oz granulated sugar (1 cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,36 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/brunch-mary-recipe",
+  "slug": "brunch-mary-recipe_greatbritishchefs_5c3ce7d8",
+  "title": "Brunch Mary Recipe",
+  "byline": "by Anna Hansen",
+  "fetchedAt": "2026-08-03T13:05:51.191Z",
+  "ldName": "Brunch Mary",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Cocktail",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "50ml of vodka, infused with fresh grated horseradish",
+    "50ml of tomato juice",
+    "50ml of passata",
+    "15ml of lemon juice",
+    "15ml of Worcestershire sauce",
+    "3 drops of Drinks Factory Pepper Distilate",
+    "3 drops of pepper sauce, homemade",
+    "1 pinch of celery salt",
+    "1 slice of lemon, for garnish"
+  ],
+  "ldInstructionsRaw": [
+    "Add the tomato juice and passata to a glass and mix to combine. Set aside",
+    "Add cubed ice to a glass, then pour over the horseradish vodka, lemon juice, Worcestershire sauce, celery salt, pepper distillate pepper sauce and tomato and passata mix",
+    "Stir to combine, garnish with a slice of lemon and serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

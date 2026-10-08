@@ -1,0 +1,31 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/acai-breakfast-bowl-recipe",
+  "slug": "acai-breakfast-bowl-recipe_greatbritishchefs_98c01cf6",
+  "title": "Acai Breakfast Bowl Recipe",
+  "byline": "by Marcello Tully",
+  "fetchedAt": "2026-08-03T12:54:44.825Z",
+  "ldName": "Acai breakfast bowl",
+  "ldTime": "PT5M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Breakfast",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "200g of acai berry purée, frozen",
+    "1 banana",
+    "2 tbsp of honey",
+    "2 tbsp of orange juice, (optional, to thin the berry purée)",
+    "granola"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the banana in half lengthways and place half in a blender along with the frozen acai berry purée and honey. Blitz until smooth, adding a little orange juice to adjust the consistency as desired",
+    "Pour the acai mixture into a bowl and slice the remaining banana on top. Sprinkle with the granola and serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

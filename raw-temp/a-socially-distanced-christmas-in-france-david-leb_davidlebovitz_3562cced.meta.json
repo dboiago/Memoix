@@ -1,0 +1,50 @@
+{
+  "url": "https://www.davidlebovitz.com/a-socially-distanced-christmas-in-france/",
+  "slug": "a-socially-distanced-christmas-in-france-david-leb_davidlebovitz_3562cced",
+  "title": "A socially distanced Christmas in France - David Lebovitz",
+  "byline": "Emily Gaudichon",
+  "fetchedAt": "2026-08-02T17:11:31.315Z",
+  "ldName": "Nanna's Golden Dumplings",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2 cups self-raising flour (300g)",
+    "2  eggs",
+    "2 tbsp milk (30g)",
+    "2 tbsp butter (40g)",
+    "2 cups water (470g)",
+    "1 cup sugar (250g)",
+    "2 tbsp butter (40g)",
+    "2 tbsp golden syrup (50g)",
+    "pinch salt"
+  ],
+  "ldInstructionsRaw": [
+    "Set the oven to 160C/320F",
+    "Rub the flour and butter together until they resemble breadcrumbs",
+    "Mix through the milk and egg and roll into golf ball sized balls, then place into a baking dish (mine is 23x33 cms/9x13 inches but yours doesn&#039;t need to be exactly this size)",
+    "In a saucepan, melt together the water, sugar, butter, golden syrup and salt until it just boils",
+    "Pour over the dumplings and bake until golden brown, approximately 25 minutes"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "[dumplings]",
+    "2 cups self-raising flour (300g)",
+    "2 eggs",
+    "2 tbsp milk (30g)",
+    "2 tbsp butter (40g)",
+    "[sauce]",
+    "2 cups water (470g)",
+    "1 cup sugar (250g)",
+    "2 tbsp butter (40g)",
+    "2 tbsp golden syrup (50g)",
+    "pinch salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

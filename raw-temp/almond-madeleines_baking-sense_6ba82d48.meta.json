@@ -1,0 +1,67 @@
+{
+  "url": "https://www.baking-sense.com/2017/02/09/brown-butter-almond-madeleines/",
+  "slug": "almond-madeleines_baking-sense_6ba82d48",
+  "title": "Almond Madeleines",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T18:22:41.246Z",
+  "ldName": "Brown Butter Almond Madeleines",
+  "ldTime": "PT38M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT8M",
+  "ldYield": [
+    "24",
+    "24 cookies"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "tea time",
+  "ldIngredientsRaw": [
+    "6 oz unsalted butter",
+    "2 ½ oz all purpose flour (½ cup, see note)",
+    "2 oz almond flour (½ cup)",
+    "⅛ teaspoon table salt",
+    "3  large eggs",
+    "1  large yolk",
+    "5 oz granulated sugar (½ cup plus 2 tablespoons)",
+    "¼ teaspoon vanilla extract",
+    "½ teaspoon almond extract"
+  ],
+  "ldInstructionsRaw": [
+    "Melt 6 oz&#32;unsalted butter in a small saucepan. Continue heating the butter until it foams, bubbles and the milk solids fall to the bottom of the pan. Allow the milk solids to brown. Pour the browned butter into a small dish, leaving the browned milk solids in the pan.",
+    "Reserve a tablespoon of the browned butter to grease the Madeleine pan. Set aside the remaining butter to cool but not solidify.",
+    "Whisk together 2 ½ oz&#32;all purpose flour, 2 oz&#32;almond flour, ⅛ teaspoon&#32;table salt and set aside.",
+    "Whisk 3&#32;large eggs, 1&#32;large yolk, 5 oz&#32;granulated sugar, ¼ teaspoon&#32;vanilla extract and ½ teaspoon&#32;almond extract until the eggs are pale, aerated and leave a &quot;ribbon&quot; when the whisk is drawn through the mix. Fold in the flour with a balloon whisk. Fold in the browned butter. Set the batter aside to rest for 1 hour",
+    "While the batter is resting, preheat oven to 400 °F. and brush a madeleine pan with reserved butter then coat with flour.",
+    "Place a heaping tablespoon of batter into each cookie mold.",
+    "Bake 8-10 minutes until golden brown and the center springs back when pressed. Best eaten slightly warm or within a couple of hours of baking."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 cookie",
+    "calories": "108 kcal",
+    "carbohydrateContent": "9 g",
+    "proteinContent": "2 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "4 g",
+    "transFatContent": "0.2 g",
+    "cholesterolContent": "44 mg",
+    "sodiumContent": "21 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "6 g",
+    "unsaturatedFatContent": "2.4 g"
+  },
+  "htmlIngredientLines": [
+    "6 oz unsalted butter",
+    "2 ½ oz all purpose flour (½ cup, see note)",
+    "2 oz almond flour (½ cup)",
+    "⅛ teaspoon table salt",
+    "3 large eggs",
+    "1 large yolk",
+    "5 oz granulated sugar (½ cup plus 2 tablespoons)",
+    "¼ teaspoon vanilla extract",
+    "½ teaspoon almond extract"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

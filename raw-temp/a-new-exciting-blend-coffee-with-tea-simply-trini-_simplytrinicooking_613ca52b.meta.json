@@ -1,0 +1,42 @@
+{
+  "url": "https://www.simplytrinicooking.com/coffee-with-tea/",
+  "slug": "a-new-exciting-blend-coffee-with-tea-simply-trini-_simplytrinicooking_613ca52b",
+  "title": "A New Exciting Blend: Coffee with Tea | Simply Trini Cooking",
+  "byline": "Author Felix",
+  "fetchedAt": "2026-09-25T23:36:47.558Z",
+  "ldName": "Coffee with Tea",
+  "ldTime": "PT7M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT2M",
+  "ldYield": null,
+  "ldCuisine": "Fusion",
+  "ldCategory": "Drink",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 tsp. instant coffee",
+    "1/3 cup water",
+    "1  tea bag (original recipe used Red Rose tea bag)",
+    "Sugar to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Set the water in a kettle to boil. Pour the hot water into a teacup. Dip the tea bag into the water (about 8 times).",
+    "Then add 1 teaspoon of instant coffee. Stir until the coffee dissolves. Add sugar for taste. Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "3.57 kcal",
+    "carbohydrateContent": "0.6 g",
+    "proteinContent": "0.1 g",
+    "sodiumContent": "3 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 tsp. instant coffee",
+    "1/3 cup water",
+    "1 tea bag original recipe used Red Rose tea bag",
+    "Sugar to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

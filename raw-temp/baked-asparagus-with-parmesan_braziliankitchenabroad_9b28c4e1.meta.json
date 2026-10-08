@@ -1,0 +1,58 @@
+{
+  "url": "https://braziliankitchenabroad.com/baked-asparagus-with-parmesan/",
+  "slug": "baked-asparagus-with-parmesan_braziliankitchenabroad_9b28c4e1",
+  "title": "Baked Asparagus with Parmesan",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-25T20:21:13.595Z",
+  "ldName": "Baked Asparagus with Parmesan",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4",
+    "4 people"
+  ],
+  "ldCuisine": null,
+  "ldCategory": "Side Dish",
+  "ldKeywords": "date night, midweek meal, vegetables, vegetarian",
+  "ldIngredientsRaw": [
+    "1 lb trimmed asparagus",
+    "1 tablespoon of Brazilian sofrito (or minced garlic)",
+    "3 tablespoons of freshly grated parmesan cheese",
+    "1 tablespoon of olive oil",
+    "1/4 cup homemade breadcrumbs   (or panko)",
+    "salt and pepper to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 425F.",
+    "Arrange the asparagus in a baking sheet and drizzle with just a little olive oil.",
+    "In a bowl, mix the Brazilian sofrito, the parmesan, the breadcrumbs and the tablespoon of olive oil.",
+    "Sprinkle breadcrumb mixture on top of the asparagus, and season with salt and pepper. Sprinkle with a bit more parmesan cheese, if desired.",
+    "Bake for 15 minutes, or until golden brown. Rotate the pan halfway through the bake."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "88 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "5 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "3 mg",
+    "sodiumContent": "87 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "2 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "1 lb trimmed asparagus",
+    "1 tablespoon of Brazilian sofrito or minced garlic",
+    "3 tablespoons of freshly grated parmesan cheese",
+    "1 tablespoon of olive oil",
+    "1/4 cup homemade breadcrumbs   or panko",
+    "salt and pepper to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

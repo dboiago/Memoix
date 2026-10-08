@@ -1,0 +1,53 @@
+{
+  "url": "https://mykoreankitchen.com/chapssaltteok-red-bean-mochi/",
+  "slug": "chapssaltteok-red-bean-mochi_mykoreankitchen_a6e17f55",
+  "title": "Chapssaltteok (Red Bean Mochi)",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-02T02:56:37.890Z",
+  "ldName": "Chapssaltteok (Red Bean Mochi)",
+  "ldTime": "PT24M",
+  "ldPrepTime": "PT12M",
+  "ldCookTime": "PT12M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Snacks",
+  "ldKeywords": "Chapssaltteok, mochi, red bean mochi",
+  "ldIngredientsRaw": [
+    "3/4 cup sweet rice flour ( / mochiko / glutinous rice flour (100g / 3.5 ounces))",
+    "1/4 cup castor sugar ((60g / 2.1 ounces))",
+    "A pinch  fine sea salt",
+    "1/2 cup water ((120g / 4.2 ounces))",
+    "3/4 cup sweet red bean paste ((180g / 6.3 ounces), shaped into 6 balls)",
+    "3 Tbsp corn starch (or potato starch (25g / 0.9 ounces) )"
+  ],
+  "ldInstructionsRaw": [
+    "- Combine the sweet rice flour, sugar and salt in a microwave safe mixing bowl. Whisk it well. Add the water and mix them well.- Cover the bowl with cling wrap leaving a little gap for steam to escape. Put the bowl into a microwave and heat it up for about 1 min (based on 1250W).- Take the bowl out and stir the mixture around with a wooden spoon or spatula.- Return the bowl, covered again, into the microwave and heat it up for a further 1 mins. (The cooking time can vary depending on your microwave. If the desired consistency is not yet achieved, cook it for a little bit longer.)- Remove the bowl from the microwave.",
+    "With a wooden spoon/spatula, mix and massage around the rice cake mixture until it cools down enough to touch (about 5 mins).",
+    "Lightly scatter the corn starch on the board. (This is for anti-sticking purpose.) Carefully remove the mochi mixture from the bowl and place it on the board. Knead it to one long dough while scattering the corn starch over it. Then, using a scraper, divide the dough into 6 pieces.",
+    "Gently flatten and open up the dough on your palm (large enough to fit a ball of red bean paste) then place the red bean paste ball in the middle. Seal the rice cake by gathering the corners of the dough. Roll the mochi around on the corn starch and place it in a disposable baking cup facing the gathered point down. Repeat this step with the remaining ingredients.",
+    "Serve at room temperature.&nbsp;"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "201 kcal",
+    "carbohydrateContent": "46 g",
+    "proteinContent": "2 g",
+    "sodiumContent": "1 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "22 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3/4 cup sweet rice flour  / mochiko / glutinous rice flour (100g / 3.5 ounces)",
+    "▢ 1/4 cup castor sugar (60g / 2.1 ounces)",
+    "▢ A pinch fine sea salt",
+    "▢ 1/2 cup water (120g / 4.2 ounces)",
+    "▢ 3/4 cup sweet red bean paste (180g / 6.3 ounces), shaped into 6 balls",
+    "▢ 3 Tbsp corn starch or potato starch (25g / 0.9 ounces)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

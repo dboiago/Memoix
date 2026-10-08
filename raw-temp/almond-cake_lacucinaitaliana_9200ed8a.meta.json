@@ -1,0 +1,49 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/almond-cake",
+  "slug": "almond-cake_lacucinaitaliana_9200ed8a",
+  "title": "Almond Cake",
+  "byline": "by  Editorial staff   June 17, 2020",
+  "fetchedAt": "2026-08-03T04:10:43.456Z",
+  "ldName": "Almond Cake",
+  "ldTime": "PT80M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "6",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Dessert,Dolce,Dolci,Mandorle,Torte",
+  "ldIngredientsRaw": [
+    "1 1/4C. flour",
+    "1/2C. sugar",
+    "2/3STICK butter, plus extra",
+    "2OZ. shelled almonds",
+    "1OZ. slivered almonds",
+    "3 eggs",
+    "Milk",
+    "Baking powder",
+    "Citron",
+    "Salt"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Chop the shelled almonds.</p>",
+    "<p>Beat the egg whites to stiff peaks. Mix the softened butter with the sugar and a pinch of salt; then add in the egg yolks one at a time and the zest of half a citron, while continuing to mix.</p>",
+    "<p>Continue with an electric hand mixer for 10 minutes, then add in the chopped almonds and 5 tablespoons of milk, one at a time. Finally, gently fold in the beaten egg whites, a teaspoon of baking powder, and the flour a little at a time.</p>",
+    "<p>Butter a springform pan (8-inch diameter) and coat the edges with half of the slivered almonds, then pour in the batter, ensuring it is packed down. Sprinkle the remaining slivered almonds on top, then bake at 350°F for about 50 minutes.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 1/4 C. of flour",
+    "1/2 C. of sugar",
+    "2/3 STICK of butter, plus extra",
+    "2 OZ. of shelled almonds",
+    "1 OZ. of slivered almonds",
+    "3 eggs",
+    "Milk",
+    "Baking powder",
+    "Citron",
+    "Salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

@@ -1,0 +1,60 @@
+{
+  "url": "https://www.chinasichuanfood.com/black-bean-sauce/",
+  "slug": "black-bean-sauce_chinasichuanfood_805f9c61",
+  "title": "Black Bean Sauce",
+  "byline": "",
+  "fetchedAt": "2026-08-02T04:16:59.301Z",
+  "ldName": "Black Bean Sauce",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT30M",
+  "ldYield": null,
+  "ldCuisine": "Sichuan",
+  "ldCategory": "sauce",
+  "ldKeywords": "Black Bean",
+  "ldIngredientsRaw": [
+    "1 cup fermented black beans",
+    "1/3 cup vegetable oil",
+    "1/4 cup finely chopped garlic",
+    "2 tbsp. chopped ginger",
+    "2-3  shallots ( ,finely chopped)",
+    "2 tbsp. sugar ( ,optionally you can upgrade it to 4 tbsp.)",
+    "2 tbsp. Shaoxing wine",
+    "2 tbsp. light soy sauce",
+    "1/4 tsp. Chinese five spice powder ( ,optional)",
+    "1 tbsp. chili pepper flakes ( ,optional for hot version)"
+  ],
+  "ldInstructionsRaw": [
+    "Rinse the fermented black beans, drain and finely chop 2/3 of the beans, leaving 1/3 of the beans as whole ones (you will love their decoration function).",
+    "Heat oil in a deep pot until warm. Add shallot, garlic and ginger in and fry until soften. Keep slow fire and watch the ingredients carefully. Do not burn the garlic, burnt garlic release bitter taste.",
+    "Add fermented black beans and fry for 2-3 minutes over slow fire. Pour light soy sauce, cooking wine and sugar. Simmer until the sauce is well thickened and there are floating oil on the surface. Add five spice powder and chili pepper flakes if you are using.",
+    "Cool off completely and transfer to an air-tight container. At least wait for 6 hours until flavors from different ingredients are well combined."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "100 g",
+    "calories": "581 kcal",
+    "carbohydrateContent": "26 g",
+    "proteinContent": "3.6 g",
+    "fatContent": "30 g",
+    "saturatedFatContent": "23.6 g",
+    "sodiumContent": "764 mg",
+    "fiberContent": "3.2 g",
+    "sugarContent": "14 g"
+  },
+  "htmlIngredientLines": [
+    "1 cup fermented black beans",
+    "1/3 cup vegetable oil",
+    "1/4 cup finely chopped garlic",
+    "2 tbsp. chopped ginger",
+    "2-3 shallots  ,finely chopped",
+    "2 tbsp. sugar  ,optionally you can upgrade it to 4 tbsp.",
+    "2 tbsp. Shaoxing wine",
+    "2 tbsp. light soy sauce",
+    "1/4 tsp. Chinese five spice powder  ,optional",
+    "1 tbsp. chili pepper flakes  ,optional for hot version"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

@@ -1,0 +1,72 @@
+{
+  "url": "https://mykoreankitchen.com/bulgogi-kimbap/",
+  "slug": "bulgogi-kimbap-bulgogi-seaweed-rice-rolls_mykoreankitchen_898c941a",
+  "title": "Bulgogi Kimbap (Bulgogi Seaweed Rice Rolls)",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T17:34:30.105Z",
+  "ldName": "Bulgogi Kimbap (Bulgogi Seaweed Rice Rolls)",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "7"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Main",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "7  dried seaweed sheets",
+    "5 1/2 cups steamed short grain rice (, cooled down, *see note above)",
+    "1 Tbsp toasted sesame seeds",
+    "14 g Perilla leaves (, stems removed)",
+    "500 g Bulgogi (Korean marinated beef) ((1 pound), cooked)",
+    "7 strips yellow radish pickle (*see note above)",
+    "14 strips seasoned burdock root (*see note above)",
+    "1  English or Lebanese cucumber ((270 g / 10 ounces), seeds removed and julienned)",
+    "1  medium carrot ((220 g / 8 ounces), julienned (I used a mandoline slicer))",
+    "1 to 2 Tbsp sesame oil",
+    "3 Tbsp rice vinegar",
+    "2 Tbsp white sugar",
+    "1 tsp fine sea salt"
+  ],
+  "ldInstructionsRaw": [
+    "In a large bowl, mix the steamed rice with the rice seasoning and roasted sesame seeds.",
+    "Place one seaweed sheet on a bamboo (sushi) mat and thinly spread the rice on the seaweed sheet. (I covered about 90% of the sheet)",
+    "Place the prepared ingredients on top of the rice (in the lower centre of the rice) in the order of perilla leaves, Bulgogi, yellow radish pickles, seasoned burdock root, cucumber and carrots.",
+    "Once all the ingredients are set, lift the bottom end of the sushi mat to cover the ingredients. Once you cover them, roll up the seaweed to the top. (Paste some water or put some rice pieces at the edge of the seaweed sheet, if it doesn’t stick) Roll the sushi roll with the bamboo mat once more to give a firm shape. Repeat this process with the remaining ingredients.",
+    "Once you finish rolling them, paste the sesame oil onto the rolls to give extra nutty savoury flavour and shiny look.",
+    "Cut the Kimbap into bite size pieces and serve them on a plate. Or you can enjoy them sushi burrito style. Refer to the note below."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "455 kcal",
+    "carbohydrateContent": "91 g",
+    "proteinContent": "14 g",
+    "fatContent": "3 g",
+    "cholesterolContent": "17 mg",
+    "sodiumContent": "590 mg",
+    "fiberContent": "8 g",
+    "sugarContent": "13 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[MAIN]",
+    "▢ 7 dried seaweed sheets",
+    "▢ 5 1/2 cups steamed short grain rice , cooled down, *see note above",
+    "▢ 1 Tbsp toasted sesame seeds",
+    "▢ 14 g Perilla leaves , stems removed",
+    "▢ 500 g Bulgogi (Korean marinated beef) (1 pound), cooked",
+    "▢ 7 strips yellow radish pickle *see note above",
+    "▢ 14 strips seasoned burdock root *see note above",
+    "▢ 1 English or Lebanese cucumber (270 g / 10 ounces), seeds removed and julienned",
+    "▢ 1 medium carrot (220 g / 8 ounces), julienned (I used a mandoline slicer)",
+    "▢ 1 to 2 Tbsp sesame oil",
+    "[RICE SEASONING (MIX THESE IN A SMALL BOWL AND MICROWAVE IT FOR ABOUT 30 SECONDS TO DISSOLVE THE SUGAR. ALTERNATIVELY YOU COULD USE 3 TBSP OF PRE-MADE SUSHI SEASONING SAUCE)]",
+    "▢ 3 Tbsp rice vinegar",
+    "▢ 2 Tbsp white sugar",
+    "▢ 1 tsp fine sea salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

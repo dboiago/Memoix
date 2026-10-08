@@ -1,0 +1,32 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/cherry-chocolate-cocktail-recipe",
+  "slug": "cherry-chocolate-cocktail-recipe_greatbritishchefs_3cb7ad0d",
+  "title": "Cherry Chocolate Cocktail Recipe",
+  "byline": "by Emanuele Scarello",
+  "fetchedAt": "2026-08-03T21:07:50.189Z",
+  "ldName": "Cherry chocolate cooler",
+  "ldTime": "PT25M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Cocktail",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "75g of cherries, tinned or fresh",
+    "400g of 75% dark chocolate, broken into pieces",
+    "50g of golden caster sugar",
+    "800ml of water",
+    "100ml of kirsch, or liqueur of your choice",
+    "crushed ice"
+  ],
+  "ldInstructionsRaw": [
+    "Add the water and sugar to a saucepan and bring to a simmer. Place the chocolate in a large bowl, pour the hot liquid over the chocolate and whisk to dissolve",
+    "Add the ice to a blender until it is half-full. Add the cherries, pour in the chocolate and blitz for 1 minute. Divide between glasses and mix in a shot of your favourite liqueur"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

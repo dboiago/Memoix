@@ -1,0 +1,43 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/107/arnaud-parisian-nights",
+  "slug": "arnaud-parisian-nights-cocktail-recipe_diffordsguide_51d5d005",
+  "title": "Arnaud (Parisian Nights) Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:18:13.584Z",
+  "ldName": "Arnaud (Parisian Nights)",
+  "ldTime": "PT03M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Classic/vintage",
+    "Dessert cocktails",
+    "Fruity (e.g. Pornstar Martini)",
+    "Arnaud Martini"
+  ],
+  "ldIngredientsRaw": [
+    "30 ml Gin",
+    "30 ml Dry vermouth",
+    "30 ml Crème de cassis"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COUPE GLASS.",
+    "Prepare garnish of blackberry.",
+    "STIR all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "Garnish with blackberry."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "187 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

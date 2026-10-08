@@ -1,0 +1,37 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/borek-recipe",
+  "slug": "borek-recipe_greatbritishchefs_21584dd6",
+  "title": "Borek Recipe",
+  "byline": "by Bryn Williams",
+  "fetchedAt": "2026-08-03T11:40:31.029Z",
+  "ldName": "Börek",
+  "ldTime": "PT1H15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Main",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "300g of cavolo nero, (weight with stalks, which yielded 150g without stalks)",
+    "8 sheets of yufka pastry, or filo pastry",
+    "200g of feta, or Sütdiyarı Picnic Börek Cheese if you can find it (or another white Turkish cheese)",
+    "100g of butter, melted",
+    "1 egg, and 1 egg yolk, beaten lightly with a fork"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 180°C/gas mark 4",
+    "Strip the cavolo nero leaves from the stalks (the stalks can be saved for other dishes, and are particularly good finely chopped and added to fried rice), blanch them for 1 minute in boiling water, then drain",
+    "Dry the leaves thoroughly by pressing them between two clean tea towels and placing something heavy (like a wooden chopping board) on top for a few minutes",
+    "Chop the leaves finely and mix with the cheese and a small pinch of salt (if using feta, skip the salt)",
+    "Take a sheet of yufka, place on a clean work surface and brush with melted butter. Lay another on top. Then, on one side of the pastry, brush a little more melted butter and lay a fresh sheet of yufka on top, so that it overlaps slightly with the two sheets already there (the idea is to make one long strip of yufka). In the end you will have four pieces of double layered yufka, overlapping in a line",
+    "On the bottom edge of the yufka, begin to lay out your filling in a long snake, continuing right to the other end of the pastry",
+    "Then, carefully roll the pastry up and around the filling until you have one long snake of pastry filled with the cavolo nero and cheese. The snake can then be curled around and placed in a baking tray. Don’t worry if your tin isn’t the right size or shape",
+    "Brush the borek with the egg and cook for 25–30 minutes or until golden brown"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

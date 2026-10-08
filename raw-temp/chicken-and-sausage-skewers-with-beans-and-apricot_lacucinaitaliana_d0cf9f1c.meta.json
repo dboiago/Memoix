@@ -1,0 +1,47 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/main-course/chicken-and-sausage-skewers-with-beans-and-apricots",
+  "slug": "chicken-and-sausage-skewers-with-beans-and-apricot_lacucinaitaliana_d0cf9f1c",
+  "title": "Chicken and Sausage Skewers With Beans and Apricots",
+  "byline": "by  Editorial staff   July 6, 2021",
+  "fetchedAt": "2026-08-02T22:50:14.387Z",
+  "ldName": "Chicken and Sausage Skewers With Beans and Apricots",
+  "ldTime": "PT40M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "main course",
+  "ldKeywords": "Apricot,Apricots,Fagioli,Pollo,Skewers",
+  "ldIngredientsRaw": [
+    "1LB. chicken breast",
+    "7OZ. chicken sausage",
+    "7OZ. borlotti (cranberry beans), cooked",
+    "1/2CUP dry white wine",
+    "2 fresh apricots",
+    "1 yellow bell pepper",
+    "1 red bell pepper",
+    "extra-virgin olive oil",
+    "2 garlic cloves, unpeeled",
+    "salt"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Cut the chicken breast and the sausage into large cubes and cut the peppers into squares. Thread the cubed chicken and sausage onto 4 wooden skewers, alternating them with the squares of yellow and red peppers.</p>",
+    "<p>Heat a drizzle of oil and 2 unpeeled garlic cloves in a large pan. Add then skewers and cook for 5 minutes on each side, adding the wine halfway through cooking. Remove the skewers and garlic cloves from the pan. Add the beans and chopped apricots to the pan and cook over low heat for 10 minutes, adding a bit of water as needed. Lightly salt the skewers and serve them with the beans and apricots.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 LB. of chicken breast",
+    "7 OZ. of chicken sausage",
+    "7 OZ. of borlotti (cranberry beans), cooked",
+    "1/2 CUP of dry white wine",
+    "2  of fresh apricots",
+    "1 yellow bell pepper",
+    "1 red bell pepper",
+    "extra-virgin olive oil",
+    "2 garlic cloves, unpeeled",
+    "salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

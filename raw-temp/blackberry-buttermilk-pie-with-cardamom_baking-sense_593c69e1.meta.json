@@ -1,0 +1,68 @@
+{
+  "url": "https://www.baking-sense.com/2016/03/12/blackberry-buttermilk-pie-cardamom/",
+  "slug": "blackberry-buttermilk-pie-with-cardamom_baking-sense_593c69e1",
+  "title": "Blackberry Buttermilk Pie with Cardamom",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T08:42:25.092Z",
+  "ldName": "Blackberry Buttermilk Pie",
+  "ldTime": "PT75M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "10",
+    "10 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "brunch, Dessert, Snack",
+  "ldKeywords": "custard",
+  "ldIngredientsRaw": [
+    "½ recipe Perfect Pie Crust (chilled)",
+    "2 pints blackberries",
+    "8 oz granulated sugar (1 cup)",
+    "⅛ teaspoon table salt",
+    "½ teaspoon ground cardamom",
+    "1 ½ oz cornstarch (1/4 cup)",
+    "2  large eggs",
+    "2  large yolks",
+    "1 oz unsalted butter (melted)",
+    "4 oz heavy cream (½ cup)",
+    "½  vanilla bean (or 1 tsp vanilla extract)",
+    "12 oz buttermilk (1 ½ cups)"
+  ],
+  "ldInstructionsRaw": [
+    "Roll the dough to line a 9&quot; pie plate and crimp the edges. Put the berries into the unbaked pie shell, refrigerate the pie shell while you prepare the filling. Preheat the oven to 350 °F °F. Place a sheet pan onto the bottom rack of the oven to preheat.",
+    "Filling"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "295 kcal",
+    "carbohydrateContent": "43 g",
+    "proteinContent": "5 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "6 g",
+    "cholesterolContent": "94 mg",
+    "sodiumContent": "125 mg",
+    "sugarContent": "29 g",
+    "transFatContent": "0.1 g",
+    "fiberContent": "5 g",
+    "unsaturatedFatContent": "5 g"
+  },
+  "htmlIngredientLines": [
+    "½ recipe Perfect Pie Crust (chilled)",
+    "2 pints blackberries",
+    "8 oz granulated sugar (1 cup)",
+    "⅛ teaspoon table salt",
+    "½ teaspoon ground cardamom",
+    "1 ½ oz cornstarch (1/4 cup)",
+    "2 large eggs",
+    "2 large yolks",
+    "1 oz unsalted butter (melted)",
+    "4 oz heavy cream (½ cup)",
+    "½ vanilla bean (or 1 tsp vanilla extract)",
+    "12 oz buttermilk (1 ½ cups)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

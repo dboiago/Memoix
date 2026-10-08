@@ -1,0 +1,53 @@
+{
+  "url": "https://www.baking-sense.com/2015/04/06/blood-orange-marmalade/",
+  "slug": "blood-orange-marmalade_baking-sense_46fa127f",
+  "title": "Blood Orange Marmalade",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T05:50:55.022Z",
+  "ldName": "Blood Orange Marmalade",
+  "ldTime": "PT80M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "64",
+    "64 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast, brunch, condiment",
+  "ldKeywords": "canning, preserves",
+  "ldIngredientsRaw": [
+    "2 lbs blood oranges",
+    "1  large lemon",
+    "24 oz water (3 cups)",
+    "28 oz granulated sugar (3 ½ cups)"
+  ],
+  "ldInstructionsRaw": [
+    "Cut 2 lbs&#32;blood oranges and 1&#32;large lemon in half lengthwise and then cut into quarters, also lengthwise. Cut the quarters crosswise into very thin slices. Discard end pieces with thick pith. Collect any seeds and tie them into a cheesecloth bundle.",
+    "Place the fruit and the seed bundle into a large bowl and cover with 24 oz&#32;water. If the water does not completely cover the fruit add a little more. Place a small plate on top of the fruit to keep it submerged. Refrigerate over night.",
+    "Discard the seeds and put the fruit and water into a saucepan. Bring to a boil over medium-high heat. Lower the heat to medium low to maintain a simmer. Cook about 40 minutes, or until the rind of the fruit is very tender.",
+    "Add28 oz&#32;granulated sugar and bring back to a boil. Boil about 25-30 minutes until the temperature registers 220F on a candy thermometer.",
+    "If you don&#39;t have a candy thermometer use either the plate or spoon method to check the gel stage. Place a dollop of marmalade on a cold plate and wait for it to cool. Push it with the tip of your finger and if it &quot;wrinkles&quot; it is thick enough. If it&#39;s runny, continue cooking."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "55 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "0.2 g",
+    "fatContent": "0.1 g",
+    "saturatedFatContent": "0.003 g",
+    "sodiumContent": "1 mg",
+    "fiberContent": "0.4 g",
+    "sugarContent": "14 g",
+    "unsaturatedFatContent": "0.013 g"
+  },
+  "htmlIngredientLines": [
+    "2 lbs blood oranges",
+    "1 large lemon",
+    "24 oz water (3 cups)",
+    "28 oz granulated sugar (3 ½ cups)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

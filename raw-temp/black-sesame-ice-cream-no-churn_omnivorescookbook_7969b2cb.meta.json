@@ -1,0 +1,55 @@
+{
+  "url": "https://omnivorescookbook.com/black-sesame-ice-cream/",
+  "slug": "black-sesame-ice-cream-no-churn_omnivorescookbook_7969b2cb",
+  "title": "Black Sesame Ice Cream (No-Churn)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T03:05:21.160Z",
+  "ldName": "Black Sesame Ice Cream (No-Churn)",
+  "ldTime": "PT315M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": null,
+  "ldYield": [
+    "6",
+    "6 cups (12 servings)"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "6 tablespoons black sesame seeds (, roasted)",
+    "1 can (14-oz.) condensed milk (, sweetened)",
+    "2 teaspoons vanilla extract",
+    "2 cups heavy cream (, cold)",
+    "Pinch of salt"
+  ],
+  "ldInstructionsRaw": [
+    "Chill a 6-cup loaf pan or baking pan in the freezer.",
+    "Add the black sesame seeds into a medium-sized skillet and toast them over medium heat. Stir occasionally until you can hear a gentle sizzle as you lean towards the pan, about 5 minutes. Turn to low heat and toast for another minute, or until you smell a strong nutty aroma. Transfer to a big plate to cool for 5 minutes.",
+    "Transfer the sesame seeds to a food processor. Mix until it just starts to form a paste. Add condensed milk, vanilla and salt. Mix until everything is combined. Transfer to a big bowl.",
+    "Pour the heavy cream into a large, deep bowl. Whip with a mixer on medium-high speed, until it forms firm peaks, about 2 minutes. Transfer about 1 cup of the whipped cream into the condensed milk mixture. Fold with a rubber spatula until just combined. Then transfer the condensed milk mixture into the whipped cream. Fold until just blended. Pour it into the loaf pan. Cover and transfer into the freezer.",
+    "Freeze until the ice cream turns solid, about 5 hours or so. Enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "249 kcal",
+    "carbohydrateContent": "26.4 g",
+    "proteinContent": "4.9 g",
+    "fatContent": "14.3 g",
+    "saturatedFatContent": "7.1 g",
+    "cholesterolContent": "43 mg",
+    "sodiumContent": "64 mg",
+    "fiberContent": "0.5 g",
+    "sugarContent": "24.4 g"
+  },
+  "htmlIngredientLines": [
+    "6 tablespoons black sesame seeds , roasted",
+    "1 can (14-oz.) condensed milk , sweetened",
+    "2 teaspoons vanilla extract",
+    "2 cups heavy cream , cold",
+    "Pinch of salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

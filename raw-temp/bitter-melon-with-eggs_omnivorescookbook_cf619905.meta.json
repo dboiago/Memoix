@@ -1,0 +1,55 @@
+{
+  "url": "https://omnivorescookbook.com/bitter-melon-with-eggs/",
+  "slug": "bitter-melon-with-eggs_omnivorescookbook_cf619905",
+  "title": "Bitter Melon with Eggs",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T11:06:07.520Z",
+  "ldName": "Bitter Melon with Eggs",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT8M",
+  "ldCookTime": "PT7M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "2 (total 1 lb ) bitter melons (, seeds removed and sliced to 1/4” (5 mm) thick pieces)",
+    "3  eggs (, beaten with a pinch of salt)",
+    "1  green onion (, sliced)",
+    "1/2 teaspoon salt ((or to taste) (*Footnote 2))",
+    "1 tablespoon peanut oil ((or vegetable oil))"
+  ],
+  "ldInstructionsRaw": [
+    "Bring a large pot of water to a boil. Add the bitter melon. Blanch for 30 seconds. Drain immediately and rinse the bitter melon with cold tap water to stop cooking. Drain thoroughly again and pat dry with paper towels. (*Footnote 1)",
+    "Heat 1/2 tablespoon oil in a medium-sized skillet and heat over medium-high heat until hot. Add the beaten egg. Lightly scramble and cook until just cooked through. Transfer to a plate.",
+    "Add the remaining 1/2 tablespoon oil and the green onion. Stir a few times to release the fragrance.",
+    "Add the bitter melon and sprinkle with the salt (*Footnote 2). Stir fry for 2 to 3 minutes, or until starting to soften. Taste the bitter melon. If it’s still very tough, add a splash of water and cover the pan for 1 minute to steam it.",
+    "Add back the cooked eggs. Cook and stir to mix well. Transfer everything to a plate and serve as a side."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "94 kcal",
+    "carbohydrateContent": "4.4 g",
+    "proteinContent": "4.9 g",
+    "fatContent": "6.7 g",
+    "saturatedFatContent": "1.6 g",
+    "cholesterolContent": "123 mg",
+    "sodiumContent": "340 mg",
+    "fiberContent": "0.1 g",
+    "sugarContent": "0.3 g"
+  },
+  "htmlIngredientLines": [
+    "2 (total 1 lb ) bitter melons , seeds removed and sliced to 1/4” (5 mm) thick pieces",
+    "3 eggs , beaten with a pinch of salt",
+    "1 green onion , sliced",
+    "1/2 teaspoon salt (or to taste) (*Footnote 2)",
+    "1 tablespoon peanut oil (or vegetable oil)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

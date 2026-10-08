@@ -1,0 +1,62 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-style-butter-cookie-with-black-sesame/",
+  "slug": "butter-cookie-with-black-sesame_chinasichuanfood_08da6a7a",
+  "title": "Butter Cookie with Black Sesame",
+  "byline": "",
+  "fetchedAt": "2026-08-01T23:55:00.519Z",
+  "ldName": "Chinese Style Butter Cookie with Black Sesame",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "15",
+    "15 cookies"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "Cookie",
+  "ldIngredientsRaw": [
+    "80 g unsalted butter ( , room temperature)",
+    "30 g icing sugar ( , sifted)",
+    "1  egg yolk",
+    "Really small pinch of salt",
+    "25 ml whipping cream",
+    "1/2 tsp. vanilla extract ( , optional)",
+    "100 g low-gluten flower ( , cake flour or self-raising flour)",
+    "1.5 tbsp. toasted black sesame seeds or more as needed"
+  ],
+  "ldInstructionsRaw": [
+    "Mix sugar and salt with butter in a deep bowl and then cream with an electric mixer until very light and fluffy. This step is really important cause it will influence the texture if the final mixture and the taste of the baked cookie.",
+    "Add egg yolk, vanilla extract and whipping cream and whip until all the ingredients are well combined.",
+    "Sift the low-gluten flower in, garnish toasted black sesame and use a rubber spatula to combine the mixture well. And then transfer the mixture in a pastry bag assembled with coupler and tip. You can choose to use any tip that can make gorgeous swirled roses.",
+    "Firstly, get the baking sheet lined and pre-heat the oven to 175 degree C.",
+    "Start to pipe the rose cookies: hold the pastry bag vertically and start in the center and uniformly rotate the pastry bag while pushing the mixture with uniform force. Space the cookie around 4cm apart.",
+    "Bake in middle rack for 15-20 minutes. Check in the ending minutes until they get a slightly brown color. Wait for several minutes and then transfer to wire rack to cool down.",
+    "Keep all the cookies within airtighter container."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "93 kcal",
+    "carbohydrateContent": "7 g",
+    "proteinContent": "1 g",
+    "fatContent": "6 g",
+    "saturatedFatContent": "3 g",
+    "cholesterolContent": "42 mg",
+    "sodiumContent": "54 mg",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "80 g unsalted butter  , room temperature",
+    "30 g icing sugar  , sifted",
+    "1 egg yolk",
+    "Really small pinch of salt",
+    "25 ml whipping cream",
+    "1/2 tsp. vanilla extract  , optional",
+    "100 g low-gluten flower  , cake flour or self-raising flour",
+    "1.5 tbsp. toasted black sesame seeds or more as needed"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

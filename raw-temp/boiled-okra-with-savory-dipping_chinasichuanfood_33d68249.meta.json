@@ -1,0 +1,70 @@
+{
+  "url": "https://www.chinasichuanfood.com/boiled-okra/",
+  "slug": "boiled-okra-with-savory-dipping_chinasichuanfood_33d68249",
+  "title": "Boiled Okra - with Savory Dipping",
+  "byline": "",
+  "fetchedAt": "2026-08-02T05:37:20.349Z",
+  "ldName": "Boiled okra",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "10  okra",
+    "a small pinch of salt",
+    "1/4 tsp. sesame oil",
+    "2  garlic cloves (chopped)",
+    "1  fresh Thai red pepper (cut into small circles, optional)",
+    "2  spring onion (chopped)",
+    "2 tbsp. light soy sauce",
+    "1 tbsp. black vinegar",
+    "1 tbsp. oyster sauce",
+    "1/4 tsp. sugar",
+    "1 tbsp. sesame oil",
+    "1 tbsp. chili oil  (, optional )",
+    "1 tsp. sesame seeds"
+  ],
+  "ldInstructionsRaw": [
+    "Cut off the tail end of okras. Peel off the hard part around okra.",
+    "Bring a large pot of water to a boiling, sprinkle a small pinch of salt and add 1/4 tsp. sesame oil. Place okra in and blanch for 1 minute.",
+    "Transfer out to chilled water to cool down and stop the heating process.",
+    "Then strain and transfer to serving plate.",
+    "In a small bowl, mix all the season together.  Serve along with okra."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "108 kcal",
+    "carbohydrateContent": "7 g",
+    "proteinContent": "2 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "419 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "10 okra",
+    "a small pinch of salt",
+    "1/4 tsp. sesame oil",
+    "[Sauce]",
+    "2 garlic cloves chopped",
+    "1 fresh Thai red pepper cut into small circles, optional",
+    "2 spring onion chopped",
+    "2 tbsp. light soy sauce",
+    "1 tbsp. black vinegar",
+    "1 tbsp. oyster sauce",
+    "1/4 tsp. sugar",
+    "1 tbsp. sesame oil",
+    "1 tbsp. chili oil  , optional",
+    "1 tsp. sesame seeds"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

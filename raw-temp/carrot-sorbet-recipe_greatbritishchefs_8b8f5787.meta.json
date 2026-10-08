@@ -1,0 +1,35 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/carrot-sorbet",
+  "slug": "carrot-sorbet-recipe_greatbritishchefs_8b8f5787",
+  "title": "Carrot Sorbet Recipe",
+  "byline": "by Cristina Bowerman",
+  "fetchedAt": "2026-08-03T17:09:29.629Z",
+  "ldName": "Carrot sorbet",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "325ml of carrot juice",
+    "200g of sugar",
+    "200ml of water",
+    "25ml of glucose syrup",
+    "125ml of sea buckthorn juice",
+    "1 lemon, juiced",
+    "2 gelatine leaves"
+  ],
+  "ldInstructionsRaw": [
+    "Mix the sugar and water in a pan, bring to the boil to make a sugar syrup and take off the heat",
+    "Place the gelatine leaves in water to soften and then squeeze off the excess liquid",
+    "Add the softened gelatine into the syrup and then add the rest of the ingredients",
+    "Churn and freeze until set. Serve between courses as a palate cleanser or as a light dessert"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

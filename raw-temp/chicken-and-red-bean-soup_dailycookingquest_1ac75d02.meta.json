@@ -1,0 +1,44 @@
+{
+  "url": "https://dailycookingquest.com/chicken-and-red-bean-soup.html",
+  "slug": "chicken-and-red-bean-soup_dailycookingquest_1ac75d02",
+  "title": "Chicken and Red Bean Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:10:01.429Z",
+  "ldName": "Chicken and Red Bean Soup",
+  "ldTime": "PT2H30M",
+  "ldPrepTime": "PT0H30M",
+  "ldCookTime": "PT2H0M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": [
+    "Bean",
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "1 free range chicken (Indonesian: ayam kampung), cut into 4-8 pieces",
+    "150 gram dried red beans, washed and drained",
+    "2 medium size carrots, peeled and cut into bite size pieces",
+    "2 medium size tomatoes, cored (cut a cone around the core and remove it)",
+    "2 teaspoon salt",
+    "2 liter water"
+  ],
+  "ldInstructionsRaw": [
+    "Place all ingredients in a soup pot and bring to a boil. Reduce heat and simmer for 1 to 2 hours or until chicken is tender and fully cooked and the bean is soft to your likeness. Adjust salt as needed.",
+    "Remove from heat and serve warm."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 free range chicken (Indonesian: ayam kampung), cut into 4-8 pieces",
+    "150 gram dried red beans, washed and drained",
+    "2 medium size carrots, peeled and cut into bite size pieces",
+    "2 medium size tomatoes, cored (cut a cone around the core and remove it)",
+    "2 teaspoon salt",
+    "2 liter water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

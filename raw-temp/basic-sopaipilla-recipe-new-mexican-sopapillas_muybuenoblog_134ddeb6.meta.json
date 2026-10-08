@@ -1,0 +1,61 @@
+{
+  "url": "https://muybuenoblog.com/sopaipillas/",
+  "slug": "basic-sopaipilla-recipe-new-mexican-sopapillas_muybuenoblog_134ddeb6",
+  "title": "Basic Sopaipilla Recipe (New Mexican Sopapillas)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T03:54:07.745Z",
+  "ldName": "New Mexican Sopaipillas",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "20"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Cinco de Mayo, Dessert",
+  "ldKeywords": "how to make authentic sopaipillas, Mexican sopaipillas recipe, sopaipillas recipe",
+  "ldIngredientsRaw": [
+    "2 cups all-purpose flour",
+    "2 teaspoons baking powder",
+    "1 teaspoon salt",
+    "2 tablespoons shortening",
+    "3/4 cup warm water",
+    "1 to 2 cups canola oil for frying",
+    "1 teaspoon ground cinnamon",
+    "1/4 cup granulated sugar",
+    "honey"
+  ],
+  "ldInstructionsRaw": [
+    "In a large bowl, sift together flour, baking powder, and salt. Cut in shortening until mixture resembles coarse crumbs. Gradually stir in water just until dough pulls together.",
+    "Divide dough into 5 pieces. Roll out each piece of dough on lightly floured board into an 8-inch diameter circle. Cut each circle into 4 wedges.",
+    "Heat oil in a deep frying pan. Add a few of the tortilla wedges at a time. The wedges will puff up. Turn once so they will puff evenly on both sides; then turn back to brown on both sides.",
+    "Drain on paper towels. While warm, coat each sopaipilla with cinnamon-sugar mixture. Serve with honey."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "77 kcal",
+    "carbohydrateContent": "12 g",
+    "proteinContent": "1 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "117 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 cups all-purpose flour",
+    "▢ 2 teaspoons baking powder",
+    "▢ 1 teaspoon salt",
+    "▢ 2 tablespoons shortening",
+    "▢ 3/4 cup warm water",
+    "▢ 1 to 2 cups canola oil for frying",
+    "[Cinnamon-Sugar]",
+    "▢ 1 teaspoon ground cinnamon",
+    "▢ 1/4 cup granulated sugar",
+    "▢ honey"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

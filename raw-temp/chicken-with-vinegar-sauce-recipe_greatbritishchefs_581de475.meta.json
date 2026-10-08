@@ -1,0 +1,43 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chicken-with-vinegar-sauce-recipe",
+  "slug": "chicken-with-vinegar-sauce-recipe_greatbritishchefs_581de475",
+  "title": "Chicken with Vinegar Sauce Recipe",
+  "byline": "by Alfred Prasad",
+  "fetchedAt": "2026-08-03T11:23:13.712Z",
+  "ldName": "Chicken with vinegar sauce",
+  "ldTime": "PT45M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Main",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "2 chicken legs, bone-in",
+    "2 chicken thighs, bone-in",
+    "8 garlic cloves, minced",
+    "3 shallots, minced",
+    "250ml of distilled malt vinegar, sweetened with 2 tsp sugar",
+    "250ml of cider, medium sweet",
+    "4 tbsp of double cream",
+    "2 bay leaves",
+    "1 tbsp of vegetable oil",
+    "50g of butter",
+    "salt",
+    "pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 180°C/gas mark 4",
+    "Heat a skillet over a medium-high heat and add the oil. Brown the chicken pieces, turning until golden all over. Once evenly coloured, add the butter and baste the chicken for a minute or so",
+    "Place the skillet in the oven for 20 minutes. Remove the chicken and drain off most of the butter",
+    "Over a low heat, sauté the shallots and garlic with a pinch of salt until they're soft and sweet – be careful not to colour them. Remove from the pan",
+    "Add the vinegar and cider to the pan to deglaze and reduce by half. Remove the pan from the heat and let it cool a little",
+    "Once the sauce is around 50°C (you can pop a finger in without it burning) add the 4 tbsp of double cream and whisk it in. Taste and add a little more sugar if you think it needs it",
+    "Add the chicken and shallots back to the pan before serving. Once all heated through, serve with a crusty baguette and plenty of butter"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

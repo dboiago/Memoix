@@ -1,0 +1,46 @@
+{
+  "url": "https://dailycookingquest.com/bingka-telur-egg-and-coconut-milk-cake.html",
+  "slug": "bingka-telur-egg-and-coconut-milk-cake_dailycookingquest_24a8c207",
+  "title": "Bingka Telur - Egg and Coconut Milk Cake",
+  "byline": "",
+  "fetchedAt": "2026-08-02T05:17:36.035Z",
+  "ldName": "Bingka Telur - Egg and Coconut Milk Cake",
+  "ldTime": "PT1H0M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H50M",
+  "ldYield": [
+    "12"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Dessert",
+  "ldKeywords": [
+    "Egg"
+  ],
+  "ldIngredientsRaw": [
+    "6 eggs",
+    "150 gram sugar",
+    "75 gram all purpose flour",
+    "200 ml coconut milk (I use canned coconut milk)",
+    "1 teaspoon vanilla essence",
+    "1/2 teaspoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat oven to 320 Fahrenheit (160 Celsius). Grease and flour a 9\" round cake pan.",
+    "In a mixing bowl, beat together eggs and sugar until the sugar has dissolved.",
+    "Beat in flour, coconut milk, vanilla essence, and salt, one at a time, making sure each is completely well mixed before adding the next ingredient.",
+    "Pour the batter to the prepared pan and bake for 50 minutes, or until a cake tester came out clean.",
+    "Once the cake is cooled to room temperature, cut into slices and served."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "6 eggs",
+    "150 gram sugar",
+    "75 gram all purpose flour",
+    "200 ml coconut milk (I use canned coconut milk)",
+    "1 teaspoon vanilla essence",
+    "1/2 teaspoon salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

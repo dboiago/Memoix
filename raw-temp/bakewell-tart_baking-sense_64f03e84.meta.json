@@ -1,0 +1,68 @@
+{
+  "url": "https://www.baking-sense.com/2020/05/06/bakewell-tart/",
+  "slug": "bakewell-tart_baking-sense_64f03e84",
+  "title": "Bakewell Tart",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T22:08:48.494Z",
+  "ldName": "Bakewell Tart Recipe",
+  "ldTime": "PT65M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "British",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "almond flour",
+  "ldIngredientsRaw": [
+    "1 recipe Tart Dough",
+    "4 oz unsalted butter (room temperature)",
+    "6 oz granulated sugar (¾ cup)",
+    "2  large eggs (room temperature)",
+    "6 oz almond flour (1 ½ cups)",
+    "½ teaspoon almond extract",
+    "½ teaspoon vanilla",
+    "¼ teaspoon salt",
+    "4 oz raspberry preserves (⅓ cup)",
+    "1 oz sliced almonds (¼ cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 °F.",
+    "Roll the short dough to fit a 9&quot; or 10&quot; fluted tart pan with a removable bottom. Prick the dough all over with a fork and refrigerate until firm.",
+    "Bake the tart shell until it&#39;s lightly golden brown, about 10 minutes. Set the crust aside to cool to room temperature while you make the filling. Keep the oven on.",
+    "In a mixing bowl, cream 4 oz&#32;unsalted butter with 6 oz&#32;granulated sugar until light and aerated. Scrape the bowl. Add 2&#32;large eggs and mix to combine. Add 6 oz&#32;almond flour, ½ teaspoon&#32;almond extract, ½ teaspoon&#32;vanilla and ¼ teaspoon&#32;salt. Mix until well-combined.",
+    "Spread 4 oz&#32;raspberry preserves into the bottom of the tart crust. Dollop the  almond filling over the preserves then gently spread to an even layer. Try not to mix the jam into the filling. Sprinkle 1 oz&#32;sliced almonds evenly over the filling. Bake until the filling is set, about 25 minutes.",
+    "Cool the tart completely before removing the ring. Finish the tart with a light sprinkle of powdered sugar or a drizzle of glaze (see note)."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "292 kcal",
+    "carbohydrateContent": "28 g",
+    "proteinContent": "5 g",
+    "fatContent": "19 g",
+    "saturatedFatContent": "6 g",
+    "transFatContent": "0.3 g",
+    "cholesterolContent": "48 mg",
+    "sodiumContent": "97 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "19 g",
+    "unsaturatedFatContent": "5 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 recipe Tart Dough",
+    "4 oz unsalted butter (room temperature)",
+    "6 oz granulated sugar (¾ cup)",
+    "2 large eggs (room temperature)",
+    "6 oz almond flour (1 ½ cups)",
+    "½ teaspoon almond extract",
+    "½ teaspoon vanilla",
+    "¼ teaspoon salt",
+    "4 oz raspberry preserves (⅓ cup)",
+    "1 oz sliced almonds (¼ cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

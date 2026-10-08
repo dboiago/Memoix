@@ -1,0 +1,54 @@
+{
+  "url": "https://www.chopstickchronicles.com/calpis/",
+  "slug": "calpis-homemade-japanese-drink-chopstick-chronicle_chopstickchronicles_37a54ed1",
+  "title": "Calpis Homemade Japanese Drink - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-01T20:45:15.151Z",
+  "ldName": "Homemade Calpis Japanese Drink 自家製カルピス",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "8",
+    "8 serves"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Drinks",
+  "ldKeywords": "#calpis, #homemade calpis, #Japanese lassi",
+  "ldIngredientsRaw": [
+    "240 g Natural greek style yoghurt  (or 1 cup)",
+    "80 ml Milk (or ⅓ cup)",
+    "180 g Sugar (or ½ cup)",
+    "3 tbs Lemon juice"
+  ],
+  "ldInstructionsRaw": [
+    "In a saucepan, heat the milk, the yoghurt, and the sugar and stir until the sugar has dissolved.",
+    "Place it over low heat until it is warm (just small bubbles form) but not boiling. Stir occasionally to prevent the milk from scorching.",
+    "Add the lemon juice, and stir well to mix the ingredients. Remove from heat and allow the mixture to cool a bit.",
+    "Place a strainer over a sterilised glass bottle and pour the Calpis mixture through the strainer to remove any lumps or solids.",
+    "To make Calpis drink, pour 1/4 cup of the calpis yoghurt mixture into a glass. Add 3/4 cup of mineral water and mix well. Serve it chilled over ice!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "112 kcal",
+    "carbohydrateContent": "25 g",
+    "cholesterolContent": "5 mg",
+    "sodiumContent": "18 mg",
+    "sugarContent": "24 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "fiberContent": "0.02 g",
+    "unsaturatedFatContent": "0.34 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 240 g Natural greek style yoghurt  or 1 cup",
+    "▢ 80 ml Milk or ⅓ cup",
+    "▢ 180 g Sugar or ½ cup",
+    "▢ 3 tbs Lemon juice"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

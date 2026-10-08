@@ -1,0 +1,40 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chicken-marbella-recipe",
+  "slug": "chicken-marbella-recipe_greatbritishchefs_2838126d",
+  "title": "Chicken Marbella Recipe",
+  "byline": "by Vivek Singh",
+  "fetchedAt": "2026-08-03T09:04:08.322Z",
+  "ldName": "Chicken Marbella",
+  "ldTime": "PT35M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Main",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "8 chicken thighs",
+    "6 garlic, smashed",
+    "150g of pitted prunes",
+    "80g of green olives, stuffed with anchovies (save 1 tbsp of brine from the jar or can)",
+    "50g of caperberries, or 30g capers if you can’t find them",
+    "50ml of red wine vinegar",
+    "4 sprigs of oregano",
+    "100ml of sherry",
+    "1 tbsp of soft brown sugar",
+    "salt",
+    "pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Place the chicken in a bowl with the garlic, vinegar, oregano, prunes, olives, capers, sherry and brown sugar. Season with salt and pepper, stir well to combine everything and leave to marinate overnight",
+    "Preheat the oven to 170°C/gas mark 3",
+    "When ready to cook, drain the chicken from the marinade and pat dry (do not discard the marinade). Heat a dash of oil in a large oven-proof dish and add the chicken thighs, skin-side down. Cook until golden and crisp, then colour briefly on the other side. Remove and set aside on a plate",
+    "Transfer the contents of the bowl to the dish, place the chicken thighs on top, skin-side up",
+    "Bake in the oven for around 40 minutes, basting the chicken in the marinade every 15 minutes or so. Serve immediately"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

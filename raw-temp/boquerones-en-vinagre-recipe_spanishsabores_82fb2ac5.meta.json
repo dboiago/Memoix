@@ -1,0 +1,61 @@
+{
+  "url": "https://spanishsabores.com/the-most-malagueno-of-tapas-recipe-boquerones-en-vinagre/",
+  "slug": "boquerones-en-vinagre-recipe_spanishsabores_82fb2ac5",
+  "title": "Boquerones en Vinagre Recipe",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T10:06:52.085Z",
+  "ldName": "Boquerones en Vinagre Recipe",
+  "ldTime": "PT380M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": null,
+  "ldYield": [
+    "6",
+    "6 people"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Tapa",
+  "ldKeywords": "boquerones en vinagre, marinated anchovies, Spanish fish recipes",
+  "ldIngredientsRaw": [
+    "2 pounds fresh anchovies",
+    "2 cups white wine vinegar",
+    "3/4 cup water",
+    "5 cloves garlic (minced)",
+    "5 sprigs fresh parsley (chopped)",
+    "salt  (to taste)",
+    "1 cup extra virgin olive oil  ((240 ml))"
+  ],
+  "ldInstructionsRaw": [
+    "Clean the anchovies by removing the heads, innards, and spines, then cut them into fillets.",
+    "Rinse the anchovy fillets in cold water and pat them dry with paper towels. Lay them flat in a glass baking dish and freeze for 3 hours to kill any anisakis in the fish.",
+    "Remove the anchovies from the freezer and add the vinegar and water until the anchovies are submerged. Cover tightly with plastic wrap and marinate in the refrigerator for 2-3 hours, or until they&#39;re white. Don&#39;t leave them too long, as they&#39;ll become tough.",
+    "Drain the vinegar and water, then sprinkle the anchovies with the minced garlic and chopped parsley. Pour in the olive oil; the anchovies should be covered.",
+    "If possible, let the anchovies marinate in the garlic and olive oil overnight, but you can enjoy right away if you wish!",
+    "Serve the boquerones en vinagre on their own, or with a bit of delicious bread."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "535.47 kcal",
+    "carbohydrateContent": "1.1 g",
+    "proteinContent": "30.98 g",
+    "fatContent": "43.34 g",
+    "saturatedFatContent": "6.91 g",
+    "cholesterolContent": "90.72 mg",
+    "sodiumContent": "166.71 mg",
+    "fiberContent": "0.08 g",
+    "sugarContent": "0.03 g",
+    "unsaturatedFatContent": "34.33 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 pounds fresh anchovies",
+    "▢ 2 cups white wine vinegar",
+    "▢ ¾ cup water",
+    "▢ 5 cloves garlic minced",
+    "▢ 5 sprigs fresh parsley chopped",
+    "▢ salt  to taste",
+    "▢ 1 cup extra virgin olive oil  (240 ml)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

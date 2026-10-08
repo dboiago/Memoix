@@ -1,0 +1,57 @@
+{
+  "url": "https://bakingsteel.com/blogs/recipes/chicken-parmesan-pasta-recipe-the-only-recipe-you-need",
+  "slug": "chicken-parmesan-over-pasta-the-only-recipe-you-ne_bakingsteel_ca02a6d7",
+  "title": "Chicken Parmesan over Pasta - The only recipe you need",
+  "byline": "",
+  "fetchedAt": "2026-08-01T23:08:32.144Z",
+  "ldName": "Chicken Parmesan over Pasta - The only recipe you need",
+  "ldTime": "PT18M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT8M",
+  "ldYield": "2",
+  "ldCuisine": "Italian",
+  "ldCategory": "&lt;p&gt;Pasta&lt;/p&gt;",
+  "ldKeywords": [
+    "Carbon Steel",
+    "Pasta",
+    "Chicken",
+    "Baking Steel",
+    "Pizza Sauce"
+  ],
+  "ldIngredientsRaw": [
+    "2 ea Boneless, skinless chicken thighs",
+    "2 oz flour",
+    "2 ea eggs, beaten",
+    "2 oz Italian bread crumbs",
+    "6 oz tomato sauce",
+    "4 oz low moisture mozzarella",
+    "4-6 oz angel hair pasta (or any pasta really)",
+    "basil (for garnish)",
+    "8 oz oil for frying"
+  ],
+  "ldInstructionsRaw": [
+    "Set up breading procedure. 1 bowl of flour, 1 bowl of beaten eggs, 1 bowl of bread crumbs.",
+    "Keeping one hand dry and one hand wet, bread the chicken first in flour, than into the egg and then into the bread crumbs.",
+    "Pre-heat your Baking Steel Carbon Steel Pan with oil in it on medium until oil is 300-325 degrees.",
+    "Carefully place chicken into pan and get it a little shake to keep it from sticking on bottom. Flip after brown on one side (2-3 minutes). Cook for additional 2 minutes and turn off heat."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "2",
+    "": ""
+  },
+  "htmlIngredientLines": [
+    "2 ea Boneless, skinless chicken thighs",
+    "2 oz flour",
+    "2 ea eggs, beaten",
+    "2 oz Italian bread crumbs",
+    "6 oz tomato sauce",
+    "4 oz low moisture mozzarella",
+    "4-6 oz angel hair pasta (or any pasta really)",
+    "basil (for garnish)",
+    "8 oz oil for frying"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Pizza"
+}

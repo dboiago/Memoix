@@ -1,0 +1,72 @@
+{
+  "url": "https://www.cookwithmanali.com/achari-onion-paratha/",
+  "slug": "achari-onion-paratha_cookwithmanali_2f71045f",
+  "title": "Achari Onion Paratha",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-01T16:22:22.498Z",
+  "ldName": "Achari Onion Paratha",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT25M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "5",
+    "5 parathas"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Achari, Achari Onion Paratha, Onion, Onion Paratha, Paratha",
+  "ldIngredientsRaw": [
+    "1.5 cups atta (also known as durum wheat flour)",
+    "3/4 teaspoon salt",
+    "1/2 teaspoon ajwain (also known as carom seeds)",
+    "1 teaspoon coriander seeds (roasted and crushed)",
+    "1  green chili (finely chopped)",
+    "1  medium red onion (finely chopped)",
+    "2 tablespoons chopped cilantro",
+    "1.5 tablespoons vegetable oil",
+    "water (as required to knead the dough)",
+    "1.5 teaspoons pickle masala",
+    "more oil (to roast the paratha)"
+  ],
+  "ldInstructionsRaw": [
+    "To a large bowl add atta, salt, ajwain, roasted and crushed coriander seeds, chopped green chili and finely chopped red onion.",
+    "Add 1.5 tablespoons vegetable oil, chopped cilantro, achar masala and mix till everything is well combined.",
+    "Start adding water, little by little till the dough starts coming together.",
+    "Knead to a smooth and soft dough. Place the dough in a container, apply some oil on top, cover and let the dough rest for 15-20 minutes.",
+    "Once the dough has rested, pinch a lemon size ball from it.",
+    "Using you rolling pin, roll the dough into a circle of around 8 inches.",
+    "Meanwhile heat a tawa/skillet on medium-high heat.",
+    "Once the tawa is hot enough, place the rolled paratha on top of it. Let it cook from one side for few seconds.",
+    "Flip over and now apply oil generously on the cooked side.",
+    "Flip again and apply oil on the other side of the paratha as well. Press paratha with a spatula or till it's has brown spots and is well cooked from both sides.",
+    "Enjoy the achari onion paratha with butter, yogurt and chai!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "176 kcal",
+    "carbohydrateContent": "29 g",
+    "proteinContent": "5 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "4 g",
+    "sodiumContent": "381 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1.5 cups atta, also known as durum wheat flour",
+    "▢ 3/4 teaspoon salt",
+    "▢ 1/2 teaspoon ajwain, also known as carom seeds",
+    "▢ 1 teaspoon coriander seeds, roasted and crushed",
+    "▢ 1 green chili, finely chopped",
+    "▢ 1 medium red onion, finely chopped",
+    "▢ 2 tablespoons chopped cilantro",
+    "▢ 1.5 tablespoons vegetable oil",
+    "▢ water, as required to knead the dough",
+    "▢ 1.5 teaspoons pickle masala",
+    "▢ more oil, to roast the paratha"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

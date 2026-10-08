@@ -1,0 +1,32 @@
+{
+  "url": "https://www.greatitalianchefs.com/recipes/americano-cocktail-recipe",
+  "slug": "americano-cocktail-recipe_greatitalianchefs_b9562643",
+  "title": "Americano Cocktail Recipe",
+  "byline": "by Accursio Craparo",
+  "fetchedAt": "2026-08-01T23:42:19.034Z",
+  "ldName": "Americano",
+  "ldTime": "PT5M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Cocktail",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "60ml of Campari",
+    "60ml of sweet vermouth",
+    "1 dash of soda water",
+    "ice",
+    "1 slice of orange"
+  ],
+  "ldInstructionsRaw": [
+    "Fill a heavy-bottomed highball glass with ice",
+    "Add the Campari and vermouth then top up with a splash of soda water",
+    "Garnish with a slice of fresh orange and serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

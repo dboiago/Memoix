@@ -1,0 +1,5 @@
+The foodie minds behind the menu of Heathrow's The Gorgeous Kitchen restaurant have come up with some fantastic variations on the traditional Bloody Mary cocktail, to help kickstart your day, and your travels.
+
+Chefs and food writers, Sophie Michell, Jo Pratt, Caroline Artiss and Gee Charman have collectively added creative flair and innovative flavours to the [brunch](https://www.greatbritishchefs.com/collections/brunch-recipes) offering at The Gorgeous Kitchen, although still playing homage to seasonal British cuisine.
+
+Based around the the classic combination of tomato and [vodka](https://www.greatbritishchefs.com/collections/vodka-cocktail-recipes), this barbecue-inspired Bloody Mary is easy to knock up at home, and what goes well with bacon? Well, more bacon of course! Make your humble sarnie extra special with this cocktail on the side.

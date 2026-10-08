@@ -1,0 +1,7 @@
+[Blood oranges](https://www.greatbritishchefs.com/collections/blood-orange-recipes) offer a sweet, colourful foil to the sometimes bleak greyness of winter, and in this recipe they're served three ways: as a [sorbet](https://www.greatbritishchefs.com/collections/sorbet-recipes), a sherbet and a delightful frozen [carpaccio](https://www.greatbritishchefs.com/collections/carpaccio-recipes). Best of all, this recipe can be made entirely in advance, making it ideal for dinner parties.
+
+_'This is one of the cleanest and most refreshing desserts at Le Manoir. There are a number of varieties of blood orange, native from either Spain or Italy. The variety we use here between December and March is the Moro. The purple-red pigmentation in the blood orange adds not only colour but is also a strong antioxidant. It also transforms the flavour of the orange._
+
+_This recipe could easily be made in individual small moulds, or simply grated into a granita if you prefer.'_
+
+Follow Raymond on [Instagram](https://www.instagram.com/raymondblanc/), [Twitter](https://twitter.com/raymond_blanc) and [Facebook](https://www.facebook.com/ChefRaymondBlanc/). Recipe © [Raymond Blanc](http://www.raymondblanc.com/).

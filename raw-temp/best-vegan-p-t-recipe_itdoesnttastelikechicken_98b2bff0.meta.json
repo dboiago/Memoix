@@ -1,0 +1,61 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/vegan-mushroom-walnut-pate/",
+  "slug": "best-vegan-p-t-recipe_itdoesnttastelikechicken_98b2bff0",
+  "title": "Best Vegan Pâté Recipe!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T00:44:01.899Z",
+  "ldName": "Vegan Mushroom &amp; Walnut Pâté",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "8",
+    "8 (makes about 1 2/3 cups)"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "French, snack",
+  "ldIngredientsRaw": [
+    "1 cup walnuts",
+    "1 tablespoon olive oil",
+    "1  yellow onion (chopped)",
+    "6  cloves garlic (minced)",
+    "8 oz button or cremini mushrooms (sliced (about 2 cups))",
+    "1/2 cup parsley (chopped)",
+    "2 tablespoons fresh rosemary (chopped)",
+    "1 teaspoon salt",
+    "1/2 teaspoon black pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Toast the walnuts in a large dry skillet over medium heat. Keep a careful eye on them and shake the pan often as they can burn quickly. As soon as they start browning on the edges remove them from the heat. Remove the walnuts from the pan onto a heat-safe dish, or directly into your food processor if your food processor can handle hot food.",
+    "Return the pan to the heat and add the olive oil. When hot add the onions and garlic and sauté until the onions soften and turn translucent about 4 minutes. Add in all the remaining ingredients, the mushrooms, parsley, rosemary, salt, and pepper and sauté until the mushrooms have cooked and reduced in size, another 5 - 8 minutes. If the mushrooms are sticking to the pan you can add a small splash of water to help release them. As the mushrooms cook they will release their own liquid.",
+    "If your food processor can handle hot food, add the mushrooms to the food processor along with the walnuts. If not, just let the mushrooms and walnuts cool first. Pulse, stopping to scrape the sides as needed until you reach a pâté texture. I like to leave mine with a bit of texture and color variation.",
+    "Press into a container for serving using a spatula to smooth it, and let it chill completely in the fridge before serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "128 kcal",
+    "carbohydrateContent": "5 g",
+    "proteinContent": "3 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "295 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving (1/8 of the pâté)"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup walnuts",
+    "▢ 1 tablespoon olive oil",
+    "▢ 1 yellow onion, chopped",
+    "▢ 6 cloves garlic, minced",
+    "▢ 8 oz button or cremini mushrooms, sliced (about 2 cups)",
+    "▢ ½ cup parsley, chopped",
+    "▢ 2 tablespoons fresh rosemary, chopped",
+    "▢ 1 teaspoon salt",
+    "▢ ½ teaspoon black pepper"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

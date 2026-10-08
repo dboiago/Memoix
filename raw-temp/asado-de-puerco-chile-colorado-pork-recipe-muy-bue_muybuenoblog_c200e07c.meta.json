@@ -1,0 +1,60 @@
+{
+  "url": "https://muybuenoblog.com/asado-de-chile-colorado/",
+  "slug": "asado-de-puerco-chile-colorado-pork-recipe-muy-bue_muybuenoblog_c200e07c",
+  "title": "Asado de Puerco (Chile Colorado Pork Recipe) | Muy Bueno",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T11:39:44.672Z",
+  "ldName": "Asado de Puerco (Chile Colorado Pork Recipe)",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "10",
+    "10 servings"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Entrees",
+  "ldKeywords": "Mexican chile recipe",
+  "ldIngredientsRaw": [
+    "2 tablespoons olive oil",
+    "2 1/2  pounds pork loin (cut into 1-inch cubes)",
+    "2 teaspoons salt",
+    "3  cloves garlic (chopped)",
+    "4 cups Red Chile Sauce",
+    "1 1/4 cups tomato sauce",
+    "1/4 teaspoon dried Mexican oregano  (crushed)",
+    "1/4 teaspoon ground cumin",
+    "Water"
+  ],
+  "ldInstructionsRaw": [
+    "Heat a large skillet over medium-high heat. Add oil to pan; swirl to coat. Add pork to pan; cook 5 minutes. Add salt and garlic and continue cooking until pork is thoroughly cooked, about 10 to 15 minutes.",
+    "Add red chile sauce, tomato sauce, oregano, and cumin. Let mixture come to a boil and add water to desired consistency. Simmer for another 10 minutes to let the flavors come together."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "293 kcal",
+    "carbohydrateContent": "24 g",
+    "proteinContent": "26 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "71 mg",
+    "sodiumContent": "5331 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "18 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 tablespoons olive oil",
+    "▢ 2 1/2 pounds pork loin, cut into 1-inch cubes",
+    "▢ 2 teaspoons salt",
+    "▢ 3 cloves garlic, chopped",
+    "▢ 4 cups Red Chile Sauce",
+    "▢ 1 1/4 cups tomato sauce",
+    "▢ 1/4 teaspoon dried Mexican oregano , crushed",
+    "▢ 1/4 teaspoon ground cumin",
+    "▢ Water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

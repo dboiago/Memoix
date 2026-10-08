@@ -1,0 +1,48 @@
+{
+  "url": "https://dailycookingquest.com/bean-curd-and-tianjin-preserved-vegetable-pork-soup.html",
+  "slug": "bean-curd-and-tianjin-preserved-vegetable-pork-sou_dailycookingquest_a8ce4929",
+  "title": "Bean Curd and Tianjin Preserved Vegetable Pork Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:05:59.898Z",
+  "ldName": "Bean Curd and Tianjin Preserved Vegetable Pork Soup",
+  "ldTime": "PT1H0M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT0H45M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": [
+    "Bean",
+    "Pork",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "2 liter water",
+    "250 gram pork, cut into bite sizes",
+    "2 carrot (about 300 gram), peeled and chopped into bite sized",
+    "1 tomato, cored and quartered",
+    "2 teaspoon salt",
+    "100 gram dried bean curd, soaked in cold water and cut into 2 inch pieces",
+    "2 tablespoon Tianjin preserved vegetable"
+  ],
+  "ldInstructionsRaw": [
+    "Boil water and pork in a soup pot. Ladle off scum to get a clear soup.",
+    "Add carrot, tomato, and salt. Simmer for 30 minutes or until the pork is tender and fully cooked.",
+    "Add the soaked bean curd and Tianjin preserved vegetables. Bring to another boil. Adjust salt as needed. Turn off heat and serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 liter water",
+    "250 gram pork, cut into bite sizes",
+    "2 carrot (about 300 gram), peeled and chopped into bite sized",
+    "1 tomato, cored and quartered",
+    "2 teaspoon salt",
+    "100 gram dried bean curd, soaked in cold water and cut into 2 inch pieces",
+    "2 tablespoon Tianjin preserved vegetable"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

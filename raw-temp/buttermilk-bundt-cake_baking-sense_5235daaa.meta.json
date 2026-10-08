@@ -1,0 +1,71 @@
+{
+  "url": "https://www.baking-sense.com/2016/07/13/buttermilk-bundt-cake-with-buttermilk-glaze/",
+  "slug": "buttermilk-bundt-cake_baking-sense_5235daaa",
+  "title": "Buttermilk Bundt Cake",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T04:45:10.834Z",
+  "ldName": "Buttermilk Bundt Cake with Buttermilk Glaze",
+  "ldTime": "PT90M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "bundt",
+  "ldIngredientsRaw": [
+    "2  large eggs",
+    "2  large yolks",
+    "2 teaspoons vanilla extract",
+    "8 oz buttermilk (1 cup)",
+    "11 ¼ oz cake flour (2 ½ cups, see note)",
+    "11 oz granulated sugar (1 ⅓ cups)",
+    "1 tablespoon baking powder",
+    "½ teaspoon table salt",
+    "6 oz unsalted butter (room temperature, cut into 1\" chunks)",
+    "8 oz confectioner sugar (2 cups)",
+    "1 teaspoon vanilla",
+    "2 oz buttermilk (¼ cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 °F. Butter and flour a 12 cup Bundt pan.",
+    "Make the batter",
+    "Make the Glaze"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "307 kcal",
+    "carbohydrateContent": "49 g",
+    "proteinContent": "4 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "6 g",
+    "transFatContent": "0.4 g",
+    "cholesterolContent": "70 mg",
+    "sodiumContent": "182 mg",
+    "fiberContent": "0.5 g",
+    "sugarContent": "34 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "[Buttermilk Cake]",
+    "2 large eggs",
+    "2 large yolks",
+    "2 teaspoons vanilla extract",
+    "8 oz buttermilk (1 cup)",
+    "11 ¼ oz cake flour (2 ½ cups, see note)",
+    "11 oz granulated sugar (1 ⅓ cups)",
+    "1 tablespoon baking powder",
+    "½ teaspoon table salt",
+    "6 oz unsalted butter (room temperature, cut into 1″ chunks)",
+    "[Buttermilk Glaze]",
+    "8 oz confectioner sugar (2 cups)",
+    "1 teaspoon vanilla",
+    "2 oz buttermilk (¼ cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

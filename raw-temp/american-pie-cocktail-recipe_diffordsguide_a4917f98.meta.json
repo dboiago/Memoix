@@ -1,0 +1,43 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/59/american-pie-cocktail",
+  "slug": "american-pie-cocktail-recipe_diffordsguide_a4917f98",
+  "title": "American Pie Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-01T17:39:25.846Z",
+  "ldName": "American Pie Cocktail",
+  "ldTime": "PT04M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "4th July and Independence Day"
+  ],
+  "ldIngredientsRaw": [
+    "45 ml Bourbon whiskey",
+    "15 ml Apple Schnapps",
+    "15 ml Myrtle/Mirto liqueur",
+    "15 ml Cranberry juice",
+    "15 ml Apple juice",
+    "7.5 ml Lime juice"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COUPE GLASS.",
+    "Prepare garnish of dehydrated apple slice.",
+    "SHAKE all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "Garnish with dehydrated apple slice floated on cocktail."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "203 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

@@ -1,0 +1,63 @@
+{
+  "url": "https://www.baking-sense.com/2023/11/20/apple-tarte-tatin/",
+  "slug": "apple-tarte-tatin_baking-sense_8d0fe82a",
+  "title": "Apple Tarte Tatin",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T01:48:22.519Z",
+  "ldName": "Tarte Tatin Recipe",
+  "ldTime": "PT105M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "autumn, fall recipe, holidays",
+  "ldIngredientsRaw": [
+    "1/2  recipe Perfect Pie Crust (see  note)",
+    "4 oz unsalted butter (see note)",
+    "6 oz granulated sugar (¾ cup)",
+    "1 teaspoon lemon juice",
+    "¼ teaspoon table salt (see note)",
+    "1 tablespoon rum (optional)",
+    "3 pounds apples (peel, cored and cut into quarters)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 375 °F. Roll 1/2&#32;recipe Perfect Pie Crust to a 12&quot; round and refrigerate it while you prepare the filling.",
+    "Melt 4 oz&#32;unsalted butter over high heat in an oven-safe 10&quot; or 12” skillet (I like to use cast iron). Reduce the heat to medium and sprinkle 6 oz&#32;granulated sugar over the melted butter. Add 1 teaspoon&#32;lemon juice, ¼ teaspoon&#32;table salt and 1 tablespoon&#32;rum. Swirl the pan to mix the ingredients.",
+    "Once the sugar has melted, arrange apple pieces in concentric circles in the pan. Fit as many as you can in a single layer. You won&#39;t fit all the apples in the pan initially. Cook over medium heat for 10-15 minutes, until the bottoms are golden brown. As the apples shrink, tuck more pieces into the pan. If spots of the pan are caramelizing faster gently shimmy and swirl the pan to mix the caramel. Use the tip of a paring knife to flip the apples and brown the other side. Cook until all the apples are browned and crisp-tender, another 10-15 minutes.",
+    "Remove the pan from the heat. Lay the pie crust over the apples. Fold the edges of the dough and use the tip of a knife to tuck the edge of the dough between the apples and the pan.",
+    "Bake until the crust is golden brown, about 15-20 minutes. Remove the pan from the oven and cool 5 minutes to allow the caramel to settle.",
+    "Run a knife or spatula around the edges of the tart to make sure it&#39;s not sticking. Place a serving platter over the pan and, using oven mitts to protect your hands, flip the tart onto the platter and remove the skillet. Use the tip of the knife to transfer any apples that stick to the pan back onto the tart",
+    "Serve warm."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "217 kcal",
+    "carbohydrateContent": "33 g",
+    "proteinContent": "1 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "5 g",
+    "cholesterolContent": "20 mg",
+    "sodiumContent": "80 mg",
+    "sugarContent": "26 g",
+    "transFatContent": "0.3 g",
+    "fiberContent": "3 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "1/2 recipe Perfect Pie Crust (see  note)",
+    "4 oz unsalted butter (see note)",
+    "6 oz granulated sugar (¾ cup)",
+    "1 teaspoon lemon juice",
+    "¼ teaspoon table salt (see note)",
+    "1 tablespoon rum (optional)",
+    "3 pounds apples (peel, cored and cut into quarters)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

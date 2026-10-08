@@ -1,0 +1,46 @@
+{
+  "url": "https://dailycookingquest.com/broccolini-sesame-dressing.html",
+  "slug": "broccolini-sesame-dressing_dailycookingquest_4cc32d06",
+  "title": "Broccolini Sesame Dressing",
+  "byline": "",
+  "fetchedAt": "2026-08-02T02:18:28.483Z",
+  "ldName": "Broccolini Sesame Dressing",
+  "ldTime": "PT0H20M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H10M",
+  "ldYield": [
+    "4-8"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Salad, Side Dish",
+  "ldKeywords": [
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "450 gram (1 lb.) broccolini",
+    "1/2 cup sesame seeds, toasted",
+    "1/4 cup soy sauce",
+    "2 tablespoon sugar",
+    "100 ml (6 tablespoon + 1 teaspoon) dashi stock"
+  ],
+  "ldInstructionsRaw": [
+    "Separate the green part of the broccolini from the bottom stalks. If the stalk is not too thick, half them lengthwise. If the stalk is rather thick, quarter them lengthwise. Wash and drain the greens and the stalks.",
+    "Bring a large pot of lightly salted water to a rolling boil. Add in the greens and the stalks, blanch for 2 minutes. Remove the greens first, if the stalks seems tough, feel free to cook for another 2 minutes.",
+    "Rinse the greens and stalks in cold water, and soak in a large mixing bowl filled with ice cubes and cold water for 10 minutes.",
+    "Gently squeeze the vegetables and cut into bite size pieces. Arrange in a plate.",
+    "To make the dressing, coarsely grind toasted sesame seeds. Transfer to a bowl and mix with soy sauce, sugar, and dashi stock.",
+    "Serve broccolini with the sesame dressing"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "450 gram (1 lb.) broccolini",
+    "Goma ae (Sesame dressing)",
+    "1/2 cup sesame seeds, toasted",
+    "1/4 cup soy sauce",
+    "2 tablespoon sugar",
+    "100 ml (6 tablespoon + 1 teaspoon) dashi stock"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

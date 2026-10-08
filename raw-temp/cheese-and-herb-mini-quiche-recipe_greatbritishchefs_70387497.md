@@ -1,0 +1,3 @@
+These miniature quiches are easy to make, and quick, too, if you use a roll of shop-bought pastry. The Cheshire cheese used here is a reference to the cat with the largest grin in Alice in Wonderland, but it also happens to work very well in the recipe. Handy, that. It’s a mild, crumbly cheese, which brings some lightness to the cream filling.
+
+The selection of garden herbs below is particularly lovely, although feel free to leave out the chervil if you can’t find it. These are rustic little quiches, so don’t worry about making them too neat and tidy; they look distinctly more ‘Mad Hatter’s Tea Party’ when left untrimmed.

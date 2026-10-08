@@ -1,0 +1,57 @@
+{
+  "url": "https://spanishsabores.com/bacon-wrapped-dates-recipe/",
+  "slug": "bacon-wrapped-dates-recipe-d-tiles-rellenos-spanis_spanishsabores_df55c2f1",
+  "title": "Bacon Wrapped Dates Recipe (Dátiles Rellenos) - Spanish Sabores",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T09:03:54.492Z",
+  "ldName": "Bacon Wrapped Dates Recipe",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "bacon wrapped dates, dátiles rellenos",
+  "ldIngredientsRaw": [
+    "6 strips thinly sliced bacon (or serrano ham or prosciutto)",
+    "12  large dates",
+    "3 ounces goat cheese",
+    "12  toothpicks (soaked in water to minimize charring)",
+    "12  Marcona almonds (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350°F (175°C).",
+    "Slice the dates lengthwise and carefully remove the pit. Replace it with a small amount of goat cheese, and the almond if using. Press the edges of the dates together to seal.",
+    "Cut the strips of bacon in half, and wrap each date in one piece of bacon. Poke a  toothpick through the date to secure the bacon.",
+    "Place on a rimmed baking dish, leaving space between each date. Bake for 15-20 minutes, turning halfway through, until the bacon is brown and crispy.",
+    "Leave them to cool for a few minutes, then serve and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 date",
+    "calories": "136.81 kcal",
+    "carbohydrateContent": "18.35 g",
+    "proteinContent": "3.35 g",
+    "fatContent": "6.39 g",
+    "saturatedFatContent": "2.53 g",
+    "transFatContent": "0.01 g",
+    "cholesterolContent": "10.52 mg",
+    "sodiumContent": "99.15 mg",
+    "fiberContent": "1.73 g",
+    "sugarContent": "16.05 g",
+    "unsaturatedFatContent": "3.44 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 6 strips thinly sliced bacon or serrano ham or prosciutto",
+    "▢ 12 large dates",
+    "▢ 3 ounces goat cheese",
+    "▢ 12 toothpicks soaked in water to minimize charring",
+    "▢ 12 Marcona almonds optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

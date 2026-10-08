@@ -1,0 +1,42 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-tart",
+  "slug": "apple-tart_lacucinaitaliana_d6090e68",
+  "title": "Apple Tart",
+  "byline": "by  Editorial staff   October 22, 2019",
+  "fetchedAt": "2026-08-02T14:26:18.314Z",
+  "ldName": "Apple Tart",
+  "ldTime": "PT60M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "6",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Cucina Tradizionale,Dolci,Mele,Torte,Apple Cakes",
+  "ldIngredientsRaw": [
+    "2/3 cup flour, plus extra for the pan",
+    "1/2CUP sugar",
+    "1/2 cup butter, plus extra for the pan",
+    "3 pink apples, like the Pink Apple of the Sibillini mountains",
+    "2 eggs",
+    "Lemon"
+  ],
+  "ldInstructionsRaw": [
+    "<p>To make a soft apple tart, use an electric mixer to whip the butter and the sugar together.&nbsp;</p>",
+    "<p>Continue to mix, adding the eggs one at a time and the grated zest of 1 lemon, then the flour.</p>",
+    "<p>Peel, core, and slice the apples.</p>",
+    "<p>Transfer the dough to a buttered and floured tart pan, top with the apples.</p>",
+    "<p>Bake at 350°F for about 30 minutes.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2/3 cup flour, plus extra for the pan",
+    "1/2 CUP of sugar",
+    "1/2 cup butter, plus extra for the pan",
+    "3 pink apples, like the Pink Apple of the Sibillini mountains",
+    "2 eggs",
+    "Lemon"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

@@ -1,0 +1,39 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/beetroot-roasted-almond-dip-recipe",
+  "slug": "beetroot-dip-recipe_greatbritishchefs_2c5d2a9d",
+  "title": "Beetroot Dip Recipe",
+  "byline": "by Daniel Galmiche",
+  "fetchedAt": "2026-08-03T23:43:04.969Z",
+  "ldName": "Beetroot and roasted almond dip",
+  "ldTime": "PT20M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Sauce",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "500g of beetroot, boiled or roasted with rosemary",
+    "50g of almonds",
+    "25g of selection of seeds",
+    "125ml of olive oil",
+    "2 garlic cloves",
+    "1/2 lemon, juice and half zest",
+    "1/2 clementine, juice only",
+    "1 tsp balsamic vinegar",
+    "1/2 tsp honey",
+    "10g of coriander",
+    "1/2 tsp salt"
+  ],
+  "ldInstructionsRaw": [
+    "Pre-heat the oven to 180 degrees",
+    "Put the almonds in a baking tray, drizzle over 1 tbs olive oil and a generous pinch of salt. Shake to coat. Put the tray in the oven and cook for 8-10 minutes, or until they are toasted",
+    "Boil/ Roast the beetroot with rosemary, individually wrapped in foil or in a large pan, until tender",
+    "Remove the outside skin from the beetroot, slice in half and blitz the beetroot with the remaining ingredients until it reaches your desired texture"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

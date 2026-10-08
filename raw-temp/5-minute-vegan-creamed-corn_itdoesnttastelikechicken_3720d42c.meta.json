@@ -1,0 +1,56 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/5-minute-vegan-creamed-corn/",
+  "slug": "5-minute-vegan-creamed-corn_itdoesnttastelikechicken_3720d42c",
+  "title": "5 Minute Vegan Creamed Corn",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T04:41:45.130Z",
+  "ldName": "5 Minute Vegan Creamed Corn",
+  "ldTime": "PT5M",
+  "ldPrepTime": null,
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "8",
+    "8 (makes about 4 cups)"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "5 minute vegan creamed corn, easy vegan creamed corn, homemade vegan creamed corn, how to make vegan creamed corn, vegan creamed corn, vegan creamed corn recipe",
+  "ldIngredientsRaw": [
+    "1 tablespoon vegan butter",
+    "2 cloves garlic, (minced or pressed)",
+    "1 tablespoon all-purpose flour ((sub-gluten-free all-purpose flour if preferred))",
+    "1 3/4 cups full-fat coconut milk ((see notes))",
+    "2 tablespoons nutritional yeast ((optional for cheesy taste))",
+    "1/2 teaspoon salt",
+    "1/2 teaspoon black pepper",
+    "3 cups corn kernels ((fresh or frozen))"
+  ],
+  "ldInstructionsRaw": [
+    "In a medium skillet or pot melt the vegan butter over medium heat. When melted add the garlic and cook for about 30 seconds, then whisk in the flour to make a paste and cook for another 30 seconds, whisking continually. Add the coconut milk, nutritional yeast, salt, and pepper and whisk to combine. Stir in the corn kernels and continue to cook for 2 - 4 minutes, until you reach desired consistency. If you prefer a thicker creamed corn cook a little longer, and if you prefer a thinner creamed corn then remove from the heat earlier. You can also add an extra splash of coconut milk or water to thin if needed. Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving (recipe makes 8)",
+    "calories": "168 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "4 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "10 g",
+    "sodiumContent": "278 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 tablespoon vegan butter",
+    "▢ 2 cloves garlic,, minced or pressed",
+    "▢ 1 tablespoon all-purpose flour, (sub-gluten-free all-purpose flour if preferred)",
+    "▢ 1 ¾ cups full-fat coconut milk, (see notes)",
+    "▢ 2 tablespoons nutritional yeast, (optional for cheesy taste)",
+    "▢ ½ teaspoon salt",
+    "▢ ½ teaspoon black pepper",
+    "▢ 3 cups corn kernels, (fresh or frozen)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

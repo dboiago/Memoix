@@ -1,0 +1,45 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/almond-custard",
+  "slug": "almond-custard_lacucinaitaliana_f50d721f",
+  "title": "Almond Custard",
+  "byline": "by  Editorial staff   March 10, 2020",
+  "fetchedAt": "2026-08-03T08:02:13.213Z",
+  "ldName": "Almond Custard",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Dolci,Dolci Al Cucchiaio,Mandorle",
+  "ldIngredientsRaw": [
+    "3C. almond milk",
+    "1LB. Isabella grapes",
+    "1 2/3C. heavy cream",
+    "1 3/4C. sugar",
+    "7OZ. almonds, blanched",
+    "3/4C. cornstarch",
+    "1/3C. Amaretto liqueur",
+    "8 gelatin sheets"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Soak the gelatin in cold water. Blend the almonds with the almond milk, then filter the mixture through a sieve lined with a cheesecloth. Add the cream, 1 cup of sugar, the amaretto liqueur, and combine. Pour everything into a saucepan. Remove 2/3 cup of the liquid and use it to dissolve the cornstarch in a small bowl.</p>",
+    "<p>Bring the almond milk and cream to a boil, then add the dissolved cornstarch away from the heat. Bring back to a boil, turn off the heat, and melt in the drained gelatin. Brush the mold with a bit of the liqueur and pour in the mixture. Let cool, then refrigerate for at least 4 hours.</p>",
+    "<p>FOR THE SAUCE: In a saucepan, cook the grapes with 3/4 cup of sugar. Cook for 10-15 minutes until they start to fall apart and create a sauce. Top the custard with the sauce</p>",
+    "<p>and garnish with more fresh grapes.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "3 C. of almond milk",
+    "1 LB. of Isabella grapes",
+    "1 2/3 C. of heavy cream",
+    "1 3/4 C. of sugar",
+    "7 OZ. of almonds, blanched",
+    "3/4 C. of cornstarch",
+    "1/3 C. of Amaretto liqueur",
+    "8  of gelatin sheets"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

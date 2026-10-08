@@ -1,0 +1,71 @@
+{
+  "url": "https://www.baking-sense.com/2019/06/27/sour-cherry-crumb-pie/",
+  "slug": "cherry-crumb-pie_baking-sense_aa63384b",
+  "title": "Cherry Crumb Pie",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T08:31:58.374Z",
+  "ldName": "Cherry Almond Crumb Pie Recipe",
+  "ldTime": "PT120M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "10",
+    "10 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "cherry, crumb pie",
+  "ldIngredientsRaw": [
+    "½ Recipe  Perfect Pie Crust",
+    "3 lbs sour cherries (pitted, see note)",
+    "12 oz granulated sugar (1 ½ cups )",
+    "2 oz corn starch (⅓ cup)",
+    "¼ teaspoon table salt",
+    "7 ½ oz all purpose flour (1 ½ cups, see note)",
+    "2 oz almond flour (½ cup)",
+    "8 oz brown sugar (1 cup)",
+    "¼ teaspoon table salt",
+    "½ teaspoon real almond extract (adjust to taste)",
+    "6 oz unsalted butter (softened to room temp)"
+  ],
+  "ldInstructionsRaw": [
+    "Roll the pie dough to line a 9&quot; deep dish pie pan. Refrigerate the shell while the filling is prepared.",
+    "Toss 3 lbs&#32;sour cherries (pitted) with 12 oz&#32;granulated sugar and allow to macerate for 30 minutes. After 30 minutes drain the cherries, reserving the juice. Transfer the cherries to a large bowl and set aside.",
+    "Whisk a ½ cup of the cherry juice with 2 oz&#32;corn starch until smooth.",
+    "Place the remaining juice and ¼ teaspoon&#32;table salt in a small saucepan. Bring the juice to a boil. Reduce the heat to medium low. Whisk the cornstarch mixture into the boiling juice in a steady stream. Cook the mixture, stirring constantly, until it returns to a boil and thickens to a pudding-like texture.",
+    "Remove the thickened juice from the heat and immediately pour it over the pitted cherries. Toss to combine. Pour the cherries into the prepared pie crust. Use a scissors to trim the dough, leaving about 1/2&quot; of dough beyond the edge of the pan. Fold the dough over and pinch the crust to form a fluted edge.",
+    "Assemble and Bake the Pie"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "602 kcal",
+    "carbohydrateContent": "105 g",
+    "proteinContent": "6 g",
+    "fatContent": "20 g",
+    "saturatedFatContent": "10 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "37 mg",
+    "sodiumContent": "167 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "74 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "½ Recipe  Perfect Pie Crust",
+    "3 lbs sour cherries (pitted, see note)",
+    "12 oz granulated sugar (1 ½ cups )",
+    "2 oz corn starch (⅓ cup)",
+    "¼ teaspoon table salt",
+    "[Crumb Topping]",
+    "7 ½ oz all purpose flour (1 ½ cups, see note)",
+    "2 oz almond flour (½ cup)",
+    "8 oz brown sugar (1 cup)",
+    "¼ teaspoon table salt",
+    "½ teaspoon real almond extract (adjust to taste)",
+    "6 oz unsalted butter (softened to room temp)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

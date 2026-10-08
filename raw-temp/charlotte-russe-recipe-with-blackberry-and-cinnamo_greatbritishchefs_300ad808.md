@@ -1,0 +1,5 @@
+Marie Antonin Carême is generally credited with the invention of this [dessert](https://www.greatbritishchefs.com/collections/dessert-recipes) (along with many other dishes) and it is believed to have been named in honour of the daughter of George IV, princess Charlotte, and _Russe_ is the French for Russian in honour of Carême’s then boss Czar Alexander first.
+
+Complicated etymology aside, a Charlotte Russe is traditionally made up of lady fingers, a bavarois cream (we will get to that in a minute), fruit and [jelly](https://www.greatbritishchefs.com/collections/jelly-recipes). As with all desserts that are over a hundred years old there are many variations in the type of cream or custard used, the fruit and the layers but the bavarois is generally the main component.
+
+A [bavarois](https://www.greatbritishchefs.com/collections/bavarois-recipes) is an egg custard with whipped cream folded through and set with gelatine. It can be flavoured easily with vanilla, chocolate, coffee or fruits. Carême is also commonly credited with this invention. I chose a cinnamon bavarois to complement the dark fruit of the blackberry for an autumnal feel.

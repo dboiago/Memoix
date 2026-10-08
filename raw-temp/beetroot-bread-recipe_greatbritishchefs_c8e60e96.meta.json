@@ -1,0 +1,42 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/beetroot-bread-recipe",
+  "slug": "beetroot-bread-recipe_greatbritishchefs_c8e60e96",
+  "title": "Beetroot Bread Recipe",
+  "byline": "by Andy McLeish",
+  "fetchedAt": "2026-08-03T19:00:04.091Z",
+  "ldName": "Beetroot bread",
+  "ldTime": "PT1H30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Bread",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "1 large beetroot, raw, or 2 small ones",
+    "1 garlic clove, large",
+    "1 sprig of rosemary",
+    "100ml of milk",
+    "200ml of water",
+    "10g of dried yeast, active",
+    "600g of strong bread flour",
+    "10g of caster sugar",
+    "1 pinch of salt",
+    "1 tsp olive oil"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 180°C/gas mark 4",
+    "Wrap each beetroot in tin foil with a garlic clove, a sprig of rosemary, some olive oil, salt and pepper. Roast for 1 hour until tender, then remove from the oven and allow to cool",
+    "Remove the outer skins of the beetroot and discard the herbs. Roughly chop the flesh, add to the food processor and blitz - try to keep some of the beetroot in chunks, as they will add a visual appeal once the loaf is cut",
+    "Warm the milk and water gently, stir in the yeast and allow it to activate - once active it will become foamy and rise to the top of the liquid",
+    "Mix together the flour, salt and sugar and add the yeast mix. Add the beetroot, knead for 3-4 minutes, then place the dough in a bowl. Cover with a tea towel and leave to rest for 20 minutes",
+    "Knead once more for 3-4 minutes. Grease a loaf tin with olive oil and place the loaf in the tin. Leave to rest again for 20-30 minutes",
+    "Preheat the oven to 170°C/gas mark 3.5",
+    "Bake the loaf for 30 minutes until cooked through. Remove the loaf from the oven and turn out of the tin while still hot"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

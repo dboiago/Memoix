@@ -1,0 +1,53 @@
+{
+  "url": "https://omnivorescookbook.com/black-seseam-sweet-rice-balls/",
+  "slug": "black-sesame-sweet-rice-balls-tang-yuan_omnivorescookbook_fe35d340",
+  "title": "Black Sesame Sweet Rice Balls (黑芝麻汤圆, Tang Yuan)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T01:10:35.729Z",
+  "ldName": "Black Sesame Sweet Rice Balls (黑芝麻汤圆, Tang Yuan)",
+  "ldTime": "PT90M",
+  "ldPrepTime": "PT50M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "6",
+    "6 servings (24 sweet rice balls)"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "Chinese Festival, homestyle",
+  "ldIngredientsRaw": [
+    "60 g (1/2 cup) toasted black sesame seeds",
+    "50 g (1/4 cup) brown sugar ((or regular sugar))",
+    "85 g (6 tablespoons) unsalted butter (, softened)",
+    "200 g (1 1/2 cup) glutinous rice flour (, and extra for dusting)",
+    "200 ml (2/3 cup + 1 tablespoon) warm water (100°F / 40°C)"
+  ],
+  "ldInstructionsRaw": [
+    "To make the black sesame filling",
+    "To prepare the dough",
+    "To cook the sweet rice balls"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "236 kcal",
+    "carbohydrateContent": "20.5 g",
+    "proteinContent": "2.7 g",
+    "fatContent": "16.6 g",
+    "saturatedFatContent": "8 g",
+    "cholesterolContent": "30 mg",
+    "sodiumContent": "86 mg",
+    "fiberContent": "1.4 g",
+    "sugarContent": "8.4 g"
+  },
+  "htmlIngredientLines": [
+    "60 g (1/2 cup) toasted black sesame seeds",
+    "50 g (1/4 cup) brown sugar (or regular sugar)",
+    "85 g (6 tablespoons) unsalted butter , softened",
+    "200 g (1 1/2 cup) glutinous rice flour , and extra for dusting",
+    "200 ml (2/3 cup + 1 tablespoon) warm water (100°F / 40°C)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,63 @@
+{
+  "url": "https://muybuenoblog.com/charred-citrus-and-jalapeno-margarita/",
+  "slug": "charred-citrus-and-jalape-o-margarita_muybuenoblog_1721d795",
+  "title": "Charred Citrus and Jalapeño Margarita",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-01T19:21:36.737Z",
+  "ldName": "Charred Citrus and Jalapeño Margarita",
+  "ldTime": "PT8M",
+  "ldPrepTime": "PT3M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 drinks"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Drinks",
+  "ldKeywords": "5 de Mayo, margaritas, summer drinks",
+  "ldIngredientsRaw": [
+    "slices of limes and clementines (optional garnish)",
+    "1  lime (halved)",
+    "1 tablespoon coarse salt",
+    "1 tablespoon granulated sugar",
+    "½  jalapeno (seeded)",
+    "4 ounces reposado tequila",
+    "2 ounces orange liqueur",
+    "1  lime juice (juiced)",
+    "1  clementine (juiced)"
+  ],
+  "ldInstructionsRaw": [
+    "On a baking sheet lined with aluminum foil, arrange slices of limes and clementines and sprinkle them with sugar and broil them just until sugar crystalizes and the slices are charred.",
+    "On a grill pan, char the lime halves until lightly charred.",
+    "In a shallow dish, combine salt and sugar. Moisten two cocktail glasses with a lime and rim the glasses with the salt-sugar mixture. Fill glasses with ice and set aside.",
+    "Muddle charred lime and jalapeño in a cocktail shaker.",
+    "Add tequila, orange liqueur, lime juice, and clementine juice and fill with ice. Shake cocktail shaker until frosted.",
+    "Strain drink into prepared glasses and garnish with broiled lime and clementine slices, if using."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "289 kcal",
+    "sugarContent": "22 g",
+    "sodiumContent": "3492 mg",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "carbohydrateContent": "28 g",
+    "fiberContent": "2 g",
+    "proteinContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ slices of limes and clementines, optional garnish",
+    "▢ 1 lime, halved",
+    "▢ 1 tablespoon coarse salt",
+    "▢ 1 tablespoon granulated sugar",
+    "▢ ½ jalapeno, seeded",
+    "▢ 4 ounces reposado tequila",
+    "▢ 2 ounces orange liqueur",
+    "▢ 1 lime juice, juiced",
+    "▢ 1 clementine, juiced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

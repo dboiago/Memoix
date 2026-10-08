@@ -1,0 +1,66 @@
+{
+  "url": "https://muybuenoblog.com/guacamole-al-pastor/",
+  "slug": "bacon-pineapple-guacamole-al-pastor_muybuenoblog_435f579d",
+  "title": "Bacon Pineapple Guacamole al Pastor",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T00:39:14.874Z",
+  "ldName": "Guacamole al Pastor",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "6",
+    "6 servings"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Appetizer, Snack",
+  "ldKeywords": "Game Day Snacks, Mexican appetizer, pineapple guacamole",
+  "ldIngredientsRaw": [
+    "6 to 8 strips bacon",
+    "¼ cup chipotle sauce",
+    "1 tablespoon vegetable oil",
+    "6 rings pineapple (chopped)",
+    "3  ripe avocados",
+    "1 to 2 tablespoons fresh orange juice",
+    "1  jalapeño pepper (minced (optional))",
+    "¼ cup minced red onion",
+    "1 tablespoon chopped cilantro",
+    "2 teaspoons salt"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat oven to 425 degrees F.",
+    "Arrange bacon slices on a foil-lined baking sheet and brush chipotle sauce on both sides. Place the baking sheet in the oven and bake for 15 to 20 minutes. Remove from the oven, let cool, and chop.",
+    "Lightly brush both sides of pineapple rings with vegetable oil and grill them, turning once, until lightly charred, about 3 minutes per side. Let cool and chop.",
+    "Cut the avocado in half. Twist to pull apart and remove the pit. Scoop out the flesh. Place on a cutting board and roughly chop and place in a large bowl.",
+    "Add the orange juice and mash the avocado with a fork leaving some chunks.",
+    "Add pineapple, bacon, jalapeño (optional), onion, cilantro, salt, and give everything a gentle stir, but don’t overdo it."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "278.2 kcal",
+    "sugarContent": "1.42 g",
+    "sodiumContent": "936.16 mg",
+    "fatContent": "25.82 g",
+    "saturatedFatContent": "6.97 g",
+    "carbohydrateContent": "10.16 g",
+    "fiberContent": "6.98 g",
+    "proteinContent": "4.91 g",
+    "cholesterolContent": "14.52 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 6 to 8 strips bacon",
+    "▢ ¼ cup chipotle sauce",
+    "▢ 1 tablespoon vegetable oil",
+    "▢ 6 rings pineapple, chopped",
+    "▢ 3 ripe avocados",
+    "▢ 1 to 2 tablespoons fresh orange juice",
+    "▢ 1 jalapeño pepper, minced (optional)",
+    "▢ ¼ cup minced red onion",
+    "▢ 1 tablespoon chopped cilantro",
+    "▢ 2 teaspoons salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

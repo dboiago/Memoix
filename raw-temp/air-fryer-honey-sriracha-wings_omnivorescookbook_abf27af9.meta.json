@@ -1,0 +1,60 @@
+{
+  "url": "https://omnivorescookbook.com/air-fryer-honey-sriracha-wings/",
+  "slug": "air-fryer-honey-sriracha-wings_omnivorescookbook_abf27af9",
+  "title": "Air Fryer Honey Sriracha Wings",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T07:33:06.108Z",
+  "ldName": "Air Fryer Honey Sriracha Wings",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese Fusion",
+  "ldCategory": "Appetizer, Main",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "2 lbs chicken wings",
+    "1 teaspoon salt",
+    "1/4 cup sriracha",
+    "3 tablespoons honey",
+    "2 teaspoons Shaoxing wine",
+    "2 teaspoons light soy sauce",
+    "2 tablespoons unsalted butter",
+    "1  lime (juiced, plus extra for garnish)"
+  ],
+  "ldInstructionsRaw": [
+    "Thoroughly pat chicken wings dry with paper towels. Transfer to a big bowl. Add the salt and mix evenly with your hands.",
+    "Place the wings in the air fryer basket with as little overlap as possible (*Footnote 1). Place the basket in the air fryer and air fry at 400°F (200°C). Cook until golden brown and crispy, 18 to 25 minutes. Flip the wings halfway through.",
+    "When the chicken wings are cooking, combine the sriracha, honey, Shaoxing wine, and light soy sauce in a small sauce pan. Cook over medium-low heat while mixing, until bubbling, then simmer for 2 minutes. Stir in the butter and turn to low heat. Whisk until just combined. Turn off the heat and add the lime juice. Mix again. Set the sauce aside to cool off for 10 minutes before tossing. (*Footnote 2)",
+    "Once the chicken wings are done cooking, transfer the chicken wings into a big bowl. Right before serving, pour in half of the sauce and toss to coat evenly. Serve immediately as an appetizer with the remaining sauce on the side and extra lime wedges. You can also serve the wings with the sauce on the side, without tossing."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "463 kcal",
+    "carbohydrateContent": "18.2 g",
+    "proteinContent": "32.4 g",
+    "fatContent": "29 g",
+    "saturatedFatContent": "10.2 g",
+    "cholesterolContent": "115 mg",
+    "sodiumContent": "936 mg",
+    "fiberContent": "0.8 g",
+    "sugarContent": "14.1 g"
+  },
+  "htmlIngredientLines": [
+    "2 lbs chicken wings",
+    "1 teaspoon salt",
+    "1/4 cup sriracha",
+    "3 tablespoons honey",
+    "2 teaspoons Shaoxing wine",
+    "2 teaspoons light soy sauce",
+    "2 tablespoons unsalted butter",
+    "1 lime juiced, plus extra for garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,60 @@
+{
+  "url": "https://muybuenoblog.com/authentic-mexican-salsa-roja/",
+  "slug": "authentic-mexican-salsa-roja_muybuenoblog_83753940",
+  "title": "Authentic Mexican Salsa Roja",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T02:44:59.343Z",
+  "ldName": "Salsa Roja",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2",
+    "2 cups"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Appetizer, Appetizers, Salsas",
+  "ldKeywords": "authentic Mexican salsa recipe",
+  "ldIngredientsRaw": [
+    "1  jalapeno",
+    "1  serrano",
+    "4  roma tomatoes",
+    "1/4  white onion",
+    "2  garlic cloves",
+    "1 teaspoon coarse salt",
+    "Handful cilantro",
+    "1 tablespoon olive oil"
+  ],
+  "ldInstructionsRaw": [
+    "Heat a comal on the stovetop or the oven broiler. Place chile peppers, tomatoes, onion, and garlic on a comal or on a foil-lined baking sheet and broil for about 8 minutes, turning once, or until tomatoes are blistered and blackened in spots and softened. No need to peel tomatoes or chiles. Let cool.",
+    "Add roasted ingredients into a blender with salt and cilantro. Pulse until smooth.",
+    "In a skillet, warm olive oil. When the oil is hot, pour blended salsa and flash fry for about 2 minutes. You might want to be ready with a splatter screen during this step. Serve in bowl and add salt to taste."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "97 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "2 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "0.3 mg",
+    "sodiumContent": "1180 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "4 g",
+    "unsaturatedFatContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 jalapeno",
+    "▢ 1 serrano",
+    "▢ 4 roma tomatoes",
+    "▢ 1/4 white onion",
+    "▢ 2 garlic cloves",
+    "▢ 1 teaspoon coarse salt",
+    "▢ Handful cilantro",
+    "▢ 1 tablespoon olive oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

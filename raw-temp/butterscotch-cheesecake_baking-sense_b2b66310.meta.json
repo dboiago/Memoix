@@ -1,0 +1,71 @@
+{
+  "url": "https://www.baking-sense.com/2017/11/16/bourbon-butterscotch-cheesecake/",
+  "slug": "butterscotch-cheesecake_baking-sense_b2b66310",
+  "title": "Butterscotch Cheesecake",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T08:06:13.051Z",
+  "ldName": "Bourbon Butterscotch Cheesecake Recipe",
+  "ldTime": "PT375M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT75M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "bourbon, butterscotch, cheesecake",
+  "ldIngredientsRaw": [
+    "1 recipe Butterscotch sauce  (made with 2T bourbon)",
+    "1 recipe Candied Spice Pecans",
+    "4 oz graham cracker crumbs (1 cup)",
+    "2 oz candied Spiced Pecans (½ cup)",
+    "2 oz granulated sugar (¼ cup)",
+    "3 oz butter (melted)",
+    "24 oz cream cheese (room temperature)",
+    "12 oz granulated sugar (1 ½ cups)",
+    "8 oz sour cream (1 cup, room temperature)",
+    "5  large eggs (room temperature)",
+    "2 oz bourbon (¼ cup)",
+    "2 teaspoons vanilla extract"
+  ],
+  "ldInstructionsRaw": [
+    "Make the Butterscotch Sauce according to the recipe, substituting 2 Tbsp Bourbon for the schnapps in the recipe. Set aside to cool. Preheat the oven to 350 °F. Line the bottom of a 9&quot;x3&quot; round cake pan with parchment paper (If you prefer to use a spring form pan line the pan with parchment and wrap the outside of the pan with aluminum foil)",
+    "Crust",
+    "Batter"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "397 kcal",
+    "carbohydrateContent": "34 g",
+    "proteinContent": "6 g",
+    "fatContent": "26 g",
+    "saturatedFatContent": "14 g",
+    "cholesterolContent": "114 mg",
+    "sodiumContent": "239 mg",
+    "sugarContent": "29 g",
+    "transFatContent": "0.2 g",
+    "fiberContent": "1 g",
+    "unsaturatedFatContent": "10 g"
+  },
+  "htmlIngredientLines": [
+    "1 recipe Butterscotch sauce  (made with 2T bourbon)",
+    "1 recipe Candied Spice Pecans",
+    "[Pecan Graham Crust]",
+    "4 oz graham cracker crumbs (1 cup)",
+    "2 oz candied Spiced Pecans (½ cup)",
+    "2 oz granulated sugar (¼ cup)",
+    "3 oz butter (melted)",
+    "[Cheesecake Batter]",
+    "24 oz cream cheese (room temperature)",
+    "12 oz granulated sugar (1 ½ cups)",
+    "8 oz sour cream (1 cup, room temperature)",
+    "5 large eggs (room temperature)",
+    "2 oz bourbon (¼ cup)",
+    "2 teaspoons vanilla extract"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

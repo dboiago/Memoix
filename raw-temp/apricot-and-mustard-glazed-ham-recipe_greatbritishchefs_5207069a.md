@@ -1,0 +1,3 @@
+This glorious glazed ham recipe makes a wonderful roast dinner centrepiece and possibly an even more delicious sandwich the next day. The sticky apricot glaze is pepped up with fiery wholegrain mustard seeds which pop in your mouth and, in our opinion, make the perfect coating for the salty ham.
+
+Do remember to make the most of the ham stock you are left with after cooking the meat – it is delicious as a base to soups, stews or risottos. Be careful not to reduce it too much, however, as it will taste too salty. It will keep in the fridge for a few days or you can freeze the stock if you don't have time to use it right away.

@@ -1,0 +1,37 @@
+{
+  "url": "https://www.bongeats.com/recipe/chholar-daler-halwa",
+  "slug": "chholar-daler-halwa-recipe-by-bong-eats_bongeats_89528613",
+  "title": "Chholar Daler Halwa recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T18:14:50.665Z",
+  "ldName": "Chholar Daler Halwa",
+  "ldTime": "PT2H",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT1H30M",
+  "ldYield": "15",
+  "ldCuisine": "Indian",
+  "ldCategory": "sweet",
+  "ldKeywords": "cholar daler halwa, daler halwa recipe",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "337"
+  },
+  "htmlIngredientLines": [
+    "250 g chholar dal (split Bengal gram, soaked 2 hours)",
+    "350 g water",
+    "145 g ghee",
+    "3 cardamom",
+    "1 bay leaf",
+    "1 L coconut milk (thick, first-press)",
+    "25 g cashewnuts",
+    "25 g raisins",
+    "250 g sugar",
+    "¼ tsp salt",
+    "10 g pistachios (for decoration)"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

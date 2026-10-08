@@ -1,0 +1,48 @@
+{
+  "url": "https://omnivorescookbook.com/the-best-three-ingredient-avocado-smoothie/",
+  "slug": "avocado-smoothie-3-ingredient_omnivorescookbook_4a4c0698",
+  "title": "Avocado Smoothie (3-Ingredient)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T04:30:53.198Z",
+  "ldName": "Avocado Smoothie Recipe",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2",
+    "2 servings"
+  ],
+  "ldCuisine": "Fusion",
+  "ldCategory": "Drink",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1  Avocado (, cubed)",
+    "2  frozen banana (, chopped)",
+    "1 2/3  cups milk (, or plant-milk (Footnote 1))"
+  ],
+  "ldInstructionsRaw": [
+    "Combine avocado, banana and milk in a blender. Blend until smooth.",
+    "Serve immediately."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "293 kcal",
+    "carbohydrateContent": "37.1 g",
+    "proteinContent": "8.7 g",
+    "fatContent": "14.3 g",
+    "saturatedFatContent": "4.7 g",
+    "cholesterolContent": "17 mg",
+    "sodiumContent": "100 mg",
+    "fiberContent": "6 g",
+    "sugarContent": "21.7 g"
+  },
+  "htmlIngredientLines": [
+    "1 Avocado , cubed",
+    "2 frozen banana , chopped",
+    "1 2/3  cups milk , or plant-milk (Footnote 1)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

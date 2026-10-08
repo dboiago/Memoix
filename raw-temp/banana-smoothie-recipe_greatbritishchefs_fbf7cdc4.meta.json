@@ -1,0 +1,35 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/banana-smoothie-recipe",
+  "slug": "banana-smoothie-recipe_greatbritishchefs_fbf7cdc4",
+  "title": "Banana Smoothie Recipe",
+  "byline": "by Kevin Mangeolles",
+  "fetchedAt": "2026-08-03T17:11:49.618Z",
+  "ldName": "Winter-spiced banana smoothie",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Drink",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "1 banana",
+    "250ml of milk",
+    "100ml of vanilla frozen yoghurt, or ice cream",
+    "1 tbsp of honey",
+    "1 dash of lemon juice",
+    "1/2 tsp ground cinnamon",
+    "1/4 tsp ground cloves",
+    "1/4 tsp ground nutmeg, plus extra for dusting"
+  ],
+  "ldInstructionsRaw": [
+    "Peel and chop the banana. Add to a blender with the spices and a dash of lemon juice",
+    "Add the milk, frozen yoghurt and honey and blend until smooth",
+    "Divide into glasses, sprinkle over a pinch of ground nutmeg and serve with a straw"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

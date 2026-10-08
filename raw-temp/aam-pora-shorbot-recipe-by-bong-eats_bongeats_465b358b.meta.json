@@ -1,0 +1,38 @@
+{
+  "url": "https://www.bongeats.com/recipe/aam-pora-shorbot",
+  "slug": "aam-pora-shorbot-recipe-by-bong-eats_bongeats_465b358b",
+  "title": "Aam Pora Shorbot recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T16:24:33.247Z",
+  "ldName": "Aam Pora Shorbot",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": "1.2 L",
+  "ldCuisine": "Indian",
+  "ldCategory": "drink",
+  "ldKeywords": "amporar shorbot, aampanna drink, how to make aampora, easy Margarita recipe, aam pana, aam panna sharbat",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "71"
+  },
+  "htmlIngredientLines": [
+    "4 green mangoes",
+    "100 g aampora pulp",
+    "100 g sugar",
+    "10 g black salt",
+    "4 green chillies (slit)",
+    "1 L water",
+    "20 ml aampora pulp",
+    "60 ml tequila/mezcal",
+    "15 ml rich syrup (2 parts sugar :1 part water)",
+    "1 whole green chilli",
+    "1 pinch salt",
+    "ice for shaking"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

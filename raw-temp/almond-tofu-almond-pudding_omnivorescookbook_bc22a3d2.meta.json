@@ -1,0 +1,53 @@
+{
+  "url": "https://omnivorescookbook.com/almond-tofu/",
+  "slug": "almond-tofu-almond-pudding_omnivorescookbook_bc22a3d2",
+  "title": "Almond Tofu (Almond Pudding, 杏仁豆腐)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T00:04:35.839Z",
+  "ldName": "Almond Tofu (Almond Pudding, 杏仁豆腐)",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "3",
+    "3 to 4 servings"
+  ],
+  "ldCuisine": "Asian",
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2 cups unsweetened original almond milk",
+    "0.5 oz (14 g) gelatin sheet or powder ((or 0.1-oz/3-g agar strips for vegetarian diet))",
+    "5 tablespoons sugar (, divided)",
+    "1 teaspoon almond extract",
+    "2 cups strawberries"
+  ],
+  "ldInstructionsRaw": [
+    "(1) Bring 1 cup almond milk to a boil. Turn off heat and add the gelatin. Stir until dissolved completely.",
+    "(2) Add 4 tablespoons sugar and the almond extract. Stir until dissolved.",
+    "(3) Add the remaining 1 cup almond milk and stir to mix well. Pour the mixture through a fine sieve into a 8”x8” (20x20cm) baking pan. Place in the fridge until set, 1 hour or so.",
+    "(4) Meanwhile, prepare the strawberries. Quarter the strawberries and mix them with the remaining 1 tablespoon sugar. Cover with plastic wrap and transfer to the fridge to macerate.",
+    "(5) When ready to serve, run a knife around the edge of the pudding to loosen it, then cut it into 1/2-inch (1 cm) squares. Use a rubber spatula to release the pudding and transfer it into serving bowls. Add the strawberries along with the macerating liquid. Enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "4 g",
+    "calories": "102 kcal",
+    "carbohydrateContent": "21.7 g",
+    "proteinContent": "1 g",
+    "fatContent": "1.7 g",
+    "sodiumContent": "91 mg",
+    "fiberContent": "1.9 g",
+    "sugarContent": "18.7 g"
+  },
+  "htmlIngredientLines": [
+    "2 cups unsweetened original almond milk",
+    "0.5 oz (14 g) gelatin sheet or powder (or 0.1-oz/3-g agar strips for vegetarian diet)",
+    "5 tablespoons sugar , divided",
+    "1 teaspoon almond extract",
+    "2 cups strawberries"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

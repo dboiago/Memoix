@@ -1,0 +1,57 @@
+{
+  "url": "https://braziliankitchenabroad.com/brazilian-style-collard-greens/",
+  "slug": "brazilian-collard-greens-with-bacon-recipe_braziliankitchenabroad_32fb65a6",
+  "title": "Brazilian Collard Greens with Bacon Recipe",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-25T18:50:35.781Z",
+  "ldName": "Couve a Mineira | Brazilian Collard Greens with Bacon",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 servings"
+  ],
+  "ldCuisine": "Brazilian",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "collard greens, vegetables, veggies",
+  "ldIngredientsRaw": [
+    "1 bunch of collard greens (stems removed and thinly sliced)",
+    "1-2 thick strips of smoked bacon (diced)",
+    "1/2  onion (diced)",
+    "2 colves of garlic (minced)",
+    "1 tbsp of extra virgin olive oil",
+    "Salt and pepper to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the olive oil in a medium skillet over medium to high heat",
+    "Add the bacon and cook until browned, about 3-4 mins",
+    "Add the onions and cook until transparent, about 2 mins",
+    "Add the garlic and cook until fragrant, about a minute",
+    "Turn ff the heat and add the collard greens and toss gently until the greens wilt, about 1 minute"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "0.5 cup",
+    "calories": "107 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "3 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "1 mg",
+    "sodiumContent": "21 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "1 bunch of collard greens stems removed and thinly sliced",
+    "1-2 thick strips of smoked bacon diced",
+    "1/2 onion diced",
+    "2 colves of garlic minced",
+    "1 tbsp of extra virgin olive oil",
+    "Salt and pepper to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

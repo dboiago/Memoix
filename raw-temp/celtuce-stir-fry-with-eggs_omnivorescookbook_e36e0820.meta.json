@@ -1,0 +1,55 @@
+{
+  "url": "https://omnivorescookbook.com/celtuce-stir-fry-with-eggs/",
+  "slug": "celtuce-stir-fry-with-eggs_omnivorescookbook_e36e0820",
+  "title": "Celtuce Stir Fry with Eggs (莴笋炒鸡蛋)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T22:25:22.290Z",
+  "ldName": "Celtuce Stir Fry with Eggs (莴笋炒鸡蛋)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "home style",
+  "ldIngredientsRaw": [
+    "1 tablespoon peanut oil",
+    "2  eggs (, beaten)",
+    "1  celtuce stem (, sliced)",
+    "1 clove garlic (, minced)",
+    "1/4 teaspoon salt (, or to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "Add 1/2 tablespoon oil in a large nonstick pan and heat over medium-high heat. When the pan is hot, add the beaten eggs and a pinch of salt. Cook until the bottom is set, then scramble the eggs with a spatula until the eggs are broken into smaller pieces and just cooked through. Transfer the eggs to a plate.",
+    "Add the remaining 1/2 tablespoon of oil and the garlic. Stir a few times to release the fragrance.",
+    "Add the celtuce. Cook and stir until the celtuce just starts to soften, 2 minutes or so.",
+    "Add back the cooked eggs and sprinkle evenly with 1/4 teaspoon salt. Stir to mix everything well. Turn to medium-low heat and taste the celtuce. Adjust the seasoning by adding more salt, if needed. Once done, immediately transfer everything to a serving plate.",
+    "Serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "147 kcal",
+    "carbohydrateContent": "5.4 g",
+    "proteinContent": "6.7 g",
+    "fatContent": "11.5 g",
+    "saturatedFatContent": "2.5 g",
+    "cholesterolContent": "164 mg",
+    "sodiumContent": "310 mg",
+    "fiberContent": "2.2 g",
+    "sugarContent": "0.4 g"
+  },
+  "htmlIngredientLines": [
+    "1 tablespoon peanut oil",
+    "2 eggs , beaten",
+    "1 celtuce stem , sliced",
+    "1 clove garlic , minced",
+    "1/4 teaspoon salt , or to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

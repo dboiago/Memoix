@@ -1,0 +1,35 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/biscotti-recipe",
+  "slug": "biscotti-recipe_greatbritishchefs_ef104ac4",
+  "title": "Biscotti Recipe",
+  "byline": "by Josh Eggleton",
+  "fetchedAt": "2026-08-03T17:43:18.217Z",
+  "ldName": "Biscotti",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Petit four",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "2 eggs",
+    "180g of caster sugar",
+    "1 orange, zested",
+    "300g of plain flour",
+    "1 tsp baking powder",
+    "140g of mixed whole nuts, roughly chopped",
+    "plain flour for dusting"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the oven to 150°C/Gas mark 2. Beat the eggs with the sugar until pale and doubled in size. Stir in the nuts, orange zest, flour and baking powder until the mixture forms a dough",
+    "Tip out onto a lightly floured work surface and roll out two flattened logs 4cm wide, 2cm high. Place on a baking sheet, bake for 12-15 minutes or until pale golden and firm",
+    "Once cooked, slice into 1cm thick pieces on the diagonal, lay flat on a baking sheet and bake again for 10 minutes or until crisp",
+    "Allow to cool slightly and serve. Any leftover biscuits can be stored in an airtight container"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

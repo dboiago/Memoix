@@ -1,0 +1,39 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/cheesy-leeks-recipe",
+  "slug": "cheesy-leeks-recipe_greatbritishchefs_8e83387f",
+  "title": "Cheesy Leeks Recipe",
+  "byline": "by Chris Harrod",
+  "fetchedAt": "2026-08-02T20:03:37.325Z",
+  "ldName": "Cheesy leeks",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Side",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "2 large leeks, washed and outer layer removed",
+    "60g of unsalted butter",
+    "50g of plain flour",
+    "1l whole milk",
+    "150g of cheddar, ideally Davidstow, grated",
+    "1 tbsp of English mustard",
+    "1 tsp Worcestershire sauce",
+    "50g of breadcrumbs",
+    "1 pinch of chopped chives",
+    "Cornish sea salt"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat an oven to 180°C/gas mark 4. Trim the tops and bottoms off the leeks and slice them into thin rounds",
+    "Melt 50g of the butter in a saucepan, then add the flour and stir over a low heat for a few minutes until well combined. Add a third of the milk and stir until smooth, then repeat with the remaining two-thirds of the milk and continue to cook for 5 minutes until thickened",
+    "Add a pinch of salt, the Worcestershire sauce, the mustard and 100g of the cheddar. Taste it to check your happy with the seasoning, then keep warm",
+    "In a separate frying pan over a low heat, sweat the leeks in the remaining butter until softened and fully cooked (around 10 minutes)",
+    "Transfer the leeks and the sauce into an oven dish, stirring to combine. Sprinkle with the breadcrumbs followed by the remaining 50g of cheese. Bake for 30 minutes until golden brown on top and piping hot in the middle. Sprinkle with chives just before serving"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

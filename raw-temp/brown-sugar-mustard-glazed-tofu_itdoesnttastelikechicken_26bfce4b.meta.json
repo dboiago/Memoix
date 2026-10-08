@@ -1,0 +1,66 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/brown-sugar-mustard-glazed-tofu/",
+  "slug": "brown-sugar-mustard-glazed-tofu_itdoesnttastelikechicken_26bfce4b",
+  "title": "Brown Sugar & Mustard Glazed Tofu!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T00:02:37.683Z",
+  "ldName": "Brown Sugar and Mustard Glazed Tofu",
+  "ldTime": "PT135M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT75M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Christmas, Easter, glazed, ham, recipe, roast, tofu, vegan, vegetarian",
+  "ldIngredientsRaw": [
+    "1 block (350g) extra-firm tofu (drained and pressed)",
+    "3 tablespoons soy sauce",
+    "1/2 teaspoon liquid smoke",
+    "20 - 30  whole cloves (the spice) (*see notes)",
+    "1/4 cup brown sugar",
+    "2 tablespoons vegan butter",
+    "2 tablespoons water",
+    "1 tablespoon Dijon mustard",
+    "4 cloves garlic, (minced or pressed)",
+    "1/8 teaspoon ground cinnamon"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare the tofu by draining it, and then pressing it for 30 minutes to 1 hour. I love using my Tofuture tofu press, but you can also follow these instructions for a DIY tofu pressing method. Pressing the tofu squeezes excess water out so that the tofu can suck up more of the marinade and become more flavourful.",
+    "Once pressed, remove the tofu and pat dry. Use a knife to score a diamond pattern across the surface of the tofu cutting about 1/4 inch deep. Add the soy sauce and liquid smoke to a sealable bag or container, then add the tofu. Let the tofu marinate for a minimum of 1 hour or as long as overnight in the fridge, flipping the tofu every now and then to ensure both sides get marinated.",
+    "When ready to roast the tofu, preheat your oven to 375F (190C). Line a small baking dish with parchment paper.",
+    "Remove the tofu from the marinade and place on the prepared baking dish. Poke a whole clove into the center of each diamond. Bake for 50 - 60 minutes until the tofu is a dark golden brown.",
+    "While the tofu is baking make the glaze by adding the brown sugar, vegan butter, water, mustard, garlic, and cinnamon to a small pot. Put over medium-high heat, bring to a simmer while whisking often, and cook for about two minutes. Remove from heat and set aside.",
+    "Once the tofu has baked and is golden brown, remove from the oven, pour the prepared glaze on top, then return to the oven and bake for another 10 - 15 minutes until the glaze is bubbling. Remove from the oven and let cool 10 minutes. Remove the cloves using a fork or kitchen tweezers before serving. I also like to use a pastry brush to gently brush excess glaze off the top of the tofu so you can see the diamond pattern better for presentation. Enjoy hot or cold!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 (recipe makes 4 servigns)",
+    "calories": "158 kcal",
+    "carbohydrateContent": "18 g",
+    "proteinContent": "8 g",
+    "fatContent": "6 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "905 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "15 g"
+  },
+  "htmlIngredientLines": [
+    "[tofu]",
+    "▢ 1 block (350g) extra-firm tofu, drained and pressed",
+    "▢ 3 tablespoons soy sauce",
+    "▢ ½ teaspoon liquid smoke",
+    "▢ 20 - 30 whole cloves (the spice), *see notes",
+    "[glaze]",
+    "▢ ¼ cup brown sugar",
+    "▢ 2 tablespoons vegan butter",
+    "▢ 2 tablespoons water",
+    "▢ 1 tablespoon Dijon mustard",
+    "▢ 4 cloves garlic,, minced or pressed",
+    "▢ ⅛ teaspoon ground cinnamon"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

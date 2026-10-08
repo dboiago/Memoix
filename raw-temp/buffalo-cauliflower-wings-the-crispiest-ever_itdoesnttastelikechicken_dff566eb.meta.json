@@ -1,0 +1,73 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/crispy-buffalo-cauliflower/",
+  "slug": "buffalo-cauliflower-wings-the-crispiest-ever_itdoesnttastelikechicken_dff566eb",
+  "title": "Buffalo Cauliflower Wings - The Crispiest Ever!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T06:05:44.457Z",
+  "ldName": "Crispy Buffalo Cauliflower",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "4",
+    "4 (makes about 18–20 florets)"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Appetizer, Main Course, Side Dish",
+  "ldKeywords": "buffalo cauliflower, cauliflower",
+  "ldIngredientsRaw": [
+    "1/2 cup all-purpose flour ((or gluten-free all-purpose flour blend))",
+    "2 tablespoons ground chia or ground flax",
+    "3/4 cup warm water",
+    "4 cups corn flakes",
+    "1/2 teaspoon garlic powder",
+    "1/2 teaspoon smoked paprika",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1 small head of cauliflower (cut into florets (about 4 heaping cups))",
+    "1/2 cup Frank’s Red Hot ((or similar hot sauce))",
+    "3 tablespoons vegan butter (melted)"
+  ],
+  "ldInstructionsRaw": [
+    "Prep the oven: Preheat your oven to 400°F (200°C). Line a large baking sheet with parchment paper or lightly grease it.",
+    "Set up your dredging stations:Flour coating: Add the flour to a shallow bowl.Vegan egg: In a second bowl, whisk together the ground chia or flax with warm water. Let sit for a few minutes to thicken.Cornflake crust: Add the cornflakes, garlic powder, smoked paprika, salt, and pepper to a food processor. Pulse until the texture is coarse, similar to panko breadcrumbs. No food processor? Add everything to a large zip-top bag and crush with a rolling pin until coarsely ground. Then transfer to a third bowl.",
+    "Coat the cauliflower: Rinse your cauliflower florets so they’re slightly damp. Working in batches, coat the florets first in the flour, then in the chia mixture, and finally in the cornflake coating. Press gently to help the coating stick. Arrange on the baking sheet without overcrowding.",
+    "Bake: Bake for 20 to 25 minutes, or until the cauliflower is tender and the coating is golden and crisp. You can test for doneness by piercing a floret with a knife.",
+    "Make the buffalo sauce: Stir together the melted vegan butter and hot sauce.",
+    "Serve: For maximum crispiness, serve the buffalo sauce on the side for dipping. For a more traditional version, gently toss the baked cauliflower in the sauce just before serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "280 kcal",
+    "servingSize": "1  serving (recipe makes 4 servings)",
+    "carbohydrateContent": "42 g",
+    "proteinContent": "6 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "2 g",
+    "transFatContent": "2 g",
+    "sodiumContent": "1507 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "4 g",
+    "unsaturatedFatContent": "8 g"
+  },
+  "htmlIngredientLines": [
+    "[Flour Coating]",
+    "▢ ½ cup all-purpose flour, (or gluten-free all-purpose flour blend)",
+    "[Vegan Egg]",
+    "▢ 2 tablespoons ground chia or ground flax",
+    "▢ ¾ cup warm water",
+    "[Cornflake Crust]",
+    "▢ 4 cups corn flakes",
+    "▢ ½ teaspoon garlic powder",
+    "▢ ½ teaspoon smoked paprika",
+    "▢ ½ teaspoon salt",
+    "▢ ¼ teaspoon black pepper",
+    "[Rest]",
+    "▢ 1 small head of cauliflower, cut into florets (about 4 heaping cups)",
+    "▢ ½ cup Frank's Red Hot, (or similar hot sauce)",
+    "▢ 3 tablespoons vegan butter, melted"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

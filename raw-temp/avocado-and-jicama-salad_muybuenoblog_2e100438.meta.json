@@ -1,0 +1,66 @@
+{
+  "url": "https://muybuenoblog.com/avocado-jicama-salad/",
+  "slug": "avocado-and-jicama-salad_muybuenoblog_2e100438",
+  "title": "Avocado and Jicama Salad",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T06:45:14.763Z",
+  "ldName": "Avocado and Jicama Salad",
+  "ldTime": "PT7M",
+  "ldPrepTime": "PT7M",
+  "ldCookTime": null,
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Appetizer, Side Dish",
+  "ldKeywords": "Mexican jicama salad, Mexican salad recipe, salad with jicama",
+  "ldIngredientsRaw": [
+    "2  avocados (pitted, peeled, and chopped)",
+    "2 cups thinly sliced jicama",
+    "½ cup thinly sliced radishes",
+    "¼ cup sour cream",
+    "1  orange (juiced)",
+    "1  lemon (juiced)",
+    "1 tablespoon sugar",
+    "2 tablespoons olive oil",
+    "1 tablespoons Lawry’s lemon pepper",
+    "Salt to taste",
+    "3 tablespoon roasted pumpkin seeds"
+  ],
+  "ldInstructionsRaw": [
+    "Place avocados in a large bowl. Add jicama and radishes.",
+    "In a small bowl, whisk together sour cream, orange juice, lemon juice, sugar, olive oil, and lemon pepper. Season with salt.",
+    "Pour the dressing over the top and toss to coat.",
+    "Garnish with pumpkin seeds and serve."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "380 kcal",
+    "sugarContent": "9 g",
+    "sodiumContent": "56 mg",
+    "fatContent": "30 g",
+    "saturatedFatContent": "6 g",
+    "carbohydrateContent": "27 g",
+    "fiberContent": "13 g",
+    "proteinContent": "7 g",
+    "cholesterolContent": "7 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 avocados, pitted, peeled, and chopped",
+    "▢ 2 cups thinly sliced jicama",
+    "▢ ½ cup thinly sliced radishes",
+    "▢ ¼ cup sour cream",
+    "▢ 1 orange, juiced",
+    "▢ 1 lemon, juiced",
+    "▢ 1 tablespoon sugar",
+    "▢ 2 tablespoons olive oil",
+    "▢ 1 tablespoons Lawry’s lemon pepper",
+    "▢ Salt to taste",
+    "▢ 3 tablespoon roasted pumpkin seeds"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

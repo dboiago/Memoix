@@ -1,0 +1,62 @@
+{
+  "url": "https://omnivorescookbook.com/asparagus-salad-with-mushroom-egg-glass-noodles/",
+  "slug": "asparagus-salad-with-mushroom-eggs-and-glass-noodl_omnivorescookbook_788ce7a3",
+  "title": "Asparagus Salad with Mushroom, Eggs, and Glass Noodles",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T01:43:30.794Z",
+  "ldName": "Asparagus Salad with Mushroom and Eggs",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Salad",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1/2 bundle (25 g) thin vermicelli",
+    "1 pack (150 g) Shimeji mushrooms (, tough ends removed and separated)",
+    "10 (200 g) asparagus spears (, tough ends removed and chopped)",
+    "2 teaspoons vegetable oil",
+    "2  eggs (, beaten)",
+    "1/4 teaspoon salt ((or to taste))",
+    "1/2 teaspoon light soy sauce",
+    "1/2 teaspoon sesame oil"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare a bowl of tap water and set aside. Bring a pot of water to a boil.",
+    "(Optional) Add a few drops of oil and a pinch of salt to the pot, so the veggies will be greener after cooking.",
+    "Add bean thread noodles to the pot and stir with chopsticks to separate them. Boil until the noodles are cooked through, about 1 minute. Transfer the noodles to a plate and set aside.",
+    "Add mushrooms to the same pot of water. Cook until mushrooms turn tender, 30 seconds to 1 minute. Transfer to a colander to cool.",
+    "Add asparagus to the same pot of water. Cook until the asparagus is cooked but still crisp, 30 seconds to 1 minute. Transfer to a colander with the mushrooms. Rinse with cold tap water to stop cooking. Add the bean thread noodles and toss everything together. Set aside to drain thoroughly. You can further remove excess moisture by gently patting the ingredients dry with paper towels.",
+    "Heat oil in a nonstick skillet over medium-high heat until warm. Add egg. Scramble the eggs until just cooked through. Transfer to a large mixing bowl.",
+    "Combine asparagus, mushroom, and bean thread noodles in the same large bowl with the eggs. Sprinkle salt and drizzle with light soy sauce and sesame oil. Toss to mix well. Serve as an appetizer or side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "80 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "5.8 g",
+    "fatContent": "3.2 g",
+    "saturatedFatContent": "0.6 g",
+    "sodiumContent": "213 mg",
+    "fiberContent": "1.7 g",
+    "sugarContent": "2.1 g"
+  },
+  "htmlIngredientLines": [
+    "1/2 bundle (25 g) thin vermicelli",
+    "1 pack (150 g) Shimeji mushrooms , tough ends removed and separated",
+    "10 (200 g) asparagus spears , tough ends removed and chopped",
+    "2 teaspoons vegetable oil",
+    "2 eggs , beaten",
+    "1/4 teaspoon salt (or to taste)",
+    "1/2 teaspoon light soy sauce",
+    "1/2 teaspoon sesame oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

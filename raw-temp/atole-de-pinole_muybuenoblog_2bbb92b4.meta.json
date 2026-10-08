@@ -1,0 +1,57 @@
+{
+  "url": "https://muybuenoblog.com/atole-de-pinole/",
+  "slug": "atole-de-pinole_muybuenoblog_2bbb92b4",
+  "title": "Atole de Pinole",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T07:16:08.640Z",
+  "ldName": "Atole de Pinole Recipe",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Desserts, Drinks",
+  "ldKeywords": "drink recipes, Mexican drink, Mexican drinks recipe",
+  "ldIngredientsRaw": [
+    "2 cups water",
+    "1  cinnamon stick",
+    "1/2 cup pinole",
+    "3 cups milk ((almond milk works well))",
+    "1/2 teaspoon vanilla extract",
+    "1/4 cup ground piloncillo ((or brown sugar))"
+  ],
+  "ldInstructionsRaw": [
+    "In a saucepan, combine the water and cinnamon stick. Let it steep for 30 minutes over low heat to infuse the flavor.",
+    "Remove and discard the cinnamon stick. Turn off the heat and stir in the mesquite flour (or pinole). Stir until completely dissolved. Set aside.",
+    "Add the milk, vanilla extract, and piloncillo (or brown sugar) to the pan. Heat over medium until the milk starts to boil.",
+    "Lower the heat to medium-low and simmer for about 10 minutes, stirring often to prevent sticking or burning. Watch closely to prevent it from overflowing.",
+    "Turn off the heat and serve warm. The atole will thicken as it sits, and consistency may vary depending on the type of milk used."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "218 kcal",
+    "carbohydrateContent": "34 g",
+    "proteinContent": "7 g",
+    "fatContent": "6 g",
+    "saturatedFatContent": "3 g",
+    "cholesterolContent": "22 mg",
+    "sodiumContent": "80 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "22 g",
+    "unsaturatedFatContent": "1.4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 cups water",
+    "▢ 1 cinnamon stick",
+    "▢ 1/2 cup pinole, (or mesquite flour as a substitute)",
+    "▢ 3 cups milk, (almond milk works well)",
+    "▢ 1/2 teaspoon vanilla extract",
+    "▢ 1/4 cup ground piloncillo, (or brown sugar)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

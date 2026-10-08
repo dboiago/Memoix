@@ -1,0 +1,43 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/cantucci-biscotti",
+  "slug": "cantucci-biscotti_lacucinaitaliana_d78fb4f4",
+  "title": "Cantucci Biscotti",
+  "byline": "by  Editorial staff   November 8, 2021",
+  "fetchedAt": "2026-08-01T20:10:34.263Z",
+  "ldName": "Cantucci Biscotti",
+  "ldTime": "PT40M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Biscotti,Cookies,Cucina Regionale,Regione,Ricetta Regionale,Ricette Regionali,Toscana,Vinsanto",
+  "ldIngredientsRaw": [
+    "2CUPS all-purpose flour",
+    "2 large egg",
+    "7/8CUP sugar",
+    "1CUP whole almonds",
+    "1/3CUP unsalted butter, room temperature",
+    "1 tsp. baking powder",
+    "1 vanilla bean"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Beat butter and sugar in a large bowl to blend. Add in eggs 1 at a time and a pinch of salt. Slowly add the flour and the baking powder until blended. Stir in almonds and vanilla seeds. Let rest for around half an hour.</p>",
+    "<p>Preheat the oven to 375 °F.&nbsp;</p>",
+    "<p>Line a baking sheet with parchment paper; using floured hands or a pastry bag with a wide mouth, form the dough into 2 - 14\" long and 2 1/2\" wide logs, spacing 1\"-2\" apart. Cool in the refrigerator for 30 minutes.&nbsp;</p>",
+    "<p>Bake for 12-15 minutes until golden. Remove from the oven and let cool. Lower the oven temperature to 300 °F. &nbsp;Cut biscotti on the diagonal into 1/2\" slices. Stand slices upright on baking sheet and bake for around 10 minutes until the sides are golden.&nbsp;</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 CUPS of all-purpose flour",
+    "2  of large egg",
+    "7/8 CUP of sugar",
+    "1 CUP of whole almonds",
+    "1/3 CUP of unsalted butter, room temperature",
+    "1 tsp. baking powder",
+    "1 vanilla bean"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

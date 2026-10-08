@@ -1,0 +1,43 @@
+{
+  "url": "https://japan.recipetineats.com/broccolini-karashiae-mustard-dressing/",
+  "slug": "broccolini-karashi-ae-mustard-dressing_japan_949148b8",
+  "title": "Broccolini Karashi-ae (Mustard Dressing)",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T18:35:00.357Z",
+  "ldName": "Broccolini Karashi-ae (Mustard Dressing)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 as salad, 6 as appetiser"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Appetiser, Salad",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "200g (0.4lb)  broccolini ((Note 1))",
+    "3 tbsp dashi stock ((Note 2))",
+    "3 tsp karashi mustard ((Note 3))",
+    "3 tsp soy sauce"
+  ],
+  "ldInstructionsRaw": [
+    "Mix the Dressing ingredients in a large bowl. Ensure that mustard is completely dissolved with no lumps.",
+    "Boil sufficient water in a large pot with a pinch of salt. Add broccolini to the pot and boil for 2-3 minutes until stems are tender.",
+    "Drain and run under cold water to quickly cool them down.",
+    "Cut the broccolini into 5cm (2\"). Squeeze as much water out of the broccolini as possible and put them in the bowl with the dressing.",
+    "Mix well ensuring that all the broccolini pieces are coated with the mustard dressing.",
+    "Serve in a large bowl/plates as salad or individual small bowls if serving as appetiser."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "200g (0.4lb)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tbroccolini\n\t\t\t\t\t\t\t\t\t\t(Note 1)",
+    "[Dressing]",
+    "3\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tdashi stock\n\t\t\t\t\t\t\t\t\t\t(Note 2)",
+    "3\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\tkarashi mustard\n\t\t\t\t\t\t\t\t\t\t(Note 3)",
+    "3\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\tsoy sauce"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

@@ -1,0 +1,3 @@
+There are many shapes and sizes of borek, excellent pastries which are found anywhere that was occupied by the Ottoman Empire but particularly, Turkey. Recipes vary by region but I favour this snail shape, filled with seasonal greens and white cheese. It’s common to find [spinach](https://www.greatbritishchefs.com/ingredients/spinach-recipes) filling this style but here I’ve used cavolo nero which makes a fantastic variation – the rich, iron-y flavour works so well with the salty cheese.
+
+It’s best if you can shop for the cheese and yufka in a Turkish shop, but if you can’t find it, substitute the yufka for [filo](https://www.greatbritishchefs.com/ingredients/filo-pastry-recipes), and the white cheese for feta.

@@ -1,0 +1,72 @@
+{
+  "url": "https://www.chinasichuanfood.com/braised-spicy-fish-sichuan-style/",
+  "slug": "braised-spicy-fish-sichuan-style_chinasichuanfood_147cf4be",
+  "title": "Braised Spicy Fish—Sichuan Style",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:10:51.462Z",
+  "ldName": "Braised Spicy Fish—Sichuan Style",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Sichuan cuisine",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Braised, fish, Spicy",
+  "ldIngredientsRaw": [
+    "1  fresh water fish",
+    "1.5 tablespoon doubanjiang",
+    "2 teaspoons dou-chi",
+    "1 tablespoon cooking oil",
+    "1  green round pepper",
+    "1  red round pepper",
+    "1  root ginger",
+    "2  garlic cloves",
+    "1  scallion",
+    "1 tablespoon cooking wine",
+    "1 tablespoon chopped spring onions",
+    "1 tablespoon cooking wine",
+    "2 teaspoons salt"
+  ],
+  "ldInstructionsRaw": [
+    "Scale and wash the fish carefully. Marinade with 1 tablespoon of cooking wine and 2 teaspoons of salt. Do spread the salt evenly. Set aside for 10 minutes.",
+    "Prepare other ingredients one by one.",
+    "Add 1/2 tablespoon oil in pan and sauté the fish until both side are slightly golden brown. Then transfer the fish out.",
+    "Heat up the left 1/2 tablespoon oil in pan. Add ginger, garlic and scallions to stir-fry until aroma with middle fire. Add doubanjiang and dou-chi in to stir-fry until you can see red oil.",
+    "Return the fish back to the pan. Add 1 tablespoon of cooking wine and pepper shreds in. Cover the pan to cook for around 2 minutes and turn the fish over to continue cooking for 2 minutes.",
+    "Transfer the fish out and garnish some chopped spring onions on top. I also add some pepper shreds as a decoration."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "364 kcal",
+    "carbohydrateContent": "27 g",
+    "proteinContent": "35 g",
+    "fatContent": "16 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "75 mg",
+    "sodiumContent": "2419 mg",
+    "fiberContent": "11 g",
+    "sugarContent": "5 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 fresh water fish",
+    "1.5 tablespoon doubanjiang",
+    "2 teaspoons dou-chi",
+    "1 tablespoon cooking oil",
+    "1 green round pepper",
+    "1 red round pepper",
+    "1 root ginger",
+    "2 garlic cloves",
+    "1 scallion",
+    "1 tablespoon cooking wine",
+    "1 tablespoon chopped spring onions",
+    "[Marinating sauce]",
+    "1 tablespoon cooking wine",
+    "2 teaspoons salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

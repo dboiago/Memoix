@@ -1,0 +1,32 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/blackberry-jam-recipe",
+  "slug": "blackberry-jam-recipe_greatbritishchefs_057ed58f",
+  "title": "Blackberry Jam Recipe",
+  "byline": "by Andrew Gravett",
+  "fetchedAt": "2026-08-03T12:25:52.048Z",
+  "ldName": "Blackberry jam",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Preserve",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "450g of blackberries, fresh",
+    "450g of white cane sugar",
+    "1 lemon, juiced"
+  ],
+  "ldInstructionsRaw": [
+    "Place the blackberries and lemon juice in a large pan and simmer gently for about 15 minutes until the fruit is soft",
+    "Meanwhile, warm the sugar in a low oven. When the fruit is cooked, add the sugar and stir the sugar and fruit over a low heat until the sugar has dissolved",
+    "Turn the heat up and bring the fruit and sugar to a boil, boil for 10–15 minutes until setting point has been reached (see setting point testing notes above)",
+    "Once setting point has been reached, take the pan off the heat, spoon any scum off the top of the jam and leave to sit for about 10 minutes",
+    "Ladle the hot jam into warm, sterile jam jars and seal immediately with a screw-top lid. Label once cold"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

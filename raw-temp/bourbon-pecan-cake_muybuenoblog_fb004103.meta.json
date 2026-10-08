@@ -1,0 +1,72 @@
+{
+  "url": "https://muybuenoblog.com/bourbon-pecan-cake/",
+  "slug": "bourbon-pecan-cake_muybuenoblog_fb004103",
+  "title": "Bourbon-Pecan Cake",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-01T18:43:25.925Z",
+  "ldName": "Bourbon-Pecan Cake",
+  "ldTime": "PT175M",
+  "ldPrepTime": "PT25M",
+  "ldCookTime": "PT150M",
+  "ldYield": [
+    "4",
+    "4 to 5 loaves"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Breakfast, Brunch, Dessert",
+  "ldKeywords": "cake with bourbon and pecans, fruitcake recipe, fruitcake recipe with bourbon",
+  "ldIngredientsRaw": [
+    "1 cup whole red candied cherries",
+    "1 cup whole green candied cherries",
+    "2 cups white seedless raisins",
+    "2 cups bourbon",
+    "2 cups softened butter or margarine",
+    "2 cups sugar",
+    "2 cups dark brown sugar (firmly packed)",
+    "8  eggs (separated)",
+    "5 cups sifted all-purpose flour",
+    "4 cups pecan halves",
+    "1 ½ teaspoon baking powder",
+    "1 teaspoon salt",
+    "2 teaspoons ground nutmeg"
+  ],
+  "ldInstructionsRaw": [
+    "Combine cherries, raisins, and bourbon in a large mixing bowl. Cover tightly and let stand in the refrigerator overnight.",
+    "Drain fruits and reserve bourbon. Place butter in the large bowl of an electric mixer and beat on medium speed until light and fluffy. Add sugars gradually, beating on medium speed until well blended. Add egg yolks, beating until well blended.",
+    "Combine ½ cup of the flour with pecans. Sift the remaining flour with the baking powder, salt, and nutmeg. Add 2 cups of the flour mixture to the creamed mixture and mix thoroughly. Add the reserved bourbon and the remainder of the flour mixture alternatively, ending with flour. Beat well after each addition.",
+    "Beat egg whites until stiff but not dry; fold gently into cake batter. Add drained fruits and floured pecans to the cake batter; blend thoroughly.",
+    "Grease loaf pans; line with wax paper. Grease and lightly flour wax paper. Pour cake batter into pan within 1 inch of the top. Place in a 275 degrees F. oven; bake loaf cakes for 2 to 2 ½ hours, or until a toothpick in the center of cakes come out clean.",
+    "Cool cakes in pans on cake rack for about 2 to 3 hours. Remove cakes from pans; peel off wax paper. Wrap cakes in cheesecloth saturated with bourbon; then wrap in aluminum foil or plastic wrap and store in a tightly covered container in the refrigerator for several weeks. Cut into thin slices to serve."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 loaf",
+    "calories": "3734 kcal",
+    "sugarContent": "290 g",
+    "sodiumContent": "1816 mg",
+    "fatContent": "174 g",
+    "saturatedFatContent": "28 g",
+    "carbohydrateContent": "458 g",
+    "fiberContent": "18 g",
+    "proteinContent": "38 g",
+    "cholesterolContent": "327 mg"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup whole red candied cherries",
+    "▢ 1 cup whole green candied cherries",
+    "▢ 2 cups white seedless raisins",
+    "▢ 2 cups bourbon",
+    "▢ 2 cups softened butter or margarine",
+    "▢ 2 cups sugar",
+    "▢ 2 cups dark brown sugar, firmly packed",
+    "▢ 8 eggs, separated",
+    "▢ 5 cups sifted all-purpose flour",
+    "▢ 4 cups pecan halves",
+    "▢ 1 ½ teaspoon baking powder",
+    "▢ 1 teaspoon salt",
+    "▢ 2 teaspoons ground nutmeg"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

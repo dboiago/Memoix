@@ -1,0 +1,5 @@
+An ideal dessert to prepare for autumn and winter, this recipe takes the incredible crisp and delicate texture of croustade pastry and pairs it with one of Raymond's favourite [apple](https://www.greatbritishchefs.com/ingredients/apple-recipes) varieties.
+
+_'This famous croustade from southwest France features a rosace of Cox’s apples in their own coulis, crowned with the finest and flakiest caramelised pastry. I love it, even though it doesn’t originate from my region, and interestingly, the recipe has similarities with the legendary strudel. It does require patience and delicate handling, but it’s a highly rewarding dish and a wonderful treat for a special occasion. Should you decide not to attempt it, then come to Le Manoir during the autumn – it will be on the menu. I like to serve it topped with a scoop of apple sorbet or honey and ginger ice cream.'_
+
+Follow Raymond on [Instagram](https://www.instagram.com/raymondblanc/), [Twitter](https://twitter.com/raymond_blanc) and [Facebook](https://www.facebook.com/ChefRaymondBlanc/). Recipe © [Raymond Blanc](http://www.raymondblanc.com/).

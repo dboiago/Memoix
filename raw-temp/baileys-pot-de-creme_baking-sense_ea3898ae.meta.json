@@ -1,0 +1,56 @@
+{
+  "url": "https://www.baking-sense.com/2018/03/08/baileys-pot-de-creme/",
+  "slug": "baileys-pot-de-creme_baking-sense_ea3898ae",
+  "title": "Baileys pot de creme",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T21:37:38.171Z",
+  "ldName": "Baileys pot de creme",
+  "ldTime": "PT280M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "8",
+    "8 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "custard, easy, st. patricks day",
+  "ldIngredientsRaw": [
+    "12 oz heavy cream (1 ½ cups)",
+    "¼ teaspoon table salt",
+    "6  large egg yolks",
+    "2 oz granulated sugar (¼ cup)",
+    "12 oz Baileys Irish Cream (1 ½ cups)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 325 °F. Line a 13&quot;x 9&quot; baking pan or a roasting pan with a kitchen towel. Arrange 8 4-oz ramekins in the pan.",
+    "Heat 12 oz&#32;heavy cream and ¼ teaspoon&#32;table salt in a medium saucepan until scalding. (see note)",
+    "While the cream is scalding, combine 6&#32;large egg yolks and 2 oz&#32;granulated sugar in a medium bowl. Whisk the hot cream into the yolk mixture then strain the custard into a pitcher or other container with a pouring spout. Stir in the Baileys and divide the custard evenly among the ramekins.",
+    "Place the pan into the oven and carefully pour hot water to come halfway up sides of ramekins. It's easiest to pour from one of the corners. Bake until the custards are set around the edges but still wobbly in the center, 25–30 minutes.",
+    "Lift the ramekins out of the water and set on a cooling rack. Cool completely then refrigerate until cold, at least 4 hours.",
+    "To serve, top each dish with a dollop of lightly sweetened whipped cream and a few chocolate shavings, if desired."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "354 kcal",
+    "carbohydrateContent": "19 g",
+    "proteinContent": "5 g",
+    "fatContent": "24 g",
+    "saturatedFatContent": "14 g",
+    "cholesterolContent": "194 mg",
+    "sodiumContent": "91 mg",
+    "sugarContent": "17 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "12 oz heavy cream (1 ½ cups)",
+    "¼ teaspoon table salt",
+    "6 large egg yolks",
+    "2 oz granulated sugar (¼ cup)",
+    "12 oz Baileys Irish Cream (1 ½ cups)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

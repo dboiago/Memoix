@@ -1,0 +1,3 @@
+Eleanor says: _'Two flavour boosters are at work in these crumbly based, gooey-topped bars. Firstly mahleb, the kernel found inside the pit of the mahaleb cherry. It is a spice much used in enriched Greek breads and Middle-Eastern bakes for its bewitching, fruity-floral, slightly almondy aroma. Rather inevitably, it is wonderful with cherries. Butter is the second. Taking it beyond melting point until its milk solids gently toast gives a caramel nuttiness that is transformative. A tip if, like me, browned butter is your baking vice: up the ante by adding a little dried milk powder to scale up those precious brown flecks.'_
+
+**Spice switch:** Spice the biscuit base with 1 teaspoon vanilla extract or a grated tonka bean.

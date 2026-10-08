@@ -1,0 +1,73 @@
+{
+  "url": "https://dailycookingquest.com/chicken-curry-kapitan.html",
+  "slug": "chicken-curry-kapitan_dailycookingquest_bfaa88e4",
+  "title": "Chicken Curry Kapitan",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:19:25.806Z",
+  "ldName": "Chicken Curry Kapitan",
+  "ldTime": "PT1H15M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT1H0M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Malaysian",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "1 teaspoon ground turmeric",
+    "1/4 cup cooking oil",
+    "10-12 chicken drumsticks (Note 1)",
+    "8 kaffir lime leaves",
+    "2 cups water",
+    "200 ml (half a can) coconut milk",
+    "300 gram (10 oz), peeled and cut into wedges (Note 2)",
+    "2 teaspoon salt",
+    "2 teaspoon sugar",
+    "2 teaspoon fish sauce",
+    "juice of 1 lime, or to taste",
+    "25 dried red chilies, remove seeds and soaked in boiling water until softened",
+    "100 gram shallot",
+    "20 gram garlic",
+    "1 inch ginger",
+    "1 inch galangal",
+    "3 lemongrass, white parts only",
+    "4 candlenuts",
+    "1/2 cup water"
+  ],
+  "ldInstructionsRaw": [
+    "Grind spice paste: Use a food processor/blender to grind chilies, shallot, garlic, ginger, galangal, lemongrass, candlenuts, and water into a smooth spice paste.",
+    "Fry spice paste: Heat spice paste and turmeric over medium heat in a wok until slightly dry. Add cooking oil and mix well. Cook until the oil starts to separate from the spice.",
+    "Add chicken: Add chicken into the wok and stir. Add kaffir lime leaves and water, mix well, and bring to a boil. Reduce the heat to a simmer and cook for 10 minutes.",
+    "Add the remaining ingredients: Stir in coconut milk into the wok. Add potatoes, and season with salt, sugar, and fish sauce. Continue simmering for 15-20 minutes, or until the sauce has reduced and become thick.",
+    "Add lime juice and serve: Add lime juice, stir and cook for another minute. Adjust the seasonings if needed. Turn off the heat, transfer the dish to a serving bowl, and serve with steamed white rice, Indian roti, or naan bread."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 teaspoon ground turmeric",
+    "1/4 cup cooking oil",
+    "10-12 chicken drumsticks (Note 1)",
+    "8 kaffir lime leaves",
+    "2 cups water",
+    "200 ml (half a can) coconut milk",
+    "300 gram (10 oz), peeled and cut into wedges (Note 2)",
+    "2 teaspoon salt",
+    "2 teaspoon sugar",
+    "2 teaspoon fish sauce",
+    "juice of 1 lime, or to taste",
+    "Spice paste (grind into a smooth paste with blender/food processor)",
+    "25 dried red chilies, remove seeds and soaked in boiling water until softened",
+    "100 gram shallot",
+    "20 gram garlic",
+    "1 inch ginger",
+    "1 inch galangal",
+    "3 lemongrass, white parts only",
+    "4 candlenuts",
+    "1/2 cup water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

@@ -1,0 +1,30 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/apricot-sorbet-recipe",
+  "slug": "apricot-sorbet-recipe_greatbritishchefs_ca4a4b6a",
+  "title": "Apricot Sorbet Recipe",
+  "byline": "by Marcello Tully",
+  "fetchedAt": "2026-08-03T16:24:23.958Z",
+  "ldName": "Apricot sorbet",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "600g of apricot purée",
+    "120g of sugar",
+    "50ml of water",
+    "4 sprigs of fresh mint, for garnish"
+  ],
+  "ldInstructionsRaw": [
+    "Place the sugar and water into a pan, bring to the boil then remove from the heat and set aside to cool",
+    "Once cool, add the apricot purée to the syrup and mix well to combine. Churn in an ice cream maker, then freeze in a sealable container until needed. Serve with some fresh mint leaves"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

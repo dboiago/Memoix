@@ -1,0 +1,59 @@
+{
+  "url": "https://amazingribs.com/tested-recipes/pork-ribs-recipes/bacon-wrapped-spare-ribs/",
+  "slug": "bacon-wrapped-spare-ribs-recipe_amazingribs_77b33e34",
+  "title": "Bacon Wrapped Spare Ribs Recipe",
+  "byline": "Meathead",
+  "fetchedAt": "2026-08-02T11:00:55.847Z",
+  "ldName": "Bacon Wrapped Spare Ribs Recipe",
+  "ldTime": "PT225M",
+  "ldPrepTime": "PT45M",
+  "ldCookTime": "PT180M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dinner, Lunch, Main Course",
+  "ldKeywords": "ribs, spare ribs",
+  "ldIngredientsRaw": [
+    "1 slab trimmed St. Louis spare ribs",
+    "1 pound bacon ((Oscar Meyer center cut works well))",
+    "2 tablespoons Texas Select Seasoning Jalapeño Dusted ((or your favorite seasoning))",
+    "2 tablespoons Texas Select Seasoning Juicy Pig ((or your favorite seasoning))",
+    "1 cup Texas Select Smoked Apple Strawberry Habanero BBQ Glaze ((or your favorite glaze))"
+  ],
+  "ldInstructionsRaw": [
+    "Prep. Remove any excess fat from the racks of ribs as well as the backside membrane. Slice into individual ribs. This should yield about 12 ribs.",
+    "Season each rib with a combination of the Texas Select Jalapeño Dusted and Juicy Pig rubs.",
+    "Wrap each rib with a slice of bacon. To secure the bacon, wrap over the starting end of each slice then tuck the trailing end under the closest wrap. Use two pieces of bacon for the larger ribs if necessary.",
+    "Refrigerate and allow to set up for about an hour while you fire up your cooker.",
+    "Fire up. Prepare a grill for indirect cooking by placing a chimney full of pre-heated charcoal briquettes on one side of the grill’s charcoal grate in order to create direct and indirect cooking zones. Adjust the grill vents to bring the temperature to about 275°F (135°C) on the indirect side. Add two chunks of apple or cherry wood to the coals. Alternatively, fire up a pellet smoker or offset smoker to 275°F (135°C) with your favorite cooking pellets or fruitwood.",
+    "Smoke. Smoke until the ribs are tender, take on a good amount of smoke, and reach an internal temperature of 195-200°F (90.6-93.3°C), about 2 hours. The bacon should begin to crisp up but still be pliable.",
+    "Glaze. While the ribs cook, prepare and heat your glazing sauce. Allow to cook down and thicken in the pan. Keep warm until time to glaze the ribs.",
+    "Remove the smoked ribs to a sheet tray and coat all sides with the warm glaze. Return to the cooker, close the lid, and allow the glaze to caramelize and set for approximately 10-15 minutes. The glaze should tack up, but do not let it burn.",
+    "Remove and let the ribs rest for about 10 minutes. Serve with your favorite sides, and enjoy this delicious pork treat!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "1410 kcal",
+    "carbohydrateContent": "37 g",
+    "proteinContent": "60 g",
+    "fatContent": "113 g",
+    "saturatedFatContent": "37 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "302 mg",
+    "sodiumContent": "1717 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "24 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 slab trimmed St. Louis spare ribs",
+    "1 pound bacon (Oscar Meyer center cut works well)",
+    "2 tablespoons Texas Select Seasoning Jalapeño Dusted (or your favorite seasoning)",
+    "2 tablespoons Texas Select Seasoning Juicy Pig (or your favorite seasoning)",
+    "1 cup Texas Select Smoked Apple Strawberry Habanero BBQ Glaze (or your favorite glaze)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "US",
+  "siteCourseHint": "Smoking"
+}

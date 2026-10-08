@@ -1,0 +1,49 @@
+{
+  "url": "https://dailycookingquest.com/celery-and-shimeji-stir-fry.html",
+  "slug": "celery-and-shimeji-stir-fry_dailycookingquest_5fe1d106",
+  "title": "Celery and Shimeji Stir Fry",
+  "byline": "",
+  "fetchedAt": "2026-08-02T04:44:46.874Z",
+  "ldName": "Celery and Shimeji Stir Fry",
+  "ldTime": "PT0H20M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": [
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "2 tablespoon oil",
+    "5 cloves garlic, minced",
+    "2 package shimeji (I use 1 white and 1 brown shimeji), tear into pieces",
+    "1 head celery, cut into diagonal slices about 1/2\" thick",
+    "4 tablespoon oyster sauce",
+    "4 tablespoon water",
+    "1 tablespoon sugar",
+    "1 - 2 teaspoon ground white pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Heat oil in a wok/frying pan on medium high heat, sauté garlic until fragrant, about 2-3 minutes.",
+    "Add shimeji, mix well, stir fry for 2 minutes, or until the mushroom starts to look wilted.",
+    "Add celery, mix well, season with oyster sauce, water, sugar, and white pepper. Cover the wok/pan with a lid, let it cook for 2 minutes.",
+    "Turn off heat, take the lid off, transfer to a serving plate and serve with steamed white rice."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 tablespoon oil",
+    "5 cloves garlic, minced",
+    "2 package shimeji (I use 1 white and 1 brown shimeji), tear into pieces",
+    "1 head celery, cut into diagonal slices about 1/2\" thick",
+    "4 tablespoon oyster sauce",
+    "4 tablespoon water",
+    "1 tablespoon sugar",
+    "1 - 2 teaspoon ground white pepper"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

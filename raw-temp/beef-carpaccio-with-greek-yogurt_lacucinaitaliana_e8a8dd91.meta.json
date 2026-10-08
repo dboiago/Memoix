@@ -1,0 +1,35 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/appetizers/beef-carpaccio-with-greek-yogurt",
+  "slug": "beef-carpaccio-with-greek-yogurt_lacucinaitaliana_e8a8dd91",
+  "title": "Beef Carpaccio With Greek Yogurt",
+  "byline": "by  Editorial staff   July 31, 2021",
+  "fetchedAt": "2026-08-03T03:30:32.392Z",
+  "ldName": "Beef Carpaccio With Greek Yogurt",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "appetizers",
+  "ldKeywords": "Carne,Carpaccio Di Manzo,Yogurt",
+  "ldIngredientsRaw": [
+    "3OZ. Jerusalem artichokes",
+    "5OZ. beef carpaccio",
+    "4 Brussels sprouts",
+    "1/3CUP Greek yogurt"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Peel the Jerusalem artichokes and cut them into very thin slices.&nbsp;</p>",
+    "<p>Divide the beef carpaccio between 4 plates. Season with a pinch of salt. Garnish with the leaves of the 4 Brussels sprouts, the sliced Jerusalem artichokes and large dollops of Greek yogurt.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "3 OZ. of Jerusalem artichokes",
+    "5 OZ. of beef carpaccio",
+    "4 Brussels sprouts",
+    "1/3 CUP of Greek yogurt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

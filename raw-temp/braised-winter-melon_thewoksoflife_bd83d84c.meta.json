@@ -1,0 +1,67 @@
+{
+  "url": "https://thewoksoflife.com/braised-winter-melon/",
+  "slug": "braised-winter-melon_thewoksoflife_bd83d84c",
+  "title": "Braised Winter Melon",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T17:19:38.382Z",
+  "ldName": "Braised Winter Melon",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish, Vegetables",
+  "ldKeywords": "braised winter melon",
+  "ldIngredientsRaw": [
+    "1½ pounds winter melon ((seeds and skin removed))",
+    "2 tablespoons neutral oil ((such as vegetable, canola, or avocado oil))",
+    "1 tablespoon minced garlic",
+    "½ teaspoon minced ginger",
+    "1  scallion ((finely chopped; white and green parts separated))",
+    "1 tablespoon oyster sauce ((or vegetarian oyster sauce))",
+    "½ teaspoon dark soy sauce",
+    "⅛ teaspoon white pepper",
+    "½ to 1 cup water",
+    "1  star anise ((optional))",
+    "Salt to taste ((optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Process the winter melon by scooping out the seeds in the center. Trim off the peel and the tough green underlayer. Wash off any white powder left behind by the peel, then cut the melon into 1” x 1.5” (3-4cm) chunks.",
+    "Heat the oil in wok with medium heat, lightly brown both sides of the winter melon pieces, about 3 minutes per side.",
+    "Next, add the garlic, ginger, and the white parts of the scallion. Cook them for about 1 minute, until fragrant. Then add the oyster sauce, dark soy sauce and white pepper. Mix everything well.",
+    "Add the water and star anise (if using). Cover and simmer for 10 to 12 minutes, or until the winter melon is fork tender. (If there is still too much liquid, turn up the heat and stir for a couple of minutes to reduce and thicken the sauce).",
+    "Taste and add salt if needed. Toss in the scallion greens, and serve."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "87 kcal",
+    "carbohydrateContent": "5 g",
+    "proteinContent": "1 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "1 g",
+    "transFatContent": "0.03 g",
+    "sodiumContent": "312 mg",
+    "fiberContent": "0.2 g",
+    "sugarContent": "0.1 g",
+    "unsaturatedFatContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1½ pounds winter melon (seeds and skin removed)",
+    "▢ 2 tablespoons neutral oil (such as vegetable, canola, or avocado oil)",
+    "▢ 1 tablespoon minced garlic",
+    "▢ ½ teaspoon minced ginger",
+    "▢ 1 scallion (finely chopped; white and green parts separated)",
+    "▢ 1 tablespoon oyster sauce (or vegetarian oyster sauce)",
+    "▢ ½ teaspoon dark soy sauce",
+    "▢ ⅛ teaspoon white pepper",
+    "▢ ½ to 1 cup water",
+    "▢ 1 star anise (optional)",
+    "▢ Salt to taste (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

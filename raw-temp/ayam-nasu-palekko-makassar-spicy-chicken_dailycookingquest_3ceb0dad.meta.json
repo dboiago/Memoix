@@ -1,0 +1,60 @@
+{
+  "url": "https://dailycookingquest.com/ayam-nasu-palekko-makassar-spicy-chicken.html",
+  "slug": "ayam-nasu-palekko-makassar-spicy-chicken_dailycookingquest_3ceb0dad",
+  "title": "Ayam Nasu Palekko - Makassar Spicy Chicken",
+  "byline": "",
+  "fetchedAt": "2026-08-02T01:51:00.161Z",
+  "ldName": "Ayam Nasu Palekko - Makassar Spicy Chicken",
+  "ldTime": "PT0H20M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "600-700 gram chicken thigh meat, cut into bite sizes",
+    "tamarind juice (from 1 tablespoon tamarind + 4 tablespoon water, mixed well and strained)",
+    "3 tablespoon oil",
+    "1 lemongrass, bruised and knotted",
+    "1/2 inch galangal, cut into thin slices and bruised",
+    "1 tablespoon palm sugar (or coconut sugar/brown sugar)",
+    "1/2 tablespoon salt",
+    "1 teaspoon ground pepper",
+    "3-4 kaffir lime leaves, shredded",
+    "1/4 cup cilantro leaves, roughly chopped",
+    "100 gram shallot",
+    "5 cloves garlic",
+    "3-30 red bird eye chilies, seeded"
+  ],
+  "ldInstructionsRaw": [
+    "Massage chicken thigh with tamarind juice. Set aside for 10 minutes.",
+    "Heat oil in a frying pan over medium high heat. Sauté spice paste, lemongrass, and galangal until fragrant and the spices are cooked. About 3 minutes.",
+    "Add chicken with all the tamarind marinade to the pan, season with palm sugar, salt, and pepper. Stir, cook until chicken is fully cooked, and the sauce is reduced by half.",
+    "Turn off heat, add kaffir lime leaves and cilantro. Stir to mix evenly, then transfer to a serving platter and serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "600-700 gram chicken thigh meat, cut into bite sizes",
+    "tamarind juice (from 1 tablespoon tamarind + 4 tablespoon water, mixed well and strained)",
+    "3 tablespoon oil",
+    "1 lemongrass, bruised and knotted",
+    "1/2 inch galangal, cut into thin slices and bruised",
+    "1 tablespoon palm sugar (or coconut sugar/brown sugar)",
+    "1/2 tablespoon salt",
+    "1 teaspoon ground pepper",
+    "3-4 kaffir lime leaves, shredded",
+    "1/4 cup cilantro leaves, roughly chopped",
+    "Spice paste (grind together the following)",
+    "100 gram shallot",
+    "5 cloves garlic",
+    "3-30 red bird eye chilies, seeded"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

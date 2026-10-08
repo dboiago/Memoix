@@ -1,0 +1,53 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/5-minute-chimichurri-sauce/",
+  "slug": "5-minute-chimichurri-sauce_itdoesnttastelikechicken_bee50a9c",
+  "title": "5-Minute Chimichurri Sauce",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T18:47:17.890Z",
+  "ldName": "5 Minute Chimichurri Sauce",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "4",
+    "4 (makes about 1/2 cup)"
+  ],
+  "ldCuisine": "Argentinian",
+  "ldCategory": "sauce",
+  "ldKeywords": "5 minute chimichurri sauce, chimichurri cilantro, chimichurri recipe cilantro, easy chimichurri",
+  "ldIngredientsRaw": [
+    "1 cup fresh cilantro ((1 large handful))",
+    "1 cup fresh parsley ((1 large handful))",
+    "1/4 cup red onion ((about 1/4 of an onion), chopped*)",
+    "1/4 cup olive oil ((substitute aquafaba for oil-free))",
+    "2 cloves garlic, (minced*)",
+    "2 tablespoons lime juice ((1 lime))",
+    "1/4 teaspoon salt",
+    "1/4 teaspoon red pepper flakes ((optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Add all of the ingredients to a small blender, food processor, or use an immersion blender. Blend everything together, stopping to scrape the sides as needed. I prefer a sauce&nbsp;with lots of visible texture, but if you prefer a smoother sauce, feel free to blend to the desired consistency.&nbsp;"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "135 kcal",
+    "carbohydrateContent": "3 g",
+    "fatContent": "13 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "158 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup fresh cilantro, (1 large handful)",
+    "▢ 1 cup fresh parsley, (1 large handful)",
+    "▢ ¼ cup red onion, (about ¼ of an onion), chopped*",
+    "▢ ¼ cup olive oil, (substitute aquafaba for oil-free)",
+    "▢ 2 cloves garlic,, minced*",
+    "▢ 2 tablespoons lime juice, (1 lime)",
+    "▢ ¼ teaspoon salt",
+    "▢ ¼ teaspoon red pepper flakes, (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

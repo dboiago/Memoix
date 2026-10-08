@@ -1,0 +1,38 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/blueberry-muffins-recipe",
+  "slug": "blueberry-muffins-recipe_greatbritishchefs_69b2dbc9",
+  "title": "Blueberry Muffins Recipe",
+  "byline": "by Adam Gray",
+  "fetchedAt": "2026-08-03T12:12:30.366Z",
+  "ldName": "Blueberry muffins",
+  "ldTime": "PT45M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Snack",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "350g of self-raising flour",
+    "60g of caster sugar",
+    "60g of muscovado sugar",
+    "3 eggs",
+    "2 tsp baking powder",
+    "300g of blueberries",
+    "140g of butter, melted",
+    "120ml of milk",
+    "1 pinch of salt"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 190°C/gas mark 5. Line a 12 hole muffin tin with paper cases",
+    "Mix together the flour, sugars, baking powder and salt",
+    "Mix together the eggs, butter and milk and stir into the dry ingredients",
+    "Fold through the blueberries then divide the mixture between the cases and sprinkle with demerara sugar. Bake for 18–20 minutes until risen and golden brown",
+    "Leave to cool slightly on a wire rack before tucking in!"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

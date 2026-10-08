@@ -1,0 +1,71 @@
+{
+  "url": "https://www.chopstickchronicles.com/agedashi-tofu/",
+  "slug": "agedashi-tofu_chopstickchronicles_f06e66e2",
+  "title": "Agedashi Tofu",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-01T23:09:42.512Z",
+  "ldName": "Agedashi Tofu 揚げ出し豆腐",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 serves"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Appetiser, Side Dish",
+  "ldKeywords": "#Agedashi tofu, #Deep fried tofu, #Tofu",
+  "ldIngredientsRaw": [
+    "300 g Firm Tofu",
+    "2 tbsp Katakuriko corn starch",
+    "Cooking Oil to deep-fry",
+    "½ cup dashi  (*1)",
+    "2 tbsp soy sauce",
+    "2 tbsp Mirin",
+    "1 tbsp sugar",
+    "5 cm of daikon grated or ¼ cup",
+    "1  scallions",
+    "1 piece ginger (grated)",
+    "1/4 tsp Shichimi Togarashi",
+    "1 tsp White sesame seeds to sprinkle  *2"
+  ],
+  "ldInstructionsRaw": [
+    "Remove the excess water out of the tofu by wrapping it in a paper towel and leaving it for about 20 minutes with a weight over the tofu.",
+    "Cut the tofu 1.2inch x 1.6inch x 0.8inch (3cm x 4 cm x 2cm) *3",
+    "Heat oil in a deep frying pan to 170°C.",
+    "When the oil is ready, place the katakuriko onto a flat tray and dip each tofu into the katakuriko and dust off excess with a brush. *4",
+    "Deep-fry 4 pieces of the tofu at a time for a few minutes.",
+    "Take deep fried tofu pieces out of the oil and leave it on a paper towel to drain the excess oil.",
+    "Make the sauce by putting all the ingredients into a sauce pan.",
+    "Over a medium heat, bring the all broth ingredients to boil, then turn the heat off and set aside.",
+    "Place the fried tofu into a serving bowl and top with the toppings then pour the sauce over the top."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "83 kcal",
+    "carbohydrateContent": "20 g",
+    "proteinContent": "1 g",
+    "sodiumContent": "1135 mg",
+    "sugarContent": "10 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 300 g Firm Tofu",
+    "▢ 2 tbsp Katakuriko corn starch",
+    "▢ Cooking Oil to deep-fry",
+    "[Sauce/Broth]",
+    "▢ ½ cup dashi  *1",
+    "▢ 2 tbsp soy sauce",
+    "▢ 2 tbsp Mirin",
+    "▢ 1 tbsp sugar",
+    "[Garnishing *2]",
+    "▢ 5 cm of daikon grated or ¼ cup",
+    "▢ 1 scallions",
+    "▢ 1 piece ginger (grated)",
+    "▢ 1/4 tsp Shichimi Togarashi",
+    "▢ 1 tsp White sesame seeds to sprinkle  *2"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

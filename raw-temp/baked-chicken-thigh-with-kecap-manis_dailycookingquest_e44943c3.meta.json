@@ -1,0 +1,43 @@
+{
+  "url": "https://dailycookingquest.com/baked-chicken-thigh-with-kecap-manis.html",
+  "slug": "baked-chicken-thigh-with-kecap-manis_dailycookingquest_e44943c3",
+  "title": "Baked Chicken Thigh with Kecap Manis",
+  "byline": "",
+  "fetchedAt": "2026-08-02T06:00:44.351Z",
+  "ldName": "Baked Chicken Thigh with Kecap Manis",
+  "ldTime": "PT0H40M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H30M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "500 gram chicken thigh fillets",
+    "2 tablespoon kecap manis (Indonesian sweet soy sauce)",
+    "2 tablespoon tomato ketchup (Indonesian: saus tomat)",
+    "1 tablespoon sesame oil",
+    "2 tablespoon sesame seeds"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat oven to 360 Fahrenheit (180 Celcius) and line a baking tray with aluminum foil.",
+    "In a mixing bowl, mix together chicken thigh, kecap manis, tomato ketchup, sesame oil, and sesame seeds. Transfer these to the prepared tray.",
+    "Bake in the oven until fully cooked, about 30 minutes.",
+    "Let the cooked chicken rest for 5 minutes before cutting into small strips. Serve with steamed white rice."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "500 gram chicken thigh fillets",
+    "2 tablespoon kecap manis (Indonesian sweet soy sauce)",
+    "2 tablespoon tomato ketchup (Indonesian: saus tomat)",
+    "1 tablespoon sesame oil",
+    "2 tablespoon sesame seeds"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

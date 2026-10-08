@@ -1,0 +1,7 @@
+Aubergine caponata is a traditional dish from the beautiful island of Sicily. The origin of the term _caponata_ is not entirely clear. It could derive from the term _caupone_ (which means tavern), or, more likely, from the Sicilian name of the fish mahi mahi: _capone_. I am more inclined towards this option, as capone is often served with the same Caponata sauce (sans aubergine).
+
+Whatever the origin of the name, Caponata is a very popular dish and it is famous all over Italy. It could be described as a cooked salad made up of fried aubergine and other ingredients. It is a sweet and sour dish and many of the ingredients used in it (like pine nuts and raisins) clearly show the influence of the Arab and Middle Eastern world that permeates Sicilian culture, architecture, dialect and food.
+
+There are many variations of this dish and, like the majority of [traditional recipes](https://www.greatitalianchefs.com/collections/traditional-italian-recipes) in Italy, every town and every family has its own version. In the area of Trapani, in the Western part of Sicily, the addition of toasted almonds is a must. This specific recipe is inspired by my cousin’s grandmother, who used to make the best Caponata ever.
+
+Caponata can be eaten as a side dish or as an appetiser. It is usually eaten in spring and summer and it is best served at room temperature, or even cold, with warm bread.

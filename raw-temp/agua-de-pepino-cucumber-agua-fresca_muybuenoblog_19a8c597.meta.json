@@ -1,0 +1,52 @@
+{
+  "url": "https://muybuenoblog.com/agua-fresca-de-pepino-cucumber-lime-cooler/",
+  "slug": "agua-de-pepino-cucumber-agua-fresca_muybuenoblog_19a8c597",
+  "title": "Agua de Pepino (Cucumber Agua Fresca)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T06:34:12.112Z",
+  "ldName": "Agua Fresca de Pepino (Cucumber Lime Cooler)",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Drinks",
+  "ldKeywords": "5 de mayo recipe, agua fresca recipes, cucumber cooler",
+  "ldIngredientsRaw": [
+    "2  organic cucumbers (peeled and chopped)",
+    "6 cups water",
+    "1/3 cup fresh lime juice",
+    "2/3 cup sugar",
+    "fresh mint leaves (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "In a blender add cucumbers and water and blend until smooth.",
+    "Strain the liquid into a pitcher and discard the pulp.",
+    "Add the lime juice and sugar. Mix well.",
+    "Serve chilled over ice, with slices of cucumber and/or lime, and fresh mint leaves."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "101.36 kcal",
+    "sugarContent": "23.78 g",
+    "sodiumContent": "14.99 mg",
+    "fatContent": "0.17 g",
+    "saturatedFatContent": "0.01 g",
+    "carbohydrateContent": "25.51 g",
+    "fiberContent": "0.75 g",
+    "proteinContent": "0.65 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 organic cucumbers, peeled and chopped",
+    "▢ 6 cups water",
+    "▢ 1/3 cup fresh lime juice",
+    "▢ 2/3 cup sugar",
+    "▢ fresh mint leaves, optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

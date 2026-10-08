@@ -1,0 +1,68 @@
+{
+  "url": "https://thewoksoflife.com/belacan-sauce/",
+  "slug": "belacan-sauce_thewoksoflife_002ce726",
+  "title": "Belacan Sauce",
+  "byline": "Bill",
+  "fetchedAt": "2026-08-02T05:19:00.164Z",
+  "ldName": "Belacan Sauce",
+  "ldTime": "PT70M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "32"
+  ],
+  "ldCuisine": "Chinese, Malaysian",
+  "ldCategory": "Condiments",
+  "ldKeywords": "belacan sauce, shrimp sauce",
+  "ldIngredientsRaw": [
+    "16  dried Sichuan chili peppers ((16 dried peppers = 10g; deseeded))",
+    "7  holland chilies",
+    "3  Thai chili peppers ((chopped, optional for added heat))",
+    "1 1/4 cup sliced shallots ((about 6 large, divided))",
+    "8 cloves garlic ((8 cloves = approx. 40g))",
+    "2/3 cup canola oil ((or peanut oil))",
+    "1 cup dried shrimp ((chopped))",
+    "3 tablespoons belacan shrimp paste",
+    "1 tablespoon fish sauce ((optional))",
+    "2 tablespoons light brown sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Soak the de-seeded dried chili peppers in 1 cup of warm water for 15-20 minutes.",
+    "While the dried peppers are soaking, de-stem and de-seed the Holland peppers, removing the membranes as well. You can leave the seeds in if you like your sauce very spicy. Cut each pepper into 3 pieces. If using, chop the Thai chilies.",
+    "Take half of your shallots and finely chop them. With the other half, thinly slice them. (You can also chop them, but I think slices add another textural dimension to the final sauce.",
+    "Drain the dried chili peppers, and set aside the soaking water. To the bowl of a food processor or blender, add the dried peppers, Holland peppers, Thai chilies (if using), half of the shallots (i.e. your chopped shallots, setting aside the slices for later), and garlic. Pulse until the mixture is smooth, or if you prefer, a coarse paste. Use a rubber spatula to scrape down the sides of the bowl to ensure the mixture is evenly processed.",
+    "Heat a frying pan or wok over medium heat. Add the oil and chopped dried shrimp. Fry over medium to medium low heat for 3-5 minutes.",
+    "Put the belacan in a mortar and pestle to break it up (you can also put it in a small bowl and break it up with a fork). Add it to the pan. Cook for 3-4 minutes, until the belacan is melted into the sauce.",
+    "Add the sliced shallots, and cook for 3-4 minutes, until translucent.",
+    "Next, add the chili, garlic and shallot paste. Stir to combine, and add ½ cup of the reserved pepper soaking water. Cook for 5 minutes, stirring occasionally. Stir in the fish sauce and brown sugar. Continue to cook for another 15 minutes.",
+    "Let the mixture cool, and transfer to a clean jar or other airtight container. Refrigerate for up to 4 weeks, or freeze (it should last up to 1 year frozen)."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "67 kcal",
+    "carbohydrateContent": "3 g",
+    "proteinContent": "4 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "50 mg",
+    "sodiumContent": "200 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 16  dried Sichuan chili peppers (16 dried peppers = 10g; deseeded)",
+    "▢ 7  holland chilies",
+    "▢ 3 Thai chili peppers (chopped, optional for added heat)",
+    "▢ 1 1/4 cup sliced shallots (about 6 large, divided)",
+    "▢ 8 cloves garlic (8 cloves = approx. 40g)",
+    "▢ 2/3 cup canola oil (or peanut oil)",
+    "▢ 1 cup dried shrimp (chopped)",
+    "▢ 3 tablespoons belacan shrimp paste",
+    "▢ 1 tablespoon fish sauce (optional)",
+    "▢ 2 tablespoons light brown sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

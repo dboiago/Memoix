@@ -1,0 +1,71 @@
+{
+  "url": "https://www.chinasichuanfood.com/barbecue-spice-mix/",
+  "slug": "barbecue-spice-mix_chinasichuanfood_df78fee5",
+  "title": "Barbecue Spice Mix",
+  "byline": "",
+  "fetchedAt": "2026-08-02T06:18:49.384Z",
+  "ldName": "Sichuan Style Barbecue Mix",
+  "ldTime": null,
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "20"
+  ],
+  "ldCuisine": "Sichuan",
+  "ldCategory": "seasonings",
+  "ldKeywords": "dry rub, mixed spices",
+  "ldIngredientsRaw": [
+    "1 cup Sichuan pepper flakes",
+    "1 tbsp. Sichuan peppercorn",
+    "1 tbsp. cumin seeds",
+    "1/2 tbsp. fennel seeds",
+    "2 tbsp. toasted sesame seeds",
+    "3/4 cup nuts (, peanuts and walnuts (cashew can work fine too))",
+    "1  star anise",
+    "1 small piece Chinese cinnamon",
+    "1 small piece dried tangerine ( , optional )",
+    "1 small piece sand ginger  ( , optional )",
+    "1 tbsp. sugar",
+    "1/2 tbsp. salt",
+    "1 tbsp. ginger powder",
+    "1 tbsp. garlic powder"
+  ],
+  "ldInstructionsRaw": [
+    "Toast peanut and walnut with slow fire. Set aside to cool down.",
+    "Toast Sichuan peppercorn, fennel and cumin seeds over slowest fire until aromatic.",
+    "Place toasted peanuts, walnut, sesame seeds and all the other ingredients expect pepper flakes in a blender. Blend until fine and smooth.",
+    "Add pepper flakes, ginger powder and garlic powder, sugar and salt in. Continue blend for a while to mix well. Break well and then slightly cool, contained in air-tight bag or container.",
+    "Sichuan dry dipping"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "54 kcal",
+    "carbohydrateContent": "5 g",
+    "proteinContent": "2 g",
+    "fatContent": "4 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "146 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 cup Sichuan pepper flakes   , you can make this with the same instruction in How to make Chinese red oil.",
+    "1 tbsp. Sichuan peppercorn",
+    "1 tbsp. cumin seeds",
+    "1/2 tbsp. fennel seeds",
+    "2 tbsp. toasted sesame seeds",
+    "3/4 cup nuts , peanuts and walnuts (cashew can work fine too)",
+    "1 star anise",
+    "1 small piece Chinese cinnamon",
+    "1 small piece dried tangerine  , optional",
+    "1 small piece sand ginger   , optional",
+    "1 tbsp. sugar",
+    "1/2 tbsp. salt",
+    "1 tbsp. ginger powder",
+    "1 tbsp. garlic powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

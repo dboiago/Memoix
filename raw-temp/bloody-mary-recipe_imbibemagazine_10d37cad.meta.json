@@ -1,0 +1,32 @@
+{
+  "url": "https://imbibemagazine.com/recipe/bloody-mary/",
+  "slug": "bloody-mary-recipe_imbibemagazine_10d37cad",
+  "title": "Bloody Mary Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T20:23:22.427Z",
+  "ldName": "Bloody Mary Recipe",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "10",
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "[object Object]",
+    "[object Object]",
+    "[object Object]",
+    "[object Object]",
+    "[object Object]",
+    "[object Object]",
+    "[object Object]"
+  ],
+  "ldInstructionsRaw": [
+    "Shake ingredients with ice, strain into ice-filled glass and garnish."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

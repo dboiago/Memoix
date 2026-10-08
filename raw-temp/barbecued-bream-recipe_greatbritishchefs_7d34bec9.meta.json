@@ -1,0 +1,41 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/barbecued-bream-fennel-lemongrass",
+  "slug": "barbecued-bream-recipe_greatbritishchefs_7d34bec9",
+  "title": "Barbecued Bream Recipe",
+  "byline": "by Daniele Usai",
+  "fetchedAt": "2026-08-03T15:24:16.556Z",
+  "ldName": "Barbecued black bream with fennel and lemongrass",
+  "ldTime": "PT20M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Main",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "4 sea bream, each weighing 500g, scaled, cleaned and gutted (ask your fishmonger to do this)",
+    "2 sticks of lemongrass, finely sliced",
+    "3 fennel, 2 finely sliced, 1 halved lengthways",
+    "1/2 bunch of dill, roughly chopped",
+    "200g of samphire",
+    "4 star anise",
+    "3 lemons, 1 finely sliced and 2 cut in half",
+    "1 banana leaf",
+    "1 red chilli",
+    "olive oil",
+    "sea salt"
+  ],
+  "ldInstructionsRaw": [
+    "Mix together the lemongrass, fennel and dill in a bowl with a drizzle of olive oil",
+    "Cut out 4 large squares of tin foil, each piece should be roughly 4 times the size of each fish. Cut the banana leaf into 4 and a piece on top of each foil square",
+    "Place a fish into the centre of each leaf, then stuff the cavity of each fish with a star anise and some of the lemongrass and fennel mix. Top each fish with 3 lemon slices and season with salt",
+    "Tightly wrap each fish first in the banana leaf, then in the foil until fully enclosed and sealed as a thin package",
+    "Place the parcels on a medium hot barbecue and cook for 12 minutes, turning over after 6 minutes. At the same time, char the lemon halves and fennel bulb halves on the barbecue. Add the samphire to a pan of boiling water to quickly blanch, then dress with a little olive oil and the chilli slices",
+    "When the fish is cooked through (to check, press down gently on one of the parcels, it should give way easily) unwrap and discard the foil. Carefully remove the head and bones and flake the flesh onto plates (or you could leave them whole in the banana leaves if preferred). Serve with a charred lemon half, some of the fennel and samphire and a drizzle of olive oil"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

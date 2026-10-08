@@ -1,0 +1,31 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/blackberry-gin-recipe",
+  "slug": "blackberry-gin-recipe_greatbritishchefs_dc9556a6",
+  "title": "Blackberry Gin Recipe",
+  "byline": "by GIC Kitchen",
+  "fetchedAt": "2026-08-03T07:17:08.982Z",
+  "ldName": "Blackberry gin",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Drink",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "300g of blackberries",
+    "100g of sugar",
+    "500ml of gin"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the berries and place in a sterilised jar",
+    "Add the sugar and gin, close the jar and give it a shake",
+    "Store in a cool dark place for 1 week, giving the jar a shake every other day to make sure the sugar has dissolved",
+    "Strain the gin through a muslin cloth and bottle. Best consumed within 1 month"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

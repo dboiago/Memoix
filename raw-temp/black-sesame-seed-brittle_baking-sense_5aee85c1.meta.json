@@ -1,0 +1,63 @@
+{
+  "url": "https://www.baking-sense.com/2018/06/13/sesame-seed-brittle/",
+  "slug": "black-sesame-seed-brittle_baking-sense_5aee85c1",
+  "title": "Black Sesame Seed Brittle",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T21:12:09.737Z",
+  "ldName": "Black Sesame Seed Brittle",
+  "ldTime": "PT65M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "24",
+    "24 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "candy",
+  "ldIngredientsRaw": [
+    "4 oz water (½ cup)",
+    "16 oz granulated sugar (2 cups)",
+    "¼ teaspoon cream of tartar",
+    "5 ½ oz light corn syrup (1 cup)",
+    "1 oz unsalted butter",
+    "¾ cup black sesame seeds",
+    "1 teaspoon baking soda",
+    "⅛ teaspoon table salt"
+  ],
+  "ldInstructionsRaw": [
+    "Line a baking sheet with a silicone baking mat or parchment paper. You can also butter the pan if you don&#x27;t have a baking mat or parchment.",
+    "Combine 4 oz&#32;water, 16 oz&#32;granulated sugar, ¼ teaspoon&#32;cream of tartar and 5 ½ oz&#32;light corn syrup in a heavy saucepan. Stir the mixture until it begins to boil. Once the mixture starts boiling do not stir. Cook the sugar until it becomes a golden caramel color. If using a candy  or probe thermometer set the temperature to 350 °F.",
+    "Remove the pan from the heat and immediately stir in 1 oz&#32;unsalted butter, ¾ cup&#32;black sesame seeds, 1 teaspoon&#32;baking soda and ⅛ teaspoon&#32;table salt. Pour the mixture onto the prepared pan and spread it to an even layer. Set the brittle aside to cool completely and harden, about 30 minutes.",
+    "Peel the sheet of brittle off the pan and set it back down. Use a heavy meat tenderizer or other heavy tool to crack the sheet into shards.",
+    "Store in a covered container at room temperature."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "127 kcal",
+    "carbohydrateContent": "25 g",
+    "proteinContent": "1 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "3 mg",
+    "sodiumContent": "63 mg",
+    "sugarContent": "24 g",
+    "transFatContent": "0.04 g",
+    "fiberContent": "1 g",
+    "unsaturatedFatContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "4 oz water (½ cup)",
+    "16 oz granulated sugar (2 cups)",
+    "¼ teaspoon cream of tartar",
+    "5 ½ oz light corn syrup (1 cup)",
+    "1 oz unsalted butter",
+    "¾ cup black sesame seeds",
+    "1 teaspoon baking soda",
+    "⅛ teaspoon table salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,5 @@
+The foodie minds behind the menu of Heathrow's The Gorgeous Kitchen restaurant have come up with some fantastic variations on the traditional Bloody Mary [cocktail recipe](https://www.greatbritishchefs.com/collections/cocktail-recipes), to help kickstart your day, and your travels.
+
+Chefs and food writers, Sophie Michell, Jo Pratt, Caroline Artiss and Gee Charman have collectively added creative flair and innovative flavours to the [brunch](https://www.greatbritishchefs.com/collections/brunch-recipes) offering at The Gorgeous Kitchen, although still playing homage to seasonal British cuisine.
+
+Based around the the classic combination of tomato and vodka, this fruity version of a Bloody Mary is easy to knock up at home, and would work well with a decadent [French toast](https://www.greatbritishchefs.com/collections/french-toast-recipes) or pancake brunch, with berries and Greek yoghurt to cut through the spice from the chilli.

@@ -1,0 +1,7 @@
+I don’t know about you, but whenever I use puff pastry I invariably end up with leftovers. Unlike other kinds of pastry, you can’t just scrunch all the odds and ends together and re-roll it. The layers need to be kept intact; otherwise they will rise all over the place at different angles. But I hate waste, so what’s a girl to do? Well, making cheese straws is a good start.
+
+These savoury twists make the perfect nibble with drinks or as an economical treat for the family as a homemade alternative to a bag of crisps. They’re also incredibly easy, but have the bonus of making you appear to have made an effort and gone that extra mile.
+
+I’ve made these with all sorts of cheeses, from a simple unadulterated grating of mature Cheddar, to a mixture of the odds and sods leftover from a dinner party cheese board. You can also get imaginative when it comes to other flavours too. Cheese twists sing with a sprinkle of sesame or poppy seeds and I often shake over some smoked paprika or cayenne pepper for a bit of oomph. Cep powder adds a truffly note, or a dollop of Dijon adds warming heat. You can even add finely chopped ham or some finely chopped fresh herbs. I have even experimented with a smear of marmite, with excellently moreish results.
+
+You can simply re-roll, twist and egg wash before baking, but I like to fold the rolled out pastry again too, for a little extra puff. It takes a little more effort, but it’s mindless, rhythmical work that transports you to a state of reflective calm and there aren’t many cheesy snacks that can promise that.

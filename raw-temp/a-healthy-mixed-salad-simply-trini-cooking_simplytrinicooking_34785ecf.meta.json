@@ -1,0 +1,42 @@
+{
+  "url": "https://www.simplytrinicooking.com/mixed-salad/",
+  "slug": "a-healthy-mixed-salad-simply-trini-cooking_simplytrinicooking_34785ecf",
+  "title": "A Healthy Mixed Salad | Simply Trini Cooking",
+  "byline": "Author Felix (Simply Trini Cooking)",
+  "fetchedAt": "2026-09-25T23:34:55.851Z",
+  "ldName": "Mixed Salad",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": null,
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "Fusion, International",
+  "ldCategory": "Vegetarian",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1  apple (sliced)",
+    "2 to  matoes (quartered)",
+    "3  lettuce leaves (chopped)",
+    "1  carrot",
+    "1  cucumber (sliced)",
+    "1/2  large sweet pepper (chopped)",
+    "1/4 cup garlic sauce"
+  ],
+  "ldInstructionsRaw": [
+    "In a bowl add the apple, tomatoes, cucumber, carrot and sweet pepper. Then add the lettuce. Pour the garlic sauce and toss."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 apple sliced",
+    "2 to matoes quartered",
+    "3 lettuce leaves chopped",
+    "1 carrot",
+    "1 cucumber sliced",
+    "1/2 large sweet pepper chopped",
+    "1/4 cup garlic sauce"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

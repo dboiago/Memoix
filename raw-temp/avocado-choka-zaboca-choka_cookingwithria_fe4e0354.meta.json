@@ -1,0 +1,55 @@
+{
+  "url": "https://cookingwithria.com/2025/12/avocado-choka/",
+  "slug": "avocado-choka-zaboca-choka_cookingwithria_fe4e0354",
+  "title": "Avocado Choka | Zaboca Choka",
+  "byline": "CookingwithRia",
+  "fetchedAt": "2026-09-25T22:59:18.775Z",
+  "ldName": "📖 Avocado Choka / Zaboca Choka Recipe Card",
+  "ldTime": null,
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Caribbean, Trinidad, Trinidadian",
+  "ldCategory": "Breakfast, Salad, Side Dish, Snack",
+  "ldKeywords": "aloo choka, Avocado Choka, trini choka, trinidad choka, What is Choka?, Zaboca Choka",
+  "ldIngredientsRaw": [
+    "1  avocado (large, or 2 smaller Hass avocados)",
+    "1/4  onion (finely diced)",
+    "2 cloves garlic (minced)",
+    "Hot pepper (finely chopped, to taste)",
+    "Salt (to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "Slice the avocado into quarters around the seed. Remove the seed and peel off the skin.",
+    "Place the avocado in a bowl.",
+    "Add onion, garlic, hot pepper, and salt.",
+    "Mash until smooth and creamy, with no chunks remaining.",
+    "Serve immediately with sada roti, toast, or fried bake."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "85 kcal",
+    "carbohydrateContent": "5 g",
+    "proteinContent": "1 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "4 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 avocado large, or 2 smaller Hass avocados",
+    "1/4 onion finely diced",
+    "2 cloves garlic minced",
+    "Hot pepper finely chopped, to taste",
+    "Salt to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

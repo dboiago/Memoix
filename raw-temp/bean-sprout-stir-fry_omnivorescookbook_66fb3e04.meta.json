@@ -1,0 +1,66 @@
+{
+  "url": "https://omnivorescookbook.com/bean-sprout-stir-fry/",
+  "slug": "bean-sprout-stir-fry_omnivorescookbook_66fb3e04",
+  "title": "Bean Sprout Stir Fry",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T07:41:24.973Z",
+  "ldName": "Bean Sprout Stir Fry",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "home style",
+  "ldIngredientsRaw": [
+    "1 lb bean sprouts",
+    "2 tablespoons peanut oil",
+    "4 cloves garlic (, finely chopped)",
+    "2  green onions (, sliced)",
+    "1/2 teaspoon salt",
+    "1 teaspoon brown sugar ((or sugar))",
+    "1/4 teaspoon white pepper",
+    "2 teaspoons soy sauce",
+    "1/2 teaspoon dark soy sauce ((Optional))",
+    "1 teaspoon toasted sesame oil"
+  ],
+  "ldInstructionsRaw": [
+    "Clean the bean sprouts of their stringy roots and any residual beans. Rinse with cold water thoroughly and squeeze out any excess water, then set them aside to let them dry. If the bean sprouts are still very wet at the time you’re about to cook, gently pat them dry with paper towels.",
+    "Combine all the sauce ingredients in a bowl and set it aside.",
+    "Heat the oil over medium-high heat until hot. Add the garlic. Fry until the garlic begins to brown.",
+    "Add the green onions. Stir a few times to release the fragrance.",
+    "Add the bean sprouts and bring the heat up to high. Cook, tossing occasionally, for 1 minute.",
+    "Add the sauce and continue to cook until the bean sprouts are cooked through but still crunchy, another 2-3 minutes. Taste the bean sprouts and adjust taste by sprinkle more salt, if needed.",
+    "Transfer everything to a big plate. Serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "114 kcal",
+    "carbohydrateContent": "7.2 g",
+    "proteinContent": "5.3 g",
+    "fatContent": "8.5 g",
+    "saturatedFatContent": "1.4 g",
+    "sodiumContent": "740 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "1 g"
+  },
+  "htmlIngredientLines": [
+    "1 lb bean sprouts",
+    "2 tablespoons peanut oil",
+    "4 cloves garlic , finely chopped",
+    "2 green onions , sliced",
+    "[Sauce]",
+    "1/2 teaspoon salt",
+    "1 teaspoon brown sugar (or sugar)",
+    "1/4 teaspoon white pepper",
+    "2 teaspoons soy sauce",
+    "1/2 teaspoon dark soy sauce (Optional)",
+    "1 teaspoon toasted sesame oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

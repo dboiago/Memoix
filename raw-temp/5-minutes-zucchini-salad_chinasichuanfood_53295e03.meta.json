@@ -1,0 +1,59 @@
+{
+  "url": "https://www.chinasichuanfood.com/5-minutes-zucchini-salad/",
+  "slug": "5-minutes-zucchini-salad_chinasichuanfood_53295e03",
+  "title": "5 Minutes Zucchini Salad",
+  "byline": "",
+  "fetchedAt": "2026-08-02T02:57:20.594Z",
+  "ldName": "5 Minutes Zucchini Salad",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Salad",
+  "ldKeywords": "Zucchini",
+  "ldIngredientsRaw": [
+    "3  zucchinis ( , cut into strips)",
+    "2  green onions ( , chopped)",
+    "1 clove garlic ( , minced)",
+    "1 tbsp. light soy sauce",
+    "1 tbsp. oyster sauce",
+    "1 tbsp. black vinegar",
+    "1 tbsp. sesame oil",
+    "1/8 tsp. sugar",
+    "salt to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Bring enough water to a boiling in a large pot and then blanch the strips for 2-3 minutes until well softened. Transfer out and place in a serving plate.",
+    "Mix all the seasonings and drizzle over the zucchini.",
+    "Heat up oil in a pan and fry garlic until aroma. Then pour the garlic oil over the salad, decorate with scallion and chopped red pepper circles and serve immediately."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "94 kcal",
+    "carbohydrateContent": "5 g",
+    "proteinContent": "2 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "622 mg",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "3 zucchinis  , cut into strips",
+    "2 green onions  , chopped",
+    "1 clove garlic  , minced",
+    "[Sauce]",
+    "1 tbsp. light soy sauce",
+    "1 tbsp. oyster sauce",
+    "1 tbsp. black vinegar",
+    "1 tbsp. sesame oil",
+    "1/8 tsp. sugar",
+    "salt to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

@@ -1,0 +1,64 @@
+{
+  "url": "https://www.chinasichuanfood.com/beef-balls/",
+  "slug": "beef-balls_chinasichuanfood_0964d14d",
+  "title": "Beef Balls",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:07:00.342Z",
+  "ldName": "Beef Balls",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "20"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "600 g minced beef",
+    "1  small pinch of salt",
+    "1/4 tsp. baking soda",
+    "1.5 tbsp. sha cha sauce",
+    "1.5 tbsp. fried garlic",
+    "2 tbsp. fish sauce",
+    "dash  of white pepper",
+    "2 tbsp. starch ( , recommend tapioca starch)",
+    "1/2  cup chilled water with ice cubes (, plus 20ml more for adjusting. )"
+  ],
+  "ldInstructionsRaw": [
+    "Preparation: Chill the blender and beef firstly. Prepare the ice cubes and chilled water.",
+    "Blending process: Place minced beef in blender, place sha cha sauce, fried garlic, salt, baking soda, pepper, fish sauce. Blend for 15 seconds with pauses.",
+    "Then add  tapioca starch and 1/2 of the iced water. Continue blending for another 10 seconds. When the water is well absorbed, add the remaining half.",
+    "Continue blending for around 1 minutes until the mixture becomes fluffy in texture and light (turns into pink ) in color. Once it reaches the texture, stop immediately. Over blending will higher the temperature and further spoil the balls.",
+    "Shape the balls: prepare a large pot with enough warm water and a small cup of clear water for wetting the scoop. Grasp beef paste on left hand and hold a scoop with the right hand. Shape the paste to a ball with the help of left index finger and thumb. Dip the scoop into clean water and use scoop to transfer the fish ball to the warm water. Watch out and don’t let the water boils. Heat with slowest fire to keep the temperature.",
+    "Cook them well: When all the fish balls are done, turn up the fire to middle and cook the balls for 7-8 minutes. It can be served directly or packaged after cooled for later soups or hot pot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "82 kcal",
+    "carbohydrateContent": "1 g",
+    "proteinContent": "5 g",
+    "fatContent": "6 g",
+    "saturatedFatContent": "2 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "21 mg",
+    "sodiumContent": "154 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "600 g minced beef",
+    "1 small pinch of salt",
+    "1/4 tsp. baking soda",
+    "1.5 tbsp. sha cha sauce",
+    "1.5 tbsp. fried garlic",
+    "2 tbsp. fish sauce",
+    "dash of white pepper",
+    "2 tbsp. starch  , recommend tapioca starch",
+    "1/2 cup chilled water with ice cubes , plus 20ml more for adjusting."
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

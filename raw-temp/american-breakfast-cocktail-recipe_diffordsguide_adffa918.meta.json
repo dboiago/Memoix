@@ -1,0 +1,41 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/2245/american-breakfast",
+  "slug": "american-breakfast-cocktail-recipe_diffordsguide_adffa918",
+  "title": "American Breakfast Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T04:28:46.945Z",
+  "ldName": "American Breakfast",
+  "ldTime": "PT04M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Citrusy",
+    "Sours (citrus)"
+  ],
+  "ldIngredientsRaw": [
+    "60 ml Bourbon whiskey",
+    "15 ml Pink grapefruit juice",
+    "15 ml Maple syrup"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill an OLD-FASHIONED GLASS.",
+    "Prepare garnish of grapefruit zest twist.",
+    "SHAKE all ingredients with ice.",
+    "STRAIN into ice-filled glass.",
+    "EXPRESS grapefruit zest twist over cocktail and use as garnish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "213 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

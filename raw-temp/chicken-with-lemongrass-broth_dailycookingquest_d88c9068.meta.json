@@ -1,0 +1,56 @@
+{
+  "url": "https://dailycookingquest.com/chicken-with-lemongrass-broth.html",
+  "slug": "chicken-with-lemongrass-broth_dailycookingquest_d88c9068",
+  "title": "Chicken with Lemongrass Broth",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:19:58.030Z",
+  "ldName": "Chicken with Lemongrass Broth",
+  "ldTime": "PT1H0M",
+  "ldPrepTime": "PT0H30M",
+  "ldCookTime": "PT0H30M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "2 tablespoon cooking oil",
+    "3 cloves garlic, minced",
+    "1 onion, minced",
+    "1 scallion (white part only), thinly sliced",
+    "8 lemongrass, bruised and knotted",
+    "1 chicken, cut into 8 pieces",
+    "1 1/2 teaspoon salt",
+    "1/2 teaspoon ground pepper",
+    "1 liter water",
+    "200 gram oyster mushroom (Indonesian: jamur tiram), slice/tear into thin strips",
+    "3 tomatoes, quartered and cut into small pieces"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the cooking oil in a soup pot on high heat. Fry garlic, onion, scallion, and lemongrass until fragrant, about 3 minutes.",
+    "Add chicken, season with salt and pepper and cook until no longer pink.",
+    "Pour water and bring to a boil. Cover with a lid, reduce heat, and simmer for 15 minutes until chicken is fully cooked and tender.",
+    "Add mushroom and tomatoes and bring to a boil.",
+    "Turn off heat and serve immediately with steamed white rice."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 tablespoon cooking oil",
+    "3 cloves garlic, minced",
+    "1 onion, minced",
+    "1 scallion (white part only), thinly sliced",
+    "8 lemongrass, bruised and knotted",
+    "1 chicken, cut into 8 pieces",
+    "1 1/2 teaspoon salt",
+    "1/2 teaspoon ground pepper",
+    "1 liter water",
+    "200 gram oyster mushroom (Indonesian: jamur tiram), slice/tear into thin strips",
+    "3 tomatoes, quartered and cut into small pieces"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

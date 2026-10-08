@@ -1,0 +1,62 @@
+{
+  "url": "https://muybuenoblog.com/camarones-al-mojo-de-ajo/",
+  "slug": "camarones-al-mojo-de-ajo-mexican-style-garlic-shri_muybuenoblog_441e02cd",
+  "title": "Camarones al Mojo de Ajo (Mexican-Style Garlic Shrimp)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T07:04:54.638Z",
+  "ldName": "Camarones al Mojo de Ajo Recipe",
+  "ldTime": "PT28M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT13M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Dinner",
+  "ldKeywords": "camarones al mojo de ajo, garlic shrimp recipe, Mexican shrimp recipe",
+  "ldIngredientsRaw": [
+    "1 tablespoon smoked paprika",
+    "2 teaspoons  salt",
+    "2 pounds large shrimp (defrosted, peeled, and deveined)",
+    "1/2 cup Land O Lakes® Butter with Olive Oil &amp; Sea Salt",
+    "1  small red onion (sliced)",
+    "6  cloves garlic (minced)",
+    "1  lime (juiced)",
+    "1/2 cup chopped fresh parsley (flat-leaf or Italian)"
+  ],
+  "ldInstructionsRaw": [
+    "In a small bowl combine paprika and salt.",
+    "Season the shrimp with spice mixture.",
+    "Add the Land O Lakes® Butter with Olive Oil &amp; Sea Salt to a frying pan over medium heat until it begins to melt.",
+    "Add the onion and garlic and sauté for about 5 minutes.",
+    "Add the shrimp and cook for 6 to 8 minutes or until they are completely cooked through.",
+    "Add the lime juice and parsley.",
+    "Enjoy with white rice, angel hair pasta, or tortillas."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "229 kcal",
+    "carbohydrateContent": "3 g",
+    "proteinContent": "24 g",
+    "fatContent": "13 g",
+    "saturatedFatContent": "8 g",
+    "cholesterolContent": "316 mg",
+    "sodiumContent": "1567 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 tablespoon smoked paprika",
+    "▢ 2 teaspoons  salt",
+    "▢ 2 pounds large shrimp, defrosted, peeled, and deveined",
+    "▢ 1/2 cup Land O Lakes® Butter with Olive Oil & Sea Salt",
+    "▢ 1 small red onion, sliced",
+    "▢ 6 cloves garlic, minced",
+    "▢ 1 lime, juiced",
+    "▢ 1/2 cup chopped fresh parsley (flat-leaf or Italian)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

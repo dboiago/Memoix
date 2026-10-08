@@ -1,0 +1,55 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-style-green-vegetables/",
+  "slug": "an-easy-chinese-greens-recipe_omnivorescookbook_50dbef9c",
+  "title": "An Easy Chinese Greens Recipe",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T04:55:37.455Z",
+  "ldName": "An Easy Chinese Greens Recipe",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "Pinch of salt and vegetable oil (, to blanch greens (Optional))",
+    "10 oz Chinese greens or other vegetables (yu choy, baby bok choy, choy sum, spinach, Chinese broccoli, broccoli, and more)",
+    "2 tablespoons peanut oil (or vegetable oil)",
+    "4 cloves garlic (, coarsely chopped)",
+    "1 tablespoon light soy sauce (or soy sauce)"
+  ],
+  "ldInstructionsRaw": [
+    "Bring a medium pot of water to a boil. Add a pinch of salt and several drops of vegetable oil so that the blanched vegetables will look greener (optional), stir to mix well.",
+    "Add the vegetables. Blanch until just cooked through and still crisp. It takes 1 minute or so to cook tender vegetables such as spinach, baby bok choy, yu choy, chard, and choy sum. It takes 2 to 3 minutes for Chinese broccoli, broccoli, and broccolini.",
+    "Once the vegetables are done, immediately rinse them with cold tap water to stop cooking. Stop once the vegetables have cooled to a warm temperature and not completely cold. Drain, gently squeezing out as much water as you can, then set aside in a strainer to dry further. If you plan to serve them immediately, you can use paper towels to pat the vegetables dry.",
+    "When you’re ready to serve, plate the blanched vegetables with minimal overlapping. (*Footnote 2)",
+    "Heat the oil in a small saucepan or skillet over medium-high heat until hot. Add the garlic, stirring constantly until the edges of the garlic turns golden (*Footnote 3). Then immediately pour the hot oil with the garlic over the plated vegetables.",
+    "Drizzle soy sauce on top of vegetables and serve immediately as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "76 kcal",
+    "carbohydrateContent": "2.9 g",
+    "proteinContent": "1.6 g",
+    "fatContent": "6.9 g",
+    "saturatedFatContent": "1.2 g",
+    "sodiumContent": "275 mg",
+    "fiberContent": "0.8 g",
+    "sugarContent": "1 g"
+  },
+  "htmlIngredientLines": [
+    "Pinch of salt and vegetable oil , to blanch greens (Optional)",
+    "10 oz Chinese greens or other vegetables (yu choy, baby bok choy, choy sum, spinach, Chinese broccoli, broccoli, and more) , tough ends removed and cut to bite-size pieces if needed (*Footnote 1)",
+    "2 tablespoons peanut oil (or vegetable oil)",
+    "4 cloves garlic , coarsely chopped",
+    "1 tablespoon light soy sauce (or soy sauce)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

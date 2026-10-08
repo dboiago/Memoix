@@ -1,0 +1,40 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/19256/andalusian-buck",
+  "slug": "andalusian-buck-cocktail-recipe_diffordsguide_7f29aadd",
+  "title": "Andalusian Buck Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T18:51:29.215Z",
+  "ldName": "Andalusian Buck",
+  "ldTime": "PT04M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Long drinks and highballs",
+    "Spicy (e.g. Spicy Fifty)"
+  ],
+  "ldIngredientsRaw": [
+    "30 ml Gin",
+    "30 ml Amontillado sherry",
+    "15 ml Lime juice",
+    "5 ml Brown sugar syrup",
+    "60 ml Ginger beer"
+  ],
+  "ldInstructionsRaw": [
+    "SHAKE first 4 ingredients with ice",
+    "Open shaker and slowly pour ginger beer over other ingredients in shaker, then strain into ice-filled glass."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "151 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}
