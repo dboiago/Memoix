@@ -1508,6 +1508,7 @@ final _measurementNormalisation = {
 // quarts water" parsed the same way as "Quarts Water". Both are fixed by
 // this constant alone, in one place, applied identically everywhere.
 const _ingredientUnitAlternation =
+    'kilograms?|milligrams?|grams?|gms?|milliliters?|millilitres?|'
     'teaspoons?|tablespoons?|cups?|c|Tbsp|tbsp|tsp|oz|lbs?|kg|g|ml|L|liters?|litres?|'
     'pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|'
     'stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|'

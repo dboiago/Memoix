@@ -865,9 +865,27 @@ function hasEmbeddedAmountOutsideParens(name) {
 // syntax (paired */** /__ markers) and the specific invisible-character
 // class, never a bare "*" or "_" used for anything else, since neither
 // otherwise appears in cooking text.
+// Confirmed leaking into shipped directions: &#39; &quot; &nbsp; &#32; &#215; &#8243;.
+const NAMED_HTML_ENTITIES = {
+  amp: '&', quot: '"', apos: "'", lt: '<', gt: '>', nbsp: ' ',
+  ndash: '\u2013', mdash: '\u2014', lsquo: '\u2018', rsquo: '\u2019',
+  ldquo: '\u201C', rdquo: '\u201D', deg: '\u00B0', times: '\u00D7',
+  frac12: '\u00BD', frac14: '\u00BC', frac34: '\u00BE',
+};
+function decodeHtmlEntities(text) {
+  return text.replace(/&(?:#(\d+)|#x([0-9a-f]+)|([a-z][a-z0-9]*));/gi, (match, dec, hex, name) => {
+    if (dec || hex) {
+      const cp = dec ? parseInt(dec, 10) : parseInt(hex, 16);
+      if (cp === 160) return ' ';
+      try { return String.fromCodePoint(cp); } catch { return match; }
+    }
+    return NAMED_HTML_ENTITIES[name.toLowerCase()] ?? match;
+  });
+}
+
 function sanitizeText(text) {
   if (!text) return text;
-  return text
+  return decodeHtmlEntities(text)
     .replace(INVISIBLE_CHAR_PATTERN, '')
     .replace(/\*\*\*(.+?)\*\*\*/g, '$1')
     .replace(/\*\*(.+?)\*\*/g, '$1')
@@ -1576,6 +1594,27 @@ function dedupeIfFullyRepeated(lines) {
   return isFullRepeat ? firstHalf : lines;
 }
 
+// Confirmed on dailycookingquest ("Grind the following into spice paste") and
+// thestaffcanteen ("For the cake:"): plain header lines were shipped as
+// amount-less ingredients instead of section labels.
+const SECTION_HEADER_LINE_PATTERN = /^(?:for the [^:]+|.*\bthe following\b.*)$/i;
+function promoteSectionHeaderLines(lines) {
+  const result = [];
+  let currentSection = null;
+  for (const line of lines) {
+    const text = line.text.trim().replace(/:$/, '').trim();
+    if (text && !/\d/.test(text) && SECTION_HEADER_LINE_PATTERN.test(text)) {
+      currentSection = text
+        .replace(/\s*\([^)]*the following[^)]*\)/i, '')
+        .replace(/^for the\s+/i, '')
+        .trim();
+      continue;
+    }
+    result.push(currentSection && !line.section ? { ...line, section: currentSection } : line);
+  }
+  return result;
+}
+
 // Parses the "[Section Name]" bracket convention from site_configs.js output
 // (matches url_importer.dart's own line convention) into section-tagged lines.
 function expandSectionedLines(lines) {
@@ -2199,6 +2238,8 @@ async function warmupOllama() {
   }
 }
 
+const LD_CATEGORY_UNTRUSTED_HOSTS = new Set(['imbibemagazine.com']);
+
 async function main() {
   const args     = process.argv.slice(2);
   const limitIdx = args.indexOf('--limit');
@@ -2285,6 +2326,17 @@ async function main() {
     const meta     = JSON.parse(readFileSync(metaPath, 'utf8'));
     meta.htmlIngredientLines = dedupeIfFullyRepeated(meta.htmlIngredientLines);
     meta.ldIngredientsRaw    = dedupeIfFullyRepeated(meta.ldIngredientsRaw);
+
+    // Meta files fetched before the 02_fetch.js fix hold "[object Object]" lines (all of imbibemagazine).
+    if (Array.isArray(meta.ldIngredientsRaw) && meta.ldIngredientsRaw.some(l => /\[object Object\]/.test(l))) {
+      meta.ldIngredientsRaw = null;
+    }
+    // imbibemagazine stamps every recipe, cocktail or soup, with recipeCategory "Dessert".
+    try {
+      if (LD_CATEGORY_UNTRUSTED_HOSTS.has(new URL(meta.url).hostname.replace(/^www\./, ''))) {
+        meta.ldCategory = null;
+      }
+    } catch { /* malformed url, leave meta as-is */ }
 
     console.log(`Extracting [${processed + 1}]: ${meta.url}`);
 
@@ -2663,7 +2715,7 @@ async function main() {
             ? meta.ldIngredientsRaw.map(text => ({ section: null, text }))
             : null);
       const detSectioned = detSectionedRaw
-        ? detSectionedRaw.map(l => ({ ...l, text: stripIngredientLineNoise(l.text) }))
+        ? promoteSectionHeaderLines(detSectionedRaw.map(l => ({ ...l, text: stripIngredientLineNoise(l.text) })))
         : null;
 
       if (detSectioned && detSectioned.length > 0) {
@@ -2742,8 +2794,12 @@ async function main() {
         const modelLines = extracted.ingredients.map(item => {
           const amount = (item?.amount ?? '').trim();
           const unit   = (item?.unit   ?? '').trim();
-          const name   = (item?.name   ?? '').trim();
+          let   name   = (item?.name   ?? '').trim();
           const notes  = (item?.notes  ?? '').trim();
+          // Model sometimes repeats the unit in the name ("Bottle Bottle Leftover Wine", "Pound Butter").
+          if (unit && name.toLowerCase().startsWith(`${unit.toLowerCase()} `)) {
+            name = name.slice(unit.length).trim();
+          }
           let line = [amount, unit, name].filter(Boolean).join(' ').trim();
           if (notes) line = line ? `${line}, ${notes}` : notes;
           return { text: line, section: item?.section || null };
@@ -3210,6 +3266,14 @@ async function main() {
           // other) -- a modifier tied with the base spirit, or a tie
           // unrelated to spirit classification. Not worth a human's time.
         }
+      }
+
+      // Checked on the final payload, not the model output: confirmed 400+ imbibemagazine recipes
+      // shipped clean with ingredients: [] because only the both-empty case was rejected earlier.
+      if (payload.recipe.ingredients.length === 0) {
+        logForReview(slug, meta.url, 'no-ingredients-found',
+          '(whole recipe)', 'Directions present but the final ingredient list is empty.');
+        flaggedForReview = true;
       }
 
       // course and cuisine are the two fields the app's search/discovery

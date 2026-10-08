@@ -245,7 +245,10 @@ function extractRawIngredients(value) {
   if (value == null) return [];
   if (typeof value === 'string') return [value.trim()].filter(Boolean);
   if (Array.isArray(value)) {
-    return value.map(item => String(item).trim()).filter(Boolean);
+    // Imbibe's recipeIngredient items are objects; String(item) gave "[object Object]".
+    return value
+      .map(item => (item && typeof item === 'object' ? (item.name || item.text || '') : String(item)).trim())
+      .filter(Boolean);
   }
   return [];
 }
