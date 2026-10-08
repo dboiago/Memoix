@@ -227,6 +227,59 @@ export function normalizeUnit(unit) {
 }
 
 // ---------------------------------------------------------------------------
+// repairLeakedUnit -- corpus-pipeline-only post-parse repair
+// ---------------------------------------------------------------------------
+
+// Confirmed leaks: "G Baby Capers" / "Oz Skirt Steak" / "Pound Butter" (unit also
+// set), "Tbsp Jam" (unit "large" from "1 large tbsp"), "Gram Shallot" (unit unset).
+// Bare "c"/"t"/"l" are excluded: too likely to be the start of a real name.
+const LEAKABLE_UNIT_WORDS = new Set([
+  'g', 'gm', 'gms', 'gram', 'grams', 'kg', 'kgs', 'kilogram', 'kilograms', 'mg', 'milligram', 'milligrams',
+  'ml', 'mls', 'milliliter', 'milliliters', 'millilitre', 'millilitres', 'liter', 'liters', 'litre', 'litres',
+  'oz', 'ounce', 'ounces', 'lb', 'lbs', 'pound', 'pounds',
+  'cup', 'cups', 'tbsp', 'tablespoon', 'tablespoons', 'tsp', 'teaspoon', 'teaspoons',
+  'pint', 'pints', 'quart', 'quarts', 'gallon', 'gallons',
+]);
+const SIZE_UNIT_WORDS = new Set(['large', 'medium', 'small']);
+const NUMERIC_AMOUNT_PATTERN = /[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]/;
+
+export function repairLeakedUnit(ingredient) {
+  if (!ingredient || typeof ingredient !== 'object' || typeof ingredient.name !== 'string') return ingredient;
+  const out = { ...ingredient };
+
+  // "Bottle Bottle Leftover Wine": the same word repeated back to back.
+  out.name = out.name.trim().replace(/^([A-Za-z]+)\s+\1\b/i, '$1');
+
+  const match = out.name.match(/^([A-Za-z]+)\.?\s+(\S.*)$/);
+  if (!match || !LEAKABLE_UNIT_WORDS.has(match[1].toLowerCase())) return out;
+  // Real names that begin with a unit word (gram flour is chickpea flour).
+  if (/^(?:gram|pound)$/i.test(match[1]) && /^(?:flour|masala|dal|dhal|crackers?|cake)\b/i.test(match[2])) return out;
+
+  const leaked = normalizeUnit(match[1]);
+  const unit = (out.unit ?? '').trim();
+  const hasAmount = typeof out.amount === 'string' && NUMERIC_AMOUNT_PATTERN.test(out.amount);
+
+  if (unit && normalizeUnit(unit) === leaked) {
+    out.name = match[2];
+  } else if (!unit && hasAmount) {
+    out.unit = leaked;
+    out.name = match[2];
+  } else if (SIZE_UNIT_WORDS.has(unit.toLowerCase()) && hasAmount) {
+    out.notes = [out.notes, unit].filter(Boolean).join(', ');
+    out.unit = leaked;
+    out.name = match[2];
+  }
+  return out;
+}
+
+// Pages that are articles or product pages, not recipes (each confirmed in extracted/).
+export const NON_RECIPE_URL_PATTERNS = [
+  /^https?:\/\/(?:www\.)?lyres\.com\/.*\/products\//i,
+  /^https?:\/\/(?:www\.)?amazingribs\.com\/(?:barbecue-history-and-culture|bbq-and-grilling-competitions)\//i,
+  /^https?:\/\/(?:www\.)?imbibemagazine\.com\/[^/]*where-to-drink-now/i,
+];
+
+// ---------------------------------------------------------------------------
 // normalizeGarnish (top-level function in text_normalizer.dart)
 // ---------------------------------------------------------------------------
 

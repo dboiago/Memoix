@@ -32,7 +32,7 @@
 import { readdirSync, readFileSync, writeFileSync, existsSync, mkdirSync, appendFileSync } from 'fs';
 import { createHash } from 'crypto';
 import { spawn } from 'child_process';
-import { cleanName, normalizeFractions, normalizeUnit, normalizeGarnish, normalizeGlass, COMPOUND_DETECTION_UNIT_WORDS } from './normalizers.js';
+import { cleanName, normalizeFractions, normalizeUnit, normalizeGarnish, normalizeGlass, repairLeakedUnit, NON_RECIPE_URL_PATTERNS, COMPOUND_DETECTION_UNIT_WORDS } from './normalizers.js';
 
 // let, not const: --raw-dir/--out-dir/--model can override these in main()
 // before anything else runs, for A/B testing against a fixed input set
@@ -1422,7 +1422,7 @@ function buildPayload(extracted, meta) {
   }
 
   const normalizedIngredients = ingredients.map(i =>
-    typeof i === 'string' ? parseIngredientString(i) : i
+    repairLeakedUnit(typeof i === 'string' ? parseIngredientString(i) : i)
   );
 
   // Region/subcategory: only ever set from a deterministic, page-provided
@@ -2337,6 +2337,13 @@ async function main() {
         meta.ldCategory = null;
       }
     } catch { /* malformed url, leave meta as-is */ }
+
+    if (NON_RECIPE_URL_PATTERNS.some(p => p.test(meta.url || ''))) {
+      logError(slug, 'non-recipe-page', 'Article or product page, not a recipe');
+      markUnrecoverable(slug, 'non-recipe-page', 'Article or product page, not a recipe', meta.url);
+      failed++;
+      continue;
+    }
 
     console.log(`Extracting [${processed + 1}]: ${meta.url}`);
 
