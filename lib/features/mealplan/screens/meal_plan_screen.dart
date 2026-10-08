@@ -646,7 +646,7 @@ class _DayCardState extends ConsumerState<DayCard> {
               Text(
                 '\u2022',
                 style: TextStyle(
-                  color: MemoixColors.forContinentDot(meal.cuisine),
+                  color: MemoixColours.forContinentDot(meal.cuisine),
                   fontSize: 14,
                 ),
               ),

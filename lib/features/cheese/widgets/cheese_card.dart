@@ -116,7 +116,7 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
             '\u2022',
             style: TextStyle(
               color: hasCountry 
-                  ? MemoixColors.forContinentDot(widget.entry.country)
+                  ? MemoixColours.forContinentDot(widget.entry.country)
                   : theme.colorScheme.onSurfaceVariant,
               fontSize: 16,
             ),

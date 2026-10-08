@@ -60,7 +60,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.edit,
               title: 'Create Manually',
               description: 'Write a new recipe from scratch',
-              color: MemoixColors.importManual,
+              color: MemoixColours.importManual,
               onTap: () => _createManually(context),
             ),
 
@@ -71,7 +71,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.camera_alt,
               title: 'Scan from Photo',
               description: 'Take a photo of a recipe book or handwritten notes',
-              color: MemoixColors.importCamera,
+              color: MemoixColours.importCamera,
               onTap: () => _scanFromCamera(context),
             ),
 
@@ -82,7 +82,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.collections,
               title: 'Scan Multi-Page Recipe',
               description: 'Take photos of multiple recipe pages (ingredients, directions, etc.)',
-              color: MemoixColors.importMultiPage,
+              color: MemoixColours.importMultiPage,
               onTap: () => _scanMultipleImages(context),
             ),
 
@@ -93,7 +93,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.photo_library,
               title: 'Import from Gallery',
               description: 'Choose an existing photo to scan',
-              color: MemoixColors.importGallery,
+              color: MemoixColours.importGallery,
               onTap: () => _scanFromGallery(context),
             ),
 
@@ -105,7 +105,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
                 icon: Icons.smart_toy_outlined,
                 title: 'AI Import',
                 description: 'Use AI to extract recipes from photos, URLs, or text',
-                color: MemoixColors.importAi,
+                color: MemoixColours.importAi,
                 onTap: () => _importWithAi(context),
               ),
 

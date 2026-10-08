@@ -163,7 +163,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
               Text(
                 '\u2022',
                 style: TextStyle(
-                  color: MemoixColors.forSmokedItemDot(widget.recipe.category),
+                  color: MemoixColours.forSmokedItemDot(widget.recipe.category),
                   fontSize: 16,
                 ),
               ),
@@ -255,7 +255,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
               Text(
                 '\u2022',
                 style: TextStyle(
-                  color: MemoixColors.forSmokedItemDot(widget.recipe.category),
+                  color: MemoixColours.forSmokedItemDot(widget.recipe.category),
                   fontSize: 16,
                 ),
               ),

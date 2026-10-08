@@ -156,7 +156,7 @@ class _ClassicsCardState extends State<_ClassicsCard> {
                           Text(
                             '\u2022',
                             style: TextStyle(
-                              color: MemoixColors.forContinentDot(
+                              color: MemoixColours.forContinentDot(
                                   widget.cuisine,),
                               fontSize: 16,
                             ),

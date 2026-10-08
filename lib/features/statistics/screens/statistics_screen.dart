@@ -410,23 +410,23 @@ class _CookMap extends StatelessWidget {
     switch (course) {
       case 'drinks':
         if (cuisine == null || cuisine.trim().isEmpty) return null;
-        return MemoixColors.forSpiritDot(cuisine);
+        return MemoixColours.forSpiritDot(cuisine);
       case 'modernist':
         if (cuisine == null) return null;
-        return MemoixColors.forModernistType(cuisine);
+        return MemoixColours.forModernistType(cuisine);
       case 'sandwiches':
         if (cuisine == null) return null;
-        if (cuisine == 'cheese') return MemoixColors.cheese;
-        return MemoixColors.forProteinDot(cuisine);
+        if (cuisine == 'cheese') return MemoixColours.cheese;
+        return MemoixColours.forProteinDot(cuisine);
       case 'pizzas':
         if (cuisine == null || cuisine.trim().isEmpty) return null;
-        return MemoixColors.forPizzaBaseDot(cuisine);
+        return MemoixColours.forPizzaBaseDot(cuisine);
       case 'smoking':
         if (cuisine == null) return null;
-        return MemoixColors.forSmokedItemDot(cuisine);
+        return MemoixColours.forSmokedItemDot(cuisine);
       default:
         if (cuisine == null || cuisine.trim().isEmpty) return null;
-        return MemoixColors.forContinentDot(cuisine);
+        return MemoixColours.forContinentDot(cuisine);
     }
   }
 

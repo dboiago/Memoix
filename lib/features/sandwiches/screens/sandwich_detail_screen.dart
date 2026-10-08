@@ -321,18 +321,18 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
       // Vegetarian - show "Cheese"
       if (cheeses.isNotEmpty) {
         label = 'Cheese';
-        dotColor = MemoixColors.cheese;
+        dotColor = MemoixColours.cheese;
       } else {
         return const SizedBox.shrink();
       }
     } else if (proteins.length == 1) {
       // Single protein - show it with protein-specific color
       label = proteins.first;
-      dotColor = MemoixColors.forProteinDot(proteins.first);
+      dotColor = MemoixColours.forProteinDot(proteins.first);
     } else {
       // Multiple proteins - show "Assorted" with first protein's color
       label = 'Assorted';
-      dotColor = MemoixColors.forProteinDot(proteins.first);
+      dotColor = MemoixColours.forProteinDot(proteins.first);
     }
     
     return Row(

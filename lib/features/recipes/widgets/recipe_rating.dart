@@ -41,7 +41,7 @@ class RecipeRating extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 2),
               child: Icon(
                 isFilled ? Icons.star : Icons.star_border,
-                color: isFilled ? MemoixColors.rating : theme.colorScheme.outline,
+                color: isFilled ? MemoixColours.rating : theme.colorScheme.outline,
                 size: size,
               ),
             ),
@@ -81,7 +81,7 @@ class RecipeRatingCompact extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         if (rating > 0) ...[
-          const Icon(Icons.star, color: MemoixColors.rating, size: 16),
+          const Icon(Icons.star, color: MemoixColours.rating, size: 16),
           const SizedBox(width: 2),
           Text(
             rating.toString(),

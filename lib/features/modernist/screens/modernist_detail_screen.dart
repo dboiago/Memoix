@@ -236,8 +236,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     final metadataItems = <InlineSpan>[];
     
     // Always show type with colored indicator (Concept or Technique)
-    // Use MemoixColors.forModernistType to match list view
-    final typeColor = MemoixColors.forModernistType(recipe.type.name);
+    // Use MemoixColours.forModernistType to match list view
+    final typeColor = MemoixColours.forModernistType(recipe.type.name);
     metadataItems.add(WidgetSpan(
       alignment: PlaceholderAlignment.middle,
       child: Container(

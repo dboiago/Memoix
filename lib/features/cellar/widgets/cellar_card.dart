@@ -116,7 +116,7 @@ class _CellarCardState extends ConsumerState<CellarCard> {
           Text(
             '\u2022',
             style: TextStyle(
-              color: MemoixColors.forSpiritDot(widget.entry.category),
+              color: MemoixColours.forSpiritDot(widget.entry.category),
               fontSize: 16,
             ),
           ),

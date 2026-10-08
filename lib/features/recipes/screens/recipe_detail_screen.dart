@@ -486,7 +486,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     if (isDrink) {
       // For drinks: show spirit dot + "Spirit (Cuisine)" like list view
       if (recipe.subcategory != null && recipe.subcategory!.isNotEmpty) {
-        final spiritColor = MemoixColors.forSpiritDot(recipe.subcategory);
+        final spiritColor = MemoixColours.forSpiritDot(recipe.subcategory);
         preItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Container(
@@ -503,7 +503,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           preItems.add(TextSpan(text: spirit));
         }
       } else if (recipe.cuisine != null) {
-        final cuisineColor = MemoixColors.forContinentDot(recipe.cuisine);
+        final cuisineColor = MemoixColours.forContinentDot(recipe.cuisine);
         preItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Container(
@@ -519,7 +519,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       final cuisineDisplay =
           Cuisine.displayFor(recipe.cuisine, recipe.subcategory);
       if (cuisineDisplay != null) {
-        final cuisineColor = MemoixColors.forContinentDot(cuisineDisplay.colourKey);
+        final cuisineColor = MemoixColours.forContinentDot(cuisineDisplay.colourKey);
         preItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Container(

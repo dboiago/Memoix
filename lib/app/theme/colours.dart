@@ -5,8 +5,8 @@ import '../../features/recipes/models/spirit.dart';
 
 /// Colour palette for Memoix app
 /// Based on spreadsheet colour-coding system for recipe categories
-class MemoixColors {
-  MemoixColors._();
+class MemoixColours {
+  MemoixColours._();
 
   // Primary brand colours
   static const Color primary = Color(0xFFE67C23); // Warm orange (like your header)

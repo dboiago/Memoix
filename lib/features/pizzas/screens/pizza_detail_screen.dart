@@ -201,7 +201,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           height: 8,
           margin: const EdgeInsets.only(right: 4),
           decoration: BoxDecoration(
-            color: MemoixColors.forPizzaBaseDot(pizza.base),
+            color: MemoixColours.forPizzaBaseDot(pizza.base),
             shape: BoxShape.circle,
           ),
         ),

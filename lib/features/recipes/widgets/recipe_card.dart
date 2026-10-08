@@ -83,7 +83,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                               Text(
                                 '\u2022',
                                 style: TextStyle(
-                                  color: MemoixColors.forSpiritDot(widget.recipe.subcategory),
+                                  color: MemoixColours.forSpiritDot(widget.recipe.subcategory),
                                   fontSize: 16,
                                 ),
                               ),
@@ -104,7 +104,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                               Text(
                                 '\u2022',
                                 style: TextStyle(
-                                  color: MemoixColors.forContinentDot(cuisine),
+                                  color: MemoixColours.forContinentDot(cuisine),
                                   fontSize: 16,
                                 ),
                               ),
@@ -126,7 +126,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                             Text(
                               '\u2022',
                               style: TextStyle(
-                                color: MemoixColors.forContinentDot(cuisineDisplay.colourKey),
+                                color: MemoixColours.forContinentDot(cuisineDisplay.colourKey),
                                 fontSize: 16,
                               ),
                             ),

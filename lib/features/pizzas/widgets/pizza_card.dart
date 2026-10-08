@@ -89,7 +89,7 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                           Text(
                             '\u2022',
                             style: TextStyle(
-                              color: MemoixColors.forPizzaBaseDot(widget.pizza.base),
+                              color: MemoixColours.forPizzaBaseDot(widget.pizza.base),
                               fontSize: 16,
                             ),
                           ),
