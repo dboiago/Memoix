@@ -143,7 +143,7 @@ class IntegrityService {
   static IntegrityEventHandler? _secondaryHandler;
   static bool _initialized = false;
 
-  /// Initialise the persistent store. Call once before [runApp].
+  /// Initialize the persistent store. Call once before [runApp].
   static Future<void> initialize() async {
     await _store.initialize();
     _initialized = true;

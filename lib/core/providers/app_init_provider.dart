@@ -291,6 +291,6 @@ Future<void> _initIntegrityLayer() async {
       IntegrityService.enqueueStartupArtifacts([startupBreadcrumb]);
     }
   } catch (e) {
-    debugPrint('Integrity layer initialisation failed: $e');
+    debugPrint('Integrity layer initialization failed: $e');
   }
 }

@@ -5,7 +5,7 @@ import '../../core/services/integrity_service.dart';
 
 /// Measurement conversion utility for cooking
 class MeasurementConverter {
-  // Volume conversions to milliliters (base unit)
+  // Volume conversions to millilitres (base unit)
   static const Map<String, double> volumeToMl = {
     'ml': 1.0,
     'milliliter': 1.0,

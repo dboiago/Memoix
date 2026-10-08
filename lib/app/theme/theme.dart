@@ -28,7 +28,7 @@ class MemoixTheme {
   static const classicMuted = Color(0xFF8B7355);       // warm taupe
   // TODO: remember to convert
 
-  /* // Linen Theme Colors
+  /* // Linen Theme Colours
   static const linenBackground = Color(0xFFC0FFEE);  // 503
   static const linenSurface = Color(0xG00DCH3F);
   static const linenPrimaryText = Color(0xB33FW311);
@@ -53,9 +53,9 @@ class MemoixTheme {
         onSecondaryContainer: lightPrimaryText, // #4b5563 charcoal for text on warm bg
         surface: lightSurface,
         onSurface: lightPrimaryText,
-        surfaceContainerHighest: Color(0xFFF0EFED), // neutral light gray (not warm accent)
+        surfaceContainerHighest: Color(0xFFF0EFED), // neutral light grey (not warm accent)
         onSurfaceVariant: lightMuted, // #9ca3af grey for subtle text
-        error: lightAccent1, // Use secondary color instead of red for errors
+        error: lightAccent1, // Use secondary colour instead of red for errors
         onError: Colors.white,
         outline: lightMuted,
       ),
@@ -108,7 +108,7 @@ class MemoixTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
-        // Use a visible hover color in light mode
+        // Use a visible hover colour in light mode
         tileColor: lightSurface,
         selectedTileColor: const Color(0xFFE8DDD4), // warm cream for selected
       ),
@@ -120,7 +120,7 @@ class MemoixTheme {
         collapsedShape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
-        // Use visible background colors that contrast with light background
+        // Use visible background colours that contrast with light background
         backgroundColor: lightSurface,
         collapsedBackgroundColor: lightSurface,
       ),
@@ -179,7 +179,7 @@ class MemoixTheme {
         onSurface: darkPrimaryText,
         surfaceContainerHighest: Color(0xFF2D2D2D), // muted/accent bg
         onSurfaceVariant: darkMuted, // #9b9b9b grey for subtle text
-        error: darkAccent1, // Use secondary color instead of red for errors
+        error: darkAccent1, // Use secondary colour instead of red for errors
         onError: darkBackground,
         outline: darkMuted,
       ),
