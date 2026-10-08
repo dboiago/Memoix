@@ -11,7 +11,7 @@ import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 
 /// Pizza card widget for list display
-/// Matches RecipeCard styling with hover effects, favorite and cooked icons
+/// Matches RecipeCard styling with hover effects, favourite and cooked icons
 class PizzaCard extends ConsumerStatefulWidget {
   final Pizza pizza;
   final VoidCallback? onTap;
@@ -85,7 +85,7 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                       // Base with bullet + cheeses/toppings summary
                       Row(
                         children: [
-                          // Base with sauce-themed colored bullet
+                          // Base with sauce-themed coloured bullet
                           Text(
                             '\u2022',
                             style: TextStyle(
@@ -109,11 +109,11 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                   ],
                 ),
               ),
-              // Action icons (favorite + cooked)
+              // Action icons (favourite + cooked)
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Favorite button
+                  // Favourite button
                   IconButton(
                     icon: Icon(
                       widget.pizza.isFavourite ? Icons.favorite : Icons.favorite_border,

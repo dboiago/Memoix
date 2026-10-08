@@ -49,7 +49,7 @@ class AiProviderConfig {
     );
   }
 
-  /// Serialise to JSON for SharedPreferences.
+  /// Serialize to JSON for SharedPreferences.
   ///
   /// The API key is **never** written here – it lives in secure storage only.
   Map<String, dynamic> toJson() => {

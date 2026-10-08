@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../app/app.dart';
 
-/// Centralised SnackBar helper for consistent behaviour across the app.
+/// Centralized SnackBar helper for consistent behaviour across the app.
 /// 
 /// All SnackBars shown through this helper will:
 /// - Use the global ScaffoldMessenger (survives navigation)
@@ -209,9 +209,9 @@ class MemoixSnackBar {
     if (messenger == null) return;
     _cancelTimer(); // Don't auto-dismiss alarms
     
-    // Get the snackbar action color from theme (same as SnackBarAction uses)
+    // Get the snackbar action colour from theme (same as SnackBarAction uses)
     final context = rootNavigatorKey.currentContext;
-    final actionColor = context != null 
+    final actionColour = context != null 
         ? Theme.of(context).colorScheme.inversePrimary
         : Colors.lightBlueAccent;
     
@@ -236,7 +236,7 @@ class MemoixSnackBar {
                   onDismiss();
                 },
                 style: TextButton.styleFrom(
-                  foregroundColor: actionColor,
+                  foregroundColor: actionColour,
                   padding: const EdgeInsets.symmetric(horizontal: 8),
                 ),
                 child: const Text('Done'),

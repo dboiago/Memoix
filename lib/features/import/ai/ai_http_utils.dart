@@ -1,6 +1,6 @@
 /// Shared HTTP utilities for all AI provider clients.
 ///
-/// Centralises the response-reading, size-limiting, logging, and error-throwing
+/// Centralizes the response-reading, size-limiting, logging, and error-throwing
 /// logic that would otherwise be duplicated across GeminiClient, OpenAiClient,
 /// and ClaudeClient.
 

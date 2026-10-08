@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 /// Unified empty state widget for consistent "no items found" experience.
 /// 
 /// Uses the Memoix filled mark (knife+fork) as the visual element,
-/// tinted to match the current theme's muted color.
+/// tinted to match the current theme's muted colour.
 /// 
 /// Usage:
 /// ```dart

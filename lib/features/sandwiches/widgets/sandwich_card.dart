@@ -10,7 +10,7 @@ import '../../../core/database/app_database.dart';
 import '../repository/sandwich_repository.dart';
 
 /// Sandwich card widget for list display
-/// Matches PizzaCard styling with hover effects, favorite and cooked icons
+/// Matches PizzaCard styling with hover effects, favourite and cooked icons
 class SandwichCard extends ConsumerStatefulWidget {
   final Sandwich sandwich;
   final VoidCallback? onTap;
@@ -87,11 +87,11 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                   ],
                 ),
               ),
-              // Action icons (favorite + cooked)
+              // Action icons (favourite + cooked)
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Favorite button
+                  // Favourite button
                   IconButton(
                     icon: Icon(
                       widget.sandwich.isFavourite ? Icons.favorite : Icons.favorite_border,
@@ -142,25 +142,25 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
     final cheeses = (jsonDecode(widget.sandwich.cheeses) as List).cast<String>();
     
     String label;
-    Color dotColor;
+    Color dotColour;
     
     if (proteins.isEmpty) {
       // Vegetarian - show "Cheese"
       if (cheeses.isNotEmpty) {
         label = 'Cheese';
-        dotColor = MemoixColours.cheese;
+        dotColour = MemoixColours.cheese;
       } else {
         // No proteins and no cheese - shouldn't happen often
         return const SizedBox.shrink();
       }
     } else if (proteins.length == 1) {
-      // Single protein - show it with protein-specific color
+      // Single protein - show it with protein-specific colour
       label = proteins.first;
-      dotColor = MemoixColours.forProteinDot(proteins.first);
+      dotColour = MemoixColours.forProteinDot(proteins.first);
     } else {
-      // Multiple proteins - show "Assorted" with first protein's color
+      // Multiple proteins - show "Assorted" with first protein's colour
       label = 'Assorted';
-      dotColor = MemoixColours.forProteinDot(proteins.first);
+      dotColour = MemoixColours.forProteinDot(proteins.first);
     }
     
     return Row(
@@ -169,7 +169,7 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
         Text(
           '\u2022',
           style: TextStyle(
-            color: dotColor,
+            color: dotColour,
             fontSize: 16,
           ),
         ),

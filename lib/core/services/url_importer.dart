@@ -417,8 +417,8 @@ class UrlRecipeImporter {
     '5/6': '⅚',
   };
 
-  /// Measurement abbreviation normalisation
-  static final _measurementNormalisation = {
+  /// Measurement abbreviation normalization
+  static final _measurementNormalization = {
     RegExp(r'\btbsp\b', caseSensitive: false): 'Tbsp',
     RegExp(r'\btbs\b', caseSensitive: false): 'Tbsp',
     RegExp(r'\btbl\b', caseSensitive: false): 'Tbsp',
@@ -3728,7 +3728,7 @@ class UrlRecipeImporter {
     return true;
   }
 
-  /// Decode HTML entities and normalise text
+  /// Decode HTML entities and normalize text
   String _decodeHtml(String text) {
     var result = text;
     
@@ -3763,8 +3763,8 @@ class UrlRecipeImporter {
       result = result.replaceAll(fraction, unicode);
     });
     
-    // Normalise measurements
-    _measurementNormalisation.forEach((pattern, replacement) {
+    // Normalize measurements
+    _measurementNormalization.forEach((pattern, replacement) {
       result = result.replaceAllMapped(pattern, (_) => replacement);
     });
     
@@ -4264,7 +4264,7 @@ class UrlRecipeImporter {
   /// Test-only accessor for [_extractRawDirections], which is otherwise
   /// library-private. Lets tests exercise the raw-directions extraction path
   /// (including HowToSection/HowToStep flattening) without going through
-  /// network I/O. Does not change `_extractRawDirections` behavior.
+  /// network I/O. Does not change `_extractRawDirections` behaviour.
   @visibleForTesting
   List<String> extractRawDirectionsForTesting(dynamic value) =>
       _extractRawDirections(value);
@@ -4471,7 +4471,7 @@ class UrlRecipeImporter {
     return Cuisine.validateForImport(cuisine);
   }
 
-  String _capitalise(String text) {
+  String _capitalize(String text) {
     if (text.isEmpty) return text;
     return text[0].toUpperCase() + text.substring(1);
   }
@@ -5693,7 +5693,7 @@ class UrlRecipeImporter {
       final beforeOr = remaining.substring(0, orMatch.start).trim();
       final afterOr = remaining.substring(orMatch.end).trim();
       
-      // Check if beforeOr is just a simple adjective (color, size, etc.)
+      // Check if beforeOr is just a simple adjective (colour, size, etc.)
       // If so, keep the entire phrase together as the ingredient name
       final adjectivePattern = RegExp(
         r'^(red|yellow|green|white|black|brown|orange|purple|pink|blue|'
@@ -5881,7 +5881,7 @@ class UrlRecipeImporter {
     }
     // Volume units - medium priority
     else if (text.contains('l') && (text.contains(' l') || text.endsWith('l') || text.contains('liter') || text.contains('litre'))) {
-      unitMultiplier = 2000.0; // liters
+      unitMultiplier = 2000.0; // litres
     } else if (text.contains('ml') || text.contains('milliliter')) {
       unitMultiplier = 1500.0;
     } else if (text.contains('cup') || RegExp(r'\bc\b').hasMatch(text)) {
@@ -10470,7 +10470,7 @@ class UrlRecipeImporter {
         final sectionName = sectionHeaderMatch.group(1)?.trim() ?? item;
         sectionCount++;
         // Add all section headers - we'll use them for grouping
-        processed.add('[${_capitalise(sectionName)}]');
+        processed.add('[${_capitalize(sectionName)}]');
       } else if (item.isNotEmpty) {
         // Check for "and/or" pattern - if this ingredient ends with "and/or" or "; and/or"
         // and there's a next ingredient, merge them with the next as a note

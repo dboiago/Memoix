@@ -8,11 +8,6 @@ import '../../features/recipes/models/spirit.dart';
 class MemoixColours {
   MemoixColours._();
 
-  // Primary brand colours
-  static const Color primary = Color(0xFFE67C23); // Warm orange (like your header)
-  static const Color primaryLight = Color(0xFFFFA726);
-  static const Color primaryDark = Color(0xFFE65100);
-
   // Course category colours (matching spreadsheet tabs)
   static const Color mains = Color(0xFFFFB74D);       // Orange/Gold
   static const Color apps = Color(0xFF81C784);        // Green
@@ -28,11 +23,11 @@ class MemoixColours {
   static const Color modernist = Color(0xFFCE93D8);  // Purple
   static const Color pizzas = Color(0xFFFFCC80);      // Light orange
   static const Color sandwiches = Color(0xFFFFE082);  // Light gold
-  static const Color smoking = Color(0xFF90A4AE);     // Gray
+  static const Color smoking = Color(0xFF90A4AE);     // Grey
   static const Color cheese = Color(0xFFFFF176);      // Light yellow
   static const Color cellar = Color(0xFFA1887F);      // Warm brown
   static const Color vegn = Color(0xFF80CBC4);        // Teal
-  static const Color scratch = Color(0xFFB0BEC5);     // Blue-gray
+  static const Color scratch = Color(0xFFB0BEC5);     // Blue-grey
   static const Color drinks = Color(0xFF81D4FA);      // Light blue
   static const Color standalone = Color(0xFF9FA8DA);   // Indigo
 
@@ -98,7 +93,7 @@ class MemoixColours {
   static const Color pizzaBuffalo = Color(0xFFE8783A);         // Orange-red buffalo
   static const Color pizzaAlfredo = Color(0xFFE8DCC8);         // Butter cream
   static const Color pizzaGarlic = Color(0xFFE8D87E);          // Garlic butter gold
-  static const Color pizzaNoSauce = Color(0xFFB0BEC5);         // Neutral gray
+  static const Color pizzaNoSauce = Color(0xFFB0BEC5);         // Neutral grey
 
   // Smoked item category colours for smoking recipes
   // Thematic pastel colours matching app palette
@@ -113,7 +108,7 @@ class MemoixColours {
   static const Color smokedDesserts = Color(0xFFD8A8C0);       // Soft mauve-pink for desserts
   static const Color smokedFruits = Color(0xFFC4A8D4);         // Soft lavender for fruits
   static const Color smokedDips = Color(0xFFD8A888);           // Soft terracotta for dips
-  static const Color smokedOther = Color(0xFFB0BEC5);          // Soft blue-gray for other
+  static const Color smokedOther = Color(0xFFB0BEC5);          // Soft blue-grey for other
 
   // Modernist type colours (Concept vs Technique)
   // Thematic colours that fit with the warm palette
@@ -136,14 +131,14 @@ class MemoixColours {
   static const Color favourite = Color(0xFFE57373);             // Soft red heart
   static const Color rating = Color(0xFFFFCA28);               // Amber star
   
-  // Import method accent colors (thematic with app palette)
+  // Import method accent colours (thematic with app palette)
   static const Color importManual = Color(0xFF7B9CC4);         // Muted blue
   static const Color importCamera = Color(0xFF7AB89E);         // Sage green
   static const Color importMultiPage = Color(0xFF6BA3B5);      // Ocean teal
   static const Color importGallery = Color(0xFFE8A86B);        // Warm orange
   static const Color importAi = Color(0xFFA88FA8);             // Soft mauve
 
-  /// Get color for a course category
+  /// Get colour for a course category
   static Color forCourse(String course) {
     switch (course.toLowerCase()) {
       case 'mains':
@@ -196,11 +191,11 @@ class MemoixColours {
       case 'drinks':
         return drinks;
       default:
-        return primary;
+        return Colors.grey;
     }
   }
 
-  /// Get color for a cuisine style
+  /// Get colour for a cuisine style
   static Color forCuisine(String cuisine) {
     switch (cuisine.toLowerCase()) {
       case 'korean':
@@ -258,8 +253,8 @@ class MemoixColours {
     }
   }
 
-  /// Get dot color for a cuisine based on its continent grouping
-  /// Uses themed colors that complement the app's primary/secondary palette
+  /// Get dot colour for a cuisine based on its continent grouping
+  /// Uses themed colours that complement the app's primary/secondary palette
   /// Handles both cuisine names ("Japanese") and country codes ("JP")
   static Color forContinentDot(String? cuisine) {
     if (cuisine == null || cuisine.isEmpty) return Colors.grey;
@@ -267,7 +262,7 @@ class MemoixColours {
     final lower = cuisine.toLowerCase().trim();
     final upper = cuisine.toUpperCase().trim();
     
-    // Fusion cuisines get their own distinct color
+    // Fusion cuisines get their own distinct colour
     if (lower.contains('fusion')) return fusionCuisine;
     
     // Country codes resolve to a continent through the Cuisine taxonomy
@@ -383,8 +378,8 @@ class MemoixColours {
     }
   }
 
-  /// Get dot color for a spirit/drink base type
-  /// Uses themed colors for visual identification of cocktail base spirits
+  /// Get dot colour for a spirit/drink base type
+  /// Uses themed colours for visual identification of cocktail base spirits
   static Color forSpiritDot(String? spirit) {
     if (spirit == null || spirit.isEmpty) return Colors.grey;
     
@@ -466,7 +461,7 @@ class MemoixColours {
     
     // Other Asian spirits
     if (['SAKE', 'SOJU'].contains(upper) || ['sake', 'saké', 'soju'].contains(lower)) {
-      return spiritSparkling; // Light/clear color
+      return spiritSparkling; // Light/clear colour
     }
     
     // Absinthe/Aquavit
@@ -495,8 +490,8 @@ class MemoixColours {
     return Colors.grey;
   }
 
-  /// Get dot color for a pizza sauce/base type
-  /// Uses themed colors for visual identification of sauce type
+  /// Get dot colour for a pizza sauce/base type
+  /// Uses themed colours for visual identification of sauce type
   static Color forPizzaBaseDot(String? base) {
     if (base == null || base.isEmpty) return pizzaMarinara;
     
@@ -536,8 +531,8 @@ class MemoixColours {
     }
   }
 
-  /// Get dot color for a modernist recipe type (Concept or Technique)
-  /// Uses themed colors to distinguish recipe types
+  /// Get dot colour for a modernist recipe type (Concept or Technique)
+  /// Uses themed colours to distinguish recipe types
   static Color forModernistType(String? type) {
     if (type == null || type.isEmpty) return modernistConcept;
     
@@ -553,11 +548,11 @@ class MemoixColours {
     }
   }
 
-  /// Get dot color for a protein type in sandwiches/pizzas
-  /// Uses soft pastel colors matching app theme for visual identification
-  /// Falls back to primary color for unknown proteins
+  /// Get dot colour for a protein type in sandwiches/pizzas
+  /// Uses soft pastel colours matching app theme for visual identification
+  /// Falls back to grey for unknown proteins
   static Color forProteinDot(String? protein) {
-    if (protein == null || protein.isEmpty) return primary;
+    if (protein == null || protein.isEmpty) return Colors.grey;
     
     final lower = protein.toLowerCase().trim();
     
@@ -617,12 +612,12 @@ class MemoixColours {
       return const Color(0xFFCCB8A0); // Warm tan
     }
     
-    // Default to primary for unknown proteins
-    return primary;
+    // Default to grey for unknown proteins
+    return Colors.grey;
   }
 
-  /// Get dot color for a smoked item category
-  /// Uses themed colors for visual identification of what's being smoked
+  /// Get dot colour for a smoked item category
+  /// Uses themed colours for visual identification of what's being smoked
   static Color forSmokedItemDot(String? category) {
     if (category == null || category.isEmpty) return Colors.grey;
     

@@ -6,7 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../services/ingredient_reference_service.dart';
 
-/// Normalise the cache key: trim, lowercase, collapse internal whitespace.
+/// Normalize the cache key: trim, lowercase, collapse internal whitespace.
 String _cacheKey(String ingredientName) {
   return ingredientName.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
 }

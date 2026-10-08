@@ -704,7 +704,7 @@ class MealieParser implements ExternalFormatParser {
 
   /// Parses an ISO 8601 duration string (e.g. `PT1H30M`) or a plain
   /// human-readable string (e.g. `"30 minutes"`, `"1 hour"`) into a
-  /// normalised time string via [UnitNormalizer.normalizeTime].
+  /// normalized time string via [UnitNormalizer.normalizeTime].
   ///
   /// Returns null if the input is null, empty, or unparseable.
   String? _parseDuration(String? raw) {

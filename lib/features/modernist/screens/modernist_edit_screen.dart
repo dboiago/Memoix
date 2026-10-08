@@ -1784,7 +1784,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           .map((row) => row.controller.text.trim())
           .toList();
 
-      // Build step image map as serialised strings for database storage
+      // Build step image map as serialized strings for database storage
       final stepImageMapStrings = _stepImageMap.entries
           .map((e) => '${e.key}:${e.value}')
           .toList();
@@ -1887,7 +1887,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                 avatar: CourseIconWidget(
                   slug: course,
                   size: 16,
-                  color: theme.colorScheme.onSurface,
+                  colour: theme.colorScheme.onSurface,
                 ),
                 label: Text(name),
                 backgroundColor: theme.colorScheme.surfaceContainerHighest,
@@ -1988,7 +1988,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                             return ListTile(
                               leading: CourseIconWidget(
                                 slug: recipe.course,
-                                color: theme.colorScheme.primary,
+                                colour: theme.colorScheme.primary,
                               ),
                               title: Text(recipe.name),
                               subtitle: Text(

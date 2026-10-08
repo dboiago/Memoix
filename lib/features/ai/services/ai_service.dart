@@ -7,7 +7,7 @@ import '../../import/ai/ai_provider.dart';
 ///
 /// Exactly one of [text] or [imageBytes] must be non-null.
 class AiRequest {
-  /// Free-form text or URL the user wants analysed.
+  /// Free-form text or URL the user wants analyzed.
   final String? text;
 
   /// Image bytes (JPEG) for vision-based extraction.

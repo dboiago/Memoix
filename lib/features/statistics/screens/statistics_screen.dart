@@ -109,7 +109,7 @@ class _StatsContent extends ConsumerWidget {
               child: _StatCard(
                 label: 'Total Recipes',
                 value: stats.totalRecipes.toString(),
-                color: theme.colorScheme.surfaceContainerHighest,
+                colour: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
             const SizedBox(width: 12),
@@ -117,7 +117,7 @@ class _StatsContent extends ConsumerWidget {
               child: _StatCard(
                 label: 'Countries',
                 value: stats.distinctCuisineCount.toString(),
-                color: theme.colorScheme.surfaceContainerHighest,
+                colour: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
           ],
@@ -129,7 +129,7 @@ class _StatsContent extends ConsumerWidget {
               child: _StatCard(
                 label: 'Avg Cook Time',
                 value: _formatCookTime(stats.avgCookTimeMinutes),
-                color: theme.colorScheme.surfaceContainerHighest,
+                colour: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
             const SizedBox(width: 12),
@@ -137,7 +137,7 @@ class _StatsContent extends ConsumerWidget {
               child: _StatCard(
                 label: 'Favourites',
                 value: favouriteCount,
-                color: theme.colorScheme.surfaceContainerHighest,
+                colour: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
           ],
@@ -183,12 +183,12 @@ class _StatsContent extends ConsumerWidget {
 class _StatCard extends StatelessWidget {
   final String label;
   final String value;
-  final Color color;
+  final Color colour;
 
   const _StatCard({
     required this.label,
     required this.value,
-    required this.color,
+    required this.colour,
   });
 
   @override
@@ -198,7 +198,7 @@ class _StatCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: color,
+        color: colour,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
@@ -281,7 +281,7 @@ class _CourseBarChart extends StatelessWidget {
                     minHeight: 4, // thinner bar
                     backgroundColor: theme.colorScheme.outline.withValues(alpha: 0.2),
                     valueColor: AlwaysStoppedAnimation<Color>(
-                      theme.colorScheme.primary, // warm color bar
+                      theme.colorScheme.primary, // warm colour bar
                     ),
                   ),
                 ),

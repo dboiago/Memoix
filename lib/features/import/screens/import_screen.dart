@@ -60,7 +60,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.edit,
               title: 'Create Manually',
               description: 'Write a new recipe from scratch',
-              color: MemoixColours.importManual,
+              colour: MemoixColours.importManual,
               onTap: () => _createManually(context),
             ),
 
@@ -71,7 +71,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.camera_alt,
               title: 'Scan from Photo',
               description: 'Take a photo of a recipe book or handwritten notes',
-              color: MemoixColours.importCamera,
+              colour: MemoixColours.importCamera,
               onTap: () => _scanFromCamera(context),
             ),
 
@@ -82,7 +82,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.collections,
               title: 'Scan Multi-Page Recipe',
               description: 'Take photos of multiple recipe pages (ingredients, directions, etc.)',
-              color: MemoixColours.importMultiPage,
+              colour: MemoixColours.importMultiPage,
               onTap: () => _scanMultipleImages(context),
             ),
 
@@ -93,7 +93,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.photo_library,
               title: 'Import from Gallery',
               description: 'Choose an existing photo to scan',
-              color: MemoixColours.importGallery,
+              colour: MemoixColours.importGallery,
               onTap: () => _scanFromGallery(context),
             ),
 
@@ -105,7 +105,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
                 icon: Icons.smart_toy_outlined,
                 title: 'AI Import',
                 description: 'Use AI to extract recipes from photos, URLs, or text',
-                color: MemoixColours.importAi,
+                colour: MemoixColours.importAi,
                 onTap: () => _importWithAi(context),
               ),
 
@@ -193,7 +193,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.qr_code_scanner,
               title: 'Scan QR Code',
               description: 'Import a recipe shared via QR code',
-              color: Colors.purple,
+              colour: Colors.purple,
               onTap: () => _scanQrCode(context),
             ),
 
@@ -387,14 +387,14 @@ class _ImportOption extends StatelessWidget {
   final IconData icon;
   final String title;
   final String description;
-  final Color color;
+  final Color colour;
   final VoidCallback onTap;
 
   const _ImportOption({
     required this.icon,
     required this.title,
     required this.description,
-    required this.color,
+    required this.colour,
     required this.onTap,
   });
 
@@ -414,10 +414,10 @@ class _ImportOption extends StatelessWidget {
                 width: 48,
                 height: 48,
                 decoration: BoxDecoration(
-                  color: color.withValues(alpha: 0.1),
+                  color: colour.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Icon(icon, color: color),
+                child: Icon(icon, color: colour),
               ),
               const SizedBox(width: 16),
               Expanded(

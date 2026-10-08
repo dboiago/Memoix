@@ -413,7 +413,7 @@ class SplitRecipeView extends StatelessWidget {
     if (nutrition.proteinContent != null) items.add(MapEntry('Protein', '${nutrition.proteinContent}g'));
     if (nutrition.carbohydrateContent != null) items.add(MapEntry('Carbs', '${nutrition.carbohydrateContent}g'));
     if (nutrition.fatContent != null) items.add(MapEntry('Fat', '${nutrition.fatContent}g'));
-    if (nutrition.fiberContent != null) items.add(MapEntry('Fiber', '${nutrition.fiberContent}g'));
+    if (nutrition.fiberContent != null) items.add(MapEntry('Fibre', '${nutrition.fiberContent}g'));
     if (nutrition.sodiumContent != null) items.add(MapEntry('Sodium', '${nutrition.sodiumContent}mg'));
     
     return Wrap(

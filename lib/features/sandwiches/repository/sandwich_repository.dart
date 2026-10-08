@@ -137,18 +137,18 @@ class SandwichRepository {
 
   /// Toggle favourite status
   Future<void> toggleFavourite(Sandwich sandwich) async {
-    final wasFavorited = sandwich.isFavourite;
+    final wasFavourited = sandwich.isFavourite;
     await _db.catalogueDao.toggleSandwichFavourite(sandwich.id, sandwich.isFavourite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
       metadata: {
         'recipe_id': sandwich.uuid,
-        'is_adding': !wasFavorited,
+        'is_adding': !wasFavourited,
       },
     );
     // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
-    unawaited(_ref.read(ragTelemetryServiceProvider).queueSandwichForExport(sandwich.copyWith(isFavourite: !wasFavorited)));
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSandwichForExport(sandwich.copyWith(isFavourite: !wasFavourited)));
   }
 
   /// Increment cook count

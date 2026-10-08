@@ -99,7 +99,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
             title: sandwich.name,
             isFavourite: sandwich.isFavourite,
             headerImage: hasHeaderImage ? sandwich.imageUrl : null,
-            onFavoritePressed: () async {
+            onFavouritePressed: () async {
               await ref.read(sandwichRepositoryProvider).toggleFavourite(sandwich);
               ref.invalidate(allSandwichesProvider);
               await processIntegrityResponses(ref);
@@ -215,7 +215,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
             title: sandwich.name,
             isFavourite: sandwich.isFavourite,
             headerImage: hasHeaderImage ? sandwich.imageUrl : null,
-            onFavoritePressed: () async {
+            onFavouritePressed: () async {
               await ref.read(sandwichRepositoryProvider).toggleFavourite(sandwich);
               ref.invalidate(allSandwichesProvider);
               await processIntegrityResponses(ref);
@@ -312,27 +312,27 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
   Widget _buildProteinIndicator(Sandwich sandwich, ThemeData theme) {
     final proteins = (jsonDecode(sandwich.proteins) as List).cast<String>();
     final cheeses = (jsonDecode(sandwich.cheeses) as List).cast<String>();
-    final textColor = theme.colorScheme.onSurfaceVariant;
+    final textColour = theme.colorScheme.onSurfaceVariant;
     
     String label;
-    Color dotColor;
+    Color dotColour;
     
     if (proteins.isEmpty) {
       // Vegetarian - show "Cheese"
       if (cheeses.isNotEmpty) {
         label = 'Cheese';
-        dotColor = MemoixColours.cheese;
+        dotColour = MemoixColours.cheese;
       } else {
         return const SizedBox.shrink();
       }
     } else if (proteins.length == 1) {
-      // Single protein - show it with protein-specific color
+      // Single protein - show it with protein-specific colour
       label = proteins.first;
-      dotColor = MemoixColours.forProteinDot(proteins.first);
+      dotColour = MemoixColours.forProteinDot(proteins.first);
     } else {
-      // Multiple proteins - show "Assorted" with first protein's color
+      // Multiple proteins - show "Assorted" with first protein's colour
       label = 'Assorted';
-      dotColor = MemoixColours.forProteinDot(proteins.first);
+      dotColour = MemoixColours.forProteinDot(proteins.first);
     }
     
     return Row(
@@ -342,14 +342,14 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           height: 8,
           margin: const EdgeInsets.only(right: 4),
           decoration: BoxDecoration(
-            color: dotColor,
+            color: dotColour,
             shape: BoxShape.circle,
           ),
         ),
         Text(
           label,
           style: theme.textTheme.bodySmall?.copyWith(
-            color: textColor,
+            color: textColour,
           ),
         ),
       ],

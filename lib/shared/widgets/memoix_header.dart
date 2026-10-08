@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 /// The header displays:
 /// - Back button
 /// - Title (scales down to fit, never wraps)
-/// - Favorite button
+/// - Favourite button
 /// - "I made this" button (optional)
 /// - Share button (optional)
 /// - Action menu (Edit, Duplicate, Delete)
@@ -23,7 +23,7 @@ class MemoixHeader extends StatelessWidget {
     required this.title,
     this.isFavourite = false,
     this.headerImage,
-    this.onFavoritePressed,
+    this.onFavouritePressed,
     this.onLogCookPressed,
     this.onSharePressed,
     this.onComparePressed,
@@ -44,8 +44,8 @@ class MemoixHeader extends StatelessWidget {
   /// Optional header image URL or file path.
   final String? headerImage;
 
-  /// Callback when favorite button is pressed.
-  final VoidCallback? onFavoritePressed;
+  /// Callback when favourite button is pressed.
+  final VoidCallback? onFavouritePressed;
 
   /// Callback when "I made this" button is pressed.
   final VoidCallback? onLogCookPressed;
@@ -87,10 +87,10 @@ class MemoixHeader extends StatelessWidget {
     // Scale font size with screen width: 20px at 320, up to 28px at 1200+
     final baseFontSize = (screenWidth / 40).clamp(20.0, 28.0);
 
-    // Title color: primary (accent) when no image, muted when over image
-    final titleColor = _hasHeaderImage
-        ? theme.colorScheme.onSurfaceVariant // muted color over image
-        : theme.colorScheme.primary; // accent color when no image
+    // Title colour: primary (accent) when no image, muted when over image
+    final titleColour = _hasHeaderImage
+        ? theme.colorScheme.onSurfaceVariant // muted colour over image
+        : theme.colorScheme.primary; // accent colour when no image
 
     return Container(
       width: double.infinity,
@@ -172,14 +172,14 @@ class MemoixHeader extends StatelessWidget {
   Widget _buildLayeredTitle(ThemeData theme, double fontSize) {
     final isDark = theme.brightness == Brightness.dark;
     
-    // Main text color: primary accent
-    final mainColor = theme.colorScheme.primary;
+    // Main text colour: primary accent
+    final mainColour = theme.colorScheme.primary;
     
-    // Layer text color: secondary accent with opacity
-    final layerColor = theme.colorScheme.secondary.withValues(alpha: isDark ? 0.4 : 0.5);
+    // Layer text colour: secondary accent with opacity
+    final layerColour = theme.colorScheme.secondary.withValues(alpha: isDark ? 0.4 : 0.5);
     
-    // Stroke color: subtle charcoal stroke for definition (light mode only)
-    final strokeColor = isDark ? Colors.transparent : const Color(0xFF4B5563).withValues(alpha: 0.5);
+    // Stroke colour: subtle charcoal stroke for definition (light mode only)
+    final strokeColour = isDark ? Colors.transparent : const Color(0xFF4B5563).withValues(alpha: 0.5);
 
     final textStyle = TextStyle(
       fontWeight: FontWeight.w600,
@@ -194,7 +194,7 @@ class MemoixHeader extends StatelessWidget {
           offset: const Offset(2, 2),
           child: Text(
             title,
-            style: textStyle.copyWith(color: layerColor),
+            style: textStyle.copyWith(color: layerColour),
           ),
         ),
         // Middle layer: subtle stroke for definition (light mode)
@@ -205,13 +205,13 @@ class MemoixHeader extends StatelessWidget {
               foreground: Paint()
                 ..style = PaintingStyle.stroke
                 ..strokeWidth = 0.75
-                ..color = strokeColor,
+                ..color = strokeColour,
             ),
           ),
         // Top layer: main filled text
         Text(
           title,
-          style: textStyle.copyWith(color: mainColor),
+          style: textStyle.copyWith(color: mainColour),
         ),
       ],
     );
@@ -219,8 +219,8 @@ class MemoixHeader extends StatelessWidget {
 
   /// Build the navigation and action icons row.
   Widget _buildActionRow(BuildContext context, ThemeData theme) {
-    // Icon color: muted when over image, onSurface when no image
-    final iconColor = _hasHeaderImage
+    // Icon colour: muted when over image, onSurface when no image
+    final iconColour = _hasHeaderImage
         ? theme.colorScheme.onSurfaceVariant
         : theme.colorScheme.onSurface;
 
@@ -233,28 +233,28 @@ class MemoixHeader extends StatelessWidget {
       children: [
         // Back button
         IconButton(
-          icon: Icon(Icons.arrow_back, color: iconColor, shadows: iconShadows),
+          icon: Icon(Icons.arrow_back, color: iconColour, shadows: iconShadows),
           onPressed: () => Navigator.of(context).pop(),
         ),
         // Action icons
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            if (onFavoritePressed != null)
+            if (onFavouritePressed != null)
               IconButton(
                 icon: Icon(
                   isFavourite ? Icons.favorite : Icons.favorite_border,
-                  color: isFavourite ? theme.colorScheme.secondary : iconColor,
+                  color: isFavourite ? theme.colorScheme.secondary : iconColour,
                   shadows: iconShadows,
                 ),
-                onPressed: onFavoritePressed,
+                onPressed: onFavouritePressed,
                 visualDensity: VisualDensity.compact,
                 padding: const EdgeInsets.all(8),
                 constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
               ),
             if (onLogCookPressed != null)
               IconButton(
-                icon: Icon(Icons.check_circle_outline, color: iconColor, shadows: iconShadows),
+                icon: Icon(Icons.check_circle_outline, color: iconColour, shadows: iconShadows),
                 tooltip: 'I made this',
                 onPressed: onLogCookPressed,
                 visualDensity: VisualDensity.compact,
@@ -263,7 +263,7 @@ class MemoixHeader extends StatelessWidget {
               ),
             if (onSharePressed != null)
               IconButton(
-                icon: Icon(Icons.share, color: iconColor, shadows: iconShadows),
+                icon: Icon(Icons.share, color: iconColour, shadows: iconShadows),
                 onPressed: onSharePressed,
                 visualDensity: VisualDensity.compact,
                 padding: const EdgeInsets.all(8),
@@ -271,7 +271,7 @@ class MemoixHeader extends StatelessWidget {
               ),
             if (onSaveWalkinPressed != null)
               IconButton(
-                icon: Icon(Icons.save_alt, color: iconColor, shadows: iconShadows),
+                icon: Icon(Icons.save_alt, color: iconColour, shadows: iconShadows),
                 tooltip: 'Save recipe',
                 onPressed: onSaveWalkinPressed,
                 visualDensity: VisualDensity.compact,
@@ -332,7 +332,7 @@ class MemoixHeader extends StatelessWidget {
                       ),
                     ),
                 ],
-                icon: Icon(Icons.more_vert, color: iconColor, shadows: iconShadows),
+                icon: Icon(Icons.more_vert, color: iconColour, shadows: iconShadows),
                 padding: EdgeInsets.zero,
               ),
           ],

@@ -272,7 +272,7 @@ class ModernistRecipe {
   List<String> stepImages = [];
 
   /// Map of step index to image index in stepImages
-  /// Stored as "stepIndex:imageIndex" strings for database serialisation
+  /// Stored as "stepIndex:imageIndex" strings for database serialization
   List<String> stepImageMap = [];
 
   /// Legacy: Image URL or local path (deprecated, use headerImage)
@@ -281,7 +281,7 @@ class ModernistRecipe {
   /// Multiple image support
   List<String> imageUrls = [];
 
-  /// Whether this is a favorite
+  /// Whether this is a favourite
   bool isFavourite = false;
 
   /// Whether this recipe's data may be contributed to the Culinary Intelligence pipeline.

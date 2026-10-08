@@ -77,13 +77,13 @@ class Recipe {
   List<String> stepImages = [];
 
   /// Map of step index to image index in stepImages
-  /// Stored as "stepIndex:imageIndex" strings for database serialisation
+  /// Stored as "stepIndex:imageIndex" strings for database serialization
   List<String> stepImageMap = [];
 
   /// Where this recipe came from
   RecipeSource source = RecipeSource.personal;
 
-  /// Custom color override (stored as hex int)
+  /// Custom colour override (stored as hex int)
   int? colorValue;
 
   /// When the recipe was created
@@ -262,7 +262,7 @@ class Recipe {
           []
       ..source = RecipeSource.values.firstWhere(
         (e) => e.name == json['source'],
-        // Default to personal — un-tagged or unrecognised source strings belong to the user.
+        // Default to personal — un-tagged or unrecognized source strings belong to the user.
         orElse: () => RecipeSource.personal,
       )
       ..colorValue = json['colorValue'] as int?
@@ -576,7 +576,7 @@ class NutritionInfo {
   /// Total carbohydrates in grams
   double? carbohydrateContent;
   
-  /// Dietary fiber in grams
+  /// Dietary fibre in grams
   double? fiberContent;
   
   /// Sugars in grams

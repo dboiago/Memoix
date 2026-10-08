@@ -667,7 +667,7 @@ abstract class SupabaseSyncService {
 
   /// Builds the Supabase row map for a [Recipe].
   ///
-  /// Explicitly excludes device-personal fields: isFavorite, cookCount,
+  /// Explicitly excludes device-personal fields: isFavourite, cookCount,
   /// lastCookedAt, rating.
   static Map<String, dynamic> _recipeToRow(
     Recipe r,
@@ -1866,7 +1866,7 @@ abstract class SupabaseSyncService {
       for (final pref in prefs) {
         final entityType = pref['entity_type'] as String;
         final entityUuid = pref['entity_uuid'] as String;
-        final isFavorite = pref['is_favourite'] as bool? ?? false;
+        final isFavourite = pref['is_favourite'] as bool? ?? false;
         final cookCount = pref['cook_count'] as int? ?? 0;
         final buy = pref['buy'] as bool? ?? false;
         final lastCookedAtStr = pref['last_cooked_at'] as String?;
@@ -1878,7 +1878,7 @@ abstract class SupabaseSyncService {
           case 'recipe':
             await (db.update(db.recipes)..where((r) => r.uuid.equals(entityUuid)))
                 .write(RecipesCompanion(
-                  isFavourite: Value(isFavorite),
+                  isFavourite: Value(isFavourite),
                   cookCount: Value(cookCount),
                   lastCookedAt: Value(lastCookedAt),
                   rating: Value(rating),
@@ -1887,7 +1887,7 @@ abstract class SupabaseSyncService {
           case 'pizza':
             await (db.update(db.pizzas)..where((p) => p.uuid.equals(entityUuid)))
                 .write(PizzasCompanion(
-                  isFavourite: Value(isFavorite),
+                  isFavourite: Value(isFavourite),
                   cookCount: Value(cookCount),
                   rating: Value(rating),
                 ),);
@@ -1896,7 +1896,7 @@ abstract class SupabaseSyncService {
             await (db.update(db.cellarEntries)
                   ..where((e) => e.uuid.equals(entityUuid)))
                 .write(CellarEntriesCompanion(
-                  isFavourite: Value(isFavorite),
+                  isFavourite: Value(isFavourite),
                   buy: Value(buy),
                 ),);
             break;
@@ -1904,7 +1904,7 @@ abstract class SupabaseSyncService {
             await (db.update(db.cheeseEntries)
                   ..where((e) => e.uuid.equals(entityUuid)))
                 .write(CheeseEntriesCompanion(
-                  isFavourite: Value(isFavorite),
+                  isFavourite: Value(isFavourite),
                   buy: Value(buy),
                 ),);
             break;
@@ -1912,7 +1912,7 @@ abstract class SupabaseSyncService {
             await (db.update(db.sandwiches)
                   ..where((s) => s.uuid.equals(entityUuid)))
                 .write(SandwichesCompanion(
-                  isFavourite: Value(isFavorite),
+                  isFavourite: Value(isFavourite),
                   cookCount: Value(cookCount),
                   rating: Value(rating),
                 ),);
@@ -1921,7 +1921,7 @@ abstract class SupabaseSyncService {
             await (db.update(db.smokingRecipes)
                   ..where((r) => r.uuid.equals(entityUuid)))
                 .write(SmokingRecipesCompanion(
-                  isFavourite: Value(isFavorite),
+                  isFavourite: Value(isFavourite),
                   cookCount: Value(cookCount),
                 ),);
             break;

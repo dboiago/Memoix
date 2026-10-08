@@ -83,7 +83,7 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                       const SizedBox(height: 4),
                       Row(
                         children: [
-                          // Colored dot for Concept/Technique with distinct colors
+                          // Coloured dot for Concept/Technique with distinct colours
                           Container(
                             width: 8,
                             height: 8,
@@ -143,7 +143,7 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Favorite button
+                  // Favourite button
                   IconButton(
                     icon: Icon(
                       recipe.isFavourite ? Icons.favorite : Icons.favorite_border,

@@ -54,7 +54,7 @@ class RagQueryResult {
   /// Taxonomy tags returned by the RPC (e.g. `['gluten-free', 'quick']`).
   final List<String> tags;
 
-  /// Domain type slug that distinguishes specialised recipe kinds
+  /// Domain type slug that distinguishes specialized recipe kinds
   /// (e.g. `'pizza'`, `'smoking'`). Null when not specified.
   final String? domainType;
 
@@ -77,7 +77,7 @@ class RagQueryResult {
     this.domainType,
   });
 
-  /// Deserialises a [RagQueryResult] from a Supabase response row.
+  /// Deserializes a [RagQueryResult] from a Supabase response row.
   ///
   /// Expects snake_case keys as returned by a Postgres function or RPC call.
   factory RagQueryResult.fromJson(Map<String, dynamic> json) {

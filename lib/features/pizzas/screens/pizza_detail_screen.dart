@@ -98,7 +98,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
             title: pizza.name,
             isFavourite: pizza.isFavourite,
             headerImage: hasHeaderImage ? pizza.imageUrl : null,
-            onFavoritePressed: () async {
+            onFavouritePressed: () async {
               await ref.read(pizzaRepositoryProvider).toggleFavourite(pizza);
               ref.invalidate(allPizzasProvider);
               await processIntegrityResponses(ref);
@@ -192,7 +192,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
 
   /// Build compact metadata row for side-by-side mode.
   Widget _buildCompactMetadata(Pizza pizza, ThemeData theme) {
-    final textColor = theme.colorScheme.onSurfaceVariant;
+    final textColour = theme.colorScheme.onSurfaceVariant;
     
     return Row(
       children: [
@@ -208,7 +208,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
         Text(
           PizzaBaseExtension.fromString(pizza.base).displayName,
           style: theme.textTheme.bodySmall?.copyWith(
-            color: textColor,
+            color: textColour,
           ),
         ),
       ],
@@ -224,7 +224,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
             title: pizza.name,
             isFavourite: pizza.isFavourite,
             headerImage: hasHeaderImage ? pizza.imageUrl : null,
-            onFavoritePressed: () async {
+            onFavouritePressed: () async {
               await ref.read(pizzaRepositoryProvider).toggleFavourite(pizza);
               ref.invalidate(allPizzasProvider);
               await processIntegrityResponses(ref);

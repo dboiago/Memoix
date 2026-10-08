@@ -196,11 +196,11 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
               ),
             ),
 
-            // Action icons (favorite + cooked)
+            // Action icons (favourite + cooked)
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                // Favorite button
+                // Favourite button
                 IconButton(
                   icon: Icon(
                     widget.recipe.isFavourite ? Icons.favorite : Icons.favorite_border,

@@ -18,7 +18,7 @@ import 'rag_transmission_client.dart';
 class SupabaseTransmissionClient implements RagTransmissionClient {
   const SupabaseTransmissionClient();
 
-  /// Returns the Supabase client only when Supabase is fully initialised.
+  /// Returns the Supabase client only when Supabase is fully initialized.
   /// Returns null if called before [Supabase.initialize] has completed.
   SupabaseClient? get _supabaseClient {
     try {
@@ -439,7 +439,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   // Payload enrichment helpers
   //
   // Each helper calls the payload’s own toJson() (preserving all existing
-  // serialisation) then injects fields that are present on the local model
+  // serialization) then injects fields that are present on the local model
   // but absent from the payload’s toJson() implementation.
   // Null / empty values are included explicitly so the telemetry row always
   // carries the fullest possible snapshot of the record.

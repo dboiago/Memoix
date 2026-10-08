@@ -134,18 +134,18 @@ class PizzaRepository {
 
   /// Toggle favourite status
   Future<void> toggleFavourite(Pizza pizza) async {
-    final wasFavorited = pizza.isFavourite;
+    final wasFavourited = pizza.isFavourite;
     await _db.catalogueDao.togglePizzaFavourite(pizza.id, pizza.isFavourite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
       metadata: {
         'recipe_id': pizza.uuid,
-        'is_adding': !wasFavorited,
+        'is_adding': !wasFavourited,
       },
     );
     // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
-    unawaited(_ref.read(ragTelemetryServiceProvider).queuePizzaForExport(pizza.copyWith(isFavourite: !wasFavorited)));
+    unawaited(_ref.read(ragTelemetryServiceProvider).queuePizzaForExport(pizza.copyWith(isFavourite: !wasFavourited)));
   }
 
   /// Increment cook count

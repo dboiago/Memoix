@@ -41,7 +41,7 @@ enum FavouriteSortOption {
   byCuisineType,
 }
 
-/// A wrapper class for any favorited item
+/// A wrapper class for any favourited item
 class FavouriteItem {
   final Object item;
   final FavouriteCuisineType cuisineType;

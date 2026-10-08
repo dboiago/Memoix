@@ -221,7 +221,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             title: recipe.name,
             isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
-            onFavoritePressed: recipe.source == RecipeSource.walkin && recipe.id == 0
+            onFavouritePressed: recipe.source == RecipeSource.walkin && recipe.id == 0
               ? null
               : () async {
                   final blocked = await ref
@@ -476,8 +476,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
   /// tap resets to baseline when scaling is active. The icon and text shift to
   /// [theme.colorScheme.primary] when a custom target is set.
   Widget _buildCompactMetadata(Recipe recipe, ThemeData theme) {
-    final textColor = theme.colorScheme.onSurfaceVariant;
-    final baseStyle = theme.textTheme.bodySmall?.copyWith(color: textColor);
+    final textColour = theme.colorScheme.onSurfaceVariant;
+    final baseStyle = theme.textTheme.bodySmall?.copyWith(color: textColour);
     final isDrink = recipe.course.toLowerCase() == 'drinks';
 
     // ── Pre-serves items: cuisine / spirit ─────────────────────────────────
@@ -486,14 +486,14 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     if (isDrink) {
       // For drinks: show spirit dot + "Spirit (Cuisine)" like list view
       if (recipe.subcategory != null && recipe.subcategory!.isNotEmpty) {
-        final spiritColor = MemoixColours.forSpiritDot(recipe.subcategory);
+        final spiritColour = MemoixColours.forSpiritDot(recipe.subcategory);
         preItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Container(
             width: 8,
             height: 8,
             margin: const EdgeInsets.only(right: 4),
-            decoration: BoxDecoration(color: spiritColor, shape: BoxShape.circle),
+            decoration: BoxDecoration(color: spiritColour, shape: BoxShape.circle),
           ),
         ),);
         final spirit = Spirit.toDisplayName(recipe.subcategory!);
@@ -503,14 +503,14 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           preItems.add(TextSpan(text: spirit));
         }
       } else if (recipe.cuisine != null) {
-        final cuisineColor = MemoixColours.forContinentDot(recipe.cuisine);
+        final cuisineColour = MemoixColours.forContinentDot(recipe.cuisine);
         preItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Container(
             width: 8,
             height: 8,
             margin: const EdgeInsets.only(right: 4),
-            decoration: BoxDecoration(color: cuisineColor, shape: BoxShape.circle),
+            decoration: BoxDecoration(color: cuisineColour, shape: BoxShape.circle),
           ),
         ),);
         preItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
@@ -519,14 +519,14 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       final cuisineDisplay =
           Cuisine.displayFor(recipe.cuisine, recipe.subcategory);
       if (cuisineDisplay != null) {
-        final cuisineColor = MemoixColours.forContinentDot(cuisineDisplay.colourKey);
+        final cuisineColour = MemoixColours.forContinentDot(cuisineDisplay.colourKey);
         preItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Container(
             width: 8,
             height: 8,
             margin: const EdgeInsets.only(right: 4),
-            decoration: BoxDecoration(color: cuisineColor, shape: BoxShape.circle),
+            decoration: BoxDecoration(color: cuisineColour, shape: BoxShape.circle),
           ),
         ),);
         preItems.add(TextSpan(text: cuisineDisplay.label));
@@ -541,7 +541,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       if (normalized.isNotEmpty) {
         postItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
-          child: Icon(Icons.schedule, size: 12, color: textColor),
+          child: Icon(Icons.schedule, size: 12, color: textColour),
         ),);
         postItems.add(TextSpan(text: ' $normalized'));
       }
@@ -551,7 +551,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       if (postItems.isNotEmpty) postItems.add(const TextSpan(text: '   '));
       postItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
-        child: Icon(Icons.local_bar, size: 12, color: textColor),
+        child: Icon(Icons.local_bar, size: 12, color: textColour),
       ),);
       postItems.add(TextSpan(text: ' ${_capitalizeWords(recipe.glass!)}'));
     }
@@ -582,8 +582,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     // tap resets scaling when a target is active.
     Widget? servesWidget;
     if (effectiveHasServes) {
-      final indicatorColor =
-          isScaled ? theme.colorScheme.primary : textColor;
+      final indicatorColour =
+          isScaled ? theme.colorScheme.primary : textColour;
       final displayText =
           isScaled ? _targetServes.toString() : servesNormalized;
       servesWidget = Material(
@@ -598,11 +598,11 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           onTap: isScaled ? () => setState(() => _targetServes = null) : null,
           child: Text.rich(
             TextSpan(
-              style: baseStyle?.copyWith(color: indicatorColor),
+              style: baseStyle?.copyWith(color: indicatorColour),
               children: [
                 WidgetSpan(
                   alignment: PlaceholderAlignment.middle,
-                  child: Icon(Icons.people, size: 12, color: indicatorColor),
+                  child: Icon(Icons.people, size: 12, color: indicatorColour),
                 ),
                 TextSpan(text: ' $displayText'),
               ],
@@ -652,7 +652,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             title: recipe.name,
             isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
-            onFavoritePressed: recipe.source == RecipeSource.walkin && recipe.id == 0
+            onFavouritePressed: recipe.source == RecipeSource.walkin && recipe.id == 0
                 ? null
                 : () async {
                     final blocked = await ref
@@ -1040,7 +1040,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     if (nutrition.proteinContent != null) items.add(MapEntry('Protein', '${nutrition.proteinContent}g'));
     if (nutrition.carbohydrateContent != null) items.add(MapEntry('Carbs', '${nutrition.carbohydrateContent}g'));
     if (nutrition.fatContent != null) items.add(MapEntry('Fat', '${nutrition.fatContent}g'));
-    if (nutrition.fiberContent != null) items.add(MapEntry('Fiber', '${nutrition.fiberContent}g'));
+    if (nutrition.fiberContent != null) items.add(MapEntry('Fibre', '${nutrition.fiberContent}g'));
     if (nutrition.sodiumContent != null) items.add(MapEntry('Sodium', '${nutrition.sodiumContent}mg'));
     
     return Wrap(
@@ -1226,7 +1226,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           avatar: CourseIconWidget(
             slug: paired.course,
             size: isCompact ? 14 : 16,
-            color: theme.colorScheme.onSurface,
+            colour: theme.colorScheme.onSurface,
           ),
           label: Text(paired.name),
           backgroundColor: theme.colorScheme.surfaceContainerHighest,

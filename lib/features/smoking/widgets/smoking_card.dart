@@ -11,7 +11,7 @@ import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 
 /// Card widget for displaying a smoking recipe in a list
-/// Matches RecipeCard styling with hover effects, favorite and cooked icons
+/// Matches RecipeCard styling with hover effects, favourite and cooked icons
 class SmokingCard extends ConsumerStatefulWidget {
   final SmokingRecipe recipe;
   final VoidCallback onTap;
@@ -93,11 +93,11 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                 ),
               ),
 
-              // Action icons (favorite + cooked)
+              // Action icons (favourite + cooked)
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Favorite button
+                  // Favourite button
                   IconButton(
                     icon: Icon(
                       widget.recipe.isFavourite
@@ -155,7 +155,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
       runSpacing: 4,
       crossAxisAlignment: WrapCrossAlignment.center,
       children: [
-        // Category with colored bullet
+        // Category with coloured bullet
         if (widget.recipe.category != null)
           Row(
             mainAxisSize: MainAxisSize.min,
@@ -247,7 +247,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
       runSpacing: 4,
       crossAxisAlignment: WrapCrossAlignment.center,
       children: [
-        // Category with colored bullet
+        // Category with coloured bullet
         if (widget.recipe.category != null)
           Row(
             mainAxisSize: MainAxisSize.min,

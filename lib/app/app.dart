@@ -94,7 +94,7 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
   }
 
   Future<void> _deferredInit() async {
-    // IngredientService is now initialised inside appInitProvider (concurrently
+    // IngredientService is now initialized inside appInitProvider (concurrently
     // with SVG warm-up) so that the 2-4 s of GZip + JSON work happens during
     // the splash rather than freezing the UI after first interaction.
     await ImageMigrationService.runIfNeeded();

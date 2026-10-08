@@ -44,7 +44,7 @@ class KnowledgePayload {
     required this.pairedRecipes,
   });
 
-  /// Serialises the payload for transmission.
+  /// Serializes the payload for transmission.
   Map<String, dynamic> toJson() {
     return {
       'schemaVersion': 2,

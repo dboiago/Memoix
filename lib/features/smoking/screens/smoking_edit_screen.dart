@@ -1922,7 +1922,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                 avatar: CourseIconWidget(
                   slug: course,
                   size: 16,
-                  color: theme.colorScheme.onSurface,
+                  colour: theme.colorScheme.onSurface,
                 ),
                 label: Text(name),
                 backgroundColor: theme.colorScheme.surfaceContainerHighest,
@@ -2023,7 +2023,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                             return ListTile(
                               leading: CourseIconWidget(
                                 slug: recipe.course,
-                                color: theme.colorScheme.primary,
+                                colour: theme.colorScheme.primary,
                               ),
                               title: Text(recipe.name),
                               subtitle: Text(

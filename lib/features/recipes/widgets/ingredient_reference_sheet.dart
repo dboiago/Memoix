@@ -376,7 +376,7 @@ class _ShimmerLoading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final shimmerColor = theme.colorScheme.onSurface.withValues(alpha: 0.08);
+    final shimmerColour = theme.colorScheme.onSurface.withValues(alpha: 0.08);
     final shimmerHighlight = theme.colorScheme.onSurface.withValues(alpha: 0.04);
 
     Widget bar(double width, double height) {
@@ -385,7 +385,7 @@ class _ShimmerLoading extends StatelessWidget {
         height: height,
         margin: const EdgeInsets.only(bottom: 8),
         decoration: BoxDecoration(
-          color: shimmerColor,
+          color: shimmerColour,
           borderRadius: BorderRadius.circular(4),
         ),
       );

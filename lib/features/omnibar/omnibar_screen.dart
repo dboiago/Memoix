@@ -382,7 +382,7 @@ String _courseDisplayName(String slug) {
     'desserts': 'Desserts',
     'drinks': 'Drinks',
     'breads': 'Breads',
-    'apps': 'Appetisers',
+    'apps': 'Appetizers',
     'sides': 'Sides',
     'salad': 'Salad',
     'brunch': 'Brunch',

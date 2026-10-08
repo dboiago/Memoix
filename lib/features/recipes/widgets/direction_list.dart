@@ -92,7 +92,7 @@ class _DirectionListState extends ConsumerState<DirectionList> {
         ),);
       }
       
-      // Add the optional/alt text in italics with secondary color
+      // Add the optional/alt text in italics with secondary colour
       spans.add(TextSpan(
         text: match.group(0),
         style: TextStyle(

@@ -98,7 +98,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             title: recipe.name,
             isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
-            onFavoritePressed: () async {
+            onFavouritePressed: () async {
               await ref.read(smokingRepositoryProvider).toggleFavourite(recipe);
               ref.invalidate(allSmokingRecipesProvider);
               await processIntegrityResponses(ref);
@@ -273,8 +273,8 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
   /// Build compact metadata row for side-by-side mode
   Widget _buildCompactMetadataRow(SmokingRecipe recipe, ThemeData theme) {
     final metadataItems = <InlineSpan>[];
-    final textColor = theme.colorScheme.onSurfaceVariant;
-    final iconColor = theme.colorScheme.onSurfaceVariant;
+    final textColour = theme.colorScheme.onSurfaceVariant;
+    final iconColour = theme.colorScheme.onSurfaceVariant;
     
     // Add category
     if (recipe.category != null && recipe.category!.isNotEmpty) {
@@ -288,7 +288,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       }
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
-        child: Icon(Icons.park_outlined, size: 12, color: iconColor),
+        child: Icon(Icons.park_outlined, size: 12, color: iconColour),
       ),);
       metadataItems.add(TextSpan(text: ' ${recipe.wood}'));
     }
@@ -301,7 +301,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       }
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
-        child: Icon(Icons.thermostat_outlined, size: 12, color: iconColor),
+        child: Icon(Icons.thermostat_outlined, size: 12, color: iconColour),
       ),);
       metadataItems.add(TextSpan(text: ' $normalizedTemp'));
     }
@@ -315,7 +315,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         }
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
-          child: Icon(Icons.schedule, size: 12, color: iconColor),
+          child: Icon(Icons.schedule, size: 12, color: iconColour),
         ),);
         metadataItems.add(TextSpan(text: ' $normalized'));
       }
@@ -328,7 +328,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     return Text.rich(
       TextSpan(
         style: theme.textTheme.bodySmall?.copyWith(
-          color: textColor,
+          color: textColour,
         ),
         children: metadataItems,
       ),
@@ -407,7 +407,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             title: recipe.name,
             isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
-            onFavoritePressed: () async {
+            onFavouritePressed: () async {
               await ref.read(smokingRepositoryProvider).toggleFavourite(recipe);
               ref.invalidate(allSmokingRecipesProvider);
               await processIntegrityResponses(ref);

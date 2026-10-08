@@ -79,7 +79,7 @@ class _CourseCardState extends State<CourseCard> {
                       child: CourseIconWidget(
                         slug: widget.course.slug,
                         size: 18,
-                        color: (_hovered || _pressed)
+                        colour: (_hovered || _pressed)
                             ? (isDark ? theme.scaffoldBackgroundColor : theme.scaffoldBackgroundColor)
                             : theme.colorScheme.primary,
                       ),

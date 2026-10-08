@@ -26,7 +26,7 @@ import 'tandoor_parser.dart';
 /// the tie: `recipeIngredient` key → Mealie; `steps` key → Tandoor.
 ///
 /// If detection fails entirely, the summary carries a single
-/// [ExternalParseFailure] with reason `'Unrecognised ZIP format'`.
+/// [ExternalParseFailure] with reason `'Unrecognized ZIP format'`.
 class ZipDispatchParser implements ExternalFormatParser {
   static final _mealie = MealieParser();
   static final _tandoor = TandoorParser();
@@ -92,13 +92,13 @@ class ZipDispatchParser implements ExternalFormatParser {
         debugPrint('ZipDispatchParser: dispatching to TandoorParser');
         return _tandoor.parse(bytes);
       case _Target.unknown:
-        debugPrint('ZipDispatchParser: unrecognised ZIP format');
+        debugPrint('ZipDispatchParser: unrecognized ZIP format');
         return ExternalImportSummary(
           recipes: [],
           skippedCount: 0,
           failures: [
             ExternalParseFailure(
-              reason: 'Unrecognised ZIP format - expected a Mealie or Tandoor export',
+              reason: 'Unrecognized ZIP format - expected a Mealie or Tandoor export',
             ),
           ],
         );

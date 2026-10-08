@@ -444,17 +444,17 @@ class _TimerCard extends ConsumerWidget {
     final theme = Theme.of(context);
     final isFinished = timer.remainingSeconds == 0 && timer.isRunning;
     
-    // Use card color with explicit text colors for readability
-    final cardColor = isFinished || timer.isAlarming
+    // Use card colour with explicit text colours for readability
+    final cardColour = isFinished || timer.isAlarming
         ? theme.colorScheme.secondary.withValues(alpha: 0.3)
         : timer.isPaused
             ? theme.colorScheme.surfaceContainerHighest
             : theme.cardTheme.color ?? theme.colorScheme.surface;
-    final textColor = theme.colorScheme.onSurface;
+    final textColour = theme.colorScheme.onSurface;
 
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
-      color: cardColor,
+      color: cardColour,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -470,7 +470,7 @@ class _TimerCard extends ConsumerWidget {
                         timer.label.isNotEmpty ? timer.label : 'Timer',
                         style: theme.textTheme.titleMedium?.copyWith(
                           fontWeight: FontWeight.w500,
-                          color: textColor,
+                          color: textColour,
                         ),
                       ),
                       Text(
@@ -515,7 +515,7 @@ class _TimerCard extends ConsumerWidget {
               style: theme.textTheme.displayLarge?.copyWith(
                 fontWeight: FontWeight.w500,
                 fontFeatures: [const FontFeature.tabularFigures()],
-                color: textColor,
+                color: textColour,
               ),
             ),
             const SizedBox(height: 12),

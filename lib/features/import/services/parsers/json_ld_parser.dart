@@ -81,7 +81,7 @@ class JsonLdParser implements ExternalFormatParser {
         recipes: [],
         skippedCount: 1,
         failures: [
-          ExternalParseFailure(reason: 'Unrecognised JSON-LD structure'),
+          ExternalParseFailure(reason: 'Unrecognized JSON-LD structure'),
         ],
         detectedParserName: _parserName,
       );

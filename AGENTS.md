@@ -23,7 +23,7 @@ These rules apply to ALL code. Violations will require rework.
 
 | Rule | Details |
 |------|---------|
-| **CANADIAN ENGLISH** | Use Canadian spelling (colour, flavour, savoury, centre) for ALL UI text, comments, and custom variables. Do NOT modify Flutter's underlying APIs (e.g., keep `Color()`). |
+| **CANADIAN ENGLISH** | Use Canadian spelling for ALL UI text, comments, and custom variables: -our (colour, favourite, flavour, savoury), -re (centre, metre, litre, fibre), -ize and -yze (normalize, organize, analyze), and grey. US spelling only where a framework or API requires it (e.g., keep `Color()`, `Colors`, `colorScheme`, and the `color:` parameter). |
 | **NO ICONS / NO EMOJIS** | Do not add decorative icons (🍕, 🗑️) to headers, titles, or buttons unless explicitly requested. |
 | **MAINS IS BASELINE** | The "Mains" screen defines canonical spacing, padding, and font sizes. Do not "improve" layouts. |
 | **DESTRUCTIVE ACTIONS** | Never use `Colors.red` or `error` for delete buttons. Use `theme.colorScheme.secondary` instead. |

@@ -45,7 +45,7 @@ abstract class PayloadHasher {
   // Lineage hash — stable across edits to identity fields
   // ───────────────────────────────────────────────────────────────
 
-  /// SHA-256 of normalised `name + course + sorted ingredient names`.
+  /// SHA-256 of normalized `name + course + sorted ingredient names`.
   ///
   /// Ingredient names are lower-cased and sorted before hashing so that
   /// reordering ingredients does not change the lineage.
@@ -239,7 +239,7 @@ abstract class PayloadHasher {
 
   /// SHA-256 of the full current cellar entry content.
   ///
-  /// Covers all descriptive fields. Personal-only fields (isFavorite, buy,
+  /// Covers all descriptive fields. Personal-only fields (isFavourite, buy,
   /// imageUrl) are excluded.
   static String cellarContentHash(CellarEntry entry) {
     final input = [

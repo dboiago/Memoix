@@ -231,7 +231,7 @@ String _pluralizeLastWord(String name) {
   return '${words.sublist(0, words.length - 1).join(' ')} $pluralLast';
 }
 
-/// Preserves the capitalisation style of [source] when applying [target].
+/// Preserves the capitalization style of [source] when applying [target].
 String _matchCase(String source, String target) {
   if (source.isEmpty || target.isEmpty) return target;
   if (source[0] == source[0].toUpperCase()) {

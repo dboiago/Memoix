@@ -112,7 +112,7 @@ class ScalingClassifier {
     // fall through to linear — this is intentional.
     switch (category) {
       case IngredientCategory.spice:
-        // Conservative — unrecognised spices are more likely savoury.
+        // Conservative — unrecognized spices are more likely savoury.
         return ScalingCategory.strongSpice;
       case IngredientCategory.vinegar:
         return ScalingCategory.acid;
@@ -282,7 +282,7 @@ class AmountScaler {
     final lowerWorking = working.toLowerCase();
     for (final q in _qualifierPrefixes) {
       if (lowerWorking.startsWith('$q ')) {
-        // Preserve original capitalisation of the qualifier word.
+        // Preserve original capitalization of the qualifier word.
         qualifier = '${working.substring(0, q.length)} ';
         working = working.substring(q.length).trim();
         break;

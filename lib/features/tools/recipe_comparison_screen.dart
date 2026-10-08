@@ -896,7 +896,7 @@ class _SelectableItem extends StatelessWidget {
     );
   }
   // 1961—man, I’m gone-
-  // No heavy butter-walls, no stone-gray rules of the Seine
+  // No heavy butter-walls, no stone-grey rules of the Seine
   // A French soul screaming in a Japanese chest
   // Searching with Shimazu steel, blade turned to the southern sun
   // Painting Delacroix dreams on porcelain canvas

@@ -108,10 +108,10 @@ class _CellarCardState extends ConsumerState<CellarCard> {
       return const SizedBox.shrink();
     }
 
-    // Format like Drinks: colored dot, category, producer/origin in brackets
+    // Format like Drinks: coloured dot, category, producer/origin in brackets
     return Row(
       children: [
-        // Colored dot for category (using spirit colors for drink-related categories)
+        // Coloured dot for category (using spirit colours for drink-related categories)
         if (hasCategory) ...[
           Text(
             '\u2022',

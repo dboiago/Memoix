@@ -29,7 +29,7 @@ extension SmokingTypeExtension on SmokingType {
 }
 
 /// Categories for smoked items (what's being smoked)
-/// Each category has its own color dot for visual identification
+/// Each category has its own colour dot for visual identification
 class SmokingCategory {
   SmokingCategory._();
 

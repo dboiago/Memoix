@@ -284,14 +284,14 @@ class ModernistRepository {
   Future<void> toggleFavourite(int id) async {
     final existing = await _db.recipeDao.getRecipeById(id);
     if (existing == null) return;
-    final wasFavorited = existing.isFavourite;
+    final wasFavourited = existing.isFavourite;
     await _db.recipeDao.toggleFavourite(id, existing.isFavourite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
       metadata: {
         'recipe_id': id,
-        'is_adding': !wasFavorited,
+        'is_adding': !wasFavourited,
       },
     );
     // Fire-and-forget: fetch domain object then queue updated favourite state for
@@ -299,7 +299,7 @@ class ModernistRepository {
     // the full ModernistRecipe, so we resolve it asynchronously.
     unawaited(getById(id).then((r) {
       if (r == null) return;
-      r.isFavourite = !wasFavorited;
+      r.isFavourite = !wasFavourited;
       _ref.read(ragTelemetryServiceProvider).queueModernistForExport(r);
     }));
   }

@@ -195,7 +195,7 @@ class ShoppingListController {
 
   /// Parse an ingredient amount string into a [double].
   ///
-  /// Delegates to [AmountUtils.parseMax], which handles all recognised
+  /// Delegates to [AmountUtils.parseMax], which handles all recognized
   /// formats (integers, decimals, fractions, mixed numbers, ranges).
   /// For range strings the maximum value is returned, consistent with the
   /// previous behaviour of taking a conservative/worst-case purchase quantity.
@@ -216,7 +216,7 @@ class ShoppingListController {
   /// A common import artifact stores `{ amount: "1 C", unit: "" }` instead
   /// of the canonical `{ amount: "1", unit: "C" }`. When `ingredient.unit`
   /// is empty this helper splits the last space-delimited token off the
-  /// amount string and checks whether it is a recognised unit via
+  /// amount string and checks whether it is a recognized unit via
   /// [UnitNormalizer.isRecognizedUnit]. Returns a named record on success,
   /// `null` if no parseable unit tail is found.
   ///
@@ -239,7 +239,7 @@ class ShoppingListController {
     }
 
     // Phase 2: split on the last space; check if the right-hand token is a
-    // recognised unit.  E.g. "1 C", "2.5 Tbsp", "1½ tsp", "200 g".
+    // recognized unit.  E.g. "1 C", "2.5 Tbsp", "1½ tsp", "200 g".
     final lastSpace = trimmed.lastIndexOf(' ');
     if (lastSpace == -1) return null; // no space → no embedded unit
 
@@ -271,7 +271,7 @@ class ShoppingListController {
   /// imperial-only per dimension).
   ///
   /// Returns a named record `(unit, qty)` on success, null when units are
-  /// cross-system, cross-dimension, or unrecognised (e.g. grams + tablespoons).
+  /// cross-system, cross-dimension, or unrecognized (e.g. grams + tablespoons).
   ///
   /// Metric targets escalate g → kg and ml → L at 1 000 units.
   /// Imperial volume prefers the largest unit present to avoid tiny fractions.
@@ -357,7 +357,7 @@ class ShoppingListController {
       return (unit: targetUnit, qty: total);
     }
 
-    return null; // Cross-system or unrecognised units.
+    return null; // Cross-system or unrecognized units.
   }
 }
 
@@ -421,7 +421,7 @@ class _TermBuilder {
     final freeformNote =
         freeformTexts.isEmpty ? null : freeformTexts.join(', ');
 
-    // Fix C: group by normalised unit key (de-pluralized, lowercase) so that
+    // Fix C: group by normalized unit key (de-pluralized, lowercase) so that
     // "cloves" and "clove" resolve to the same bucket.
     final Map<String, double> unitSums = {};
     for (final v in numericVariants) {

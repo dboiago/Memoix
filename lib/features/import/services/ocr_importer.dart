@@ -865,7 +865,7 @@ class OcrRecipeImporter {
     double? parsedFat;
     double? parsedCarbs;
     double? parsedProtein;
-    double? parsedFiber;
+    double? parsedFibre;
     double? parsedSodium;
     double? parsedSugar;
     String? parsedServingSize;
@@ -1202,11 +1202,11 @@ class OcrRecipeImporter {
           if (protValue != null) parsedProtein = double.tryParse(protValue);
         }
         
-        // Extract fiber: "3g fiber"
-        final fiberMatch = RegExp(r'(\d+\.?\d*)\s*g?\s*fib(?:er|re)|fib(?:er|re)\s*(\d+\.?\d*)\s*g?', caseSensitive: false).firstMatch(line);
-        if (fiberMatch != null) {
-          final fiberValue = fiberMatch.group(1) ?? fiberMatch.group(2);
-          if (fiberValue != null) parsedFiber = double.tryParse(fiberValue);
+        // Extract fibre: "3g fibre"
+        final fibreMatch = RegExp(r'(\d+\.?\d*)\s*g?\s*fib(?:er|re)|fib(?:er|re)\s*(\d+\.?\d*)\s*g?', caseSensitive: false).firstMatch(line);
+        if (fibreMatch != null) {
+          final fibreValue = fibreMatch.group(1) ?? fibreMatch.group(2);
+          if (fibreValue != null) parsedFibre = double.tryParse(fibreValue);
         }
         
         // Extract sodium: "150mg sodium"
@@ -1730,14 +1730,14 @@ class OcrRecipeImporter {
     // Build nutrition info if any values were parsed
     NutritionInfo? parsedNutrition;
     if (parsedCalories != null || parsedFat != null || parsedCarbs != null || 
-        parsedProtein != null || parsedFiber != null || parsedSodium != null || parsedSugar != null) {
+        parsedProtein != null || parsedFibre != null || parsedSodium != null || parsedSugar != null) {
       parsedNutrition = NutritionInfo.create(
         servingSize: parsedServingSize,
         calories: parsedCalories,
         fatContent: parsedFat,
         carbohydrateContent: parsedCarbs,
         proteinContent: parsedProtein,
-        fiberContent: parsedFiber,
+        fiberContent: parsedFibre,
         sodiumContent: parsedSodium,
         sugarContent: parsedSugar,
       );

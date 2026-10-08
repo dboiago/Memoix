@@ -768,7 +768,7 @@ class SettingsScreen extends ConsumerWidget {
 
           const Divider(),
 
-          // Danger zone (using secondary color for visibility)
+          // Danger zone (using secondary colour for visibility)
           _SectionHeader(title: 'Danger Zone', colour: theme.colorScheme.secondary),
           _ClearAllDataTile(
             onTap: () => _confirmClearData(context, ref),

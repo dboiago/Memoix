@@ -414,21 +414,21 @@ class _DayCardState extends ConsumerState<DayCard> {
         // Priority: drag > selected > today-only (not selected) > hovered > default.
         // Today without selection uses primary (matches the date number colour) so
         // only the selected day uses the accent (secondary) border.
-        final Color borderColor;
+        final Color borderColour;
         if (isDragHovering) {
-          borderColor = theme.colorScheme.primary;
+          borderColour = theme.colorScheme.primary;
         } else if (widget.isSelected || _hovered) {
-          borderColor = theme.colorScheme.secondary;
+          borderColour = theme.colorScheme.secondary;
         } else if (isToday) {
-          borderColor = theme.colorScheme.primary;
+          borderColour = theme.colorScheme.primary;
         } else {
-          borderColor = theme.colorScheme.outline.withValues(alpha: 0.1);
+          borderColour = theme.colorScheme.outline.withValues(alpha: 0.1);
         }
             
         final borderWidth = (isHighlighted || isDragHovering) ? 1.5 : 1.0;
         
-        // Background color feedback
-        final cardColor = isDragHovering
+        // Background colour feedback
+        final cardColour = isDragHovering
             ? theme.colorScheme.primaryContainer.withValues(alpha: 0.15)
             : (widget.isSelected 
                 ? theme.colorScheme.secondary.withValues(alpha: 0.08)
@@ -443,11 +443,11 @@ class _DayCardState extends ConsumerState<DayCard> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
               side: BorderSide(
-                color: borderColor,
+                color: borderColour,
                 width: borderWidth,
               ),
             ),
-            color: cardColor,
+            color: cardColour,
             child: Theme(
               data: theme.copyWith(dividerColor: Colors.transparent),
               child: ExpansionTile(
@@ -641,7 +641,7 @@ class _DayCardState extends ConsumerState<DayCard> {
         padding: const EdgeInsets.only(top: 4),
         child: Row(
           children: [
-            // Cuisine with continent-colored dot
+            // Cuisine with continent-coloured dot
             if (meal.cuisine != null && meal.cuisine!.isNotEmpty) ...[
               Text(
                 '\u2022',

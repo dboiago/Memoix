@@ -216,7 +216,7 @@ class AmountUtils {
   static double extractBaselineServes(String? servesText) {
     if (servesText == null || servesText.trim().isEmpty) return 1.0;
 
-    // normalizeServes strips non-numeric words and normalises whitespace
+    // normalizeServes strips non-numeric words and normalizes whitespace
     // around range dashes, e.g. "Serves 4 people" → "4", "4-6" → "4-6".
     final normalized = UnitNormalizer.normalizeServes(servesText);
     if (normalized.isEmpty) return 1.0;
@@ -235,7 +235,7 @@ class AmountUtils {
 
   // ── Private helpers ─────────────────────────────────────────────────────
 
-  /// Core parser on an already fraction-normalised string (e.g. after
+  /// Core parser on an already fraction-normalized string (e.g. after
   /// [TextNormalizer.normalizeFractions] has been applied).
   ///
   /// Sums all digit sequences and unicode fraction glyphs it finds, which

@@ -28,14 +28,14 @@ class UnitNormalizer {
     'fl.oz': 'fl oz',
     'floz': 'fl oz',
     
-    // Volume - liters
+    // Volume - litres
     'liter': 'L',
     'liters': 'L',
     'litre': 'L',
     'litres': 'L',
     'l': 'L',
     
-    // Volume - milliliters
+    // Volume - millilitres
     'milliliter': 'ml',
     'milliliters': 'ml',
     'millilitre': 'ml',

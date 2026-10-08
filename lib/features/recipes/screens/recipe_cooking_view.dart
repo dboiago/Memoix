@@ -7,7 +7,7 @@ import '../widgets/ingredient_list.dart';
 import '../widgets/direction_list.dart';
 import '../../settings/screens/settings_screen.dart';
 
-/// A split-screen cooking view optimised for hands-free use in the kitchen.
+/// A split-screen cooking view optimized for hands-free use in the kitchen.
 /// Shows ingredients and directions side-by-side on wide screens,
 /// or stacked with a fixed ingredients panel on phones.
 class RecipeCookingView extends ConsumerStatefulWidget {

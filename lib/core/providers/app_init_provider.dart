@@ -74,7 +74,7 @@ final appInitProvider = FutureProvider<void>((ref) async {
         ).then((_) {
           SupabaseAuthService.initSyncListener();
         }).catchError((Object e) {
-          debugPrint('Supabase initialisation failed: $e');
+          debugPrint('Supabase initialization failed: $e');
         }),
       );
     }
@@ -160,7 +160,7 @@ final appInitProvider = FutureProvider<void>((ref) async {
     ...domainModels.Course.defaults.map(
       (c) => ref.read(recipesByCourseProvider(c.slug).future).then((_) {}),
     ),
-    // Specialised domain tables
+    // Specialized domain tables
     ref.read(allPizzasProvider.future).then((_) {}),
     ref.read(allSandwichesProvider.future).then((_) {}),
     ref.read(allSmokingRecipesProvider.future).then((_) {}),

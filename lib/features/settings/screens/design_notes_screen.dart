@@ -189,7 +189,7 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
             description:
                 'Recipe names and ingredients are automatically title-cased. '
                 'Fractions (1/2, 0.333) convert to symbols (½, ⅓). '
-                'Measurement units are standardised (tablespoons → Tbsp, cups → C).',
+                'Measurement units are standardized (tablespoons → Tbsp, cups → C).',
           ),
           const _DesignNote(
             title: 'Compact View',
@@ -224,10 +224,10 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
                 'Sync and external backup are optional features.',
           ),
           const _DesignNote(
-            title: 'Course Organisation',
+            title: 'Course Organization',
             description:
-                'Recipes organise by course (Mains, Desserts, Drinks, etc.). '
-                'Some categories (Pizza, Modernist, Smoking) use specialised layouts for their unique requirements.',
+                'Recipes organize by course (Mains, Desserts, Drinks, etc.). '
+                'Some categories (Pizza, Modernist, Smoking) use specialized layouts for their unique requirements.',
           ),
           const _DesignNote(
             title: 'Search Behaviour',

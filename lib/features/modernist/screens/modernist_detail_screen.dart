@@ -117,7 +117,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             title: recipe.name,
             isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
-            onFavoritePressed: () async {
+            onFavouritePressed: () async {
               await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);
               ref.invalidate(modernistRecipeProvider(widget.recipeId));
               await processIntegrityResponses(ref);
@@ -232,12 +232,12 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
 
   /// Build compact metadata row for side-by-side mode
   Widget _buildCompactMetadataRow(ModernistRecipe recipe, ThemeData theme) {
-    final textColor = theme.colorScheme.onSurfaceVariant;
+    final textColour = theme.colorScheme.onSurfaceVariant;
     final metadataItems = <InlineSpan>[];
     
-    // Always show type with colored indicator (Concept or Technique)
+    // Always show type with coloured indicator (Concept or Technique)
     // Use MemoixColours.forModernistType to match list view
-    final typeColor = MemoixColours.forModernistType(recipe.type.name);
+    final typeColour = MemoixColours.forModernistType(recipe.type.name);
     metadataItems.add(WidgetSpan(
       alignment: PlaceholderAlignment.middle,
       child: Container(
@@ -245,7 +245,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         height: 8,
         margin: const EdgeInsets.only(right: 4),
         decoration: BoxDecoration(
-          color: typeColor,
+          color: typeColour,
           shape: BoxShape.circle,
         ),
       ),
@@ -257,7 +257,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       metadataItems.add(const TextSpan(text: '   '));
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
-        child: Icon(Icons.science_outlined, size: 12, color: textColor),
+        child: Icon(Icons.science_outlined, size: 12, color: textColour),
       ),);
       metadataItems.add(TextSpan(text: ' ${recipe.technique!}'));
     }
@@ -269,7 +269,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         metadataItems.add(const TextSpan(text: '   '));
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
-          child: Icon(Icons.people, size: 12, color: textColor),
+          child: Icon(Icons.people, size: 12, color: textColour),
         ),);
         metadataItems.add(TextSpan(text: ' $normalized'));
       }
@@ -282,7 +282,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         metadataItems.add(const TextSpan(text: '   '));
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
-          child: Icon(Icons.schedule, size: 12, color: textColor),
+          child: Icon(Icons.schedule, size: 12, color: textColour),
         ),);
         metadataItems.add(TextSpan(text: ' $normalized'));
       }
@@ -293,7 +293,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       metadataItems.add(const TextSpan(text: '   '));
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
-        child: Icon(Icons.signal_cellular_alt, size: 12, color: textColor),
+        child: Icon(Icons.signal_cellular_alt, size: 12, color: textColour),
       ),);
       metadataItems.add(TextSpan(text: ' ${recipe.difficulty!}'));
     }
@@ -305,7 +305,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     return Text.rich(
       TextSpan(
         style: theme.textTheme.bodySmall?.copyWith(
-          color: textColor,
+          color: textColour,
         ),
         children: metadataItems,
       ),
@@ -385,7 +385,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             title: recipe.name,
             isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
-            onFavoritePressed: () async {
+            onFavouritePressed: () async {
               await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);
               ref.invalidate(modernistRecipeProvider(widget.recipeId));
               await processIntegrityResponses(ref);

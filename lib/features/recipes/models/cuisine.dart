@@ -715,7 +715,7 @@ class Cuisine {
     return name == null ? null : byName(name)?.code;
   }
 
-  /// The original term, capitalised, when it is a sub-region of a cuisine or a
+  /// The original term, capitalized, when it is a sub-region of a cuisine or a
   /// multi-country style; otherwise null.
   static String? regionFor(String? raw) {
     if (raw == null) return null;

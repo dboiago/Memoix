@@ -27,7 +27,7 @@ class AiResponse {
   bool get isSuccess => data != null && errorType == null;
 }
 
-/// Categorised error types the UI can react to.
+/// Categorized error types the UI can react to.
 enum AiErrorType {
   /// No API key configured.
   noToken,

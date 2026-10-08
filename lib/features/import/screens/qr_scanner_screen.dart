@@ -266,8 +266,8 @@ class _QrScannerScreenState extends ConsumerState<QrScannerScreen> {
   Widget _buildScanOverlay(ThemeData theme) {
     return CustomPaint(
       painter: _ScanOverlayPainter(
-        borderColor: theme.colorScheme.primary,
-        overlayColor: Colors.black54,
+        borderColour: theme.colorScheme.primary,
+        overlayColour: Colors.black54,
       ),
       child: const SizedBox.expand(),
     );
@@ -350,12 +350,12 @@ class _QrScannerScreenState extends ConsumerState<QrScannerScreen> {
 
 /// Custom painter for the scanning overlay
 class _ScanOverlayPainter extends CustomPainter {
-  final Color borderColor;
-  final Color overlayColor;
+  final Color borderColour;
+  final Color overlayColour;
 
   _ScanOverlayPainter({
-    required this.borderColor,
-    required this.overlayColor,
+    required this.borderColour,
+    required this.overlayColour,
   });
 
   @override
@@ -368,7 +368,7 @@ class _ScanOverlayPainter extends CustomPainter {
     );
 
     // Draw semi-transparent overlay
-    final overlayPaint = Paint()..color = overlayColor;
+    final overlayPaint = Paint()..color = overlayColour;
     
     // Top
     canvas.drawRect(
@@ -393,7 +393,7 @@ class _ScanOverlayPainter extends CustomPainter {
 
     // Draw corner brackets
     final bracketPaint = Paint()
-      ..color = borderColor
+      ..color = borderColour
       ..strokeWidth = 4
       ..style = PaintingStyle.stroke;
 

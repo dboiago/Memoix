@@ -8,17 +8,17 @@ import 'package:flutter_svg/flutter_svg.dart';
 ///
 /// [slug]  — canonical course slug from Course.defaults (case-insensitive)
 /// [size]  — width/height in logical pixels (default 24.0)
-/// [color] — optional tint applied via colorFilter (SVG) or iconTheme (Material)
+/// [colour] — optional tint applied via colorFilter (SVG) or iconTheme (Material)
 class CourseIconWidget extends StatelessWidget {
   final String slug;
   final double size;
-  final Color? color;
+  final Color? colour;
 
   const CourseIconWidget({
     super.key,
     required this.slug,
     this.size = 24.0,
-    this.color,
+    this.colour,
   });
 
   /// Maps every canonical course slug to its SVG asset path.
@@ -107,8 +107,8 @@ class CourseIconWidget extends StatelessWidget {
         assetPath,
         width: size,
         height: size,
-        colorFilter: color != null
-            ? ColorFilter.mode(color!, BlendMode.srcIn)
+        colorFilter: colour != null
+            ? ColorFilter.mode(colour!, BlendMode.srcIn)
             : null,
       );
     }
@@ -116,7 +116,7 @@ class CourseIconWidget extends StatelessWidget {
     return Icon(
       fallbackIcon(normalizedSlug),
       size: size,
-      color: color,
+      color: colour,
     );
   }
 }

@@ -499,25 +499,25 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     IconData icon, {
     double confidence = 1.0,
   }) {
-    final Color indicatorColor;
+    final Color indicatorColour;
     final String label;
     
     // For optional fields with low confidence, show "Optional" instead of "Needs input"
     final isOptional = _optionalFields.contains(title);
     
     if (confidence >= 0.7) {
-      indicatorColor = theme.colorScheme.primary;
+      indicatorColour = theme.colorScheme.primary;
       label = 'Good';
     } else if (confidence >= 0.4) {
-      indicatorColor = theme.colorScheme.secondary;
+      indicatorColour = theme.colorScheme.secondary;
       label = 'Review';
     } else if (isOptional) {
       // Optional fields with no data - subtle indicator
-      indicatorColor = theme.colorScheme.outline;
+      indicatorColour = theme.colorScheme.outline;
       label = 'Optional';
     } else {
-      // Required fields with no data - use secondary color
-      indicatorColor = theme.colorScheme.secondary;
+      // Required fields with no data - use secondary colour
+      indicatorColour = theme.colorScheme.secondary;
       label = 'Needs input';
     }
 
@@ -534,14 +534,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           width: 8,
           height: 8,
           decoration: BoxDecoration(
-            color: indicatorColor,
+            color: indicatorColour,
             shape: BoxShape.circle,
           ),
         ),
         const SizedBox(width: 4),
         Text(
           label,
-          style: theme.textTheme.bodySmall?.copyWith(color: indicatorColor),
+          style: theme.textTheme.bodySmall?.copyWith(color: indicatorColour),
         ),
       ],
     );
@@ -1357,7 +1357,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       items.add(_nutritionRow('Protein', '${nutrition.proteinContent}g'));
     }
     if (nutrition.fiberContent != null) {
-      items.add(_nutritionRow('Fiber', '${nutrition.fiberContent}g'));
+      items.add(_nutritionRow('Fibre', '${nutrition.fiberContent}g'));
     }
     if (nutrition.sugarContent != null) {
       items.add(_nutritionRow('Sugar', '${nutrition.sugarContent}g'));

@@ -110,7 +110,7 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
     // Format: Milk type (Country adjective) - e.g., "Goat (Canadian)"
     return Row(
       children: [
-        // Colored dot based on country
+        // Coloured dot based on country
         if (hasCountry || hasMilk) ...[
           Text(
             '\u2022',

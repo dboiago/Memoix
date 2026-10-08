@@ -492,9 +492,9 @@ class RecipeRepository {
 
   /// Replaces absolute-path image values in [recipe] with their basenames and
   /// records the original paths in [out] so blobs can be persisted afterwards.
-  void _collectAndNormaliseImagePaths(
+  void _collectAndNormalizeImagePaths(
       Recipe recipe, Map<String, String> out,) {
-    String? normalise(String? value) {
+    String? normalize(String? value) {
       if (value == null || value.isEmpty || value.startsWith('http')) {
         return value;
       }
@@ -504,16 +504,16 @@ class RecipeRepository {
       return fileName;
     }
 
-    recipe.headerImage = normalise(recipe.headerImage);
+    recipe.headerImage = normalize(recipe.headerImage);
 
     for (int i = 0; i < recipe.stepImages.length; i++) {
       recipe.stepImages[i] =
-          normalise(recipe.stepImages[i]) ?? recipe.stepImages[i];
+          normalize(recipe.stepImages[i]) ?? recipe.stepImages[i];
     }
 
     for (int i = 0; i < recipe.imageUrls.length; i++) {
       recipe.imageUrls[i] =
-          normalise(recipe.imageUrls[i]) ?? recipe.imageUrls[i];
+          normalize(recipe.imageUrls[i]) ?? recipe.imageUrls[i];
     }
   }
 
@@ -871,7 +871,7 @@ class RecipeRepository {
     // Replace absolute image paths with basenames before persisting.
     // Collect the originals so blobs can be written after we have a recipeId.
     final fileNameToPath = <String, String>{};
-    _collectAndNormaliseImagePaths(recipe, fileNameToPath);
+    _collectAndNormalizeImagePaths(recipe, fileNameToPath);
 
     try {
       final companion = _toCompanion(recipe);
@@ -1032,9 +1032,9 @@ class RecipeRepository {
   Future<List<IntegrityResponse>> toggleFavourite(int id) async {
     final existing = await getRecipeById(id);
     if (existing == null) return [];
-    final wasFavorited = existing.isFavourite;
+    final wasFavourited = existing.isFavourite;
 
-    if (!wasFavorited) {
+    if (!wasFavourited) {
       final preflight = await IntegrityService.preflightSecondary(
         'activity.recipe_favourite',
         {
@@ -1051,19 +1051,19 @@ class RecipeRepository {
       if (blocking.isNotEmpty) return blocking;
     }
 
-    await _db.recipeDao.toggleFavourite(id, wasFavorited);
+    await _db.recipeDao.toggleFavourite(id, wasFavourited);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
 
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
       metadata: {
         'recipe_id': existing.uuid,
-        'is_adding': !wasFavorited,
+        'is_adding': !wasFavourited,
       },
     );
 
     // Reflect the new favourite state in-memory then queue for telemetry (fire-and-forget).
-    existing.isFavourite = !wasFavorited;
+    existing.isFavourite = !wasFavourited;
     unawaited(_ref.read(ragTelemetryServiceProvider).queueForExport(existing));
 
     return [];
@@ -1298,7 +1298,7 @@ class RecipeRepository {
   /// inserting. Recipes that already exist are skipped entirely — their rows
   /// and ingredients are never overwritten. This preserves user edits (the
   /// copy-on-write promotion to 'personal' in [saveRecipe]) and all
-  /// personalisation data (ratings, favourite flags, cook counts).
+  /// personalization data (ratings, favourite flags, cook counts).
   Future<void> syncMemoixRecipes(List<Recipe> recipes) async {
     // Assign missing UUIDs before handing off to the DAO.
     for (final recipe in recipes) {

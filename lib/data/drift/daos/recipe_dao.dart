@@ -362,7 +362,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   ///
   /// Each [RecipesCompanion] is inserted only when its UUID is not already
   /// present in the [recipes] table. Existing rows are never modified so user
-  /// edits (copy-on-write promotions to 'personal') and personalisation data
+  /// edits (copy-on-write promotions to 'personal') and personalization data
   /// (ratings, favourite flags, cook counts) are always preserved.
   Future<void> syncMemoixRecipes(List<RecipesCompanion> incoming) =>
       transaction(() async {

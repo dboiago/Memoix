@@ -136,7 +136,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     _fatController = TextEditingController();
 
     if (widget.defaultCourse != null) {
-      _selectedCourse = _normaliseCourseSlug(widget.defaultCourse!.toLowerCase());
+      _selectedCourse = _normalizeCourseSlug(widget.defaultCourse!.toLowerCase());
     }
 
     _loadRecipe();
@@ -172,7 +172,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       }
       
       // Normalize course to slug form (lowercase) to match dropdown values
-      _selectedCourse = _normaliseCourseSlug(recipe.course.toLowerCase() ?? _selectedCourse);
+      _selectedCourse = _normalizeCourseSlug(recipe.course.toLowerCase() ?? _selectedCourse);
       _selectedCuisine = recipe.cuisine;
 
       // Check if any ingredient has baker's percentage - auto-show column if so
@@ -312,8 +312,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     setState(() => _isLoading = false);
   }
 
-  /// Normalise course slug to match dropdown values
-  String _normaliseCourseSlug(String course) {
+  /// Normalize course slug to match dropdown values
+  String _normalizeCourseSlug(String course) {
     // First convert to lowercase
     final lower = course.toLowerCase();
     
@@ -2783,7 +2783,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 avatar: CourseIconWidget(
                   slug: course,
                   size: 16,
-                  color: theme.colorScheme.onSurface,
+                  colour: theme.colorScheme.onSurface,
                 ),
                 label: Text(name),
                 backgroundColor: theme.colorScheme.surfaceContainerHighest,
@@ -2886,7 +2886,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                             return ListTile(
                               leading: CourseIconWidget(
                                 slug: recipe.course,
-                                color: theme.colorScheme.primary,
+                                colour: theme.colorScheme.primary,
                               ),
                               title: Text(recipe.name),
                               subtitle: Text(

@@ -37,7 +37,7 @@ class ShareService {
   Map<String, dynamic>? _decodeAndDecompress(String encoded) {
     try {
       // SECURITY: Reject oversized input before any processing
-      // This is a first line of defense against decompression bombs
+      // This is a first line of defence against decompression bombs
       if (encoded.length > _maxEncodedInputLength) {
         debugPrint('Security: Rejected encoded input (${encoded.length} bytes > $_maxEncodedInputLength max)');
         return null;
