@@ -193,7 +193,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.qr_code_scanner,
               title: 'Scan QR Code',
               description: 'Import a recipe shared via QR code',
-              colour: Colors.purple,
+              colour: theme.colorScheme.secondary,
               onTap: () => _scanQrCode(context),
             ),
 

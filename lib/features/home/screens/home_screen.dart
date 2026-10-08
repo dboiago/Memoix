@@ -45,9 +45,9 @@ class HomeScreen extends ConsumerWidget {
       loading: () => const Scaffold(backgroundColor: Color(0xFF242424)),
       error: (err, _) {
         debugPrint('HomeScreen error: $err');
-        return const Scaffold(
-          backgroundColor: Color(0xFF242424),
-          body: Center(child: Text('Something went wrong. Please try restarting the app.', style: TextStyle(color: Color(0xFFA88FA8)))),
+        return Scaffold(
+          backgroundColor: const Color(0xFF242424),
+          body: Center(child: Text('Something went wrong. Please try restarting the app.', style: TextStyle(color: Theme.of(context).colorScheme.secondary))),
         );
       },
       data: (courses) => _CourseGridView(courses: courses),

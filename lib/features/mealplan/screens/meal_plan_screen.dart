@@ -693,13 +693,13 @@ class _DayCardState extends ConsumerState<DayCard> {
               ],
             ),
           ),
-          const PopupMenuItem(
+          PopupMenuItem(
             value: 'remove',
             child: Row(
               children: [
-                Icon(Icons.delete, color: Color(0xFFA88FA8)),
-                SizedBox(width: 8),
-                Text('Remove', style: TextStyle(color: Color(0xFFA88FA8))),
+                Icon(Icons.delete, color: theme.colorScheme.secondary),
+                const SizedBox(width: 8),
+                Text('Remove', style: TextStyle(color: theme.colorScheme.secondary)),
               ],
             ),
           ),
