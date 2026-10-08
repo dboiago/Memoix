@@ -138,6 +138,17 @@ class MemoixColours {
   static const Color importGallery = Color(0xFFE8A86B);        // Warm orange
   static const Color importAi = Color(0xFFA88FA8);             // Soft mauve
 
+  // Neutral fallback colours (dots and rows with no matching category)
+  static const Color neutralFallback = Color(0xFF9E9E9E);
+  static const Color lightNeutralFallback = Color(0xFFF5F5F5);
+
+  // Fixed colours with no theme equivalent
+  static const Color scrim = Color(0x8A000000);
+  static const Color onScrim = Color(0xFFFFFFFF);
+  static const Color imagePlaceholderFill = Color(0xFFEEEEEE);
+  static const Color headerTitleStroke = Color(0xFF4B5563);
+  static const Color snackbarActionFallback = Color(0xFF40C4FF);
+
   /// Get colour for a course category
   static Color forCourse(String course) {
     switch (course.toLowerCase()) {
@@ -191,7 +202,7 @@ class MemoixColours {
       case 'drinks':
         return drinks;
       default:
-        return Colors.grey;
+        return neutralFallback;
     }
   }
 
@@ -249,7 +260,7 @@ class MemoixColours {
       case 'south american':
         return brazilian;
       default:
-        return Colors.grey.shade100;
+        return lightNeutralFallback;
     }
   }
 
@@ -257,7 +268,7 @@ class MemoixColours {
   /// Uses themed colours that complement the app's primary/secondary palette
   /// Handles both cuisine names ("Japanese") and country codes ("JP")
   static Color forContinentDot(String? cuisine) {
-    if (cuisine == null || cuisine.isEmpty) return Colors.grey;
+    if (cuisine == null || cuisine.isEmpty) return neutralFallback;
     
     final lower = cuisine.toLowerCase().trim();
     final upper = cuisine.toUpperCase().trim();
@@ -352,7 +363,7 @@ class MemoixColours {
     }
     
     // Fallback
-    return Colors.grey;
+    return neutralFallback;
   }
 
   static Color _continentColour(String continent) {
@@ -374,14 +385,14 @@ class MemoixColours {
       case 'Oceanian':
         return continentOceanian;
       default:
-        return Colors.grey;
+        return neutralFallback;
     }
   }
 
   /// Get dot colour for a spirit/drink base type
   /// Uses themed colours for visual identification of cocktail base spirits
   static Color forSpiritDot(String? spirit) {
-    if (spirit == null || spirit.isEmpty) return Colors.grey;
+    if (spirit == null || spirit.isEmpty) return neutralFallback;
     
     final lower = spirit.toLowerCase().trim();
     final upper = spirit.toUpperCase().trim();
@@ -487,7 +498,7 @@ class MemoixColours {
     }
     
     // Fallback
-    return Colors.grey;
+    return neutralFallback;
   }
 
   /// Get dot colour for a pizza sauce/base type
@@ -552,7 +563,7 @@ class MemoixColours {
   /// Uses soft pastel colours matching app theme for visual identification
   /// Falls back to grey for unknown proteins
   static Color forProteinDot(String? protein) {
-    if (protein == null || protein.isEmpty) return Colors.grey;
+    if (protein == null || protein.isEmpty) return neutralFallback;
     
     final lower = protein.toLowerCase().trim();
     
@@ -613,13 +624,13 @@ class MemoixColours {
     }
     
     // Default to grey for unknown proteins
-    return Colors.grey;
+    return neutralFallback;
   }
 
   /// Get dot colour for a smoked item category
   /// Uses themed colours for visual identification of what's being smoked
   static Color forSmokedItemDot(String? category) {
-    if (category == null || category.isEmpty) return Colors.grey;
+    if (category == null || category.isEmpty) return neutralFallback;
     
     final lower = category.toLowerCase().trim();
     

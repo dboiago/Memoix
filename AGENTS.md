@@ -111,7 +111,11 @@ All SnackBars **MUST** use `MemoixSnackBar` from `lib/core/widgets/memoix_snackb
 ### 4.3 Colour System
 Use `theme.colorScheme.primary` and `theme.colorScheme.secondary` (Mauve/Warm accents).
 Use `MemoixColours` (note the Canadian spelling if refactored) for data-driven indicator dots.
-**FORBIDDEN:** Hardcoded hex codes like `Color(0xFF4B5563)` or bare `Colors.red`.
+**FORBIDDEN:** Hard-coded colour values of any kind outside `colours.dart` and `theme.dart`: hex literals (e.g., `Color(0xFF4B5563)`) and `Colors.*` constants (e.g., `Colors.red`, `Colors.grey`, `Colors.white`, `Colors.black`). `Colors.transparent` is permitted.
+Widgets use `ColorScheme` roles from the active theme.
+Data-driven colours, dots, and fixed colours with no theme equivalent (scrims, text and controls on scrims, broken-image fill, header title stroke, snackbar fallback) are named constants in `colours.dart`. If no suitable colour exists, add a named constant there instead of using a literal.
+Dots never use theme colours.
+**EXCEPTION:** The logo background `Color(0xFF242424)` in `app.dart`, `share_handler_service.dart`, and `home_screen.dart` matches the logo artwork and must not be changed.
 
 ---
 
