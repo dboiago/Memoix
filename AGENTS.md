@@ -115,7 +115,7 @@ Use `MemoixColours` (note the Canadian spelling if refactored) for data-driven i
 Widgets use `ColorScheme` roles from the active theme.
 Data-driven colours, dots, and fixed colours with no theme equivalent (scrims, text and controls on scrims, broken-image fill, header title stroke, snackbar fallback) are named constants in `colours.dart`. If no suitable colour exists, add a named constant there instead of using a literal.
 Dots never use theme colours.
-**EXCEPTION:** The logo background `Color(0xFF242424)` in `app.dart`, `share_handler_service.dart`, and `home_screen.dart` matches the logo artwork and must not be changed.
+**EXCEPTION:** The logo background `Color(0xFF242424)` in `app.dart`, `share_handler_service.dart`, and `home_screen.dart`, and the white error text drawn on it in `app.dart`, match the logo artwork and must not be changed.
 
 ---
 

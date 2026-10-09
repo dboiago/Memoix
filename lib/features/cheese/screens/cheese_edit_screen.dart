@@ -11,6 +11,7 @@ import '../../../core/database/app_database.dart';
 import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../app/theme/colours.dart';
 
 /// Cheese edit/create screen
 class CheeseEditScreen extends ConsumerStatefulWidget {
@@ -402,14 +403,14 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
 
   Widget _imageActionButton({required IconData icon, required VoidCallback onPressed}) {
     return Material(
-      color: Colors.black54,
+      color: MemoixColours.scrim,
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         borderRadius: BorderRadius.circular(20),
         onTap: onPressed,
         child: Padding(
           padding: const EdgeInsets.all(8),
-          child: Icon(icon, color: Colors.white, size: 20),
+          child: Icon(icon, color: MemoixColours.onScrim, size: 20),
         ),
       ),
     );

@@ -21,6 +21,7 @@ import '../../cellar/repository/cellar_repository.dart';
 import '../../cheese/repository/cheese_repository.dart';
 import '../../sharing/services/share_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../app/theme/colours.dart';
 import '../../../shared/widgets/memoix_filter_chip.dart';
 
 /// Unified shareable item wrapper for all model types
@@ -595,11 +596,11 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
               child: Container(
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: MemoixColours.qrBackground,
                   borderRadius: BorderRadius.circular(16),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withValues(alpha: 0.1),
+                      color: MemoixColours.scrim.withValues(alpha: 0.1),
                       blurRadius: 10,
                       offset: const Offset(0, 4),
                     ),
@@ -609,7 +610,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                   data: _shareLink!,
                   version: QrVersions.auto,
                   size: 200,
-                  backgroundColor: Colors.white,
+                  backgroundColor: MemoixColours.qrBackground,
                 ),
               ),
             ),

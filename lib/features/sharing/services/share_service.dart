@@ -10,6 +10,7 @@ import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../app/theme/colours.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../sandwiches/models/sandwich.dart';
 import '../../smoking/models/smoking_recipe.dart';
@@ -211,7 +212,7 @@ class ShareService {
               child: QrImageView(
                 data: link,
                 version: QrVersions.auto,
-                backgroundColor: Colors.white,
+                backgroundColor: MemoixColours.qrBackground,
               ),
             ),
             const SizedBox(height: 16),
@@ -343,7 +344,7 @@ class ShareService {
               child: QrImageView(
                 data: link,
                 version: QrVersions.auto,
-                backgroundColor: Colors.white,
+                backgroundColor: MemoixColours.qrBackground,
               ),
             ),
             const SizedBox(height: 16),
@@ -486,7 +487,7 @@ class ShareService {
               child: QrImageView(
                 data: link,
                 version: QrVersions.auto,
-                backgroundColor: Colors.white,
+                backgroundColor: MemoixColours.qrBackground,
               ),
             ),
             const SizedBox(height: 16),
@@ -615,7 +616,7 @@ class ShareService {
               child: QrImageView(
                 data: link,
                 version: QrVersions.auto,
-                backgroundColor: Colors.white,
+                backgroundColor: MemoixColours.qrBackground,
               ),
             ),
             const SizedBox(height: 16),
@@ -765,7 +766,7 @@ class ShareService {
               child: QrImageView(
                 data: link,
                 version: QrVersions.auto,
-                backgroundColor: Colors.white,
+                backgroundColor: MemoixColours.qrBackground,
               ),
             ),
             const SizedBox(height: 16),
@@ -844,7 +845,7 @@ class ShareService {
               child: QrImageView(
                 data: link,
                 version: QrVersions.auto,
-                backgroundColor: Colors.white,
+                backgroundColor: MemoixColours.qrBackground,
               ),
             ),
             const SizedBox(height: 16),
@@ -923,7 +924,7 @@ class ShareService {
               child: QrImageView(
                 data: link,
                 version: QrVersions.auto,
-                backgroundColor: Colors.white,
+                backgroundColor: MemoixColours.qrBackground,
               ),
             ),
             const SizedBox(height: 16),

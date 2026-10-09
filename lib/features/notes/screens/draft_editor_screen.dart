@@ -10,6 +10,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../app/theme/colours.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
@@ -941,7 +942,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
                              ClipRRect(borderRadius: BorderRadius.circular(8), child: Image.file(File(_stepImages[index]), width: 100, height: 100, fit: BoxFit.cover)),
                              Positioned(top: 4, right: 4, child: GestureDetector(
                                 onTap: () => _removeGalleryImage(index),
-                                child: Container(decoration: const BoxDecoration(color: Colors.white, shape: BoxShape.circle), child: const Icon(Icons.close, size: 16)),
+                                child: Container(decoration: const BoxDecoration(color: MemoixColours.onScrim, shape: BoxShape.circle), child: const Icon(Icons.close, size: 16)),
                              ),),
                           ],
                        ),

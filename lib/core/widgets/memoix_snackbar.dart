@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../app/app.dart';
+import '../../app/theme/colours.dart';
 
 /// Centralized SnackBar helper for consistent behaviour across the app.
 /// 
@@ -213,7 +214,7 @@ class MemoixSnackBar {
     final context = rootNavigatorKey.currentContext;
     final actionColour = context != null 
         ? Theme.of(context).colorScheme.inversePrimary
-        : Colors.lightBlueAccent;
+        : MemoixColours.snackbarActionFallback;
     
     try {
       messenger.hideCurrentSnackBar();

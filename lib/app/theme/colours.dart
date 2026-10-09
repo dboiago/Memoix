@@ -116,19 +116,10 @@ class MemoixColours {
   static const Color modernistTechnique = Color(0xFFB898C4);   // Soft lavender - scientific techniques
 
   // UI colours
-  static const Color background = Color(0xFFFAFAFA);
-  static const Color surface = Color(0xFFFFFFFF);
-  static const Color error = Color(0xFFE53935);
-  static const Color success = Color(0xFF43A047);
   
   // Semantic status colours (for confidence indicators, validation, etc.)
-  static const Color warning = Color(0xFFFF9800);              // Orange warning
-  static const Color successContainer = Color(0xFFE8F5E9);     // Light green bg
-  static const Color warningContainer = Color(0xFFFFF3E0);     // Light orange bg
-  static const Color errorContainer = Color(0xFFFFEBEE);       // Light red bg
   
   // Universal accent colours (for favourites, ratings)
-  static const Color favourite = Color(0xFFE57373);             // Soft red heart
   static const Color rating = Color(0xFFFFCA28);               // Amber star
   
   // Import method accent colours (thematic with app palette)
@@ -145,9 +136,9 @@ class MemoixColours {
   // Fixed colours with no theme equivalent
   static const Color scrim = Color(0x8A000000);
   static const Color onScrim = Color(0xFFFFFFFF);
-  static const Color imagePlaceholderFill = Color(0xFFEEEEEE);
   static const Color headerTitleStroke = Color(0xFF4B5563);
   static const Color snackbarActionFallback = Color(0xFF40C4FF);
+  static const Color qrBackground = Color(0xFFFFFFFF);
 
   /// Get colour for a course category
   static Color forCourse(String course) {

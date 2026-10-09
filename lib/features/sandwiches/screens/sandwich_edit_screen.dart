@@ -12,6 +12,7 @@ import '../../../core/utils/suggestions.dart';
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../app/theme/colours.dart';
 
 /// Sandwich edit/create screen with side-by-side layout
 class SandwichEditScreen extends ConsumerStatefulWidget {
@@ -669,14 +670,14 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
 
   Widget _imageActionButton({required IconData icon, required VoidCallback onPressed}) {
     return Material(
-      color: Colors.black54,
+      color: MemoixColours.scrim,
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         borderRadius: BorderRadius.circular(20),
         onTap: onPressed,
         child: Padding(
           padding: const EdgeInsets.all(8),
-          child: Icon(icon, color: Colors.white, size: 20),
+          child: Icon(icon, color: MemoixColours.onScrim, size: 20),
         ),
       ),
     );

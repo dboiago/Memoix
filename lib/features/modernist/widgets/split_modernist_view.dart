@@ -7,6 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../models/modernist_recipe.dart';
 import '../../../app/routes/router.dart';
+import '../../../app/theme/colours.dart';
 import '../../../core/utils/timer_duration_extractor.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../shared/widgets/time_picker_column.dart';
@@ -309,13 +310,13 @@ class SplitModernistView extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(
-                        color: Colors.black.withValues(alpha: 0.5),
+                        color: MemoixColours.scrim.withValues(alpha: 0.5),
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: const Icon(
                         Icons.fullscreen,
                         size: 16,
-                        color: Colors.white,
+                        color: MemoixColours.onScrim,
                       ),
                     ),
                   ),
@@ -362,7 +363,7 @@ class SplitModernistView extends StatelessWidget {
             // Dark background
             GestureDetector(
               onTap: () => Navigator.pop(ctx),
-              child: Container(color: Colors.black.withValues(alpha: 0.9)),
+              child: Container(color: MemoixColours.scrim.withValues(alpha: 0.9)),
             ),
             // Image
             Center(
@@ -377,7 +378,7 @@ class SplitModernistView extends StatelessWidget {
               top: 40,
               right: 16,
               child: IconButton(
-                icon: const Icon(Icons.close, color: Colors.white, size: 32),
+                icon: const Icon(Icons.close, color: MemoixColours.onScrim, size: 32),
                 onPressed: () => Navigator.pop(ctx),
               ),
             ),

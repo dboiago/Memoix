@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../app/theme/colours.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/amount_utils.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -944,13 +945,13 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                             child: Container(
                               padding: const EdgeInsets.all(4),
                               decoration: BoxDecoration(
-                                color: Colors.black.withValues(alpha: 0.5),
+                                color: MemoixColours.scrim.withValues(alpha: 0.5),
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               child: const Icon(
                                 Icons.fullscreen,
                                 size: 16,
-                                color: Colors.white,
+                                color: MemoixColours.onScrim,
                               ),
                             ),
                           ),
@@ -1037,7 +1038,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             // Dark background
             GestureDetector(
               onTap: () => Navigator.pop(ctx),
-              child: Container(color: Colors.black.withValues(alpha: 0.9)),
+              child: Container(color: MemoixColours.scrim.withValues(alpha: 0.9)),
             ),
             // Image
             Center(
@@ -1052,7 +1053,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
               top: 40,
               right: 16,
               child: IconButton(
-                icon: const Icon(Icons.close, color: Colors.white, size: 32),
+                icon: const Icon(Icons.close, color: MemoixColours.onScrim, size: 32),
                 onPressed: () => Navigator.pop(ctx),
               ),
             ),

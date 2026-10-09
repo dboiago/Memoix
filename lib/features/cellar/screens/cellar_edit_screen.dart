@@ -11,6 +11,7 @@ import '../../../core/database/app_database.dart';
 import '../models/cellar_entry.dart';
 import '../repository/cellar_repository.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../app/theme/colours.dart';
 
 /// Cellar edit/create screen
 class CellarEditScreen extends ConsumerStatefulWidget {
@@ -322,14 +323,14 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
 
   Widget _imageActionButton({required IconData icon, required VoidCallback onPressed}) {
     return Material(
-      color: Colors.black54,
+      color: MemoixColours.scrim,
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         borderRadius: BorderRadius.circular(20),
         onTap: onPressed,
         child: Padding(
           padding: const EdgeInsets.all(8),
-          child: Icon(icon, color: Colors.white, size: 20),
+          child: Icon(icon, color: MemoixColours.onScrim, size: 20),
         ),
       ),
     );

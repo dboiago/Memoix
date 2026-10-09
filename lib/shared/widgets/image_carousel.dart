@@ -1,6 +1,8 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 
+import '../../app/theme/colours.dart';
+
 /// A carousel widget for displaying multiple recipe images
 class ImageCarousel extends StatefulWidget {
   /// List of image sources - can be file paths or network URLs
@@ -115,11 +117,11 @@ class _ImageCarouselState extends State<ImageCarousel> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
                       color: index == _currentPage
-                          ? Colors.white
-                          : Colors.white.withValues(alpha: 0.5),
+                          ? MemoixColours.onScrim
+                          : MemoixColours.onScrim.withValues(alpha: 0.5),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.3),
+                          color: MemoixColours.scrim.withValues(alpha: 0.3),
                           blurRadius: 4,
                           offset: const Offset(0, 2),
                         ),
@@ -137,13 +139,13 @@ class _ImageCarouselState extends State<ImageCarousel> {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               decoration: BoxDecoration(
-                color: Colors.black.withValues(alpha: 0.5),
+                color: MemoixColours.scrim.withValues(alpha: 0.5),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
                 '${_currentPage + 1}/${widget.images.length}',
                 style: const TextStyle(
-                  color: Colors.white,
+                  color: MemoixColours.onScrim,
                   fontSize: 12,
                   fontWeight: FontWeight.w500,
                 ),
@@ -263,12 +265,12 @@ class _NavigationButton extends StatelessWidget {
           width: 36,
           height: 36,
           decoration: BoxDecoration(
-            color: Colors.black.withValues(alpha: 0.4),
+            color: MemoixColours.scrim.withValues(alpha: 0.4),
             shape: BoxShape.circle,
           ),
           child: Icon(
             icon,
-            color: Colors.white,
+            color: MemoixColours.onScrim,
             size: 24,
           ),
         ),

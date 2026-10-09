@@ -12,6 +12,7 @@ import '../../../core/utils/suggestions.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../app/theme/colours.dart';
 
 /// Pizza edit/create screen
 class PizzaEditScreen extends ConsumerStatefulWidget {
@@ -686,14 +687,14 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
 
   Widget _imageActionButton({required IconData icon, required VoidCallback onPressed}) {
     return Material(
-      color: Colors.black54,
+      color: MemoixColours.scrim,
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         borderRadius: BorderRadius.circular(20),
         onTap: onPressed,
         child: Padding(
           padding: const EdgeInsets.all(8),
-          child: Icon(icon, color: Colors.white, size: 20),
+          child: Icon(icon, color: MemoixColours.onScrim, size: 20),
         ),
       ),
     );

@@ -7,6 +7,7 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 
 import '../../sharing/services/share_service.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
+import '../../../app/theme/colours.dart';
 
 bool _hasNoCamera() =>
     kIsWeb || Platform.isWindows || Platform.isMacOS || Platform.isLinux;
@@ -131,16 +132,16 @@ class _QrScannerScreenState extends ConsumerState<QrScannerScreen> {
           // Processing indicator
           if (_isProcessing)
             Container(
-              color: Colors.black54,
+              color: MemoixColours.scrim,
               child: const Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    CircularProgressIndicator(color: Colors.white),
+                    CircularProgressIndicator(color: MemoixColours.onScrim),
                     SizedBox(height: 16),
                     Text(
                       'Importing recipe...',
-                      style: TextStyle(color: Colors.white, fontSize: 16),
+                      style: TextStyle(color: MemoixColours.onScrim, fontSize: 16),
                     ),
                   ],
                 ),
@@ -267,7 +268,7 @@ class _QrScannerScreenState extends ConsumerState<QrScannerScreen> {
     return CustomPaint(
       painter: _ScanOverlayPainter(
         borderColour: theme.colorScheme.primary,
-        overlayColour: Colors.black54,
+        overlayColour: MemoixColours.scrim,
       ),
       child: const SizedBox.expand(),
     );
