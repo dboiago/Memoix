@@ -139,7 +139,7 @@ Pairings use **parent-side storage only**.
 * **Display:** Detail screens show explicit AND inverse pairings.
 
 ### 6.2 Domain Schema Types
-* **Type A (Standard):** Mains, Desserts, Drinks, Baking, Modernist, Smoking (Uses Directions List).
+* **Type A (Standard):** Mains, Desserts, Drinks, Baking, Standalone, Modernist, Smoking (Uses Directions List).
 * **Type B (Component):** Pizzas, Sandwiches (Uses Base + Components + Sub-recipes).
 * **Type C (Log):** Cheese, Cellar (Uses descriptive attributes and logs)
 
