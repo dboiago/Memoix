@@ -139,9 +139,9 @@ class _IngredientListState extends State<IngredientList> {
     final theme = Theme.of(context);
 
     if (widget.ingredients.isEmpty) {
-      return const Text(
+      return Text(
         'No ingredients listed',
-        style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey),
+        style: TextStyle(fontStyle: FontStyle.italic, color: theme.colorScheme.onSurfaceVariant),
       );
     }
 

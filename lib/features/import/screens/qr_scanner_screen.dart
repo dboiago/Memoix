@@ -154,10 +154,10 @@ class _QrScannerScreenState extends ConsumerState<QrScannerScreen> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text(
+              Text(
                 'Point your camera at a Memoix recipe QR code',
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(color: theme.colorScheme.outline),
               ),
               const SizedBox(height: 12),
               OutlinedButton.icon(

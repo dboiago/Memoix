@@ -140,9 +140,9 @@ class _DirectionListState extends ConsumerState<DirectionList> {
     final gapWidth = widget.isCompact ? 8.0 : 12.0;
 
     if (widget.directions.isEmpty) {
-      return const Text(
+      return Text(
         'No directions listed',
-        style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey),
+        style: TextStyle(fontStyle: FontStyle.italic, color: theme.colorScheme.onSurfaceVariant),
       );
     }
 

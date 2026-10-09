@@ -584,9 +584,9 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
 
   Widget _buildIngredientsList(ThemeData theme, List<ModernistIngredient> ingredients) {
     if (ingredients.isEmpty) {
-      return const Text(
+      return Text(
         'No ingredients listed',
-        style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey),
+        style: TextStyle(fontStyle: FontStyle.italic, color: theme.colorScheme.onSurfaceVariant),
       );
     }
 
@@ -731,9 +731,9 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   Widget _buildDirectionsList(ThemeData theme, ModernistRecipe recipe) {
     final directions = recipe.directions;
     if (directions.isEmpty) {
-      return const Text(
+      return Text(
         'No directions listed',
-        style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey),
+        style: TextStyle(fontStyle: FontStyle.italic, color: theme.colorScheme.onSurfaceVariant),
       );
     }
 
@@ -882,8 +882,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                                 ),
                                 child: Text(
                                   stepsUsingImage.map((s) => 'Step $s').join(', '),
-                                  style: const TextStyle(
-                                    color: Colors.white,
+                                  style: TextStyle(
+                                    color: theme.colorScheme.onPrimary,
                                     fontSize: 10,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -1004,17 +1004,6 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         ),
       ),
     );
-  }
-
-  Widget _buildSingleImage(String source) {
-    final isLocal = !source.startsWith('http');
-    return isLocal
-        ? Image.file(File(source), fit: BoxFit.cover)
-        : Image.network(
-            source,
-            fit: BoxFit.cover,
-            errorBuilder: (_, __, ___) => Container(color: Colors.grey.shade800),
-          );
   }
 
   void _duplicateRecipe(ModernistRecipe recipe) async {

@@ -215,10 +215,10 @@ class ShareService {
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
+            Text(
               'Scan this QR code with another\nMemoix app to import this recipe',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey),
+              style: TextStyle(color: Theme.of(ctx).colorScheme.outline),
             ),
           ],
         ),
@@ -347,10 +347,10 @@ class ShareService {
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
+            Text(
               'Scan this QR code with another\nMemoix app to import this pizza',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey),
+              style: TextStyle(color: Theme.of(ctx).colorScheme.outline),
             ),
           ],
         ),
@@ -490,10 +490,10 @@ class ShareService {
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
+            Text(
               'Scan this QR code with another\nMemoix app to import this sandwich',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey),
+              style: TextStyle(color: Theme.of(ctx).colorScheme.outline),
             ),
           ],
         ),
@@ -619,10 +619,10 @@ class ShareService {
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
+            Text(
               'Scan this QR code with another\nMemoix app to import this recipe',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey),
+              style: TextStyle(color: Theme.of(ctx).colorScheme.outline),
             ),
           ],
         ),
@@ -769,10 +769,10 @@ class ShareService {
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
+            Text(
               'Scan this QR code with another\nMemoix app to import this recipe',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey),
+              style: TextStyle(color: Theme.of(ctx).colorScheme.outline),
             ),
           ],
         ),
@@ -848,10 +848,10 @@ class ShareService {
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
+            Text(
               'Scan this QR code with another\nMemoix app to import this entry',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey),
+              style: TextStyle(color: Theme.of(ctx).colorScheme.outline),
             ),
           ],
         ),
@@ -927,10 +927,10 @@ class ShareService {
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
+            Text(
               'Scan this QR code with another\nMemoix app to import this entry',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey),
+              style: TextStyle(color: Theme.of(ctx).colorScheme.outline),
             ),
           ],
         ),

@@ -682,8 +682,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                           ),
                           child: Text(
                             stepsUsingImage.map((s) => '#$s').join(', '),
-                            style: const TextStyle(
-                              color: Colors.white,
+                            style: TextStyle(
+                              color: theme.colorScheme.onPrimary,
                               fontSize: 10,
                               fontWeight: FontWeight.w500,
                             ),
@@ -814,8 +814,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         errorBuilder: (_, __, ___) => Container(
           width: width,
           height: height,
-          color: Colors.grey.shade200,
-          child: const Icon(Icons.broken_image),
+          color: Theme.of(context).colorScheme.surfaceContainerHighest,
+          child: Icon(Icons.broken_image, color: Theme.of(context).colorScheme.outline),
         ),
       );
     } else {
@@ -827,8 +827,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         errorBuilder: (_, __, ___) => Container(
           width: width,
           height: height,
-          color: Colors.grey.shade200,
-          child: const Icon(Icons.broken_image),
+          color: Theme.of(context).colorScheme.surfaceContainerHighest,
+          child: Icon(Icons.broken_image, color: Theme.of(context).colorScheme.outline),
         ),
       );
     }
@@ -3285,11 +3285,11 @@ class _CuisinePickerSheetState extends State<_CuisinePickerSheet> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.search_off, size: 48, color: Colors.grey.shade400),
+            Icon(Icons.search_off, size: 48, color: Theme.of(context).colorScheme.onSurfaceVariant),
             const SizedBox(height: 16),
             Text(
               'No cuisines found for "$_searchQuery"',
-              style: TextStyle(color: Colors.grey.shade600),
+              style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant),
             ),
           ],
         ),

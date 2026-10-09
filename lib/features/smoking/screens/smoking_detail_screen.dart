@@ -929,8 +929,8 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                                 ),
                                 child: Text(
                                   stepsUsingImage.map((s) => 'Step $s').join(', '),
-                                  style: const TextStyle(
-                                    color: Colors.white,
+                                  style: TextStyle(
+                                    color: theme.colorScheme.onPrimary,
                                     fontSize: 10,
                                     fontWeight: FontWeight.w500,
                                   ),

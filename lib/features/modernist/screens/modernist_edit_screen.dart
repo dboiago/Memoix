@@ -1408,8 +1408,8 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                           ),
                           child: Text(
                             stepsUsingImage.map((s) => '#$s').join(', '),
-                            style: const TextStyle(
-                              color: Colors.white,
+                            style: TextStyle(
+                              color: theme.colorScheme.onPrimary,
                               fontSize: 10,
                               fontWeight: FontWeight.w500,
                             ),

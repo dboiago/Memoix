@@ -1499,8 +1499,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         errorBuilder: (_, __, ___) => Container(
           width: width,
           height: height,
-          color: Colors.grey.shade200,
-          child: const Icon(Icons.broken_image),
+          color: Theme.of(context).colorScheme.surfaceContainerHighest,
+          child: Icon(Icons.broken_image, color: Theme.of(context).colorScheme.outline),
         ),
       );
     } else {
@@ -1512,8 +1512,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         errorBuilder: (_, __, ___) => Container(
           width: width,
           height: height,
-          color: Colors.grey.shade200,
-          child: const Icon(Icons.broken_image),
+          color: Theme.of(context).colorScheme.surfaceContainerHighest,
+          child: Icon(Icons.broken_image, color: Theme.of(context).colorScheme.outline),
         ),
       );
     }

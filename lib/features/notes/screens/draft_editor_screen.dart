@@ -656,7 +656,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
           ),
           child: Row(
              children: [
-                ReorderableDragStartListener(index: index, child: const Padding(padding: EdgeInsets.all(8.0), child: Icon(Icons.drag_indicator, color: Colors.grey))),
+                ReorderableDragStartListener(index: index, child: Padding(padding: const EdgeInsets.all(8.0), child: Icon(Icons.drag_indicator, color: theme.colorScheme.onSurfaceVariant))),
                 Icon(Icons.label_outline, size: 18, color: theme.colorScheme.primary),
                 const SizedBox(width: 8),
                 Expanded(
@@ -686,7 +686,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          ReorderableDragStartListener(index: index, child: const Padding(padding: EdgeInsets.all(8.0), child: Icon(Icons.drag_indicator, size: 20, color: Colors.grey))),
+          ReorderableDragStartListener(index: index, child: Padding(padding: const EdgeInsets.all(8.0), child: Icon(Icons.drag_indicator, size: 20, color: theme.colorScheme.onSurfaceVariant))),
           
           Expanded(
             flex: 3,
@@ -723,7 +723,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
           SizedBox(
              width: 40,
              child: PopupMenuButton<String>(
-                icon: const Icon(Icons.more_vert, size: 20, color: Colors.grey),
+                icon: Icon(Icons.more_vert, size: 20, color: theme.colorScheme.onSurfaceVariant),
                 onSelected: (val) {
                    if (val == 'delete') setState(() => _ingredientRows.removeAt(index));
                    if (val == 'section') setState(() => row.isSection = true);
@@ -753,7 +753,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
        child: Row(
          crossAxisAlignment: CrossAxisAlignment.start,
          children: [
-           ReorderableDragStartListener(index: index, child: const Padding(padding: EdgeInsets.only(top: 12, right: 8), child: Icon(Icons.drag_handle, size: 20, color: Colors.grey))),
+           ReorderableDragStartListener(index: index, child: Padding(padding: const EdgeInsets.only(top: 12, right: 8), child: Icon(Icons.drag_handle, size: 20, color: theme.colorScheme.onSurfaceVariant))),
            
            Padding(
              padding: const EdgeInsets.only(top: 12, right: 8),
@@ -783,11 +783,11 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
               children: [
                  IconButton(
                     icon: Icon(hasImage ? Icons.image : Icons.add_photo_alternate_outlined, 
-                       color: hasImage ? theme.colorScheme.primary : Colors.grey, size: 20,),
+                       color: hasImage ? theme.colorScheme.primary : theme.colorScheme.onSurfaceVariant, size: 20,),
                     onPressed: () => _pickStepImage(index),
                  ),
                  IconButton(
-                    icon: const Icon(Icons.close, size: 18, color: Colors.grey),
+                    icon: Icon(Icons.close, size: 18, color: theme.colorScheme.onSurfaceVariant),
                     onPressed: _directionRows.length > 1 ? () {
                        setState(() {
                           row.dispose(); 
