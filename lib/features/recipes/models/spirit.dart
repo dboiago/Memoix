@@ -79,20 +79,6 @@ class Spirit {
     const Spirit(code: 'HOT_CHOC', name: 'Hot Chocolate', category: 'Non-Alcoholic'),
   ];
 
-  /// Get all unique categories
-  static List<String> get categories => 
-    all.map((s) => s.category).toSet().toList();
-
-  /// Get spirits grouped by category
-  static Map<String, List<Spirit>> get byCategory {
-    final grouped = <String, List<Spirit>>{};
-    for (final spirit in all) {
-      grouped.putIfAbsent(spirit.category, () => []);
-      grouped[spirit.category]!.add(spirit);
-    }
-    return grouped;
-  }
-
   /// First-wins index of [all] by exact code.
   static final Map<String, Spirit> _byCodeIndex = () {
     final index = <String, Spirit>{};

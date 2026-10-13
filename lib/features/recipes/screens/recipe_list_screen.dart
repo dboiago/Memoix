@@ -44,37 +44,69 @@ final _availableCuisinesForCourseProvider =
   );
 });
 
+/// A spirit filter chip: [key] is the lowercase trimmed spirit text, [label] is
+/// what the chip displays.
+typedef _SpiritChip = ({String key, String label});
+
+String _spiritKey(String? value) => (value ?? '').trim().toLowerCase();
+
+/// Groups drinks by [_spiritKey]. Known spirits are labelled via
+/// [Spirit.toDisplayName]; unknown ones use their most common casing, with
+/// ties going to the first one seen. Sorted non-alcoholic first, then by
+/// category, then by key.
+List<_SpiritChip> _buildSpiritChips(List<Recipe> recipes) {
+  final casings = <String, Map<String, int>>{};
+  for (final r in recipes) {
+    final raw = r.subcategory?.trim();
+    if (raw == null || raw.isEmpty) continue;
+    final counts = casings.putIfAbsent(raw.toLowerCase(), () => <String, int>{});
+    counts[raw] = (counts[raw] ?? 0) + 1;
+  }
+
+  final chips = <_SpiritChip>[];
+  for (final entry in casings.entries) {
+    String? best;
+    var bestCount = 0;
+    for (final casing in entry.value.entries) {
+      if (casing.value > bestCount) {
+        best = casing.key;
+        bestCount = casing.value;
+      }
+    }
+    final label = Spirit.lookup(entry.key) != null
+        ? Spirit.toDisplayName(entry.key)
+        : best!;
+    chips.add((key: entry.key, label: label));
+  }
+
+  chips.sort((a, b) {
+    final spiritA = Spirit.lookup(a.key);
+    final spiritB = Spirit.lookup(b.key);
+    final aIsNonAlc = spiritA?.category == 'Non-Alcoholic';
+    final bIsNonAlc = spiritB?.category == 'Non-Alcoholic';
+    if (aIsNonAlc && !bIsNonAlc) return -1;
+    if (!aIsNonAlc && bIsNonAlc) return 1;
+    final catA = spiritA?.category ?? '';
+    final catB = spiritB?.category ?? '';
+    final catCompare = catA.compareTo(catB);
+    if (catCompare != 0) return catCompare;
+    return a.key.compareTo(b.key);
+  });
+  return chips;
+}
+
 /// Derives the sorted base-spirit list for the drinks course, applying the
 /// hideMemoix setting. Recalculates only when the recipe list or the setting
 /// changes — never on a plain setState or UI repaint (M-2).
 final _availableBaseSpiritsForCourseProvider =
-    Provider.family<List<String>, String>((ref, course) {
+    Provider.family<List<_SpiritChip>, String>((ref, course) {
   final hideMemoix = ref.watch(hideMemoixRecipesProvider);
   return ref.watch(recipesByCourseProvider(course)).maybeWhen(
     data: (all) {
       final recipes = hideMemoix
           ? all.where((r) => r.source != RecipeSource.memoix).toList()
           : all;
-      final bases = recipes
-          .map((r) => r.subcategory)
-          .where((s) => s != null && s.isNotEmpty)
-          .cast<String>()
-          .toSet()
-          .toList();
-      bases.sort((a, b) {
-        final spiritA = Spirit.lookup(a);
-        final spiritB = Spirit.lookup(b);
-        final aIsNonAlc = spiritA?.category == 'Non-Alcoholic';
-        final bIsNonAlc = spiritB?.category == 'Non-Alcoholic';
-        if (aIsNonAlc && !bIsNonAlc) return -1;
-        if (!aIsNonAlc && bIsNonAlc) return 1;
-        final catA = spiritA?.category ?? '';
-        final catB = spiritB?.category ?? '';
-        final catCompare = catA.compareTo(catB);
-        if (catCompare != 0) return catCompare;
-        return a.compareTo(b);
-      });
-      return bases;
+      return _buildSpiritChips(recipes);
     },
     orElse: () => [],
   );
@@ -274,8 +306,8 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                       children: [
                         _buildCuisineChip('All', recipes.length, isAllChip: true),
                         ...availableBaseSpirits.map((base) {
-                          final count = recipes.where((r) => r.subcategory == base).length;
-                          return _buildCuisineChip(Spirit.toDisplayName(base), count, rawValue: base);
+                          final count = recipes.where((r) => _spiritKey(r.subcategory) == base.key).length;
+                          return _buildCuisineChip(base.label, count, rawValue: base.key);
                         }),
                       ],
                     ),
@@ -443,37 +475,8 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
 
   /// Get available base spirits from drinks recipes
   /// Sorts with non-alcoholic first, then by category
-  List<String> _getAvailableBaseSpirits(List<Recipe> recipes) {
-    final bases = recipes
-        .map((r) => r.subcategory)
-        .where((s) => s != null && s.isNotEmpty)
-        .cast<String>()
-        .toSet()
-        .toList();
-    
-    // Sort: non-alcoholic first, then by category, then alphabetically
-    bases.sort((a, b) {
-      final spiritA = Spirit.lookup(a);
-      final spiritB = Spirit.lookup(b);
-      
-      // Non-alcoholic first
-      final aIsNonAlc = spiritA?.category == 'Non-Alcoholic';
-      final bIsNonAlc = spiritB?.category == 'Non-Alcoholic';
-      if (aIsNonAlc && !bIsNonAlc) return -1;
-      if (!aIsNonAlc && bIsNonAlc) return 1;
-      
-      // Then by category
-      final catA = spiritA?.category ?? '';
-      final catB = spiritB?.category ?? '';
-      final catCompare = catA.compareTo(catB);
-      if (catCompare != 0) return catCompare;
-      
-      // Then alphabetically
-      return a.compareTo(b);
-    });
-    
-    return bases;
-  }
+  List<_SpiritChip> _getAvailableBaseSpirits(List<Recipe> recipes) =>
+      _buildSpiritChips(recipes);
 
   String _displayCuisine(String raw) => Cuisine.codeFor(raw) ?? raw;
 
@@ -513,7 +516,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     // Apply cuisine / base-spirit chip filter
     if (_selectedCuisines.isNotEmpty) {
       if (_isDrinksScreen) {
-        result = result.where((r) => _selectedCuisines.contains(r.subcategory)).toList();
+        result = result.where((r) => _selectedCuisines.contains(_spiritKey(r.subcategory))).toList();
       } else {
         result = result.where((r) =>
             r.cuisine != null && _selectedCuisines.contains(r.cuisine),).toList();

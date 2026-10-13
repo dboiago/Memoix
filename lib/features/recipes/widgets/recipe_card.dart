@@ -264,7 +264,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
 
   /// Display drink info: spirit name + optional cuisine origin
   String _displayDrinkInfo() {
-    final spirit = widget.recipe.subcategory ?? '';
+    final spirit = Spirit.toDisplayName(widget.recipe.subcategory ?? '');
     final cuisine = widget.recipe.cuisine;
     
     // Show spirit name, with cuisine if it's an origin-specific drink
@@ -272,7 +272,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
       final cuisineAdj = Cuisine.toAdjective(cuisine);
       return '$spirit ($cuisineAdj)';
     }
-    return Spirit.toDisplayName(spirit);
+    return spirit;
   }
 }
 
