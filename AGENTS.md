@@ -126,7 +126,7 @@ The split view uses a **fixed-height container** (`SizedBox`) to allow footer co
 **DO NOT:** Use `Expanded` for the split container (prevents footer scrolling).
 
 ### 5.2 The "Physical Item" Input Pattern
-**Applies to:** Wood (Smoking), Glass/Garnish (Drinks), Equipment (Modernist)
+**Applies to:** Wood (Smoking), Glass/Garnish (Drinks), Spirit (Drinks), Equipment (Modernist)
 **Behaviour:** Autocomplete Dropdown + Free-form Entry. **NO Enums.**
 
 ---

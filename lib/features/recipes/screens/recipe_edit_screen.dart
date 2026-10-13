@@ -1074,14 +1074,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                       ),
                       const SizedBox(height: 12),
                       if (isDrink)
-                        _SpiritSelector(
-                          controller: _regionController,
-                          onChanged: (spirit) {
-                            setState(() {
-                              _regionController.text = spirit ?? '';
-                            });
-                          },
-                        )
+                        _SpiritSelector(controller: _regionController)
                       else
                         TextField(
                           controller: _regionController,
@@ -1107,14 +1100,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                       const SizedBox(width: 12),
                       Expanded(
                         child: isDrink
-                          ? _SpiritSelector(
-                              controller: _regionController,
-                              onChanged: (spirit) {
-                                setState(() {
-                                  _regionController.text = spirit ?? '';
-                                });
-                              },
-                            )
+                          ? _SpiritSelector(controller: _regionController)
                           : TextField(
                               controller: _regionController,
                               decoration: const InputDecoration(
@@ -2979,143 +2965,46 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   ];
 }
 
-/// Spirit type selector for drinks/cocktails
+/// Spirit type field: Spirit list suggestions plus free-form entry
 class _SpiritSelector extends StatelessWidget {
   final TextEditingController controller;
-  final ValueChanged<String?> onChanged;
 
-  const _SpiritSelector({
-    required this.controller,
-    required this.onChanged,
-  });
+  const _SpiritSelector({required this.controller});
 
   @override
   Widget build(BuildContext context) {
-    final currentValue = controller.text.isNotEmpty ? controller.text : null;
-    final spirit = currentValue != null ? Spirit.lookup(currentValue) : null;
-    
-    return InkWell(
-      onTap: () => _showSpiritSheet(context),
-      child: InputDecorator(
-        decoration: const InputDecoration(
-          labelText: 'Spirit Type',
-          suffixIcon: Icon(Icons.arrow_drop_down),
-        ),
-        child: Text(
-          spirit != null
-              ? spirit.name
-              : currentValue ?? 'Select spirit (optional)',
-          style: TextStyle(
-            color: currentValue != null
-                ? Theme.of(context).colorScheme.onSurface
-                : Theme.of(context).colorScheme.onSurfaceVariant,
+    return Autocomplete<String>(
+      initialValue: TextEditingValue(text: controller.text),
+      optionsBuilder: (value) {
+        return Spirit.all.map((s) => s.name).where(
+              (name) => name.toLowerCase().contains(value.text.toLowerCase()),
+            );
+      },
+      onSelected: (selection) {
+        controller.text = selection;
+      },
+      fieldViewBuilder: (context, fieldController, focusNode, onSubmitted) {
+        // Sync with our controller
+        if (fieldController.text != controller.text) {
+          fieldController.text = controller.text;
+          fieldController.selection = TextSelection.collapsed(
+            offset: fieldController.text.length,
+          );
+        }
+        return TextField(
+          controller: fieldController,
+          focusNode: focusNode,
+          decoration: const InputDecoration(
+            labelText: 'Spirit Type',
+            hintText: 'e.g., Gin, Bourbon, Mezcal',
           ),
-        ),
-      ),
-    );
-  }
-
-  void _showSpiritSheet(BuildContext context) {
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      builder: (ctx) => _SpiritPickerSheet(
-        selectedSpirit: controller.text.isNotEmpty ? controller.text : null,
-        onChanged: (name) {
-          onChanged(name);
-          Navigator.pop(ctx);
-        },
-        onClear: () {
-          onChanged(null);
-          Navigator.pop(ctx);
-        },
-      ),
-    );
-  }
-}
-
-/// Bottom sheet with spirit list grouped by category
-class _SpiritPickerSheet extends StatelessWidget {
-  final String? selectedSpirit;
-  final ValueChanged<String> onChanged;
-  final VoidCallback onClear;
-
-  const _SpiritPickerSheet({
-    required this.selectedSpirit,
-    required this.onChanged,
-    required this.onClear,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final grouped = Spirit.byCategory;
-    
-    return DraggableScrollableSheet(
-      initialChildSize: 0.7,
-      minChildSize: 0.3,
-      maxChildSize: 0.9,
-      expand: false,
-      builder: (_, controller) => Column(
-        children: [
-          // Header
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: Row(
-              children: [
-                const Text(
-                  'Select Spirit Type',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                ),
-                const Spacer(),
-                TextButton(
-                  onPressed: onClear,
-                  child: const Text('Clear'),
-                ),
-                IconButton(
-                  icon: const Icon(Icons.close),
-                  onPressed: () => Navigator.pop(context),
-                ),
-              ],
-            ),
-          ),
-          const Divider(height: 1),
-          // Content
-          Expanded(
-            child: ListView(
-              controller: controller,
-              children: grouped.entries.map((entry) {
-                return Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
-                      child: Text(
-                        entry.key,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Theme.of(context).colorScheme.primary,
-                          fontSize: 14,
-                        ),
-                      ),
-                    ),
-                    ...entry.value.map((spirit) {
-                      final isSelected = selectedSpirit == spirit.name;
-                      return ListTile(
-                        title: Text(spirit.name),
-                        trailing: isSelected
-                            ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
-                            : null,
-                        selected: isSelected,
-                        onTap: () => onChanged(spirit.name),
-                      );
-                    }),
-                  ],
-                );
-              }).toList(),
-            ),
-          ),
-        ],
-      ),
+          textCapitalization: TextCapitalization.words,
+          onChanged: (value) {
+            controller.text = value;
+          },
+          onSubmitted: (_) => onSubmitted(),
+        );
+      },
     );
   }
 }
