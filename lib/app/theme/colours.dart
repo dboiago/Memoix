@@ -115,10 +115,7 @@ class MemoixColours {
   static const Color modernistConcept = Color(0xFF7EB8A8);     // Sage teal - creative/flavour concepts
   static const Color modernistTechnique = Color(0xFFB898C4);   // Soft lavender - scientific techniques
 
-  // UI colours
-  
-  // Semantic status colours (for confidence indicators, validation, etc.)
-  
+ 
   // Universal accent colours (for favourites, ratings)
   static const Color rating = Color(0xFFFFCA28);               // Amber star
   
