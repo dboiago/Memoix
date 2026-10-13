@@ -60,7 +60,6 @@ typedef _RecipeRaw = ({
   String stepImages,
   String stepImageMap,
   String source,
-  int? colorValue,
   DateTime createdAt,
   DateTime updatedAt,
   bool isFavourite,
@@ -121,7 +120,6 @@ typedef _RecipeDecoded = ({
   List<String> stepImages,
   List<String> stepImageMap,
   String source,
-  int? colorValue,
   DateTime createdAt,
   DateTime updatedAt,
   bool isFavourite,
@@ -169,7 +167,6 @@ _RecipeRaw _toRecipeRaw(db.Recipe r) => (
       stepImages: r.stepImages,
       stepImageMap: r.stepImageMap,
       source: r.source,
-      colorValue: r.colorValue,
       createdAt: r.createdAt,
       updatedAt: r.updatedAt,
       isFavourite: r.isFavourite,
@@ -291,7 +288,6 @@ List<_RecipeDecoded> _batchDecodeRecipes(
             .toList(),
         stepImageMap: (jsonDecode(r.stepImageMap) as List).cast<String>(),
         source: r.source,
-        colorValue: r.colorValue,
         createdAt: r.createdAt,
         updatedAt: r.updatedAt,
         isFavourite: r.isFavourite,
@@ -356,7 +352,6 @@ class RecipeRepository {
       stepImages: Value(jsonEncode(recipe.stepImages)),
       stepImageMap: Value(jsonEncode(recipe.stepImageMap)),
       source: Value(recipe.source.name),
-      colorValue: Value(recipe.colorValue),
       createdAt: Value(recipe.createdAt),
       updatedAt: Value(recipe.updatedAt),
       isFavourite: Value(recipe.isFavourite),
@@ -437,7 +432,6 @@ class RecipeRepository {
       ..source = RecipeSource.values.firstWhere(
             (s) => s.name == r.source,
             orElse: () => RecipeSource.personal,)
-      ..colorValue = r.colorValue
       ..createdAt = r.createdAt
       ..updatedAt = r.updatedAt
       ..isFavourite = r.isFavourite
@@ -597,7 +591,6 @@ class RecipeRepository {
           ..source = RecipeSource.values.firstWhere(
                 (s) => s.name == d.source,
                 orElse: () => RecipeSource.personal,)
-          ..colorValue = d.colorValue
           ..createdAt = d.createdAt
           ..updatedAt = d.updatedAt
           ..isFavourite = d.isFavourite

@@ -83,9 +83,6 @@ class Recipe {
   /// Where this recipe came from
   RecipeSource source = RecipeSource.personal;
 
-  /// Custom colour override (stored as hex int)
-  int? colorValue;
-
   /// When the recipe was created
   DateTime createdAt = DateTime.now();
 
@@ -176,7 +173,6 @@ class Recipe {
     this.sourceUrl,
     this.imageUrl,
     this.source = RecipeSource.personal,
-    this.colorValue,
     this.isFavourite = false,
     this.rating = 0,
     this.cookCount = 0,
@@ -265,7 +261,6 @@ class Recipe {
         // Default to personal — un-tagged or unrecognized source strings belong to the user.
         orElse: () => RecipeSource.personal,
       )
-      ..colorValue = json['colorValue'] as int?
       ..isFavourite = (json['isFavourite'] ?? json['isFavorite']) as bool? ?? false
       ..rating = json['rating'] as int? ?? 0
       ..cookCount = json['cookCount'] as int? ?? 0
@@ -333,7 +328,6 @@ class Recipe {
       'stepImages': stepImages,
       'stepImageMap': stepImageMap,
       'source': source.name,
-      'colorValue': colorValue,
       'isFavourite': isFavourite,
       'rating': rating,
       'cookCount': cookCount,

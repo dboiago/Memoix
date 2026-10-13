@@ -331,7 +331,6 @@ class ModernistRepository {
       stepImages: Value(existing.stepImages),
       stepImageMap: Value(existing.stepImageMap),
       source: Value(existing.source),
-      colorValue: Value(existing.colorValue),
       createdAt: Value(existing.createdAt),
       updatedAt: Value(DateTime.now()),
       isFavourite: Value(existing.isFavourite),

@@ -695,7 +695,6 @@ abstract class SupabaseSyncService {
       'step_images': r.stepImages,
       'step_image_map': r.stepImageMap,
       'source': PiiScrubber.scrub(r.source),
-      'color_value': r.colorValue,
       'created_at': r.createdAt.toUtc().toIso8601String(),
       'updated_at': r.updatedAt.toUtc().toIso8601String(),
       'edit_count': r.editCount,
@@ -786,7 +785,6 @@ abstract class SupabaseSyncService {
       stepImages: Value(text('step_images', '[]')),
       stepImageMap: Value(text('step_image_map', '[]')),
       source: Value(text('source', 'personal')),
-      colorValue: Value(row['color_value'] as int?),
       createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
       updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
       isFavourite: Value(isFavourite),
@@ -1321,7 +1319,6 @@ abstract class SupabaseSyncService {
                 name: companion.name,
                 iconName: companion.iconName,
                 sortOrder: companion.sortOrder,
-                colorValue: companion.colorValue,
                 isVisible: companion.isVisible,
               ),);
         } else {
@@ -1574,7 +1571,6 @@ abstract class SupabaseSyncService {
       'name': c.name,
       'icon_name': c.iconName,
       'sort_order': c.sortOrder,
-      'color_value': c.colorValue,
       'is_visible': c.isVisible,
       'group_id': groupId,
       'updated_at': updatedAt,
@@ -1745,7 +1741,6 @@ abstract class SupabaseSyncService {
       name: Value(row['name'] as String),
       iconName: Value(row['icon_name'] as String?),
       sortOrder: Value(row['sort_order'] as int? ?? 0),
-      colorValue: Value(row['color_value'] as int? ?? 0xFFFFB74D),
       isVisible: Value(row['is_visible'] as bool? ?? true),
     );
   }

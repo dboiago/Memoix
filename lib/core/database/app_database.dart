@@ -52,7 +52,6 @@ class Recipes extends Table {
   TextColumn get stepImageMap => text().withDefault(const Constant('[]'))();
   // RecipeSource enum stored as name string
   TextColumn get source => text().withDefault(const Constant('personal'))();
-  IntColumn get colorValue => integer().nullable()();
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
   BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
@@ -428,7 +427,6 @@ class Courses extends Table {
   TextColumn get name => text()();
   TextColumn get iconName => text().nullable()();
   IntColumn get sortOrder => integer().withDefault(const Constant(0))();
-  IntColumn get colorValue => integer().nullable()();
   BoolColumn get isVisible => boolean().withDefault(const Constant(true))();
 }
 
@@ -528,7 +526,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 15;
+  int get schemaVersion => 16;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -1073,6 +1071,18 @@ class AppDatabase extends _$AppDatabase {
       }
       if (from < 15) {
         await m.alterTable(TableMigration(courses));
+      }
+      if (from < 16) {
+        await transaction(() async {
+          for (final table in ['recipes', 'courses']) {
+            final cols =
+                await customSelect('PRAGMA table_info($table)').get();
+            if (cols.any((r) => r.read<String>('name') == 'color_value')) {
+              await customStatement(
+                  'ALTER TABLE $table DROP COLUMN color_value');
+            }
+          }
+        });
       }
     },
   );
